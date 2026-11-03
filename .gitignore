@@ -8,3 +8,44 @@ dist/
 .DS_Store
 Thumbs.db
 src/App.backup.jsx
+
+# =========================================================
+# V Pilot local repair, migration and design backups
+# =========================================================
+
+repair-backup-*/
+router-work-backup-*/
+narration-backup-*/
+enterprise-3d-backup-*/
+
+*.backup
+*.backup.*
+*.before-*.jsx
+*.before-*.js
+*.before-*.css
+*.damaged.backup.css
+*.full-backup.jsx
+*.premium-backup-*.jsx
+*.premium-backup-*.css
+
+src/components/Footer.before-*.jsx
+src/components/Footer.premium-backup-*.jsx
+src/pages/HomePage.full-backup.jsx
+src/styles.before-*.css
+src/narrative.before-*.css
+src/enterprise-3d.premium-backup-*.css
+
+# Dependencies and generated production output
+node_modules/
+dist/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
