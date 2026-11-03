@@ -562,3 +562,119 @@
 @media (max-width: 760px) { .premium-enterprise-footer .premium-footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 520px) { .premium-enterprise-footer .premium-footer-grid { grid-template-columns: 1fr; } }
 /* V PILOT PREMIUM FOOTER FINAL END */
+/* V PILOT DARK FOOTER FORCE START */
+html body .site-footer.premium-enterprise-footer {
+  color-scheme: dark;
+  color: #f7fbff !important;
+  background-color: #031523 !important;
+  background-image:
+    radial-gradient(circle at 12% 12%, rgba(0, 151, 221, 0.28) 0, rgba(0, 151, 221, 0.08) 28%, transparent 48%),
+    radial-gradient(circle at 88% 18%, rgba(31, 211, 169, 0.17) 0, transparent 38%),
+    linear-gradient(135deg, #020c16 0%, #05253d 43%, #073451 68%, #031523 100%) !important;
+  border-top: 1px solid rgba(72, 210, 244, 0.42) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 -24px 70px rgba(1, 18, 31, 0.18) !important;
+}
+
+html body .site-footer.premium-enterprise-footer::before {
+  opacity: 1 !important;
+  background-image:
+    linear-gradient(rgba(91, 205, 235, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(91, 205, 235, 0.055) 1px, transparent 1px) !important;
+  background-size: 44px 44px !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-column h4 {
+  color: #ffffff !important;
+  text-shadow: 0 0 18px rgba(49, 216, 238, 0.16);
+}
+
+html body .site-footer.premium-enterprise-footer .footer-brand > p,
+html body .site-footer.premium-enterprise-footer .footer-column > a,
+html body .site-footer.premium-enterprise-footer .footer-contact-link,
+html body .site-footer.premium-enterprise-footer .footer-address,
+html body .site-footer.premium-enterprise-footer .footer-address address {
+  color: #b8d0e1 !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-column > a:hover,
+html body .site-footer.premium-enterprise-footer .footer-contact-link:hover {
+  color: #ffffff !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-brand-statement {
+  color: #79dff1 !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-social-link {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  padding: 0 !important;
+  color: #c7f2f8 !important;
+  border: 1px solid rgba(87, 213, 241, 0.34) !important;
+  border-radius: 12px !important;
+  background: linear-gradient(145deg, rgba(255,255,255,0.125), rgba(255,255,255,0.035)) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.16),
+    0 12px 28px rgba(0,0,0,0.25) !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-social-icon {
+  position: static !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 0 !important;
+  transform: none !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-social-icon svg {
+  position: static !important;
+  display: block !important;
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  vertical-align: middle !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-social-link:hover,
+html body .site-footer.premium-enterprise-footer .footer-social-link:focus-visible {
+  color: #031523 !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, #50e0f2 0%, #25c6dd 48%, #2dd4a8 100%) !important;
+  box-shadow: 0 16px 34px rgba(21, 195, 220, 0.28) !important;
+}
+
+html body .site-footer.premium-enterprise-footer .social-coming-soon {
+  color: #7fa8bf !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-legal {
+  background: rgba(0, 8, 16, 0.36) !important;
+  border-top: 1px solid rgba(120, 205, 231, 0.16) !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-bottom,
+html body .site-footer.premium-enterprise-footer .footer-legal-links a {
+  color: #88a9bf !important;
+}
+
+html body .site-footer.premium-enterprise-footer .footer-operating-line {
+  color: #c4d9e8 !important;
+}
+/* V PILOT DARK FOOTER FORCE END */

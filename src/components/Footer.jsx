@@ -27,7 +27,24 @@ function SocialIcon({ name }) {
   return <svg {...common}><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="2" /><circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="2" /><circle cx="17.4" cy="6.7" r="1.15" fill="currentColor" /></svg>;
 }
 
-const socialLinks = ["X", "LinkedIn", "Facebook", "Instagram"];
+const socialLinks = [
+  {
+    name: "X",
+    href: "https://x.com/vpilotcyber",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/company/vpilotcyber",
+  },
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/VPilotCyberSolutions",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/vpilotcyber",
+  },
+];
 
 export default function Footer() {
   const stopPlaceholder = (event) => event.preventDefault();
@@ -90,13 +107,15 @@ export default function Footer() {
           <a className="footer-contact-link" href="tel:+919442331700"><Phone size={17} aria-hidden="true" /><span>+91 94423 31700</span></a>
           <div className="footer-address"><MapPin size={17} aria-hidden="true" /><address>Suite No 12, Pulsebay 64<br />Opp. to Railway Station<br />Subbiah Salai<br />Pondicherry 605001, India</address></div>
           <div className="footer-social" aria-label="V Pilot social media accounts">
-            {socialLinks.map((name) => (
-              <a key={name} className="footer-social-link" href="#" aria-label={`${name} account coming soon`} title={`${name} account coming soon`} onClick={stopPlaceholder}>
-                <span className="footer-social-icon"><SocialIcon name={name} /></span>
+            {socialLinks.map((social) => (
+              <a key={social.name} className="footer-social-link" href={social.href} aria-label={`Follow V Pilot on ${social.name}`} title={`Follow V Pilot on ${social.name}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                <span className="footer-social-icon"><SocialIcon name={social.name} /></span>
               </a>
             ))}
           </div>
-          <span className="social-coming-soon">Official channels coming soon</span>
+          <span className="social-coming-soon">Follow V Pilot</span>
         </div>
       </div>
 
@@ -110,3 +129,4 @@ export default function Footer() {
     </footer>
   );
 }
+

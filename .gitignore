@@ -49,3 +49,8 @@ dist/
 .DS_Store
 Thumbs.db
 
+
+# Footer design backups
+src/components/Footer.social-backup-*.jsx
+src/enterprise-3d.social-backup-*.css
+
