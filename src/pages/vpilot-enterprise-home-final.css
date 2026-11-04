@@ -779,3 +779,104 @@ html body .vph-home .vph-dark .vph-section-head p {
 
 /* V PILOT VPH FLOW REPAIR END */
 
+/* V PILOT FINAL HOMEPAGE ISOLATION START */
+html body .vph-home {
+  position: relative !important;
+  display: flow-root !important;
+  width: 100% !important;
+  min-height: 1px !important;
+  overflow-x: clip !important;
+  isolation: isolate !important;
+}
+
+html body .vph-home > section {
+  position: relative !important;
+  inset: auto !important;
+  z-index: auto !important;
+  display: flow-root !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  clear: both !important;
+}
+
+html body .vph-home > section > .container {
+  position: relative !important;
+  inset: auto !important;
+  z-index: 1 !important;
+  transform: none !important;
+}
+
+html body .vph-home .vph-section-head,
+html body .vph-home .vph-section-head > span,
+html body .vph-home .vph-section-head > h2,
+html body .vph-home .vph-section-head > p,
+html body .vph-home .vph-card-grid,
+html body .vph-home .vph-dim-grid,
+html body .vph-home .vph-layer-grid,
+html body .vph-home .vph-split,
+html body .vph-home .vph-lifecycle,
+html body .vph-home .vph-validation,
+html body .vph-home .vph-final-grid {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+html body .vph-home .vph-hero {
+  min-height: 760px !important;
+  padding: 96px 0 90px !important;
+}
+
+html body .vph-home .vph-section {
+  min-height: 0 !important;
+  padding: 92px 0 !important;
+  overflow: hidden !important;
+}
+
+html body .vph-home .vph-light {
+  color: #082f52 !important;
+  background: #ffffff !important;
+}
+
+html body .vph-home .vph-soft {
+  color: #082f52 !important;
+  background: linear-gradient(180deg, #f5f9fc, #edf5f9) !important;
+}
+
+html body .vph-home .vph-dark {
+  color: #edf8fd !important;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(48, 213, 232, 0.13), transparent 30%),
+    linear-gradient(135deg, #020c16, #05243b) !important;
+}
+
+html body .vph-home .vph-dark .vph-section-head h2 {
+  color: #ffffff !important;
+}
+
+html body .vph-home .vph-dark .vph-section-head p {
+  color: #9cb8c8 !important;
+}
+
+html body .vph-home + .site-footer,
+html body main + .site-footer {
+  position: relative !important;
+  z-index: 0 !important;
+  clear: both !important;
+}
+
+@media (max-width: 760px) {
+  html body .vph-home .vph-hero {
+    min-height: auto !important;
+    padding: 72px 0 !important;
+  }
+}
+/* V PILOT FINAL HOMEPAGE ISOLATION END */
+
