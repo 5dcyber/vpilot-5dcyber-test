@@ -1,0 +1,1396 @@
+﻿/* =========================================================
+   V PILOT ENTERPRISE HOMEPAGE
+   Scoped homepage visual system
+   ========================================================= */
+
+.home-enterprise-hero {
+  min-height: 790px;
+  color: #f7fbff;
+
+  background:
+    radial-gradient(
+      circle at 82% 22%,
+      rgba(35, 199, 228, 0.20),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 12% 88%,
+      rgba(8, 117, 201, 0.16),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #020c16 0%,
+      #031827 43%,
+      #073652 100%
+    );
+}
+
+.home-enterprise-hero .hero-mesh {
+  opacity: 0.2;
+
+  background-image:
+    linear-gradient(
+      rgba(87, 205, 233, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(87, 205, 233, 0.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 44px 44px;
+}
+
+.home-enterprise-hero .hero-copy h1 {
+  max-width: 790px;
+  margin-top: 25px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(
+      3.25rem,
+      5vw,
+      6rem
+    );
+
+  line-height: 0.98;
+  letter-spacing: -0.047em;
+}
+
+.home-enterprise-hero .hero-copy h1 em {
+  display: inline-block;
+
+  color: transparent;
+
+  font-style: normal;
+
+  background:
+    linear-gradient(
+      90deg,
+      #9cecf4,
+      #54d8e9 55%,
+      #72e4bd
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.home-enterprise-hero .hero-copy > p {
+  max-width: 730px;
+  margin-top: 25px;
+
+  color: #bed3e0;
+
+  font-size:
+    clamp(
+      1rem,
+      1.25vw,
+      1.18rem
+    );
+
+  line-height: 1.72;
+}
+
+.home-enterprise-hero .hero-copy .hero-secondary-copy {
+  margin-top: 11px;
+
+  color: #91adbf;
+
+  font-size: 0.96rem;
+}
+
+.home-enterprise-hero .kicker {
+  color: #a8edf5;
+
+  border-color:
+    rgba(83, 217, 238, 0.25);
+
+  background:
+    rgba(61, 202, 230, 0.09);
+}
+
+.home-enterprise-hero .btn.ghost {
+  color: #e7f5fa;
+
+  border-color:
+    rgba(113, 215, 238, 0.24);
+
+  background:
+    rgba(255, 255, 255, 0.055);
+}
+
+.home-proof-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  margin-top: 25px;
+}
+
+.home-proof-points span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 9px 12px;
+
+  color: #d9e9f2;
+
+  border:
+    1px solid
+    rgba(130, 211, 235, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+
+  font-size: 0.76rem;
+  font-weight: 750;
+}
+
+.home-proof-points svg {
+  color: #59d8ea;
+}
+
+.home-responsibility {
+  display: flex;
+  gap: 13px;
+
+  max-width: 730px;
+  margin-top: 26px;
+  padding: 17px 18px;
+
+  color: #9fb8c7;
+
+  border-left: 3px solid #2bcfe6;
+
+  border-radius:
+    0 15px 15px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(43, 207, 230, 0.10),
+      rgba(255, 255, 255, 0.02)
+    );
+}
+
+.home-responsibility svg {
+  flex: 0 0 auto;
+
+  color: #64deee;
+}
+
+.home-responsibility p {
+  margin: 0;
+
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.home-responsibility strong {
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #f0f9fc;
+}
+
+.home-platform-visual {
+  position: relative;
+
+  border-color:
+    rgba(97, 211, 238, 0.24);
+
+  background: #061c2d;
+
+  box-shadow:
+    0 38px 90px rgba(0, 0, 0, 0.42),
+    0 0 52px rgba(34, 192, 225, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.home-platform-visual::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  border-radius: inherit;
+
+  box-shadow:
+    inset 0 0 0 1px
+      rgba(108, 224, 243, 0.13),
+    inset 0 -55px 90px
+      rgba(2, 21, 35, 0.26);
+}
+
+.home-platform-visual > img {
+  transition:
+    transform 800ms
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-platform-visual:hover > img {
+  transform:
+    scale(1.015)
+    translateY(-3px);
+}
+
+.home-visual-overlay {
+  position: absolute;
+  z-index: 3;
+
+  left: 22px;
+  right: 22px;
+  bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  padding: 13px 16px;
+
+  color: #dff6fb;
+
+  border:
+    1px solid
+    rgba(105, 220, 240, 0.18);
+
+  border-radius: 14px;
+
+  background:
+    rgba(2, 20, 34, 0.78);
+
+  backdrop-filter:
+    blur(16px)
+    saturate(135%);
+}
+
+.home-visual-overlay span {
+  color: #66ddec;
+
+  font-size: 0.64rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.home-visual-overlay strong {
+  font-size: 0.75rem;
+}
+
+.home-operating-gap {
+  padding: 96px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f3f8fb
+    );
+}
+
+.home-gap-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 17px;
+
+  margin-top: 43px;
+}
+
+.home-gap-card {
+  min-height: 225px;
+
+  padding: 25px;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.12);
+
+  border-radius: 21px;
+
+  background:
+    rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 18px 48px
+    rgba(6, 37, 59, 0.065);
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.home-gap-card:hover {
+  transform: translateY(-5px);
+
+  border-color:
+    rgba(8, 117, 201, 0.26);
+
+  box-shadow:
+    0 26px 60px
+    rgba(6, 37, 59, 0.11);
+}
+
+.home-gap-card > span {
+  color: #18a8d9;
+
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.home-gap-card h3 {
+  margin: 21px 0 0;
+
+  color: #082f52;
+
+  font-size: 1.14rem;
+}
+
+.home-gap-card p {
+  margin: 13px 0 0;
+
+  color: #647f91;
+
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+.home-platform-promise {
+  padding: 16px 18px;
+
+  color: #075f9e;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.16);
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e9f7fc,
+      #f7fcfe
+    );
+
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.home-platform-capabilities {
+  padding: 0 0 96px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f4f9fc,
+      #ffffff
+    );
+}
+
+.home-capability-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 15px;
+}
+
+.home-capability-card {
+  min-height: 265px;
+
+  padding: 22px;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.12);
+
+  border-radius: 20px;
+
+  background:
+    rgba(255, 255, 255, 0.91);
+
+  box-shadow:
+    0 16px 42px
+    rgba(6, 37, 59, 0.06);
+}
+
+.home-capability-icon {
+  display: grid;
+
+  width: 49px;
+  height: 49px;
+
+  place-items: center;
+
+  color: #0875c9;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e5f6fc,
+      #ffffff
+    );
+
+  box-shadow:
+    0 10px 24px
+    rgba(8, 117, 201, 0.12);
+}
+
+.home-capability-card h3 {
+  margin: 21px 0 0;
+
+  color: #082f52;
+
+  font-size: 1.05rem;
+}
+
+.home-capability-card p {
+  margin: 13px 0 0;
+
+  color: #647f91;
+
+  font-size: 0.84rem;
+  line-height: 1.65;
+}
+
+.home-section-action {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 30px;
+}
+
+.home-section-action a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #0875c9;
+
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-pilot-card {
+  position: relative;
+
+  padding-bottom: 58px;
+}
+
+.home-card-link {
+  position: absolute;
+
+  left: 22px;
+  bottom: 20px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #0875c9 !important;
+
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.home-engagement-model {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-top: 30px;
+  padding: 17px 20px;
+
+  color: #587589;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.13);
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.76);
+}
+
+.home-engagement-model strong {
+  margin-right: 7px;
+
+  color: #082f52;
+}
+
+.home-engagement-model i {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #20b8df;
+}
+
+.home-solution-grid {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+}
+
+.home-validation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 9px;
+}
+
+.home-validation-grid span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 11px 12px;
+
+  color: #526f84;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.12);
+
+  border-radius: 11px;
+
+  background: #f6fafc;
+
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.home-validation-grid svg {
+  flex: 0 0 auto;
+
+  color: #0875c9;
+}
+
+.home-validation-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 17px;
+}
+
+.home-validation-outcomes strong,
+.home-validation-outcomes span {
+  padding: 8px 11px;
+
+  border-radius: 999px;
+
+  font-size: 0.68rem;
+}
+
+.home-validation-outcomes strong {
+  color: #082f52;
+}
+
+.home-validation-outcomes span {
+  color: #0875c9;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.15);
+
+  background: #eef8fc;
+}
+
+.home-insights {
+  padding: 96px 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(35, 199, 228, 0.09),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff,
+      #f0f7fa
+    );
+}
+
+.home-insight-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 42px;
+}
+
+.home-insight-grid article {
+  min-height: 250px;
+
+  padding: 24px;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.12);
+
+  border-radius: 21px;
+
+  background:
+    rgba(255, 255, 255, 0.86);
+
+  box-shadow:
+    0 18px 45px
+    rgba(6, 37, 59, 0.065);
+}
+
+.home-insight-grid svg {
+  color: #0875c9;
+}
+
+.home-insight-grid h3 {
+  margin: 22px 0 0;
+
+  color: #082f52;
+}
+
+.home-insight-grid p {
+  margin: 13px 0 0;
+
+  color: #647f91;
+
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1366px) {
+  .home-enterprise-hero .hero-copy h1 {
+    font-size:
+      clamp(
+        3rem,
+        4.65vw,
+        5rem
+      );
+  }
+
+  .home-capability-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-gap-grid,
+  .home-solution-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .home-insight-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .home-enterprise-hero {
+    min-height: auto;
+  }
+
+  .home-enterprise-hero .hero-copy h1 {
+    font-size:
+      clamp(
+        2.75rem,
+        13vw,
+        4.3rem
+      );
+  }
+
+  .home-gap-grid,
+  .home-capability-grid,
+  .home-solution-grid,
+  .home-insight-grid,
+  .home-validation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-proof-points {
+    display: grid;
+  }
+
+  .home-proof-points span {
+    width: 100%;
+  }
+
+  .home-visual-overlay {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-platform-visual > img,
+  .home-gap-card {
+    transition: none;
+  }
+
+  .home-platform-visual:hover > img,
+  .home-gap-card:hover {
+    transform: none;
+  }
+}
+
+/*
+
+/* =========================================================
+   V PILOT HOMEPAGE STRUCTURE FINAL START
+   Clean homepage layout rules
+   ========================================================= */
+
+/* Ensure all homepage elements use predictable dimensions. */
+.home-enterprise-hero *,
+.home-operating-gap *,
+.home-platform-capabilities *,
+.home-pilots *,
+.home-solutions *,
+.home-insights *,
+.visual-story-section * {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   SHARED HOMEPAGE SECTION STRUCTURE
+   ========================================================= */
+
+.home-operating-gap,
+.home-platform-capabilities,
+.home-pilots,
+.home-solutions,
+.home-insights,
+.visual-story-section {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+  height: auto;
+  min-height: 0;
+
+  overflow: visible;
+}
+
+.home-operating-gap > .container,
+.home-platform-capabilities > .container,
+.home-pilots > .container,
+.home-solutions > .container,
+.home-insights > .container,
+.visual-story-section > .container {
+  position: relative;
+
+  height: auto;
+  min-height: 0;
+
+  overflow: visible;
+}
+
+/* =========================================================
+   NARRATIVE HEADING
+   Actual PageParts class: narrative-heading
+   ========================================================= */
+
+.home-operating-gap .narrative-heading,
+.home-platform-capabilities .narrative-heading,
+.home-pilots .narrative-heading,
+.home-solutions .narrative-heading,
+.home-insights .narrative-heading,
+.visual-story-section .narrative-heading {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  width: 100% !important;
+  max-width: 1120px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 0 50px !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  transform: none !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.home-operating-gap .narrative-heading .eyebrow,
+.home-platform-capabilities .narrative-heading .eyebrow,
+.home-pilots .narrative-heading .eyebrow,
+.home-solutions .narrative-heading .eyebrow,
+.home-insights .narrative-heading .eyebrow,
+.visual-story-section .narrative-heading .eyebrow {
+  position: static !important;
+
+  display: inline-block !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+
+  color: #16add8 !important;
+
+  font-size: 0.72rem !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+
+  transform: none !important;
+}
+
+.home-operating-gap .narrative-heading h2,
+.home-platform-capabilities .narrative-heading h2,
+.home-pilots .narrative-heading h2,
+.home-solutions .narrative-heading h2,
+.home-insights .narrative-heading h2,
+.visual-story-section .narrative-heading h2 {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 1080px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  color: #082f52 !important;
+
+  font-family:
+    "Space Grotesk",
+    Inter,
+    Arial,
+    sans-serif !important;
+
+  font-size: clamp(2.45rem, 4vw, 4.55rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.043em !important;
+
+  text-wrap: balance;
+
+  transform: none !important;
+
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.home-operating-gap .narrative-heading p,
+.home-platform-capabilities .narrative-heading p,
+.home-pilots .narrative-heading p,
+.home-solutions .narrative-heading p,
+.home-insights .narrative-heading p,
+.visual-story-section .narrative-heading p {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 930px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  color: #647f91 !important;
+
+  font-size: clamp(0.98rem, 1.18vw, 1.12rem) !important;
+  line-height: 1.75 !important;
+
+  transform: none !important;
+
+  background: none !important;
+}
+
+/* =========================================================
+   OPERATING GAP
+   ========================================================= */
+
+.home-operating-gap {
+  padding: clamp(84px, 8vw, 116px) 0;
+
+  background:
+    radial-gradient(
+      circle at 86% 12%,
+      rgba(35, 190, 225, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f2f8fb 100%
+    );
+}
+
+.home-operating-gap .narrative-heading {
+  max-width: 1160px !important;
+  margin-bottom: 56px !important;
+}
+
+.home-gap-grid {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  clear: both;
+}
+
+.home-gap-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 270px;
+
+  margin: 0;
+  padding: 28px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.12);
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.99),
+      rgba(247, 251, 253, 0.96)
+    );
+
+  box-shadow:
+    0 20px 48px
+    rgba(6, 37, 59, 0.075);
+}
+
+.home-gap-card > span {
+  display: block;
+
+  margin: 0 0 28px;
+
+  color: #0daddb;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.15em;
+}
+
+.home-gap-card h3 {
+  position: static;
+
+  margin: 0;
+  padding: 0;
+
+  color: #082f52;
+
+  font-size: 1.24rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.home-gap-card p {
+  position: static;
+
+  margin: 18px 0 0;
+  padding: 0;
+
+  color: #688399;
+
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   VISUAL STORY SECTIONS
+   PUDICA AND GOLDENVAULT
+   ========================================================= */
+
+.visual-story-section {
+  padding: clamp(84px, 8vw, 116px) 0 !important;
+}
+
+.visual-story-section .visual-story {
+  position: relative !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.05fr) !important;
+
+  align-items: center !important;
+
+  gap: clamp(44px, 6vw, 84px) !important;
+
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  overflow: visible !important;
+
+  transform: none !important;
+}
+
+.visual-story-section .visual-story > div {
+  position: relative !important;
+
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  overflow: visible !important;
+}
+
+.visual-story-section .narrative-heading {
+  max-width: 100% !important;
+  margin-bottom: 30px !important;
+}
+
+.visual-story-section .narrative-heading h2 {
+  font-size: clamp(2.35rem, 3.55vw, 4.15rem) !important;
+}
+
+.visual-story-section .home-platform-promise,
+.visual-story-section .home-validation-grid,
+.visual-story-section .home-validation-outcomes,
+.visual-story-section .benefit-list,
+.visual-story-section .outcome-tags {
+  position: relative !important;
+
+  display: grid;
+
+  width: 100% !important;
+
+  margin-top: 24px !important;
+
+  clear: both;
+
+  transform: none !important;
+}
+
+.visual-story-section .visual-story-frame {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: 470px !important;
+  min-height: 470px !important;
+
+  margin: 0 !important;
+
+  overflow: hidden !important;
+
+  border-radius: 28px !important;
+
+  transform:
+    perspective(1200px)
+    rotateY(-2.5deg)
+    rotateX(1deg) !important;
+}
+
+.visual-story-section .visual-story-frame img {
+  display: block !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.visual-story-section .visual-story.reverse > div:first-child {
+  order: 2;
+}
+
+.visual-story-section .visual-story.reverse > figure {
+  order: 1;
+}
+
+/* =========================================================
+   PUDICA CAPABILITY CARDS
+   ========================================================= */
+
+.home-platform-capabilities {
+  padding: 0 0 clamp(84px, 8vw, 112px);
+}
+
+.home-platform-capabilities .home-capability-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 16px;
+
+  width: 100%;
+
+  margin: 0;
+}
+
+/* =========================================================
+   PILOTS
+   ========================================================= */
+
+.home-pilots {
+  padding: clamp(84px, 8vw, 112px) 0 !important;
+}
+
+.home-pilots .compact-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr)) !important;
+
+  gap: 16px !important;
+
+  margin: 0 !important;
+}
+
+/* =========================================================
+   SOLUTIONS
+   ========================================================= */
+
+.home-solutions {
+  padding: clamp(84px, 8vw, 112px) 0 !important;
+}
+
+.home-solutions .home-solution-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 18px !important;
+
+  margin: 0 !important;
+}
+
+/* =========================================================
+   INSIGHTS
+   ========================================================= */
+
+.home-insights {
+  padding: clamp(84px, 8vw, 112px) 0 !important;
+}
+
+.home-insights .home-insight-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 18px !important;
+
+  margin: 0 !important;
+}
+
+/* =========================================================
+   GENERIC HOMEPAGE NARRATIVE SAFETY
+   ========================================================= */
+
+.narrative-section {
+  height: auto;
+  min-height: 0;
+
+  overflow: visible;
+}
+
+.narrative-section > .container {
+  height: auto;
+  min-height: 0;
+
+  overflow: visible;
+}
+
+.narrative-section .hero-proof,
+.narrative-section .proof-banner {
+  position: relative !important;
+
+  width: 100% !important;
+  height: auto !important;
+
+  margin: 30px 0 0 !important;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1366px) {
+  .home-operating-gap .narrative-heading h2,
+  .home-platform-capabilities .narrative-heading h2,
+  .home-pilots .narrative-heading h2,
+  .home-solutions .narrative-heading h2,
+  .home-insights .narrative-heading h2 {
+    font-size: clamp(2.25rem, 3.6vw, 3.8rem) !important;
+  }
+
+  .home-platform-capabilities .home-capability-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .home-pilots .compact-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .visual-story-section .visual-story {
+    grid-template-columns: 1fr !important;
+  }
+
+  .visual-story-section .visual-story.reverse > div:first-child,
+  .visual-story-section .visual-story.reverse > figure {
+    order: initial;
+  }
+
+  .visual-story-section .visual-story-frame {
+    height: 390px !important;
+    min-height: 390px !important;
+
+    transform: none !important;
+  }
+
+  .home-gap-grid,
+  .home-solutions .home-solution-grid,
+  .home-insights .home-insight-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .home-pilots .compact-grid,
+  .home-platform-capabilities .home-capability-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+  .home-operating-gap,
+  .home-pilots,
+  .home-solutions,
+  .home-insights,
+  .visual-story-section {
+    padding: 68px 0 !important;
+  }
+
+  .home-operating-gap .narrative-heading,
+  .home-platform-capabilities .narrative-heading,
+  .home-pilots .narrative-heading,
+  .home-solutions .narrative-heading,
+  .home-insights .narrative-heading,
+  .visual-story-section .narrative-heading {
+    margin-bottom: 34px !important;
+  }
+
+  .home-operating-gap .narrative-heading h2,
+  .home-platform-capabilities .narrative-heading h2,
+  .home-pilots .narrative-heading h2,
+  .home-solutions .narrative-heading h2,
+  .home-insights .narrative-heading h2,
+  .visual-story-section .narrative-heading h2 {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    line-height: 1.07 !important;
+    text-wrap: wrap;
+  }
+
+  .home-gap-grid,
+  .home-pilots .compact-grid,
+  .home-solutions .home-solution-grid,
+  .home-insights .home-insight-grid,
+  .home-platform-capabilities .home-capability-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-gap-card {
+    min-height: 0;
+  }
+
+  .visual-story-section .visual-story-frame {
+    height: 290px !important;
+    min-height: 290px !important;
+  }
+}
+
+/* V PILOT HOMEPAGE STRUCTURE FINAL END */
+

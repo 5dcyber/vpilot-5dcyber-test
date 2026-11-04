@@ -58,3 +58,19 @@ src/enterprise-3d.social-backup-*.css
 # Local index HTML backups
 index.before-*.html
 
+
+# Homepage visual recovery snapshots
+src/pages/HomePage.corrupted-visual-*.jsx
+src/pages/HomePage.before-*.jsx
+
+# Final homepage rebuild backups
+src/pages/HomePage.before-final-rebuild-*.jsx
+
+
+# Header recovery CSS backups
+src/pages/vpilot-enterprise-home-final.before-header-fix-*.css
+
+
+# Homepage flow repair backups
+src/pages/HomePage.before-flow-fix-*.jsx
+src/pages/vpilot-enterprise-home-final.before-flow-fix-*.css

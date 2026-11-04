@@ -1,0 +1,781 @@
+﻿/* V Pilot final enterprise homepage; header/footer remain untouched */
+.vph-hero{position:relative;overflow:hidden;min-height:760px;padding:150px 0 90px;color:#f4fbff;background:radial-gradient(circle at 80% 18%,rgba(35,199,228,.22),transparent 32%),linear-gradient(135deg,#020c16,#05243b 58%,#073b55)}.vph-grid{position:absolute;inset:0;opacity:.16;background-image:linear-gradient(rgba(103,218,239,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(103,218,239,.14) 1px,transparent 1px);background-size:44px 44px}.vph-hero-layout{position:relative;display:grid;grid-template-columns:1fr 1.02fr;gap:64px;align-items:center}.vph-eyebrow,.vph-section-head>span,.vph-final-grid>div>span{display:inline-flex;color:#72e3f2;font-size:.72rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.vph-hero h1{max-width:760px;margin:22px 0 0;font:700 clamp(3.2rem,5vw,5.8rem)/.99 "Space Grotesk",Inter,sans-serif;letter-spacing:-.05em}.vph-hero h1 em{color:transparent;font-style:normal;background:linear-gradient(90deg,#9cecf4,#54d8e9,#72e4bd);-webkit-background-clip:text;background-clip:text}.vph-lead{margin:26px 0 0;color:#c0d7e5;font-size:1.14rem;line-height:1.72}.vph-hero-copy>p:not(.vph-lead){color:#8faec0;line-height:1.65}.vph-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}.vph-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 20px;border-radius:999px;font-weight:800;text-decoration:none}.vph-btn.primary{color:#fff;background:linear-gradient(135deg,#0757a7,#0875c9,#0a98d7);box-shadow:0 15px 34px rgba(8,117,201,.28)}.vph-btn.secondary{color:#def4fa;border:1px solid rgba(108,220,241,.23);background:rgba(255,255,255,.055)}.vph-promise{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:25px;color:#8edbea;font-size:.66rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.vph-promise i{width:4px;height:4px;border-radius:50%;background:#2dd4a8}.vph-hero-visual{position:relative;margin:0;overflow:hidden;border:1px solid rgba(110,221,241,.25);border-radius:30px;background:#06192b;box-shadow:0 35px 90px rgba(0,0,0,.42)}.vph-hero-visual img{display:block;width:100%;min-height:520px;object-fit:cover}.vph-hero-visual figcaption{position:absolute;left:20px;right:20px;bottom:18px;display:flex;justify-content:space-between;gap:16px;padding:13px 16px;border:1px solid rgba(111,220,239,.18);border-radius:14px;background:rgba(2,18,31,.8);backdrop-filter:blur(14px)}.vph-hero-visual figcaption span{color:#61dcec;font-size:.65rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.vph-hero-visual figcaption strong{font-size:.76rem}.vph-section{padding:92px 0}.vph-section.vph-light{background:#fff}.vph-section.vph-soft{background:linear-gradient(180deg,#f5f9fc,#edf5f9)}.vph-section.vph-dark{color:#edf8fd;background:radial-gradient(circle at 85% 15%,rgba(48,213,232,.13),transparent 30%),linear-gradient(135deg,#020c16,#05243b)}.vph-section-head{max-width:980px}.vph-section-head h2{margin:12px 0 0;color:#082f52;font:700 clamp(2.5rem,4vw,4.5rem)/1.04 "Space Grotesk",Inter,sans-serif;letter-spacing:-.045em}.vph-dark .vph-section-head h2{color:#fff}.vph-section-head p{max-width:900px;margin:19px 0 0;color:#617e91;font-size:1.02rem;line-height:1.74}.vph-dark .vph-section-head p{color:#9cb8c8}.vph-statement{display:flex;gap:18px;margin-top:38px;padding:26px;border:1px solid rgba(8,117,201,.15);border-radius:22px;background:linear-gradient(135deg,#eef8fc,#fff);box-shadow:0 18px 45px rgba(6,37,59,.08)}.vph-statement svg{flex:0 0 auto;color:#0875c9}.vph-statement p{margin:0}.vph-statement strong,.vph-statement span{display:block}.vph-statement strong{color:#082f52;font-size:1.18rem}.vph-statement span{margin-top:7px;color:#617e91}.vph-card-grid{display:grid;gap:16px;margin-top:42px}.vph-card-grid.three{grid-template-columns:repeat(3,1fr)}.vph-card-grid.five{grid-template-columns:repeat(5,1fr)}.vph-card,.vph-pilot,.vph-package{padding:24px;border:1px solid rgba(8,117,201,.12);border-radius:21px;background:rgba(255,255,255,.92);box-shadow:0 17px 44px rgba(6,37,59,.065)}.vph-card .num,.vph-pilot>span,.vph-package>span{color:#16a9df;font-size:.68rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.vph-card h3,.vph-pilot h3,.vph-package h3,.vph-layer-grid h3{margin:20px 0 0;color:#082f52}.vph-card p,.vph-pilot p,.vph-package p,.vph-layer-grid p{color:#647f91;font-size:.86rem;line-height:1.65}.vph-dim-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:42px}.vph-dim-grid article{padding:22px;border:1px solid rgba(110,222,241,.14);border-radius:20px;background:rgba(255,255,255,.04)}.vph-dim-grid article>span{color:#6fdfee;font-size:.65rem;font-weight:900}.vph-dim-grid svg{display:block;margin-top:22px;color:#6fdfee}.vph-dim-grid b,.vph-dim-grid small{display:block}.vph-dim-grid b{margin-top:15px;color:#fff}.vph-dim-grid small{margin-top:4px;color:#2dd4a8}.vph-dim-grid p{color:#9ab6c6;font-size:.82rem;line-height:1.6}.vph-layer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:42px}.vph-layer-grid article{padding:23px;border-left:3px solid #18bde2;border-radius:0 18px 18px 0;background:#f5f9fc}.vph-layer-grid span{color:#0875c9;font-size:.67rem;font-weight:900;text-transform:uppercase}.vph-split{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:42px}.vph-feature-list{display:grid;gap:10px}.vph-feature-list p{display:flex;align-items:center;gap:10px;margin:0;padding:15px;border:1px solid rgba(8,117,201,.12);border-radius:13px;background:#fff;color:#526f84}.vph-feature-list svg{color:#0875c9}.vph-quote{padding:28px;border-radius:22px;color:#dcecf5;background:linear-gradient(135deg,#05243b,#073b55)}.vph-quote svg{color:#65deee}.vph-quote strong{display:block;margin-top:20px;font-size:1.35rem;line-height:1.45}.vph-quote p{color:#9db9c9;line-height:1.65}.vph-lifecycle{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}.vph-lifecycle div{padding:22px;border:1px solid rgba(108,220,241,.14);border-radius:18px;background:rgba(255,255,255,.045)}.vph-lifecycle span{display:block;color:#5ddaea;font-size:.68rem;font-weight:900}.vph-lifecycle b{display:block;margin-top:10px}.vph-validation{display:grid;grid-template-columns:1.05fr 1fr;gap:34px;align-items:center;margin-top:42px}.vph-validation figure{margin:0;overflow:hidden;border-radius:24px;box-shadow:0 27px 65px rgba(6,37,59,.16)}.vph-validation img{display:block;width:100%}.vph-chip-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vph-chip-grid span{display:flex;align-items:center;gap:8px;padding:13px;border:1px solid rgba(8,117,201,.12);border-radius:12px;color:#526f84;background:#f5f9fc;font-size:.8rem}.vph-chip-grid svg{width:16px;color:#0875c9}.vph-note{padding:16px;border-left:3px solid #18bde2;color:#617e91;background:#f4f9fc}.vph-package.featured{color:#dff4fa;background:linear-gradient(135deg,#05243b,#0875c9)}.vph-package.featured h3,.vph-package.featured p{color:inherit}.vph-package a,.vph-final-card a{display:inline-flex;align-items:center;gap:7px;margin-top:14px;color:#0875c9;font-weight:800;text-decoration:none}.vph-package.featured a{color:#fff}.vph-final-grid{display:grid;grid-template-columns:1fr .8fr;gap:34px;align-items:center}.vph-final-grid h2{margin:12px 0 0;font:700 clamp(2.5rem,4vw,4.5rem)/1.04 "Space Grotesk",Inter,sans-serif}.vph-final-grid>div>p{color:#9cb8c8;font-size:1.05rem;line-height:1.7}.vph-final-card{padding:30px;border:1px solid rgba(111,221,240,.18);border-radius:22px;background:rgba(255,255,255,.05)}.vph-final-card svg{color:#70e1ee}.vph-final-card strong{display:block;margin-top:18px;font-size:1.35rem}.vph-final-card p{color:#9db9c9;line-height:1.6}.vph-final-card a{color:#70e1ee}@media(max-width:1200px){.vph-hero-layout,.vph-validation,.vph-final-grid{grid-template-columns:1fr}.vph-card-grid.five{grid-template-columns:repeat(3,1fr)}.vph-dim-grid{grid-template-columns:repeat(3,1fr)}.vph-layer-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:760px){.vph-hero{padding-top:120px}.vph-card-grid.three,.vph-card-grid.five,.vph-dim-grid,.vph-layer-grid,.vph-lifecycle,.vph-split,.vph-chip-grid{grid-template-columns:1fr}.vph-hero h1{font-size:clamp(2.8rem,13vw,4.3rem)}.vph-hero-visual figcaption{display:none}}
+
+/* V PILOT HOMEPAGE FLOW RESET START */
+html body .vph-home {
+  position: relative !important;
+  z-index: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  overflow: clip !important;
+  isolation: isolate !important;
+}
+
+html body .vph-home > section,
+html body .vph-home .vph-section,
+html body .vph-home .vph-hero {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: auto !important;
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  clear: both !important;
+}
+
+html body .vph-home .vph-hero {
+  min-height: 760px !important;
+  padding: 96px 0 90px !important;
+}
+
+html body .vph-home .vph-section {
+  padding: 92px 0 !important;
+  overflow: hidden !important;
+}
+
+html body .vph-home .vph-section-head,
+html body .vph-home .vph-card-grid,
+html body .vph-home .vph-dim-grid,
+html body .vph-home .vph-layer-grid,
+html body .vph-home .vph-split,
+html body .vph-home .vph-lifecycle,
+html body .vph-home .vph-validation,
+html body .vph-home .vph-final-grid {
+  position: relative !important;
+  inset: auto !important;
+  z-index: auto !important;
+  transform: none !important;
+}
+
+html body .vph-home .vph-light {
+  background: #ffffff !important;
+}
+
+html body .vph-home .vph-soft {
+  background: linear-gradient(180deg, #f5f9fc, #edf5f9) !important;
+}
+
+html body .vph-home .vph-dark {
+  color: #edf8fd !important;
+  background: radial-gradient(circle at 85% 15%, rgba(48,213,232,.13), transparent 30%), linear-gradient(135deg, #020c16, #05243b) !important;
+}
+
+html body .vph-home .vph-dark .vph-section-head h2 {
+  color: #ffffff !important;
+}
+
+html body .vph-home .vph-dark .vph-section-head p {
+  color: #9cb8c8 !important;
+}
+
+@media (max-width: 760px) {
+  html body .vph-home .vph-hero {
+    min-height: auto !important;
+    padding: 72px 0 !important;
+  }
+}
+/* V PILOT HOMEPAGE FLOW RESET END */
+
+
+
+/* =========================================================
+   V PILOT VPH FLOW REPAIR START
+   Final document-flow correction for the active homepage
+   ========================================================= */
+
+/*
+ * The active homepage uses only the vph-* design system.
+ * Every section container is converted into an explicit
+ * vertical layout so headings and section content cannot overlap.
+ */
+
+.vph-home,
+.vph-home *,
+.vph-home *::before,
+.vph-home *::after {
+  box-sizing: border-box;
+}
+
+.vph-home {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  overflow-x: clip;
+}
+
+/* =========================================================
+   SECTION FLOW
+   ========================================================= */
+
+.vph-home > .vph-section {
+  position: relative !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+
+  overflow: hidden !important;
+
+  transform: none !important;
+}
+
+.vph-home > .vph-section > .container {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+
+  width: min(
+    1180px,
+    calc(100% - 40px)
+  ) !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin-inline: auto !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  transform: none !important;
+}
+
+/*
+ * Every normal section uses an explicit row gap between
+ * the heading group and its next content block.
+ */
+.vph-home > .vph-section:not(.vph-final) > .container {
+  gap:
+    clamp(
+      38px,
+      4vw,
+      56px
+    ) !important;
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.vph-home .vph-section-head {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  width: 100% !important;
+  max-width: 1120px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  transform: none !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.vph-home .vph-section-head > span {
+  position: static !important;
+
+  display: inline-block !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 0 17px !important;
+  padding: 0 !important;
+
+  color: #16add8 !important;
+
+  font-size: 0.72rem !important;
+  font-weight: 900 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-section-head h2 {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 1100px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  color: #082f52 !important;
+
+  font-family:
+    "Space Grotesk",
+    Inter,
+    Arial,
+    sans-serif !important;
+
+  font-size:
+    clamp(
+      2.4rem,
+      4vw,
+      4.35rem
+    ) !important;
+
+  font-weight: 700 !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.044em !important;
+
+  text-wrap: balance;
+
+  transform: none !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.vph-home .vph-section-head p {
+  position: static !important;
+
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 930px !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+
+  color: #617e91 !important;
+
+  font-size:
+    clamp(
+      0.98rem,
+      1.18vw,
+      1.12rem
+    ) !important;
+
+  line-height: 1.75 !important;
+
+  transform: none !important;
+
+  background: transparent !important;
+}
+
+/* Dark-section heading colors */
+.vph-home .vph-dark .vph-section-head h2 {
+  color: #ffffff !important;
+}
+
+.vph-home .vph-dark .vph-section-head p {
+  color: #9cb8c8 !important;
+}
+
+.vph-home .vph-dark .vph-section-head > span {
+  color: #6edfee !important;
+}
+
+/* =========================================================
+   REMOVE THE OLD MARGIN-BASED SECTION POSITIONING
+   Content separation is now handled by the container gap.
+   ========================================================= */
+
+.vph-home .vph-statement,
+.vph-home .vph-card-grid,
+.vph-home .vph-dim-grid,
+.vph-home .vph-layer-grid,
+.vph-home .vph-split,
+.vph-home .vph-lifecycle,
+.vph-home .vph-validation {
+  position: relative !important;
+
+  width: 100% !important;
+
+  margin-top: 0 !important;
+
+  transform: none !important;
+}
+
+/* =========================================================
+   CORPORATE POSITIONING
+   ========================================================= */
+
+.vph-home .vph-statement {
+  display: grid !important;
+
+  grid-template-columns:
+    34px
+    minmax(0, 1fr) !important;
+
+  align-items: start !important;
+
+  gap: 18px !important;
+
+  min-height: 0 !important;
+
+  padding:
+    clamp(
+      24px,
+      3vw,
+      32px
+    ) !important;
+
+  overflow: visible !important;
+
+  border:
+    1px solid
+    rgba(8, 117, 201, 0.16) !important;
+
+  border-radius: 22px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef8fc,
+      #ffffff
+    ) !important;
+
+  box-shadow:
+    0 18px 45px
+    rgba(6, 37, 59, 0.08) !important;
+}
+
+.vph-home .vph-statement > svg {
+  position: static !important;
+
+  width: 25px !important;
+  height: 25px !important;
+
+  margin-top: 2px !important;
+
+  color: #0875c9 !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-statement > p {
+  position: static !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-statement strong {
+  display: block !important;
+
+  margin: 0 !important;
+
+  color: #082f52 !important;
+
+  font-size:
+    clamp(
+      1.05rem,
+      1.45vw,
+      1.28rem
+    ) !important;
+
+  line-height: 1.45 !important;
+}
+
+.vph-home .vph-statement span {
+  display: block !important;
+
+  margin: 9px 0 0 !important;
+
+  color: #617e91 !important;
+
+  font-size: 0.94rem !important;
+  line-height: 1.65 !important;
+}
+
+/* =========================================================
+   OPERATING GAP
+   ========================================================= */
+
+.vph-home .vph-card-grid {
+  display: grid !important;
+
+  gap: 20px !important;
+}
+
+.vph-home .vph-card-grid.three {
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+}
+
+.vph-home .vph-card-grid.five {
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr)) !important;
+}
+
+.vph-home .vph-card,
+.vph-home .vph-pilot,
+.vph-home .vph-package {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+  min-height: 250px !important;
+
+  margin: 0 !important;
+  padding: 26px !important;
+
+  overflow: visible !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-card .num {
+  display: block !important;
+
+  margin: 0 0 26px !important;
+}
+
+.vph-home .vph-card h3,
+.vph-home .vph-pilot h3,
+.vph-home .vph-package h3 {
+  position: static !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  line-height: 1.3 !important;
+}
+
+.vph-home .vph-card p,
+.vph-home .vph-pilot p,
+.vph-home .vph-package p {
+  position: static !important;
+
+  margin: 17px 0 0 !important;
+  padding: 0 !important;
+
+  line-height: 1.67 !important;
+}
+
+/* =========================================================
+   5D DIMENSIONS
+   ========================================================= */
+
+.vph-home .vph-dim-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr)) !important;
+
+  gap: 15px !important;
+}
+
+.vph-home .vph-dim-grid article {
+  min-width: 0 !important;
+  min-height: 310px !important;
+}
+
+/* =========================================================
+   SYSTEM ARCHITECTURE
+   ========================================================= */
+
+.vph-home .vph-layer-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 16px !important;
+}
+
+.vph-home .vph-layer-grid article {
+  min-width: 0 !important;
+}
+
+/* =========================================================
+   PUDICA
+   ========================================================= */
+
+.vph-home .vph-split {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr) !important;
+
+  align-items: stretch !important;
+
+  gap: 28px !important;
+}
+
+.vph-home .vph-feature-list {
+  display: grid !important;
+
+  align-content: start !important;
+
+  gap: 12px !important;
+}
+
+.vph-home .vph-feature-list p {
+  position: static !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    25px
+    minmax(0, 1fr) !important;
+
+  align-items: center !important;
+
+  gap: 12px !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 17px 18px !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-feature-list svg {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.vph-home .vph-quote {
+  display: flex !important;
+  flex-direction: column !important;
+
+  min-height: 100% !important;
+
+  margin: 0 !important;
+  padding: 32px !important;
+
+  transform: none !important;
+}
+
+.vph-home .vph-quote strong {
+  margin: 22px 0 0 !important;
+}
+
+.vph-home .vph-quote p {
+  margin: 18px 0 0 !important;
+}
+
+/* =========================================================
+   PRODSECOPS LIFECYCLE
+   ========================================================= */
+
+.vph-home .vph-lifecycle {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 15px !important;
+}
+
+/* =========================================================
+   SECLABS + GOLDENVAULT
+   ========================================================= */
+
+.vph-home .vph-validation {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(0, 0.95fr) !important;
+
+  align-items: center !important;
+
+  gap: 36px !important;
+}
+
+.vph-home .vph-validation figure {
+  position: relative !important;
+
+  width: 100% !important;
+
+  margin: 0 !important;
+}
+
+.vph-home .vph-validation img {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* =========================================================
+   FINAL SECTION
+   ========================================================= */
+
+.vph-home .vph-final-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 0.8fr) !important;
+
+  align-items: center !important;
+
+  gap: 38px !important;
+
+  width: min(
+    1180px,
+    calc(100% - 40px)
+  ) !important;
+
+  height: auto !important;
+
+  margin-inline: auto !important;
+}
+
+.vph-home .vph-final-grid h2 {
+  height: auto !important;
+
+  overflow: visible !important;
+}
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width: 1366px) {
+  .vph-home .vph-section-head h2 {
+    font-size:
+      clamp(
+        2.3rem,
+        3.65vw,
+        3.8rem
+      ) !important;
+  }
+
+  .vph-home .vph-card-grid.five,
+  .vph-home .vph-dim-grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .vph-home .vph-layer-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+  .vph-home > .vph-section:not(.vph-final) > .container {
+    gap: 36px !important;
+  }
+
+  .vph-home .vph-card-grid.three,
+  .vph-home .vph-card-grid.five,
+  .vph-home .vph-dim-grid,
+  .vph-home .vph-layer-grid,
+  .vph-home .vph-lifecycle {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .vph-home .vph-split,
+  .vph-home .vph-validation,
+  .vph-home .vph-final-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 680px) {
+  .vph-home .vph-section {
+    padding:
+      66px
+      0 !important;
+  }
+
+  .vph-home .vph-section-head h2 {
+    font-size:
+      clamp(
+        2rem,
+        10vw,
+        3rem
+      ) !important;
+
+    line-height: 1.07 !important;
+
+    text-wrap: wrap;
+  }
+
+  .vph-home .vph-section-head p {
+    margin-top: 18px !important;
+
+    font-size: 0.95rem !important;
+  }
+
+  .vph-home .vph-card-grid.three,
+  .vph-home .vph-card-grid.five,
+  .vph-home .vph-dim-grid,
+  .vph-home .vph-layer-grid,
+  .vph-home .vph-lifecycle {
+    grid-template-columns: 1fr !important;
+  }
+
+  .vph-home .vph-statement {
+    grid-template-columns: 1fr !important;
+  }
+
+  .vph-home .vph-card,
+  .vph-home .vph-pilot,
+  .vph-home .vph-package,
+  .vph-home .vph-dim-grid article {
+    min-height: 0 !important;
+  }
+}
+
+/* V PILOT VPH FLOW REPAIR END */
+
