@@ -54,3 +54,7 @@ Thumbs.db
 src/components/Footer.social-backup-*.jsx
 src/enterprise-3d.social-backup-*.css
 
+
+# Local index HTML backups
+index.before-*.html
+
