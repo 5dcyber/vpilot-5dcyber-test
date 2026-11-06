@@ -1,0 +1,212 @@
+﻿/* =========================================================
+   V PILOT PILOT-BACKGROUND HERO
+   Static cinematic background, two-line headline, no 3D card
+   ========================================================= */
+
+.vpm-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 790px;
+  padding: 108px 0 0;
+  color: #071a33;
+  background-color: #eef8fd;
+  background-image: url('/assets/enterprise-3d/vpilot-pilot-background-clean.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Opaque on the copy side, transparent over the Pilot visual. */
+.vpm-hero::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248, 252, 255, 0.99) 0%,
+      rgba(246, 251, 255, 0.985) 38%,
+      rgba(239, 248, 253, 0.94) 48%,
+      rgba(232, 246, 252, 0.38) 58%,
+      rgba(232, 246, 252, 0) 68%
+    );
+}
+
+.vpm-hero .vpm-mesh {
+  display: none;
+}
+
+.vpm-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: block;
+  min-height: 612px;
+}
+
+.vpm-hero-copy {
+  width: min(720px, 48.5%);
+  padding-top: 8px;
+}
+
+.vpm-eyebrow {
+  color: #0b5cab;
+}
+
+.vpm-hero h1 {
+  width: 760px;
+  max-width: 100%;
+  margin: 18px 0 0;
+  color: #071a33;
+  font-size: clamp(3rem, 4.45vw, 4.85rem);
+  line-height: 0.98;
+  letter-spacing: -0.052em;
+  text-wrap: balance;
+}
+
+.vpm-hero h1 em {
+  display: inline;
+  color: transparent;
+  background: linear-gradient(90deg, #0b5cab 0%, #12a9e8 64%, #22a06b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.vpm-hero-copy > p {
+  max-width: 650px;
+  margin-top: 20px;
+  color: #264866;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.vpm-actions {
+  margin-top: 25px;
+}
+
+.vpm-btn.secondary {
+  color: #0b5cab;
+  border-color: #0b5cab;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+/* The right-side visual is now painted by the hero background. */
+.vpm-hero-grid > .vpa-stage,
+.vpm-hero-grid > .vpo-stage,
+.vpm-hero-grid > .vpm-hero-visual {
+  display: none !important;
+}
+
+.vpm-proof-strip {
+  position: relative;
+  z-index: 3;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 0;
+  overflow: hidden;
+  border: 1px solid rgba(11, 92, 171, 0.12);
+  border-bottom: 0;
+  border-radius: 19px 19px 0 0;
+  color: #071a33;
+  background: rgba(255, 255, 255, 0.91);
+  box-shadow: 0 -12px 42px rgba(8, 75, 126, 0.1);
+  backdrop-filter: blur(13px) saturate(130%);
+}
+
+.vpm-proof-strip div {
+  min-height: 92px;
+  padding: 18px 22px;
+  color: #123b61;
+  border-right: 1px solid rgba(11, 92, 171, 0.12);
+  font-size: 0.77rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.vpm-proof-strip div:last-child {
+  border-right: 0;
+}
+
+.vpm-proof-strip svg {
+  width: 31px;
+  height: 31px;
+  color: #0b5cab;
+  stroke-width: 2.15;
+}
+
+@media (min-width: 1181px) and (max-width: 1450px) {
+  .vpm-hero {
+    min-height: 750px;
+  }
+
+  .vpm-hero-grid {
+    min-height: 574px;
+  }
+
+  .vpm-hero-copy {
+    width: 49%;
+  }
+
+  .vpm-hero h1 {
+    font-size: clamp(2.8rem, 4.2vw, 4.25rem);
+  }
+}
+
+@media (max-width: 1180px) {
+  .vpm-hero {
+    min-height: auto;
+    background-position: 62% top;
+  }
+
+  .vpm-hero::before {
+    background: rgba(246, 251, 255, 0.92);
+  }
+
+  .vpm-hero-grid {
+    min-height: 620px;
+  }
+
+  .vpm-hero-copy {
+    width: min(720px, 100%);
+  }
+
+  .vpm-hero h1 {
+    width: 760px;
+  }
+
+  .vpm-proof-strip {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .vpm-hero {
+    padding-top: 90px;
+    background-position: 67% top;
+  }
+
+  .vpm-hero-grid {
+    min-height: 650px;
+  }
+
+  .vpm-hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    line-height: 1;
+  }
+
+  .vpm-proof-strip {
+    grid-template-columns: 1fr 1fr;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .vpm-proof-strip div {
+    min-height: 84px;
+  }
+
+  .vpm-proof-strip div:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
