@@ -1,4 +1,5 @@
-﻿import { Link } from "react-router-dom";
+﻿import PremiumHomeNarrative from "./PremiumHomeNarrative.jsx";
+import { Link } from "react-router-dom";
 import {
   ArrowRight, BadgeCheck, BrainCircuit, Building2, CheckCircle2,
   CloudCog, DatabaseBackup, Eye, FileCheck2, FlaskConical, Gauge,
@@ -61,6 +62,7 @@ export default function HomePage(){return <div className="vph2-page">
 <strong className="vph2-hero-brand">
  From Risk to Resilient Outcomes.
 </strong><p>V Pilot works as an extension of security, IT, risk, compliance, and resilience teams to govern, protect, remediate, monitor, respond, recover, and continuously assure the digital environment.</p><p>Powered by PUDICA and delivered through five specialist Pilot teams, the operating model connects leadership, technical operations, independent validation, controlled automation, trusted recovery, and audit-ready evidence.</p><div className="vph2-actions"><Link to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link to="/platform">Explore PUDICA</Link></div><div className="vph2-five-d">ANTICIPATE <i/> OBSERVE <i/> RESPOND <i/> RESTORE <i/> PROVE</div></div></div><div className="vph2-shell vph2-proof">{proof.map(([Icon,label])=><div key={label}><Icon/><span>{label}</span></div>)}</div></section>
+      <PremiumHomeNarrative />
 
   <section className="vph2-section vph2-gap"><div className="vph2-shell"><Head eyebrow="THE ENTERPRISE OPERATING GAP" title="Security Tools Are Connected to Systems. Security Operations Are Not." lead="Organizations have invested in identity, endpoint, SIEM, vulnerability, cloud, backup, and compliance technologies. Findings, approvals, remediation, monitoring, incidents, recovery, and evidence still move through disconnected teams and records."/><div className="vph2-gap-grid">{gaps.map(([Icon,title,text],i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div><blockquote>The challenge is not the absence of security tools. The challenge is the absence of one connected security-operations lifecycle.</blockquote></div></section>
 
@@ -80,6 +82,7 @@ export default function HomePage(){return <div className="vph2-page">
 
   <section className="vph2-final"><div className="vph2-shell"><div><span>BUILD YOUR OPERATING MODEL</span><h2>Build a Security Operating Model That Can Finish the Work.</h2><p>Begin with one specialist Pilot, combine teams into an Integrated Fleet, or adopt Complete 5Pilot Operations as a managed extension of the internal security organization.</p></div><div><Link to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link to="/contact">Request Operating-Gap Assessment</Link></div></div></section>
 </div>}
+
 
 
 

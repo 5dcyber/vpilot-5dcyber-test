@@ -1,0 +1,72 @@
+﻿/* V Pilot enterprise homepage narrative */
+:root{--vph3-navy:#061b36;--vph3-deep:#082f63;--vph3-blue:#087eeb;--vph3-cyan:#20c5e7;--vph3-ice:#edf8ff;--vph3-slate:#58718b;--vph3-line:#d7e5f1;--vph3-white:#fff}.vph3-home-narrative{background:#fff;color:var(--vph3-deep)}.vph3-shell{width:min(1440px,calc(100% - 96px));margin:auto}.vph3-section{padding:84px 0}.vph3-heading{max-width:850px;margin-bottom:38px}.vph3-heading>span{display:block;margin-bottom:12px;color:var(--vph3-blue);font-size:12px;font-weight:800;letter-spacing:.14em}.vph3-heading h2{margin:0 0 16px;font-size:clamp(2rem,3.2vw,3.35rem);line-height:1.05;letter-spacing:-.035em}.vph3-heading p{margin:0;color:var(--vph3-slate);font-size:16px;line-height:1.72}.vph3-gap{background:linear-gradient(135deg,#f8fbff,#edf8ff 55%,#f8fbff)}.vph3-gap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.vph3-gap-grid article,.vph3-why-grid article{padding:25px;border:1px solid var(--vph3-line);border-radius:16px;background:rgba(255,255,255,.88);box-shadow:0 14px 38px rgba(4,48,91,.07)}.vph3-gap-grid svg,.vph3-why-grid svg{width:26px;color:var(--vph3-blue)}.vph3-gap-grid h3,.vph3-why-grid h3{margin:16px 0 8px;font-size:18px}.vph3-gap-grid p,.vph3-why-grid p{margin:0;color:var(--vph3-slate);line-height:1.62}.vph3-proposition{color:#fff;background:radial-gradient(circle at 80% 20%,rgba(32,197,231,.18),transparent 32%),linear-gradient(135deg,#061b36,#082f63)}.vph3-proposition .vph3-heading p,.vph3-assurance .vph3-heading p{color:#b8cadb}.vph3-proposition-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}.vph3-lifecycle{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.vph3-lifecycle div{padding:18px;border:1px solid rgba(255,255,255,.15);border-radius:13px;background:rgba(255,255,255,.06)}.vph3-lifecycle span{display:block;color:var(--vph3-cyan);font-size:11px}.vph3-lifecycle strong{font-size:15px}.vph3-platform{background:linear-gradient(145deg,#fff,#f3faff)}.vph3-platform-grid{display:grid;grid-template-columns:.9fr 1.2fr;gap:42px;align-items:start}.vph3-stack{padding:30px;border-radius:22px;background:linear-gradient(160deg,#0b75ce,#063d78);box-shadow:0 30px 70px rgba(4,60,116,.2)}.vph3-stack>div{display:flex;gap:14px;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.17);color:#fff}.vph3-stack>div span{color:#78e5f1}.vph3-stack p{color:#cfe0ed;line-height:1.6}.vph3-module-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.vph3-module-grid article{display:flex;gap:14px;padding:18px;border:1px solid var(--vph3-line);border-radius:14px;background:#fff}.vph3-module-grid svg{flex:0 0 25px;color:var(--vph3-blue)}.vph3-module-grid h3{margin:0 0 6px;font-size:16px}.vph3-module-grid p{margin:0;color:var(--vph3-slate);font-size:13px;line-height:1.5}.vph3-link{display:inline-flex;align-items:center;gap:9px;margin-top:28px;color:var(--vph3-blue);font-weight:750;text-decoration:none}.vph3-link svg{width:17px}.vph3-pilots{background:#fff}.vph3-pilot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.vph3-pilot-grid article{overflow:hidden;padding:0 20px 24px;border:1px solid var(--vph3-line);border-radius:15px;background:#fff;box-shadow:0 13px 30px rgba(5,49,91,.065)}.vph3-pilot-top{display:flex;align-items:center;gap:10px;margin:0 -20px 20px;padding:17px 20px;color:#fff;background:#087eeb}.vph3-pilot-grid h3{font-size:16px;line-height:1.28}.vph3-pilot-grid p{color:var(--vph3-slate);font-size:13px;line-height:1.58}.vph3-pilot-grid .compass .vph3-pilot-top{background:#6956d9}.vph3-pilot-grid .custodian .vph3-pilot-top{background:#149363}.vph3-pilot-grid .vigil .vph3-pilot-top{background:#087eeb}.vph3-pilot-grid .art .vph3-pilot-top{background:#d84c39}.vph3-pilot-grid .phoenix .vph3-pilot-top{background:#d98519}.vph3-native{background:linear-gradient(135deg,#eef9ff,#e5f5fb)}.vph3-native-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}.vph3-native-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.vph3-native-items div{display:flex;align-items:center;gap:10px;min-height:84px;padding:16px;border:1px solid #cfe5f2;border-radius:13px;background:rgba(255,255,255,.78)}.vph3-native-items svg{color:var(--vph3-blue)}.vph3-why{background:linear-gradient(145deg,#f8fbff,#edf8ff)}.vph3-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.vph3-why-grid .is-wide{grid-column:span 3}.vph3-assurance{color:#fff;background:radial-gradient(circle at 70% 15%,rgba(32,197,231,.18),transparent 34%),linear-gradient(135deg,#061b36,#073767)}.vph3-assurance-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.vph3-link.light{color:#7ce9f4}.vph3-outcomes{display:grid;grid-template-columns:1fr 1fr;gap:14px}.vph3-outcomes div{display:flex;align-items:center;gap:11px;padding:17px;border:1px solid rgba(255,255,255,.15);border-radius:12px;background:rgba(255,255,255,.06)}.vph3-outcomes svg{color:#5fe0ec}.vph3-confidence{background:#f5faff}.vph3-confidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.vph3-industries{display:flex;flex-wrap:wrap;gap:10px}.vph3-industries span{padding:11px 15px;border:1px solid var(--vph3-line);border-radius:999px;background:#fff;color:#315777;font-size:13px}.vph3-conversion{padding:56px 0;color:#fff;background:linear-gradient(110deg,#061b36,#0a437b)}.vph3-conversion .vph3-shell{display:flex;align-items:center;justify-content:space-between;gap:30px}.vph3-conversion span{color:#6fe1f1;font-size:11px;font-weight:800;letter-spacing:.13em}.vph3-conversion h2{margin:9px 0;font-size:clamp(1.8rem,2.7vw,3rem)}.vph3-conversion p{margin:0;color:#bfd0df}.vph3-button{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:0 22px;border-radius:8px;text-decoration:none;font-weight:750}.vph3-button.primary{color:#fff;background:#087eeb}.vph3-button.secondary{margin-left:9px;color:#fff;border:1px solid rgba(255,255,255,.65)}
+/* Hide superseded homepage sections after the hero; new narrative is the production content. */
+.vph2-hero~*:not(.vph3-home-narrative){display:none!important}
+@media(max-width:1100px){.vph3-shell{width:min(100% - 48px,960px)}.vph3-gap-grid,.vph3-why-grid{grid-template-columns:1fr 1fr}.vph3-why-grid .is-wide{grid-column:span 2}.vph3-pilot-grid{grid-template-columns:repeat(3,1fr)}.vph3-platform-grid,.vph3-native-grid,.vph3-proposition-grid,.vph3-assurance-grid,.vph3-confidence-grid{grid-template-columns:1fr}.vph3-pilot-grid article:nth-child(4),.vph3-pilot-grid article:nth-child(5){grid-column:span 1}}@media(max-width:700px){.vph3-shell{width:min(100% - 32px,620px)}.vph3-section{padding:60px 0}.vph3-heading{margin-bottom:28px}.vph3-heading h2{font-size:2.15rem}.vph3-gap-grid,.vph3-why-grid,.vph3-module-grid,.vph3-pilot-grid,.vph3-native-items,.vph3-outcomes{grid-template-columns:1fr}.vph3-why-grid .is-wide{grid-column:auto}.vph3-lifecycle{grid-template-columns:1fr 1fr}.vph3-conversion .vph3-shell{display:block}.vph3-conversion .vph3-shell>div:last-child{margin-top:24px}.vph3-button{display:flex;justify-content:center;margin:9px 0!important}}
+/* V PILOT HOMEPAGE SECTION HEADER ISOLATION START */
+/* Prevent broad global header rules from affecting homepage section headings. */
+.vph3-home-narrative {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  overflow: clip;
+}
+
+.vph3-home-narrative .vph3-heading {
+  position: static !important;
+  inset: auto !important;
+  z-index: auto !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.vph3-home-narrative .vph3-heading > span,
+.vph3-home-narrative .vph3-heading > h2,
+.vph3-home-narrative .vph3-heading > p {
+  position: static !important;
+  inset: auto !important;
+  width: auto !important;
+  height: auto !important;
+  transform: none !important;
+}
+
+/* Keep the real website header above page content without covering it. */
+.vph-header {
+  z-index: 1000 !important;
+}
+
+.vph3-home-narrative .vph3-section {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+/* Restore predictable heading dimensions if older global selectors targeted h2/p. */
+.vph3-home-narrative .vph3-heading h2 {
+  max-width: 900px;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+.vph3-home-narrative .vph3-heading p {
+  max-width: 820px;
+  white-space: normal !important;
+}
+
+@media (max-width: 700px) {
+  .vph3-home-narrative {
+    overflow-x: hidden;
+  }
+}
+/* V PILOT HOMEPAGE SECTION HEADER ISOLATION END */
