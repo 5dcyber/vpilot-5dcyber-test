@@ -1,0 +1,1437 @@
+﻿.vpf-footer,.vpf-footer *,.vpf-footer *::before,.vpf-footer *::after{box-sizing:border-box}.vpf-footer{color:#082f63;background:#f4f9fe;font-family:Inter,"Source Sans 3",sans-serif}.vpf-shell{width:min(1640px,calc(100% - 128px));margin-inline:auto}.vpf-conversion{color:#fff;background:linear-gradient(115deg,#083467,#0a437b)}.vpf-conversion-layout{display:flex;align-items:center;justify-content:space-between;gap:48px;min-height:164px;padding-block:28px}.vpf-conversion span{color:#87dff4;font-size:.67rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}.vpf-conversion h2{margin:7px 0 4px;font:700 clamp(1.8rem,2.6vw,2.65rem)/1.05 "Space Grotesk",Inter,sans-serif}.vpf-conversion p{margin:0;color:#c5d9e9;font-size:.86rem}.vpf-conversion small{display:flex;align-items:center;gap:9px;margin-top:13px;color:#a7c7dd;font-size:.66rem}.vpf-conversion small i{width:4px;height:4px;border-radius:50%;background:#18bde7}.vpf-conversion-actions{display:flex;flex-wrap:wrap;gap:12px}.vpf-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 28px;border-radius:8px;font-size:.77rem;font-weight:850;text-decoration:none}.vpf-cta.primary{color:#fff;background:#0b8ff3}.vpf-cta.secondary{color:#fff;border:1px solid rgba(255,255,255,.72)}.vpf-accent{height:3px;background:linear-gradient(90deg,#063b78,#0b8fe8,#18c7d9)}.vpf-primary{padding:54px 0 48px;background:linear-gradient(135deg,#f8fbff,#eef7ff 50%,#f7fbff)}.vpf-primary-layout{display:grid;grid-template-columns:minmax(280px,1.35fr) minmax(170px,1fr) minmax(180px,1fr) minmax(220px,1.08fr) minmax(135px,.82fr) minmax(145px,.85fr);gap:38px;align-items:start}.vpf-brand{position:relative;padding-right:34px}.vpf-brand::after{content:"";position:absolute;top:10px;right:0;bottom:10px;width:1px;background:#d6e4f0}.vpf-logo{display:inline-flex;width:198px;max-width:100%;margin-bottom:28px}.vpf-logo .vpilot-logo-lockup,.vpf-logo img{width:100%;height:auto}.vpf-brand h2{margin:0 0 14px;color:#082f63;font:700 1.18rem/1.35 "Space Grotesk",Inter,sans-serif}.vpf-brand>p{max-width:315px;margin:0;color:#58718b;font-size:.8rem;line-height:1.7}.vpf-assurance-line{margin-top:18px!important;color:#075eb5!important;font-size:.74rem!important;font-weight:700;line-height:1.6!important}.vpf-brand-link{display:inline-flex;align-items:center;gap:7px;margin-top:20px;color:#087eeb;font-size:.78rem;font-weight:800;text-decoration:none}.vpf-nav{display:contents}.vpf-group h3{margin:0 0 17px;color:#092f62;font-size:.74rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.vpf-group-toggle{display:none}.vpf-group ul{margin:0;padding:0;list-style:none}.vpf-group a{display:flex;align-items:center;gap:5px;min-height:30px;color:#58718b;font-size:.78rem;line-height:1.5;text-decoration:none;transition:color .18s ease,transform .18s ease}.vpf-group a:hover{color:#087eeb;transform:translateX(3px)}.vpf-group a.is-priority{color:#0b5cab;font-weight:780}.vpf-assurance{padding:34px 0 22px;color:#fff;background:#061d3a}.vpf-assurance-layout{display:grid;grid-template-columns:1fr 1fr}.vpf-assurance-layout article{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:4px 44px 6px 0}.vpf-assurance-layout article+article{padding-right:0;padding-left:44px;border-left:1px solid rgba(255,255,255,.14)}.vpf-assurance-icon{display:grid;place-items:center;width:38px;height:38px;color:#18bde7;border:1px solid rgba(24,189,231,.38);border-radius:50%}.vpf-assurance h3{margin:0 0 7px;font-size:.84rem}.vpf-assurance article p{margin:0;color:#b7cbe0;font-size:.79rem;line-height:1.55}.vpf-assurance article a{display:inline-flex;align-items:center;gap:7px;margin-top:9px;color:#18bde7;font-size:.7rem;font-weight:800;text-decoration:none}.vpf-legal-bar{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;margin-top:24px;padding:22px 0 2px;border-top:1px solid rgba(255,255,255,.12)}.vpf-legal-bar p,.vpf-legal-bar nav a,.vpf-connect{color:#a8bed5;font-size:.72rem}.vpf-legal-bar p{margin:0}.vpf-legal-bar nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px}.vpf-legal-bar nav a{text-decoration:none}.vpf-connect{display:flex;align-items:center;gap:8px}.vpf-connect a{display:grid;place-items:center;width:31px;height:31px;color:#fff;border:1px solid rgba(24,189,231,.32);border-radius:50%;background:#092a5e}.vpf-footer :focus-visible{outline:2px solid #18bde7;outline-offset:3px}@media(max-width:1360px){.vpf-shell{width:min(100% - 84px,1640px)}.vpf-primary-layout{grid-template-columns:minmax(260px,1.3fr) repeat(3,minmax(170px,1fr)) repeat(2,minmax(130px,.78fr));gap:28px}}@media(max-width:1100px){.vpf-shell{width:min(100% - 56px,1640px)}.vpf-primary-layout{grid-template-columns:1.3fr 1fr 1fr;row-gap:42px}.vpf-brand{grid-row:span 2}.vpf-legal-bar{grid-template-columns:1fr auto}.vpf-legal-bar nav{grid-column:1/-1;grid-row:1;justify-content:flex-start}.vpf-connect{grid-column:2;grid-row:2}}@media(max-width:760px){.vpf-shell{width:min(100% - 32px,1640px)}.vpf-conversion-layout{display:block;padding-block:30px}.vpf-conversion-actions{margin-top:20px}.vpf-primary{padding:38px 0}.vpf-primary-layout{display:block}.vpf-brand{padding:0 0 26px}.vpf-brand::after{display:none}.vpf-logo{width:165px}.vpf-nav{display:block}.vpf-group{border-bottom:1px solid #d7e5f1}.vpf-group h3{display:none}.vpf-group-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:50px;padding:0;border:0;color:#082f63;background:transparent;font-size:.74rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}.vpf-group>ul{display:none;padding:0 0 14px}.vpf-group.is-open>ul{display:block}.vpf-assurance{padding-top:28px}.vpf-assurance-layout{grid-template-columns:1fr}.vpf-assurance-layout article,.vpf-assurance-layout article+article{padding:10px 0 22px;border-left:0}.vpf-assurance-layout article+article{padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}.vpf-legal-bar{grid-template-columns:1fr;text-align:center}.vpf-legal-bar nav{grid-column:1;grid-row:auto;justify-content:center}.vpf-connect{grid-column:1;grid-row:auto;justify-content:center}}
+
+/* V PILOT FOOTER BRAND AND SOCIAL PREMIUM FINISH START */
+.vpf-brand {
+  padding-right: 38px !important;
+}
+
+.vpf-logo {
+  width: 236px !important;
+  max-width: 100% !important;
+  margin-bottom: 24px !important;
+  filter: drop-shadow(0 10px 20px rgba(7, 53, 91, 0.10));
+}
+
+.vpf-brand h2 {
+  max-width: 310px;
+  margin-bottom: 12px !important;
+}
+
+.vpf-brand > p:not(.vpf-assurance-line) {
+  max-width: 330px !important;
+}
+
+.vpf-assurance-line {
+  max-width: 325px;
+  margin: 19px 0 0 !important;
+  padding: 12px 14px;
+  color: #075eb5 !important;
+  border-left: 3px solid #18bde7;
+  border-radius: 0 8px 8px 0;
+  background: linear-gradient(90deg, rgba(18,169,232,.10), rgba(18,169,232,.025));
+  font-size: .75rem !important;
+  font-weight: 780 !important;
+  line-height: 1.55 !important;
+}
+
+.vpf-brand-link {
+  margin-top: 17px !important;
+}
+
+.vpf-connect {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px !important;
+}
+
+.vpf-connect > span {
+  margin-right: 3px;
+  white-space: nowrap;
+}
+
+.vpf-connect a {
+  width: 34px !important;
+  height: 34px !important;
+  color: #dff5ff !important;
+  border-color: rgba(51, 197, 243, .34) !important;
+  background: linear-gradient(145deg, rgba(10,65,112,.95), rgba(5,35,67,.98)) !important;
+  box-shadow: inset 0 1px rgba(255,255,255,.08), 0 8px 18px rgba(0,0,0,.18);
+  transition: transform .18s ease, color .18s ease, border-color .18s ease, background .18s ease !important;
+}
+
+.vpf-connect a:hover,
+.vpf-connect a:focus-visible {
+  color: #ffffff !important;
+  border-color: rgba(51, 197, 243, .80) !important;
+  background: linear-gradient(145deg, #0b8fe8, #0757a7) !important;
+  transform: translateY(-3px) !important;
+}
+
+.vpf-connect svg {
+  display: block;
+}
+
+@media (max-width: 1360px) {
+  .vpf-logo { width: 216px !important; }
+  .vpf-brand { padding-right: 28px !important; }
+}
+
+@media (max-width: 760px) {
+  .vpf-logo { width: 170px !important; }
+  .vpf-connect { justify-content: center; }
+  .vpf-connect > span { width: 100%; margin: 0 0 4px; text-align: center; }
+}
+/* V PILOT FOOTER BRAND AND SOCIAL PREMIUM FINISH END */
+
+/* V PILOT FOOTER BRAND CLEANUP START */
+.vpf-brand {
+  align-self: start;
+}
+
+.vpf-logo {
+  width: clamp(190px, 13vw, 235px) !important;
+  margin-bottom: 30px !important;
+}
+
+.vpf-brand > p:not(.vpf-assurance-line) {
+  max-width: 330px !important;
+  margin-bottom: 0 !important;
+}
+
+.vpf-assurance-line,
+.vpf-brand-link {
+  display: none !important;
+}
+
+.vpf-primary {
+  padding-bottom: 46px !important;
+}
+
+@media (max-width: 760px) {
+  .vpf-logo {
+    width: clamp(155px, 45vw, 175px) !important;
+    margin-bottom: 22px !important;
+  }
+}
+/* V PILOT FOOTER BRAND CLEANUP END */
+
+/* V PILOT FOOTER PREMIUM LOGO FINISH START */
+.vpf-primary-layout {
+  grid-template-columns:
+    minmax(340px, 1.48fr)
+    minmax(165px, .95fr)
+    minmax(175px, 1fr)
+    minmax(220px, 1.08fr)
+    minmax(125px, .75fr)
+    minmax(130px, .78fr) !important;
+}
+
+.vpf-brand {
+  overflow: visible;
+}
+
+.vpf-logo {
+  position: relative;
+  width: clamp(225px, 15vw, 275px) !important;
+  max-width: 100% !important;
+  margin: -8px 0 30px !important;
+  padding: 8px 10px 10px 0;
+  transform: perspective(900px) rotateX(1.5deg) rotateY(-2.5deg);
+  transform-origin: left center;
+  filter:
+    drop-shadow(0 5px 3px rgba(2, 35, 67, .13))
+    drop-shadow(0 16px 24px rgba(7, 76, 128, .15));
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.vpf-logo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -18px;
+  top: -16px;
+  width: 300px;
+  height: 132px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(18,169,232,.14), rgba(18,169,232,.035) 48%, transparent 72%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.vpf-logo:hover {
+  transform: perspective(900px) rotateX(0deg) rotateY(0deg) translateY(-3px) scale(1.02);
+  filter:
+    drop-shadow(0 7px 4px rgba(2, 35, 67, .14))
+    drop-shadow(0 20px 30px rgba(7, 76, 128, .20));
+}
+
+.vpf-logo .vpilot-logo-lockup,
+.vpf-logo .vpilot-logo-lockup.is-compact,
+.vpf-logo img,
+.vpf-logo svg {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+}
+
+@media (max-width: 1360px) {
+  .vpf-primary-layout {
+    grid-template-columns:
+      minmax(300px, 1.35fr)
+      repeat(3, minmax(165px, 1fr))
+      repeat(2, minmax(125px, .78fr)) !important;
+  }
+
+  .vpf-logo {
+    width: clamp(205px, 16vw, 245px) !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vpf-primary-layout {
+    grid-template-columns: 1.3fr 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .vpf-primary-layout {
+    display: block !important;
+  }
+
+  .vpf-logo {
+    width: clamp(165px, 48vw, 185px) !important;
+    margin-top: 0 !important;
+    transform: none;
+  }
+
+  .vpf-logo::before {
+    width: 220px;
+    height: 100px;
+  }
+}
+/* V PILOT FOOTER PREMIUM LOGO FINISH END */
+
+/* =========================================================
+   V PILOT CLEAN PREMIUM FOOTER LOGO START
+   ========================================================= */
+
+.vpf-primary-layout {
+  grid-template-columns:
+    minmax(360px, 1.5fr)
+    minmax(165px, 0.95fr)
+    minmax(175px, 1fr)
+    minmax(220px, 1.08fr)
+    minmax(125px, 0.75fr)
+    minmax(130px, 0.78fr) !important;
+}
+
+.vpf-brand {
+  overflow: visible !important;
+  padding-right: 38px !important;
+}
+
+/*
+ * Larger logo with one restrained shadow.
+ * Removes the blurred halo and perspective distortion.
+ */
+.vpf-logo {
+  position: relative !important;
+
+  display: inline-flex !important;
+
+  width:
+    clamp(
+      245px,
+      16vw,
+      300px
+    ) !important;
+
+  max-width: 100% !important;
+
+  margin:
+    -10px
+    0
+    34px !important;
+
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+
+  filter:
+    drop-shadow(
+      0 8px 9px
+      rgba(7, 64, 108, 0.13)
+    ) !important;
+
+  transition:
+    transform 180ms ease,
+    filter 180ms ease !important;
+}
+
+/*
+ * Remove the previous radial glow behind the logo.
+ */
+.vpf-logo::before,
+.vpf-logo::after {
+  content: none !important;
+  display: none !important;
+}
+
+/*
+ * Override size restrictions inside ApprovedVPilotBrand.
+ */
+.vpf-logo .vpilot-logo-lockup,
+.vpf-logo .vpilot-logo-lockup.is-compact,
+.vpf-logo picture,
+.vpf-logo img,
+.vpf-logo svg {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  margin: 0 !important;
+
+  opacity: 1 !important;
+
+  transform: none !important;
+
+  filter: none !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+}
+
+/*
+ * Restrained hover elevation only.
+ */
+.vpf-logo:hover {
+  transform:
+    translateY(-2px)
+    scale(1.01) !important;
+
+  filter:
+    drop-shadow(
+      0 11px 12px
+      rgba(7, 64, 108, 0.16)
+    ) !important;
+}
+
+/*
+ * Keep slogan aligned with the larger logo.
+ */
+.vpf-brand h2 {
+  max-width: 330px !important;
+
+  margin-top: 0 !important;
+}
+
+/* Medium desktop and laptop */
+@media (min-width: 1101px) and (max-width: 1360px) {
+  .vpf-primary-layout {
+    grid-template-columns:
+      minmax(315px, 1.38fr)
+      repeat(
+        3,
+        minmax(165px, 1fr)
+      )
+      repeat(
+        2,
+        minmax(125px, 0.78fr)
+      ) !important;
+
+    gap: 28px !important;
+  }
+
+  .vpf-logo {
+    width:
+      clamp(
+        225px,
+        18vw,
+        265px
+      ) !important;
+
+    margin-bottom: 30px !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .vpf-primary-layout {
+    grid-template-columns:
+      1.3fr
+      1fr
+      1fr !important;
+  }
+
+  .vpf-logo {
+    width:
+      clamp(
+        205px,
+        24vw,
+        245px
+      ) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .vpf-primary-layout {
+    display: block !important;
+  }
+
+  .vpf-logo {
+    width:
+      clamp(
+        165px,
+        52vw,
+        190px
+      ) !important;
+
+    margin:
+      0
+      0
+      24px !important;
+
+    transform: none !important;
+  }
+
+  .vpf-logo:hover {
+    transform:
+      translateY(-1px) !important;
+  }
+}
+
+/* =========================================================
+   V PILOT CLEAN PREMIUM FOOTER LOGO END
+   ========================================================= */
+
+
+/* =========================================================
+   V PILOT FINAL FOOTER SPACING AND LEGAL TYPOGRAPHY START
+   ========================================================= */
+
+/*
+ * Reduce the vertical gap between the enlarged logo
+ * and “We Pilot Your Security Operations.”
+ */
+.vpf-logo {
+  margin:
+    -10px
+    0
+    18px !important;
+}
+
+.vpf-brand h2 {
+  margin:
+    0
+    0
+    12px !important;
+
+  line-height: 1.28 !important;
+}
+
+/*
+ * Keep the description visually connected to the slogan.
+ */
+.vpf-brand > p {
+  margin-top: 0 !important;
+}
+
+/* =========================================================
+   COMPACT LEGAL AND SOCIAL ROW
+   Only these elements receive the smaller typography.
+   ========================================================= */
+
+.vpf-legal-bar {
+  gap:
+    20px !important;
+
+  margin-top:
+    22px !important;
+
+  padding:
+    18px
+    0
+    4px !important;
+}
+
+.vpf-legal-bar > p {
+  color:
+    #9fb5ca !important;
+
+  font-size:
+    0.65rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.4 !important;
+
+  white-space:
+    nowrap;
+}
+
+.vpf-legal-bar nav {
+  gap:
+    7px
+    16px !important;
+}
+
+.vpf-legal-bar nav a {
+  color:
+    #a8bed5 !important;
+
+  font-size:
+    0.65rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.4 !important;
+}
+
+.vpf-legal-bar nav a:hover,
+.vpf-legal-bar nav a:focus-visible {
+  color:
+    #33c5f3 !important;
+}
+
+.vpf-connect {
+  gap:
+    7px !important;
+
+  color:
+    #a8bed5 !important;
+
+  font-size:
+    0.65rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.4 !important;
+}
+
+.vpf-connect > span {
+  margin-right:
+    2px !important;
+}
+
+/*
+ * Keep social icons visually premium while the label becomes smaller.
+ */
+.vpf-connect a {
+  width:
+    31px !important;
+
+  height:
+    31px !important;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .vpf-logo {
+    margin-bottom:
+      16px !important;
+  }
+
+  .vpf-legal-bar {
+    grid-template-columns:
+      1fr
+      auto !important;
+
+    row-gap:
+      14px !important;
+  }
+
+  .vpf-legal-bar nav {
+    grid-column:
+      1 / -1 !important;
+
+    grid-row:
+      1 !important;
+
+    justify-content:
+      flex-start !important;
+  }
+
+  .vpf-legal-bar > p {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      2 !important;
+  }
+
+  .vpf-connect {
+    grid-column:
+      2 !important;
+
+    grid-row:
+      2 !important;
+
+    justify-content:
+      flex-end !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .vpf-logo {
+    margin:
+      0
+      0
+      15px !important;
+  }
+
+  .vpf-brand h2 {
+    margin-bottom:
+      10px !important;
+  }
+
+  .vpf-legal-bar {
+    display:
+      grid !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      15px !important;
+
+    padding:
+      18px
+      0
+      6px !important;
+
+    text-align:
+      center !important;
+  }
+
+  .vpf-legal-bar > p {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      3;
+
+    white-space:
+      normal;
+
+    font-size:
+      0.64rem !important;
+  }
+
+  .vpf-legal-bar nav {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      1;
+
+    display:
+      flex !important;
+
+    justify-content:
+      center !important;
+
+    gap:
+      8px
+      14px !important;
+  }
+
+  .vpf-legal-bar nav a {
+    min-height:
+      28px;
+
+    display:
+      inline-flex;
+
+    align-items:
+      center;
+
+    font-size:
+      0.64rem !important;
+  }
+
+  .vpf-connect {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      2;
+
+    display:
+      flex !important;
+
+    justify-content:
+      center !important;
+
+    gap:
+      9px !important;
+
+    font-size:
+      0.64rem !important;
+  }
+
+  .vpf-connect > span {
+    width:
+      100%;
+
+    margin:
+      0
+      0
+      3px !important;
+
+    text-align:
+      center;
+  }
+
+  .vpf-connect a {
+    width:
+      34px !important;
+
+    height:
+      34px !important;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .vpf-legal-bar nav {
+    max-width:
+      340px;
+
+    margin-inline:
+      auto;
+  }
+
+  .vpf-legal-bar nav a {
+    font-size:
+      0.62rem !important;
+  }
+
+  .vpf-legal-bar > p,
+  .vpf-connect {
+    font-size:
+      0.62rem !important;
+  }
+}
+
+/* =========================================================
+   V PILOT FINAL FOOTER SPACING AND LEGAL TYPOGRAPHY END
+   ========================================================= */
+
+
+/* =========================================================
+   V PILOT FINAL LEGAL BAR SOCIAL ALIGNMENT START
+   ========================================================= */
+
+/*
+ * Keep the copyright, legal links, social label and icons
+ * on one visually balanced baseline.
+ */
+.vpf-legal-bar {
+  grid-template-columns:
+    minmax(290px, 1fr)
+    minmax(520px, auto)
+    minmax(310px, 1fr) !important;
+
+  align-items:
+    center !important;
+
+  min-height:
+    58px !important;
+
+  column-gap:
+    24px !important;
+
+  padding:
+    14px
+    0
+    12px !important;
+}
+
+/* Copyright */
+.vpf-legal-bar > p {
+  margin:
+    0 !important;
+
+  color:
+    #9fb5ca !important;
+
+  font-size:
+    0.64rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.35 !important;
+
+  white-space:
+    nowrap;
+}
+
+/* Legal destinations */
+.vpf-legal-bar nav {
+  display:
+    flex !important;
+
+  flex-wrap:
+    wrap;
+
+  align-items:
+    center !important;
+
+  justify-content:
+    center !important;
+
+  gap:
+    6px
+    17px !important;
+
+  margin:
+    0 !important;
+}
+
+.vpf-legal-bar nav a {
+  display:
+    inline-flex !important;
+
+  align-items:
+    center !important;
+
+  min-height:
+    26px;
+
+  padding:
+    0 !important;
+
+  color:
+    #a8bed5 !important;
+
+  font-size:
+    0.64rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.35 !important;
+}
+
+/* Social group */
+.vpf-connect {
+  display:
+    flex !important;
+
+  flex-wrap:
+    nowrap !important;
+
+  align-items:
+    center !important;
+
+  justify-content:
+    flex-end !important;
+
+  gap:
+    7px !important;
+
+  margin:
+    0 !important;
+
+  color:
+    #a8bed5 !important;
+
+  font-size:
+    0.64rem !important;
+
+  font-weight:
+    500 !important;
+
+  line-height:
+    1.35 !important;
+
+  white-space:
+    nowrap;
+}
+
+.vpf-connect > span {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  min-height:
+    28px;
+
+  margin:
+    0
+    4px
+    0
+    0 !important;
+}
+
+/*
+ * Compact desktop social control.
+ */
+.vpf-connect a,
+.vpf-social-link {
+  display:
+    inline-flex !important;
+
+  flex:
+    0 0 28px !important;
+
+  align-items:
+    center !important;
+
+  justify-content:
+    center !important;
+
+  width:
+    28px !important;
+
+  min-width:
+    28px !important;
+
+  height:
+    28px !important;
+
+  min-height:
+    28px !important;
+
+  margin:
+    0 !important;
+
+  padding:
+    0 !important;
+
+  color:
+    #dff7ff !important;
+
+  border:
+    1px solid
+    rgba(51, 197, 243, 0.42) !important;
+
+  border-radius:
+    50% !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 78, 126, 0.94),
+      rgba(5, 42, 78, 0.98)
+    ) !important;
+
+  box-shadow:
+    inset 0 1px
+    rgba(255, 255, 255, 0.12),
+    0 4px 10px
+    rgba(0, 0, 0, 0.16) !important;
+
+  line-height:
+    0 !important;
+
+  transform:
+    none !important;
+
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease !important;
+}
+
+.vpf-connect a svg,
+.vpf-social-link svg {
+  display:
+    block !important;
+
+  width:
+    13px !important;
+
+  height:
+    13px !important;
+
+  margin:
+    0 !important;
+
+  color:
+    currentColor !important;
+
+  transform:
+    none !important;
+}
+
+.vpf-connect a:hover,
+.vpf-connect a:focus-visible,
+.vpf-social-link:hover,
+.vpf-social-link:focus-visible {
+  color:
+    #ffffff !important;
+
+  border-color:
+    #33c5f3 !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #0875c9,
+      #0b91dc
+    ) !important;
+
+  box-shadow:
+    0 6px 13px
+    rgba(18, 169, 232, 0.22) !important;
+
+  transform:
+    translateY(-1px) !important;
+}
+
+/* =========================================================
+   COMPACT LAPTOP
+   ========================================================= */
+
+@media (min-width: 1101px) and (max-width: 1450px) {
+  .vpf-legal-bar {
+    grid-template-columns:
+      minmax(240px, 1fr)
+      minmax(450px, auto)
+      minmax(265px, 1fr) !important;
+
+    column-gap:
+      18px !important;
+  }
+
+  .vpf-legal-bar > p,
+  .vpf-legal-bar nav a,
+  .vpf-connect {
+    font-size:
+      0.61rem !important;
+  }
+
+  .vpf-legal-bar nav {
+    gap:
+      5px
+      13px !important;
+  }
+
+  .vpf-connect {
+    gap:
+      6px !important;
+  }
+
+  .vpf-connect a,
+  .vpf-social-link {
+    flex-basis:
+      27px !important;
+
+    width:
+      27px !important;
+
+    min-width:
+      27px !important;
+
+    height:
+      27px !important;
+
+    min-height:
+      27px !important;
+  }
+
+  .vpf-connect a svg,
+  .vpf-social-link svg {
+    width:
+      12px !important;
+
+    height:
+      12px !important;
+  }
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .vpf-legal-bar {
+    grid-template-columns:
+      1fr
+      auto !important;
+
+    row-gap:
+      12px !important;
+
+    padding:
+      16px
+      0 !important;
+  }
+
+  .vpf-legal-bar nav {
+    grid-column:
+      1 / -1 !important;
+
+    grid-row:
+      1 !important;
+
+    justify-content:
+      flex-start !important;
+  }
+
+  .vpf-legal-bar > p {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      2 !important;
+
+    white-space:
+      normal;
+  }
+
+  .vpf-connect {
+    grid-column:
+      2 !important;
+
+    grid-row:
+      2 !important;
+  }
+
+  /*
+   * Slightly larger than desktop for tablet touch use.
+   */
+  .vpf-connect a,
+  .vpf-social-link {
+    flex-basis:
+      30px !important;
+
+    width:
+      30px !important;
+
+    min-width:
+      30px !important;
+
+    height:
+      30px !important;
+
+    min-height:
+      30px !important;
+  }
+
+  .vpf-connect a svg,
+  .vpf-social-link svg {
+    width:
+      14px !important;
+
+    height:
+      14px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .vpf-legal-bar {
+    display:
+      grid !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      13px !important;
+
+    min-height:
+      0 !important;
+
+    padding:
+      17px
+      0
+      13px !important;
+
+    text-align:
+      center !important;
+  }
+
+  .vpf-legal-bar nav {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      1;
+
+    justify-content:
+      center !important;
+
+    gap:
+      5px
+      13px !important;
+  }
+
+  .vpf-connect {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      2;
+
+    flex-wrap:
+      wrap !important;
+
+    justify-content:
+      center !important;
+
+    gap:
+      8px !important;
+
+    white-space:
+      normal;
+  }
+
+  .vpf-connect > span {
+    flex:
+      0 0 100%;
+
+    justify-content:
+      center;
+
+    min-height:
+      20px;
+
+    margin:
+      0
+      0
+      2px !important;
+  }
+
+  /*
+   * Preserve a comfortable mobile touch target.
+   */
+  .vpf-connect a,
+  .vpf-social-link {
+    flex-basis:
+      34px !important;
+
+    width:
+      34px !important;
+
+    min-width:
+      34px !important;
+
+    height:
+      34px !important;
+
+    min-height:
+      34px !important;
+  }
+
+  .vpf-connect a svg,
+  .vpf-social-link svg {
+    width:
+      15px !important;
+
+    height:
+      15px !important;
+  }
+
+  .vpf-legal-bar > p {
+    grid-column:
+      1 !important;
+
+    grid-row:
+      auto !important;
+
+    order:
+      3;
+
+    white-space:
+      normal;
+
+    text-align:
+      center;
+  }
+
+  .vpf-legal-bar > p,
+  .vpf-legal-bar nav a,
+  .vpf-connect {
+    font-size:
+      0.62rem !important;
+  }
+}
+
+/* =========================================================
+   V PILOT FINAL LEGAL BAR SOCIAL ALIGNMENT END
+   ========================================================= */
+
+
+/* =========================================================
+   V PILOT GLOBAL FOOTER CONVERSION REMOVAL START
+   Page-specific CTAs replace the generic footer CTA.
+   ========================================================= */
+
+.vpf-footer > .vpf-conversion {
+  display: none !important;
+}
+
+/*
+ * Remove the standalone accent assigned to the former
+ * conversion band.
+ */
+.vpf-footer > .vpf-accent {
+  display: none !important;
+}
+
+/*
+ * Give the navigation footer a precise premium top edge.
+ */
+.vpf-footer > .vpf-primary {
+  position: relative;
+
+  margin-top: 0 !important;
+
+  border-top: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at 7% 8%,
+      rgba(18, 169, 232, 0.075),
+      transparent 24%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #edf7fd 52%,
+      #f7fbff 100%
+    ) !important;
+}
+
+.vpf-footer > .vpf-primary::before {
+  content: "";
+
+  position: absolute;
+  z-index: 2;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 3px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0757a7 0%,
+      #0b8fe8 38%,
+      #18c7d9 72%,
+      #22a06b 100%
+    );
+}
+
+/*
+ * Ensure that the footer begins without residual spacing,
+ * regardless of the page rendered immediately before it.
+ */
+.vpf-footer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/*
+ * Homepage already has the vpm-final conversion section.
+ */
+.vpm-final + .vpf-footer,
+main:has(.vpm-final) + .vpf-footer {
+  margin-top: 0 !important;
+}
+
+/*
+ * Legal pages already have the Questions about this policy
+ * trust panel. Avoid duplicate transition rules.
+ */
+main:has(> .vpl-page) + .vpf-footer > .vpf-primary::before {
+  background:
+    linear-gradient(
+      90deg,
+      #0757a7 0%,
+      #12a9e8 48%,
+      #18c7d9 74%,
+      #22a06b 100%
+    );
+}
+
+/*
+ * The primary navigation begins with balanced spacing
+ * after either a page CTA or a Legal & Trust panel.
+ */
+.vpf-primary-layout {
+  padding-top: 46px !important;
+  padding-bottom: 44px !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .vpf-primary-layout {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .vpf-primary-layout {
+    padding-top: 32px !important;
+    padding-bottom: 34px !important;
+  }
+}
+
+/* =========================================================
+   V PILOT GLOBAL FOOTER CONVERSION REMOVAL END
+   ========================================================= */
+

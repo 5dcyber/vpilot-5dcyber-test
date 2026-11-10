@@ -1,0 +1,353 @@
+﻿/* V PILOT PUDICA PLATFORM ORBIT START */
+.pudica-platform-orbit {
+  position: relative;
+  width: clamp(205px, 16vw, 218px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.pudica-platform-orbit__shell {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none !important;
+  filter: none !important;
+}
+
+.pudica-platform-orbit__core {
+  position: absolute;
+  left: 50%;
+  top: 48.1%;
+  width: 40%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(8, 126, 232, 0.28);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #ffffff 0%, #f3fbff 58%, #dceff9 100%);
+  box-shadow: 0 14px 30px rgba(6, 53, 102, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  animation: pudica-core-float 6.5s ease-in-out infinite;
+}
+
+.pudica-platform-orbit__emblem {
+  display: block;
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+  filter: drop-shadow(0 7px 8px rgba(3, 49, 96, 0.17));
+}
+
+.company-feature--pudica {
+  background: radial-gradient(circle at 52% 8%, rgba(88, 214, 47, 0.11), transparent 31%), radial-gradient(circle at 48% 12%, rgba(32, 197, 231, 0.16), transparent 43%), linear-gradient(150deg, #effaff 0%, #e6f6ff 54%, #e1f4ed 100%) !important;
+}
+
+.company-feature--pudica .company-feature__visual {
+  min-height: 224px;
+}
+
+@keyframes pudica-core-float {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, calc(-50% - 4px)); }
+}
+
+@media (max-width: 1280px) and (min-width: 1081px) {
+  .pudica-platform-orbit { width: 165px; }
+  .company-feature--pudica .company-feature__visual { min-height: 185px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pudica-platform-orbit__core { animation: none; }
+}
+/* V PILOT PUDICA PLATFORM ORBIT END */
+
+/* V PILOT PUDICA CENTERED VISUAL FINAL START */
+.company-feature--pudica .company-feature__visual {
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+  justify-self: stretch !important;
+  align-self: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 224px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit {
+  position: relative !important;
+  justify-self: center !important;
+  align-self: center !important;
+  width: clamp(205px, 16vw, 218px) !important;
+  max-width: 218px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit__shell {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit__core {
+  left: 50% !important;
+  top: 48.1% !important;
+  margin: 0 !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit__emblem {
+  justify-self: center !important;
+  align-self: center !important;
+  margin: 0 !important;
+  object-position: center !important;
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
+  .company-feature--pudica .company-feature__visual {
+    min-height: 196px !important;
+  }
+  .company-feature--pudica .pudica-platform-orbit {
+    width: 184px !important;
+    max-width: 184px !important;
+  }
+}
+
+@media (min-width: 1081px) and (max-height: 850px) {
+  .company-feature--pudica .company-feature__visual {
+    min-height: 166px !important;
+  }
+  .company-feature--pudica .pudica-platform-orbit {
+    width: 158px !important;
+    max-width: 158px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-feature--pudica .pudica-platform-orbit__core {
+    animation: none !important;
+  }
+}
+/* V PILOT PUDICA CENTERED VISUAL FINAL END */
+/* V PILOT PUDICA EMBLEM OPTICAL ALIGNMENT START */
+
+/* Center the complete orbit composition in the featured-panel visual row. */
+.company-feature--pudica .company-feature__visual {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  place-items: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-inline: 0 !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit {
+  justify-self: center !important;
+  align-self: center !important;
+  width: clamp(212px, 16.4vw, 224px) !important;
+  max-width: 224px !important;
+  margin-inline: auto !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+/* The shell remains fixed to the complete orbit canvas. */
+.company-feature--pudica .pudica-platform-orbit__shell {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+/* Place the dimensional core at the shell's optical center. */
+.company-feature--pudica .pudica-platform-orbit__core {
+  left: 50% !important;
+  top: 49.2% !important;
+  width: 42% !important;
+  margin: 0 !important;
+}
+
+/* Increase the approved emblem and compensate for transparent PNG padding. */
+.company-feature--pudica .pudica-platform-orbit__emblem {
+  width: 88% !important;
+  height: 88% !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  margin: 0 !important;
+  transform: translate(1px, 1px) scale(1.035) !important;
+  transform-origin: center center !important;
+  filter: drop-shadow(0 7px 9px rgba(3, 49, 96, 0.18)) !important;
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
+  .company-feature--pudica .pudica-platform-orbit {
+    width: 192px !important;
+    max-width: 192px !important;
+  }
+
+  .company-feature--pudica .pudica-platform-orbit__emblem {
+    transform: translate(1px, 1px) scale(1.03) !important;
+  }
+}
+
+@media (min-width: 1081px) and (max-height: 850px) {
+  .company-feature--pudica .pudica-platform-orbit {
+    width: 166px !important;
+    max-width: 166px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-feature--pudica .pudica-platform-orbit__core {
+    animation: none !important;
+  }
+}
+
+/* V PILOT PUDICA EMBLEM OPTICAL ALIGNMENT END */
+/* V PILOT PUDICA TRUE CENTER START */
+
+/* Use the complete panel width as the centering reference. */
+.company-feature--pudica {
+  --pudica-orbit-size: 218px;
+  --pudica-core-size: 92px;
+}
+
+.company-feature--pudica .company-feature__visual {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 224px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit {
+  position: relative !important;
+  flex: 0 0 var(--pudica-orbit-size) !important;
+  width: var(--pudica-orbit-size) !important;
+  height: var(--pudica-orbit-size) !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+/* Shell and core share exactly the same 50% / 50% center. */
+.company-feature--pudica .pudica-platform-orbit__shell {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+.company-feature--pudica .pudica-platform-orbit__core {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  width: var(--pudica-core-size) !important;
+  height: var(--pudica-core-size) !important;
+  aspect-ratio: 1 !important;
+  margin: 0 !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Enlarge the visible emblem without shifting its layout box. */
+.company-feature--pudica .pudica-platform-orbit__emblem {
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  display: block !important;
+  width: 86px !important;
+  height: 86px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: translate(-50%, -50%) scale(1.08) !important;
+  transform-origin: center center !important;
+  filter: drop-shadow(0 7px 9px rgba(3, 49, 96, 0.18)) !important;
+}
+
+/* Preserve the same center during the depth animation. */
+@keyframes pudica-core-float-centered {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, calc(-50% - 3px)); }
+}
+
+.company-feature--pudica .pudica-platform-orbit__core {
+  animation: pudica-core-float-centered 6.5s ease-in-out infinite !important;
+}
+
+@media (min-width: 1081px) and (max-width: 1500px) {
+  .company-feature--pudica {
+    --pudica-orbit-size: 194px;
+    --pudica-core-size: 84px;
+  }
+
+  .company-feature--pudica .company-feature__visual {
+    min-height: 202px !important;
+  }
+
+  .company-feature--pudica .pudica-platform-orbit__emblem {
+    width: 78px !important;
+    height: 78px !important;
+  }
+}
+
+@media (min-width: 1081px) and (max-height: 850px) {
+  .company-feature--pudica {
+    --pudica-orbit-size: 172px;
+    --pudica-core-size: 76px;
+  }
+
+  .company-feature--pudica .company-feature__visual {
+    min-height: 178px !important;
+  }
+
+  .company-feature--pudica .pudica-platform-orbit__emblem {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-feature--pudica .pudica-platform-orbit__core {
+    animation: none !important;
+  }
+}
+
+/* V PILOT PUDICA TRUE CENTER END */
+

@@ -1,0 +1,1827 @@
+﻿:root{--h2-ink:#061b36;--h2-navy:#082f63;--h2-blue:#087eeb;--h2-cyan:#20c5e7;--h2-green:#16a970;--h2-ice:#edf8ff;--h2-slate:#58718b}.vph2-page,.vph2-page *{box-sizing:border-box}.vph2-page{color:var(--h2-ink);background:#fff;overflow-x:clip}.vph2-shell{width:min(1440px,calc(100% - 80px));margin:auto}.vph2-hero{position:relative;min-height:760px;padding:88px 0 0;color:#fff;background:linear-gradient(90deg,rgba(2,15,33,.97),rgba(3,27,53,.88) 46%,rgba(4,35,63,.25) 74%),url('/assets/vpilot-home-mountain-hero.png') right center/cover no-repeat;overflow:hidden}.vph2-hero:after{content:"";position:absolute;inset:auto 0 0;height:160px;background:linear-gradient(transparent,rgba(2,19,39,.96))}.vph2-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:70px;align-items:center}.vph2-hero-grid>div>span,.vph2-head>span,.vph2-native span,.vph2-assurance span,.vph2-final span{color:#67dff0;font-size:11px;font-weight:900;letter-spacing:.16em}.vph2-hero h1{margin:18px 0 10px;font:760 clamp(3.5rem,5.2vw,6rem)/.96 "Space Grotesk",Inter,sans-serif;letter-spacing:-.055em}.vph2-hero h1 em{font-style:normal;color:transparent;background:linear-gradient(90deg,#fff,#57dff1,#65e6bd);-webkit-background-clip:text;background-clip:text}.vph2-hero-grid>div>strong{display:block;color:#27c6eb;font-size:clamp(1.4rem,2vw,2.2rem)}.vph2-hero p{max-width:760px;color:#c3d6e3;line-height:1.7}.vph2-actions{display:flex;gap:12px;margin-top:25px}.vph2-actions a,.vph2-final a,.vph2-native a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border:1px solid rgba(118,217,239,.38);border-radius:8px;color:#fff;text-decoration:none;font-weight:800}.vph2-actions a:first-child,.vph2-final a:first-child{border-color:transparent;background:linear-gradient(135deg,#087eeb,#0ba8dc);box-shadow:0 14px 30px rgba(8,126,235,.25)}.vph2-five-d{display:flex;align-items:center;gap:10px;margin-top:27px;color:#66ddef;font-size:10px;font-weight:800;letter-spacing:.12em}.vph2-five-d i{width:4px;height:4px;border-radius:50%;background:#5de2bd}.vph2-hero aside{padding:31px;border:1px solid rgba(112,218,240,.24);border-radius:22px;background:rgba(2,20,39,.68);backdrop-filter:blur(13px);box-shadow:0 30px 70px rgba(0,0,0,.25)}.vph2-hero aside>span{color:#67dff0;font-size:10px;letter-spacing:.14em}.vph2-hero aside h2{font-size:31px;line-height:1.05}.vph2-hero aside>div{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.vph2-hero aside b{display:flex;align-items:center;gap:8px;padding:12px;border:1px solid rgba(112,218,240,.16);border-radius:9px;background:rgba(255,255,255,.04);font-size:12px}.vph2-hero aside svg{color:#67dff0}.vph2-proof{position:absolute;z-index:3;right:0;bottom:0;left:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(112,218,240,.2)}.vph2-proof div{display:flex;align-items:center;gap:11px;min-height:85px;padding:14px;border-right:1px solid rgba(112,218,240,.18);font-size:11px;font-weight:750}.vph2-proof svg{color:#67dff0}.vph2-section{padding:86px 0}.vph2-head{max-width:1080px;margin-bottom:38px}.vph2-head>span{color:#087eeb}.vph2-head h2,.vph2-native h2,.vph2-assurance h2,.vph2-final h2{margin:10px 0 0;font:740 clamp(2.35rem,3.7vw,4.3rem)/1.02 "Space Grotesk",Inter,sans-serif;letter-spacing:-.045em}.vph2-head>p{max-width:900px;color:var(--h2-slate);line-height:1.72}.vph2-gap{background:linear-gradient(#f8fcff,#edf7fd)}.vph2-gap-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.vph2-gap-grid article{position:relative;min-height:230px;padding:22px;border:1px solid #d7e5f1;border-radius:12px;background:#fff}.vph2-gap-grid article>span{color:#9bb7ca;font-size:10px;font-weight:900}.vph2-gap-grid svg{position:absolute;top:20px;right:20px;color:#087eeb}.vph2-gap-grid h3{margin-top:35px;font-size:16px}.vph2-gap-grid p,.vph2-op-flow p,.vph2-modules p,.vph2-pilot-grid p,.vph2-solutions p,.vph2-confidence p{color:var(--h2-slate);font-size:12px;line-height:1.55}.vph2-gap blockquote{margin:18px 0 0;padding:17px;text-align:center;background:#fff;border-left:3px solid #20c5e7;font-weight:800}.vph2-proposition{background:linear-gradient(135deg,#061b36,#073a5c);color:#fff}.vph2-proposition .vph2-head h2{color:#fff}.vph2-proposition .vph2-head p{color:#b9cedc}.vph2-op-flow{display:grid;grid-template-columns:repeat(7,1fr);gap:17px}.vph2-op-flow article{text-align:center}.vph2-op-flow article>div{display:grid;place-items:center;width:64px;height:64px;margin:auto;border:1px solid rgba(93,218,240,.36);border-radius:50%;background:rgba(255,255,255,.06);color:#6ce0f0}.vph2-op-flow h3{color:#fff}.vph2-op-flow p{color:#a9c2d1}.vph2-platform{background:#f4faff}.vph2-platform-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}.vph2-stack{display:grid;place-items:center;align-content:center;padding:30px;background:radial-gradient(circle,rgba(18,169,232,.11),transparent 62%)}.vph2-stack article{width:min(610px,100%);padding:17px 24px;text-align:center;color:#fff;border:1px solid rgba(111,222,241,.3);border-radius:50%;background:linear-gradient(180deg,#0c74bb,#073d70);box-shadow:0 14px 24px rgba(5,60,109,.17)}.vph2-stack article+article{margin-top:-4px}.vph2-stack span{font-size:10px;font-weight:900;letter-spacing:.11em}.vph2-stack p{margin:5px 0 0;font-size:11px}.vph2-modules{display:grid;gap:10px}.vph2-modules article{display:flex;gap:15px;padding:18px;border:1px solid #d5e6f1;border-radius:12px;background:#fff}.vph2-modules svg{flex:none;color:#087eeb}.vph2-modules h3{margin:0;font-size:15px}.vph2-modules p{margin:5px 0 0}.vph2-promise{margin-top:20px;padding:18px;background:#fff;border-left:3px solid #20c5e7;font-weight:750}.vph2-promise a,.vph2-text-link{display:inline-flex;align-items:center;gap:7px;margin-left:12px;color:#087eeb;text-decoration:none}.vph2-pilot-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.vph2-pilot-grid article{display:flex;flex-direction:column;min-height:300px;padding:22px;border:1px solid #d7e5f1;border-top:4px solid #087eeb;border-radius:14px;background:#fff;box-shadow:0 14px 34px rgba(3,33,66,.07)}.vph2-pilot-grid article:nth-child(2){border-top-color:#16a970}.vph2-pilot-grid article:nth-child(3){border-top-color:#18a7f5}.vph2-pilot-grid article:nth-child(4){border-top-color:#e65d43}.vph2-pilot-grid article:nth-child(5){border-top-color:#ef9b31}.vph2-pilot-grid svg{color:#087eeb}.vph2-pilot-grid span{margin-top:18px;color:#087eeb;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.vph2-pilot-grid h3{font-size:19px}.vph2-text-link{margin:24px 0 0}.vph2-native{background:linear-gradient(135deg,#edf8ff,#f9fdff)}.vph2-native-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.vph2-native span{color:#087eeb}.vph2-native p{color:var(--h2-slate);line-height:1.7}.vph2-native a{color:#087eeb;border-color:#087eeb}.vph2-native-grid>div:last-child{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#d7e5f1;border:1px solid #d7e5f1;border-radius:14px;overflow:hidden}.vph2-native-grid>div:last-child span{display:grid;place-items:center;gap:8px;min-height:110px;padding:15px;text-align:center;background:#fff;color:#082f63;font-size:11px;letter-spacing:0}.vph2-native-grid svg{color:#087eeb}.vph2-solutions{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.vph2-solutions article{padding:25px;border:1px solid #d7e5f1;border-radius:14px;background:#fff}.vph2-solutions svg{color:#087eeb}.vph2-assurance{color:#fff;background:radial-gradient(circle at 80% 15%,rgba(32,197,231,.18),transparent 28%),linear-gradient(135deg,#04172e,#073e61)}.vph2-assurance-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.vph2-assurance p{color:#b9cfdd;line-height:1.7}.vph2-assurance-grid>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:12px}.vph2-assurance-grid>div:last-child span{display:flex;align-items:center;gap:10px;padding:15px;border:1px solid rgba(109,220,240,.2);border-radius:10px;background:rgba(255,255,255,.04);color:#dff6fb;letter-spacing:0}.vph2-confidence{background:#f5faff}.vph2-confidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.vph2-confidence-grid article{padding:23px;border-left:3px solid #20c5e7;background:#fff}.vph2-industries{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}.vph2-industries>span{flex-basis:100%;color:#087eeb;font-size:10px;font-weight:900;letter-spacing:.1em}.vph2-industries b{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid #d7e5f1;border-radius:999px;background:#fff;font-size:11px}.vph2-industries svg{width:15px;color:#087eeb}.vph2-final{padding:70px 0;color:#fff;background:linear-gradient(90deg,rgba(2,17,37,.98),rgba(5,48,81,.87)),url('/assets/vpilot-home-mountain-hero.png') center 58%/cover}.vph2-final>.vph2-shell{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center}.vph2-final p{max-width:850px;color:#b9cfdd;line-height:1.7}.vph2-final>.vph2-shell>div:last-child{display:grid;gap:10px}.vph2-final a:last-child{background:transparent}@media(max-width:1100px){.vph2-shell{width:min(100% - 48px,1440px)}.vph2-hero-grid,.vph2-platform-grid,.vph2-native-grid,.vph2-assurance-grid,.vph2-final>.vph2-shell{grid-template-columns:1fr}.vph2-gap-grid{grid-template-columns:repeat(3,1fr)}.vph2-op-flow{grid-template-columns:repeat(4,1fr)}.vph2-pilot-grid{grid-template-columns:repeat(2,1fr)}.vph2-solutions,.vph2-confidence-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.vph2-shell{width:calc(100% - 28px)}.vph2-hero{min-height:auto;padding-top:62px}.vph2-hero h1{font-size:clamp(2.9rem,13vw,4.2rem)}.vph2-hero aside{display:none}.vph2-proof{position:relative;grid-template-columns:1fr;margin-top:45px}.vph2-proof div{min-height:62px}.vph2-section{padding:64px 0}.vph2-gap-grid,.vph2-op-flow,.vph2-pilot-grid,.vph2-solutions,.vph2-confidence-grid,.vph2-assurance-grid>div:last-child{grid-template-columns:1fr}.vph2-native-grid>div:last-child{grid-template-columns:1fr 1fr}.vph2-actions{display:grid}.vph2-final>.vph2-shell>div:last-child{width:100%}}
+/* V PILOT HOME ORBIT AND ALTERNATING SURFACES START */
+
+/* Hero orbit card */
+.vph2-hero-orbit-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: minmax(270px, auto) auto;
+  align-content: center;
+  min-height: 590px;
+  padding: 24px 30px 28px !important;
+  overflow: hidden;
+  border: 1px solid rgba(103, 223, 240, 0.26) !important;
+  border-radius: 24px !important;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(32, 197, 231, 0.16), transparent 36%),
+    linear-gradient(150deg, rgba(4, 31, 58, 0.91), rgba(5, 49, 79, 0.82)) !important;
+  box-shadow: 0 30px 75px rgba(0, 0, 0, 0.28) !important;
+  backdrop-filter: blur(16px) saturate(120%) !important;
+}
+
+.vph2-hero-orbit-card::before,
+.vph2-hero-orbit-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vph2-hero-orbit-card::before {
+  width: 420px;
+  height: 420px;
+  top: -190px;
+  right: -170px;
+  border: 1px solid rgba(103, 223, 240, 0.12);
+}
+
+.vph2-hero-orbit-card::after {
+  width: 290px;
+  height: 290px;
+  top: -122px;
+  right: -105px;
+  border: 1px dashed rgba(93, 226, 189, 0.12);
+}
+
+.vph2-hero-orbit {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  min-height: 280px;
+}
+
+.vph2-hero-orbit img {
+  display: block;
+  width: clamp(270px, 25vw, 390px);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter:
+    saturate(1.04)
+    contrast(1.02)
+    drop-shadow(0 22px 34px rgba(0, 17, 36, 0.24));
+  transform: none !important;
+}
+
+.vph2-hero-orbit-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.vph2-hero-orbit-copy > span {
+  color: #67dff0 !important;
+  font-size: 10px !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.15em !important;
+}
+
+.vph2-hero-orbit-copy h2 {
+  margin: 10px 0 9px !important;
+  font-size: clamp(1.65rem, 2.1vw, 2.55rem) !important;
+  line-height: 1.06 !important;
+}
+
+.vph2-hero-orbit-copy p {
+  margin: 0 0 15px !important;
+  font-size: 13px !important;
+  line-height: 1.55 !important;
+}
+
+.vph2-hero-orbit-copy > div {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+  margin-top: 0 !important;
+}
+
+.vph2-hero-orbit-copy b {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  min-height: 44px !important;
+  padding: 10px 12px !important;
+  border: 1px solid rgba(103, 223, 240, 0.18) !important;
+  border-radius: 9px !important;
+  background: rgba(255, 255, 255, 0.045) !important;
+  font-size: 11px !important;
+}
+
+.vph2-hero-orbit-copy svg {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  color: #67dff0;
+}
+
+/* Deliberate alternating narration surfaces */
+.vph2-gap {
+  background:
+    radial-gradient(circle at 88% 14%, rgba(32, 197, 231, 0.09), transparent 27%),
+    linear-gradient(135deg, #f9fcff 0%, #edf7fd 52%, #f7fbff 100%) !important;
+}
+
+.vph2-proposition {
+  position: relative;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(8, 126, 235, 0.19), transparent 28%),
+    radial-gradient(circle at 82% 78%, rgba(32, 197, 231, 0.12), transparent 25%),
+    linear-gradient(135deg, #04172e 0%, #073a5c 58%, #062944 100%) !important;
+}
+
+.vph2-platform {
+  background:
+    linear-gradient(180deg, #f8fcff 0%, #edf7fd 48%, #f9fcff 100%) !important;
+}
+
+.vph2-pilots {
+  background:
+    radial-gradient(circle at 12% 15%, rgba(105, 86, 217, 0.06), transparent 22%),
+    radial-gradient(circle at 88% 78%, rgba(22, 169, 112, 0.07), transparent 24%),
+    #ffffff !important;
+}
+
+.vph2-native {
+  background:
+    radial-gradient(circle at 80% 15%, rgba(32, 197, 231, 0.10), transparent 25%),
+    linear-gradient(135deg, #eef8ff 0%, #f9fdff 55%, #edf7fd 100%) !important;
+}
+
+.vph2-page > .vph2-section:not(.vph2-gap):not(.vph2-proposition):not(.vph2-platform):not(.vph2-pilots):not(.vph2-native):not(.vph2-assurance):not(.vph2-confidence) {
+  background: #ffffff;
+}
+
+.vph2-assurance {
+  background:
+    radial-gradient(circle at 85% 12%, rgba(32, 197, 231, 0.19), transparent 27%),
+    radial-gradient(circle at 14% 82%, rgba(8, 126, 235, 0.15), transparent 25%),
+    linear-gradient(135deg, #03152b 0%, #073d60 58%, #052a48 100%) !important;
+}
+
+.vph2-confidence {
+  background:
+    linear-gradient(135deg, #f8fcff 0%, #eef8fd 52%, #ffffff 100%) !important;
+}
+
+/* Subtle top transition on light narrative sections */
+.vph2-gap,
+.vph2-platform,
+.vph2-native,
+.vph2-confidence {
+  border-top: 1px solid rgba(8, 86, 156, 0.07);
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero-orbit-card {
+    min-height: auto;
+    grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+    grid-template-rows: auto;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 240px;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(230px, 34vw, 330px);
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero-orbit-card {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vph2-hero-orbit img {
+    animation-play-state: paused !important;
+  }
+}
+
+/* V PILOT HOME ORBIT AND ALTERNATING SURFACES END */
+/* V PILOT FINAL PREMIUM HOME HERO START */
+
+/* The hero grows with content instead of clipping the proof strip. */
+.vph2-hero {
+  min-height: 0 !important;
+  padding: 68px 0 0 !important;
+  background-position: center center !important;
+}
+
+.vph2-hero::after {
+  height: 210px !important;
+}
+
+.vph2-hero-grid {
+  grid-template-columns: minmax(0, 1.18fr) minmax(430px, 0.82fr) !important;
+  gap: clamp(38px, 4vw, 72px) !important;
+  align-items: center !important;
+  padding-bottom: 42px !important;
+}
+
+.vph2-hero-grid > div:first-child {
+  min-width: 0;
+  padding-block: 18px 8px;
+}
+
+.vph2-hero h1 {
+  max-width: 930px !important;
+  margin: 15px 0 13px !important;
+  font-size: clamp(3.4rem, 4.65vw, 5.55rem) !important;
+  line-height: 0.98 !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-grid > div:first-child > strong {
+  margin-bottom: 22px !important;
+  font-size: clamp(1.42rem, 1.75vw, 2rem) !important;
+}
+
+.vph2-hero-grid > div:first-child > p {
+  max-width: 825px !important;
+  margin: 0 0 14px !important;
+  color: #c7d8e5 !important;
+  font-size: 15px !important;
+  line-height: 1.68 !important;
+}
+
+.vph2-actions {
+  margin-top: 23px !important;
+}
+
+.vph2-actions a {
+  min-height: 50px !important;
+  padding-inline: 22px !important;
+}
+
+.vph2-five-d {
+  margin-top: 23px !important;
+}
+
+/* Premium orbit panel: visual first, narrative second, no narrow text column. */
+.vph2-hero-orbit-card {
+  align-self: center !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: 300px auto !important;
+  align-content: center !important;
+  min-width: 0 !important;
+  min-height: 640px !important;
+  padding: 22px 30px 28px !important;
+  border-radius: 26px !important;
+  background:
+    radial-gradient(circle at 50% 15%, rgba(73, 213, 238, 0.18), transparent 36%),
+    radial-gradient(circle at 90% 82%, rgba(93, 226, 189, 0.08), transparent 24%),
+    linear-gradient(150deg, rgba(4, 27, 52, 0.95), rgba(5, 58, 88, 0.88)) !important;
+  box-shadow:
+    0 34px 78px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+.vph2-hero-orbit {
+  min-height: 300px !important;
+  padding: 0 !important;
+}
+
+.vph2-hero-orbit img {
+  width: clamp(275px, 22vw, 350px) !important;
+  max-height: 350px !important;
+}
+
+.vph2-hero-orbit-copy {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  align-content: start !important;
+  width: 100% !important;
+  max-width: 540px !important;
+  margin: 0 auto !important;
+  text-align: left !important;
+}
+
+.vph2-hero-orbit-copy > span {
+  margin-bottom: 8px !important;
+}
+
+.vph2-hero-orbit-copy h2 {
+  max-width: 520px !important;
+  margin: 0 0 10px !important;
+  font-size: clamp(1.7rem, 2vw, 2.35rem) !important;
+  line-height: 1.08 !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-orbit-copy p {
+  max-width: 520px !important;
+  margin: 0 0 16px !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+}
+
+.vph2-hero-orbit-copy > div {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+}
+
+.vph2-hero-orbit-copy b {
+  min-width: 0 !important;
+  min-height: 46px !important;
+  padding: 10px 12px !important;
+  white-space: normal !important;
+}
+
+/* Proof strip is in document flow, so no overlap or clipped labels. */
+.vph2-proof {
+  position: relative !important;
+  z-index: 3 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(1440px, calc(100% - 80px)) !important;
+  margin: 0 auto !important;
+  border-top: 1px solid rgba(112, 218, 240, 0.24) !important;
+}
+
+.vph2-proof div {
+  min-width: 0 !important;
+  min-height: 76px !important;
+  padding: 12px 15px !important;
+  line-height: 1.35 !important;
+}
+
+.vph2-proof div:last-child {
+  border-right: 0 !important;
+}
+
+/* Large desktop tightening */
+@media (min-width: 1501px) {
+  .vph2-hero-grid {
+    grid-template-columns: minmax(0, 1.22fr) minmax(500px, 0.78fr) !important;
+  }
+}
+
+/* Standard laptop and browser zoom resilience */
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero {
+    padding-top: 52px !important;
+  }
+
+  .vph2-hero-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(390px, 0.88fr) !important;
+    gap: 32px !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(3.15rem, 4.7vw, 4.7rem) !important;
+  }
+
+  .vph2-hero-orbit-card {
+    grid-template-rows: 250px auto !important;
+    min-height: 565px !important;
+    padding: 18px 24px 24px !important;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 250px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(235px, 21vw, 295px) !important;
+  }
+
+  .vph2-hero-orbit-copy h2 {
+    font-size: clamp(1.55rem, 1.8vw, 2rem) !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero {
+    padding-top: 50px !important;
+  }
+
+  .vph2-hero-grid {
+    grid-template-columns: 1fr !important;
+    padding-bottom: 28px !important;
+  }
+
+  .vph2-hero-orbit-card {
+    grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.2fr) !important;
+    grid-template-rows: auto !important;
+    min-height: 0 !important;
+    padding: 22px !important;
+  }
+
+  .vph2-hero-orbit,
+  .vph2-hero-orbit-card {
+    min-height: 260px !important;
+  }
+
+  .vph2-proof {
+    width: min(100% - 48px, 1440px) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero {
+    padding-top: 42px !important;
+  }
+
+  .vph2-hero-grid {
+    padding-bottom: 24px !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem) !important;
+  }
+
+  .vph2-hero-orbit-card {
+    display: none !important;
+  }
+
+  .vph2-proof {
+    width: calc(100% - 28px) !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* V PILOT FINAL PREMIUM HOME HERO END */
+/* V PILOT SIMPLE HERO ORBIT START */
+
+/* Let the branded animation become the primary right-side articulation. */
+.vph2-hero-orbit-card {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: minmax(360px, 1fr) auto !important;
+  place-items: center !important;
+  align-content: center !important;
+  min-height: 640px !important;
+  padding: 28px 32px 34px !important;
+  text-align: center !important;
+  background:
+    radial-gradient(circle at 50% 36%, rgba(65, 211, 237, 0.18), transparent 35%),
+    radial-gradient(circle at 82% 84%, rgba(84, 220, 180, 0.08), transparent 25%),
+    linear-gradient(150deg, rgba(3, 25, 49, 0.96), rgba(5, 57, 87, 0.9)) !important;
+}
+
+.vph2-hero-orbit {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  min-height: 360px !important;
+  padding: 0 !important;
+}
+
+.vph2-hero-orbit img {
+  width: clamp(330px, 27vw, 470px) !important;
+  max-width: 100% !important;
+  max-height: 470px !important;
+  filter:
+    saturate(1.045)
+    contrast(1.025)
+    drop-shadow(0 28px 42px rgba(0, 15, 34, 0.28)) !important;
+}
+
+.vph2-hero-orbit-copy--simple {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  width: min(100%, 520px) !important;
+  max-width: 520px !important;
+  margin: -4px auto 0 !important;
+  text-align: center !important;
+}
+
+.vph2-hero-orbit-copy--simple > span {
+  color: #68e1f2 !important;
+  font-size: 10px !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.17em !important;
+}
+
+.vph2-hero-orbit-copy--simple h2 {
+  max-width: 500px !important;
+  margin: 10px 0 10px !important;
+  color: #ffffff !important;
+  font-size: clamp(1.75rem, 2.1vw, 2.55rem) !important;
+  line-height: 1.06 !important;
+  letter-spacing: -0.025em !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-orbit-copy--simple p {
+  max-width: 470px !important;
+  margin: 0 !important;
+  color: #bdd2df !important;
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  text-wrap: balance;
+}
+
+/* Remove all legacy capability tiles from this simplified state. */
+.vph2-hero-orbit-copy--simple > div,
+.vph2-hero-orbit-copy--simple b {
+  display: none !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero-orbit-card {
+    grid-template-rows: minmax(300px, 1fr) auto !important;
+    min-height: 565px !important;
+    padding: 22px 26px 28px !important;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 300px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(275px, 24vw, 365px) !important;
+    max-height: 365px !important;
+  }
+
+  .vph2-hero-orbit-copy--simple h2 {
+    font-size: clamp(1.55rem, 1.9vw, 2.1rem) !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero-orbit-card {
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr) !important;
+    grid-template-rows: auto !important;
+    min-height: 0 !important;
+    gap: 18px !important;
+  }
+
+  .vph2-hero-orbit,
+  .vph2-hero-orbit-card {
+    min-height: 280px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(240px, 35vw, 325px) !important;
+  }
+
+  .vph2-hero-orbit-copy--simple {
+    justify-items: start !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero-orbit-card {
+    display: none !important;
+  }
+}
+
+/* V PILOT SIMPLE HERO ORBIT END */
+/* V PILOT ENTERPRISE HERO ORBIT START */
+
+/* Balanced enterprise panel: enlarge the visual and remove unused upper space. */
+.vph2-hero-orbit-card {
+  grid-template-rows: minmax(415px, 1fr) auto !important;
+  min-height: 640px !important;
+  padding: 18px 30px 32px !important;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(86, 222, 241, 0.22), transparent 38%),
+    radial-gradient(circle at 84% 84%, rgba(84, 220, 180, 0.09), transparent 26%),
+    linear-gradient(145deg, rgba(2, 23, 45, 0.97), rgba(5, 58, 88, 0.93)) !important;
+  border: 1px solid rgba(104, 222, 241, 0.25) !important;
+  box-shadow:
+    0 36px 84px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.065),
+    inset 0 -30px 70px rgba(0, 15, 32, 0.1) !important;
+}
+
+/* Center the entire artwork in a larger visual stage. */
+.vph2-hero-orbit {
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  min-height: 415px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.vph2-hero-orbit::before {
+  content: "";
+  position: absolute;
+  width: min(480px, 88%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(50, 193, 229, 0.10), transparent 67%);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.vph2-hero-orbit img {
+  position: relative !important;
+  z-index: 2 !important;
+  width: clamp(405px, 31vw, 540px) !important;
+  max-width: 96% !important;
+  max-height: 540px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  filter:
+    saturate(1.055)
+    contrast(1.035)
+    drop-shadow(0 30px 42px rgba(0, 13, 31, 0.30))
+    drop-shadow(0 0 32px rgba(34, 197, 231, 0.08)) !important;
+}
+
+/* Treat the title as a restrained visual caption. */
+.vph2-hero-orbit-copy--simple {
+  width: min(100%, 560px) !important;
+  max-width: 560px !important;
+  margin: -10px auto 0 !important;
+  padding-top: 4px !important;
+}
+
+.vph2-hero-orbit-copy--simple > span {
+  font-size: 9px !important;
+  letter-spacing: 0.18em !important;
+}
+
+.vph2-hero-orbit-copy--simple h2 {
+  margin: 8px 0 8px !important;
+  font-size: clamp(1.65rem, 1.9vw, 2.18rem) !important;
+  line-height: 1.05 !important;
+}
+
+.vph2-hero-orbit-copy--simple p {
+  max-width: 510px !important;
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* Large desktop */
+@media (min-width: 1501px) {
+  .vph2-hero-orbit-card {
+    grid-template-rows: minmax(440px, 1fr) auto !important;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 440px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(455px, 29vw, 565px) !important;
+    max-height: 565px !important;
+  }
+}
+
+/* Standard laptop */
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero-orbit-card {
+    grid-template-rows: minmax(350px, 1fr) auto !important;
+    min-height: 565px !important;
+    padding: 15px 25px 25px !important;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 350px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(335px, 29vw, 430px) !important;
+    max-height: 430px !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .vph2-hero-orbit-card {
+    grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.05fr) !important;
+    grid-template-rows: auto !important;
+    min-height: 330px !important;
+    padding: 20px 24px !important;
+  }
+
+  .vph2-hero-orbit {
+    min-height: 300px !important;
+  }
+
+  .vph2-hero-orbit img {
+    width: clamp(285px, 39vw, 365px) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero-orbit-card {
+    display: none !important;
+  }
+}
+
+/* V PILOT ENTERPRISE HERO ORBIT END */
+/* V PILOT 3D COMMAND ORBIT START */
+
+/* A bounded command-stage gives the transparent SVG convincing depth. */
+.vph2-command-orbit {
+  position: relative !important;
+  isolation: isolate !important;
+  perspective: 1100px !important;
+  transform-style: preserve-3d !important;
+}
+
+.vph2-command-orbit__halo,
+.vph2-command-orbit__plate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vph2-command-orbit__halo {
+  z-index: 0;
+  width: min(520px, 92%);
+  aspect-ratio: 1;
+  background:
+    radial-gradient(circle, rgba(255,255,255,.13) 0 15%, rgba(34,197,231,.16) 28%, rgba(8,126,235,.08) 48%, transparent 70%);
+  filter: blur(12px);
+  transform: translate(-50%, -50%) translateZ(-70px) scale(.96);
+  animation: vph2CommandHalo 5.6s ease-in-out infinite;
+}
+
+.vph2-command-orbit__plate {
+  z-index: 1;
+  width: min(445px, 80%);
+  aspect-ratio: 1;
+  border: 1px solid rgba(107,225,241,.14);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.01)),
+    radial-gradient(circle at 35% 26%, rgba(255,255,255,.09), transparent 42%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    inset 0 -25px 55px rgba(1,17,35,.2),
+    0 34px 65px rgba(0,13,30,.22);
+  transform: translate(-50%, -47%) rotateX(62deg) translateZ(-34px);
+  animation: vph2CommandPlate 8s ease-in-out infinite;
+}
+
+.vph2-command-orbit img {
+  z-index: 3 !important;
+  width: clamp(430px, 33vw, 590px) !important;
+  max-width: 98% !important;
+  max-height: 590px !important;
+  transform-origin: 50% 52% !important;
+  transform: rotateX(2deg) rotateY(-2deg) translateZ(32px) !important;
+  will-change: transform, filter;
+  filter:
+    saturate(1.08)
+    contrast(1.045)
+    drop-shadow(0 36px 42px rgba(0,10,25,.36))
+    drop-shadow(0 8px 18px rgba(36,196,229,.12)) !important;
+  animation: vph2CommandFloat 7.2s cubic-bezier(.45,0,.55,1) infinite !important;
+}
+
+/* Glass edge and sight rings reinforce the command-center narration. */
+.vph2-command-orbit::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  width: min(470px, 84%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px dashed rgba(91,216,239,.13);
+  box-shadow: 0 0 0 24px rgba(31,178,220,.025), 0 0 0 54px rgba(31,178,220,.018);
+  transform: translate(-50%, -50%) translateZ(-15px);
+  pointer-events: none;
+}
+
+@keyframes vph2CommandFloat {
+  0%, 100% { transform: rotateX(2deg) rotateY(-2deg) translateY(0) translateZ(32px) scale(1); }
+  50% { transform: rotateX(-1deg) rotateY(2deg) translateY(-9px) translateZ(44px) scale(1.018); }
+}
+
+@keyframes vph2CommandPlate {
+  0%, 100% { transform: translate(-50%, -47%) rotateX(62deg) translateZ(-34px) scale(1); opacity: .76; }
+  50% { transform: translate(-50%, -46%) rotateX(60deg) translateZ(-28px) scale(1.025); opacity: .92; }
+}
+
+@keyframes vph2CommandHalo {
+  0%, 100% { opacity: .68; transform: translate(-50%, -50%) translateZ(-70px) scale(.94); }
+  50% { opacity: 1; transform: translate(-50%, -50%) translateZ(-62px) scale(1.04); }
+}
+
+/* Caption remains restrained so the 3D visual tells the story. */
+.vph2-hero-orbit-copy--simple {
+  position: relative !important;
+  z-index: 5 !important;
+  margin-top: -24px !important;
+}
+
+.vph2-hero-orbit-copy--simple h2 {
+  font-size: clamp(1.52rem, 1.75vw, 2rem) !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-command-orbit img {
+    width: clamp(360px, 31vw, 470px) !important;
+    max-height: 470px !important;
+  }
+
+  .vph2-command-orbit__halo { width: min(430px, 92%); }
+  .vph2-command-orbit__plate { width: min(375px, 80%); }
+  .vph2-command-orbit::after { width: min(395px, 84%); }
+}
+
+@media (max-width: 1100px) {
+  .vph2-command-orbit img {
+    width: clamp(300px, 41vw, 390px) !important;
+  }
+
+  .vph2-command-orbit__plate {
+    transform: translate(-50%, -47%) rotateX(64deg) translateZ(-24px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vph2-command-orbit img,
+  .vph2-command-orbit__halo,
+  .vph2-command-orbit__plate {
+    animation: none !important;
+  }
+
+  .vph2-command-orbit img {
+    transform: translateZ(24px) !important;
+  }
+}
+
+/* V PILOT 3D COMMAND ORBIT END */
+/* V PILOT CLEAN TRANSPARENT HERO ORBIT START */
+
+/* Remove the artificial 3D stage. The approved SVG supplies its own depth. */
+.vph2-command-orbit__halo,
+.vph2-command-orbit__plate,
+.vph2-command-orbit::after,
+.vph2-clean-orbit::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Make the right side a transparent visual field rather than a heavy card. */
+.vph2-hero-orbit-card {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: minmax(470px, 1fr) auto !important;
+  place-items: center !important;
+  align-content: center !important;
+  min-height: 640px !important;
+  padding: 12px 18px 30px !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.vph2-hero-orbit-card::before,
+.vph2-hero-orbit-card::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 44% !important;
+  pointer-events: none !important;
+  border-radius: 50% !important;
+}
+
+.vph2-hero-orbit-card::before {
+  width: min(590px, 92%) !important;
+  aspect-ratio: 1 !important;
+  transform: translate(-50%, -50%) !important;
+  border: 1px solid rgba(91, 216, 239, 0.08) !important;
+  background: radial-gradient(circle, rgba(35, 194, 227, 0.10), transparent 67%) !important;
+  filter: blur(2px) !important;
+}
+
+.vph2-hero-orbit-card::after {
+  width: min(470px, 75%) !important;
+  aspect-ratio: 1 !important;
+  transform: translate(-50%, -50%) !important;
+  border: 1px dashed rgba(91, 216, 239, 0.10) !important;
+  background: transparent !important;
+}
+
+.vph2-clean-orbit {
+  position: relative !important;
+  z-index: 2 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  min-height: 470px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  perspective: none !important;
+  transform-style: flat !important;
+}
+
+.vph2-clean-orbit img,
+.vph2-command-orbit img {
+  position: relative !important;
+  z-index: 3 !important;
+  display: block !important;
+  width: clamp(470px, 37vw, 650px) !important;
+  max-width: 98% !important;
+  max-height: 650px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  animation: none !important;
+  transform: none !important;
+  filter:
+    saturate(1.035)
+    contrast(1.02)
+    drop-shadow(0 28px 38px rgba(0, 14, 31, 0.26)) !important;
+}
+
+/* The SVG itself continues its internal orbit, pulse and sheen animations. */
+.vph2-hero-orbit-copy--simple {
+  position: relative !important;
+  z-index: 4 !important;
+  width: min(100%, 540px) !important;
+  max-width: 540px !important;
+  margin: -34px auto 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.vph2-hero-orbit-copy--simple > span {
+  display: none !important;
+}
+
+.vph2-hero-orbit-copy--simple h2 {
+  margin: 0 0 9px !important;
+  color: #ffffff !important;
+  font-size: clamp(1.7rem, 1.9vw, 2.15rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.025em !important;
+}
+
+.vph2-hero-orbit-copy--simple p {
+  max-width: 500px !important;
+  margin: 0 auto !important;
+  color: #bcd2df !important;
+  font-size: 11.75px !important;
+  line-height: 1.55 !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero-orbit-card {
+    grid-template-rows: minmax(385px, 1fr) auto !important;
+    min-height: 565px !important;
+  }
+
+  .vph2-clean-orbit {
+    min-height: 385px !important;
+  }
+
+  .vph2-clean-orbit img,
+  .vph2-command-orbit img {
+    width: clamp(390px, 35vw, 520px) !important;
+    max-height: 520px !important;
+  }
+
+  .vph2-hero-orbit-card::before { width: min(500px, 92%) !important; }
+  .vph2-hero-orbit-card::after { width: min(395px, 75%) !important; }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero-orbit-card {
+    grid-template-columns: minmax(310px, 0.95fr) minmax(0, 1.05fr) !important;
+    grid-template-rows: auto !important;
+    min-height: 340px !important;
+    padding: 16px !important;
+  }
+
+  .vph2-clean-orbit {
+    min-height: 310px !important;
+  }
+
+  .vph2-clean-orbit img,
+  .vph2-command-orbit img {
+    width: clamp(310px, 43vw, 405px) !important;
+  }
+
+  .vph2-hero-orbit-copy--simple {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero-orbit-card {
+    display: none !important;
+  }
+}
+
+/* V PILOT CLEAN TRANSPARENT HERO ORBIT END */
+/* V PILOT HERO COMMAND ORBIT START */
+
+.vph2-command-visual {
+  position: relative !important;
+  display: grid !important;
+  grid-template-rows: minmax(430px, 1fr) auto !important;
+  align-content: center !important;
+  min-height: 650px !important;
+  padding: 18px 22px 28px !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.vph2-command-visual__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 430px;
+  isolation: isolate;
+}
+
+.vph2-command-visual__stage::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  width: min(620px, 95%);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(23, 172, 224, .16) 0, rgba(7, 71, 120, .07) 42%, transparent 70%);
+  filter: blur(1px);
+}
+
+.vph2-command-visual__orbit {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: clamp(410px, 31vw, 560px);
+  max-width: 92%;
+  height: auto;
+  object-fit: contain;
+  transform: none !important;
+  filter: saturate(1.055) contrast(1.025) drop-shadow(0 28px 40px rgba(0, 12, 29, .30));
+}
+
+.vph2-command-visual__arc {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.vph2-command-visual__arc--outer {
+  width: min(555px, 88%);
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(85, 214, 239, .12);
+  box-shadow: 0 0 0 25px rgba(30, 181, 220, .025), 0 0 0 52px rgba(30, 181, 220, .015);
+}
+
+.vph2-command-visual__arc--inner {
+  width: min(405px, 66%);
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(85, 214, 239, .14);
+}
+
+.vph2-command-label {
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  gap: 2px;
+  min-width: 112px;
+  padding: 8px 11px;
+  border: 1px solid rgba(108, 222, 241, .18);
+  border-radius: 9px;
+  background: rgba(3, 31, 57, .72);
+  box-shadow: 0 10px 24px rgba(0, 17, 36, .15);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+}
+
+.vph2-command-label b { font-size: 10.5px; line-height: 1.12; }
+.vph2-command-label small { color: #75dff0; font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
+.vph2-command-label--compass { top: 2%; left: 50%; transform: translateX(-50%); }
+.vph2-command-label--art { top: 33%; left: 0; }
+.vph2-command-label--vigil { top: 33%; right: 0; }
+.vph2-command-label--custodian { left: 9%; bottom: 10%; }
+.vph2-command-label--phoenix { right: 9%; bottom: 10%; }
+
+.vph2-command-visual__lifecycle {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: -2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 13px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(103, 223, 240, .18);
+  border-radius: 999px;
+  background: rgba(2, 29, 53, .78);
+  color: #67dff0;
+  font-size: 7.5px;
+  font-weight: 850;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+}
+
+.vph2-command-visual__lifecycle i { width: 3px; height: 3px; border-radius: 50%; background: #5de2bd; }
+
+.vph2-command-visual__caption {
+  position: relative;
+  z-index: 7;
+  width: min(100%, 570px);
+  margin: 16px auto 0;
+  text-align: center;
+}
+
+.vph2-command-visual__caption > span {
+  color: #67dff0;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .17em;
+}
+
+.vph2-command-visual__caption h2 {
+  margin: 8px auto 8px;
+  max-width: 560px;
+  color: #fff;
+  font-size: clamp(1.62rem, 1.85vw, 2.05rem);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+.vph2-command-visual__caption p {
+  max-width: 545px;
+  margin: 0 auto;
+  color: #bdd2df;
+  font-size: 11px;
+  line-height: 1.52;
+  text-wrap: balance;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-command-visual { grid-template-rows: minmax(360px, 1fr) auto !important; min-height: 570px !important; padding: 16px 18px 24px !important; }
+  .vph2-command-visual__stage { min-height: 360px; }
+  .vph2-command-visual__orbit { width: clamp(340px, 29vw, 450px); }
+  .vph2-command-label { min-width: 96px; padding: 6px 8px; }
+  .vph2-command-label b { font-size: 9px; }
+  .vph2-command-label small { font-size: 7px; }
+  .vph2-command-label--art { left: -2%; }
+  .vph2-command-label--vigil { right: -2%; }
+}
+
+@media (max-width: 1100px) {
+  .vph2-command-visual { grid-template-columns: minmax(330px, .95fr) minmax(0, 1.05fr) !important; grid-template-rows: auto !important; min-height: 350px !important; gap: 20px; }
+  .vph2-command-visual__stage { min-height: 320px; }
+  .vph2-command-visual__orbit { width: clamp(300px, 42vw, 380px); }
+  .vph2-command-label { display: none; }
+  .vph2-command-visual__lifecycle { bottom: -8px; }
+  .vph2-command-visual__caption { margin: 0; text-align: left; }
+}
+
+@media (max-width: 700px) {
+  .vph2-command-visual { display: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vph2-command-visual__orbit { animation: none !important; }
+}
+
+/* V PILOT HERO COMMAND ORBIT END */
+/* V PILOT FINAL LOCKED HERO START */
+
+/* Lock the hero to a balanced two-column composition. */
+.vph2-hero {
+  min-height: 730px !important;
+  padding: 62px 0 0 !important;
+}
+
+.vph2-hero-grid {
+  grid-template-columns: minmax(0, 1.18fr) minmax(430px, .82fr) !important;
+  gap: clamp(42px, 4.2vw, 74px) !important;
+  align-items: center !important;
+  padding-bottom: 34px !important;
+}
+
+/* Completely reset all previous right-panel/card treatments. */
+.vph2-final-visual {
+  position: relative !important;
+  align-self: center !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  grid-template-rows: minmax(430px, 1fr) auto !important;
+  place-items: center !important;
+  align-content: center !important;
+  min-width: 0 !important;
+  min-height: 610px !important;
+  margin: 0 !important;
+  padding: 12px 8px 24px !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  transform: none !important;
+}
+
+.vph2-final-visual::before,
+.vph2-final-visual::after,
+.vph2-final-visual .vph2-command-label,
+.vph2-final-visual .vph2-command-visual__lifecycle,
+.vph2-final-visual .vph2-command-orbit__halo,
+.vph2-final-visual .vph2-command-orbit__plate {
+  content: none !important;
+  display: none !important;
+}
+
+.vph2-final-visual__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 430px;
+  isolation: isolate;
+}
+
+.vph2-final-visual__stage::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  width: min(570px, 94%);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(40, 194, 230, .14) 0, rgba(8, 102, 161, .05) 46%, transparent 70%);
+  pointer-events: none;
+}
+
+.vph2-final-visual__ring {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.vph2-final-visual__ring--outer {
+  width: min(530px, 88%);
+  border: 1px solid rgba(88, 214, 239, .10);
+}
+
+.vph2-final-visual__ring--inner {
+  width: min(420px, 70%);
+  border: 1px dashed rgba(88, 214, 239, .11);
+}
+
+.vph2-final-visual__orbit {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: clamp(430px, 34vw, 590px) !important;
+  max-width: 96% !important;
+  height: auto !important;
+  max-height: 590px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  animation: none !important;
+  filter: saturate(1.045) contrast(1.025) drop-shadow(0 30px 40px rgba(0, 13, 30, .28)) !important;
+}
+
+.vph2-final-visual__caption {
+  position: relative;
+  z-index: 4;
+  width: min(100%, 590px);
+  margin: -26px auto 0;
+  text-align: center;
+}
+
+.vph2-final-visual__caption span {
+  color: #6fe1f1;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .17em;
+}
+
+.vph2-final-visual__caption h2 {
+  max-width: 570px;
+  margin: 8px auto 0;
+  color: #fff;
+  font-size: clamp(1.72rem, 2vw, 2.25rem);
+  line-height: 1.07;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+}
+
+/* Keep the five proof items below the hero columns. */
+.vph2-proof {
+  position: relative !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(1440px, calc(100% - 80px)) !important;
+  margin: 0 auto !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero {
+    min-height: 660px !important;
+    padding-top: 48px !important;
+  }
+
+  .vph2-hero-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(390px, .88fr) !important;
+    gap: 34px !important;
+  }
+
+  .vph2-final-visual {
+    grid-template-rows: minmax(355px, 1fr) auto !important;
+    min-height: 545px !important;
+  }
+
+  .vph2-final-visual__stage {
+    min-height: 355px;
+  }
+
+  .vph2-final-visual__orbit {
+    width: clamp(350px, 31vw, 465px) !important;
+    max-height: 465px !important;
+  }
+
+  .vph2-final-visual__caption h2 {
+    font-size: clamp(1.5rem, 1.75vw, 1.95rem);
+  }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .vph2-final-visual {
+    grid-template-columns: minmax(310px, .95fr) minmax(0, 1.05fr) !important;
+    grid-template-rows: auto !important;
+    min-height: 330px !important;
+    gap: 18px;
+  }
+
+  .vph2-final-visual__stage {
+    min-height: 310px;
+  }
+
+  .vph2-final-visual__orbit {
+    width: clamp(300px, 42vw, 390px) !important;
+  }
+
+  .vph2-final-visual__caption {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-final-visual {
+    display: none !important;
+  }
+
+  .vph2-proof {
+    width: calc(100% - 28px) !important;
+  }
+}
+
+/* V PILOT FINAL LOCKED HERO END */
+/* V PILOT SINGLE-COLUMN HERO FINAL START */
+
+/* Final hero: one clear narrative column over the mountain composition. */
+.vph2-hero {
+  min-height: 720px !important;
+  padding: 78px 0 0 !important;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2, 15, 33, 0.98) 0%,
+      rgba(3, 25, 51, 0.91) 42%,
+      rgba(3, 28, 55, 0.48) 67%,
+      rgba(3, 28, 55, 0.10) 100%
+    ),
+    url('/assets/vpilot-home-mountain-hero.png') right center / cover no-repeat !important;
+}
+
+.vph2-hero-grid {
+  display: block !important;
+  width: min(1440px, calc(100% - 80px)) !important;
+  margin: 0 auto !important;
+  padding: 0 0 48px !important;
+}
+
+.vph2-hero-grid > div:first-child {
+  width: min(860px, 58vw) !important;
+  max-width: 860px !important;
+  padding: 12px 0 0 !important;
+}
+
+.vph2-hero h1 {
+  max-width: 900px !important;
+  margin: 16px 0 13px !important;
+  font-size: clamp(3.5rem, 5.15vw, 5.9rem) !important;
+  line-height: 0.97 !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-grid > div:first-child > strong {
+  display: block !important;
+  margin-bottom: 24px !important;
+  font-size: clamp(1.45rem, 1.85vw, 2.1rem) !important;
+}
+
+.vph2-hero-grid > div:first-child > p {
+  max-width: 830px !important;
+  margin: 0 0 15px !important;
+  color: #cad9e5 !important;
+  font-size: 15.5px !important;
+  line-height: 1.7 !important;
+}
+
+.vph2-actions {
+  margin-top: 25px !important;
+}
+
+.vph2-actions a {
+  min-height: 50px !important;
+}
+
+.vph2-five-d {
+  margin-top: 24px !important;
+}
+
+/* Ensure every historical right-side visual treatment stays removed. */
+.vph2-hero-orbit-card,
+.vph2-final-visual,
+.vph2-command-visual,
+.vph2-hero-orbit,
+.vph2-command-orbit,
+.vph2-clean-orbit {
+  display: none !important;
+}
+
+/* Proof items remain below the hero narrative and use the full shell. */
+.vph2-proof {
+  position: relative !important;
+  z-index: 3 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(1440px, calc(100% - 80px)) !important;
+  margin: 0 auto !important;
+}
+
+.vph2-proof div {
+  min-width: 0 !important;
+  min-height: 76px !important;
+  padding: 12px 15px !important;
+  line-height: 1.35 !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero {
+    min-height: 670px !important;
+    padding-top: 60px !important;
+  }
+
+  .vph2-hero-grid > div:first-child {
+    width: min(820px, 62vw) !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(3.2rem, 5vw, 4.9rem) !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero {
+    min-height: auto !important;
+    padding-top: 56px !important;
+  }
+
+  .vph2-hero-grid {
+    width: min(100% - 48px, 1440px) !important;
+  }
+
+  .vph2-hero-grid > div:first-child {
+    width: min(100%, 820px) !important;
+  }
+
+  .vph2-proof {
+    width: min(100% - 48px, 1440px) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero {
+    padding-top: 44px !important;
+  }
+
+  .vph2-hero-grid {
+    width: calc(100% - 28px) !important;
+    padding-bottom: 26px !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem) !important;
+  }
+
+  .vph2-actions {
+    display: grid !important;
+  }
+
+  .vph2-proof {
+    width: calc(100% - 28px) !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* V PILOT SINGLE-COLUMN HERO FINAL END */
+
+
+/* V PILOT 1536X1024 HERO ALIGNMENT START */
+.vph2-hero{
+  min-height:720px!important;
+  background-image:
+    linear-gradient(90deg,rgba(2,16,34,.72) 0%,rgba(3,24,49,.56) 37%,rgba(3,28,55,.18) 58%,rgba(3,28,55,0) 76%),
+    url('/assets/vpilot-home-mountain-hero.png')!important;
+  background-size:cover!important;
+  background-position:center center!important;
+  background-repeat:no-repeat!important;
+}
+.vph2-hero-grid{display:block!important;width:min(1440px,calc(100% - 96px))!important;margin:0 auto!important}
+.vph2-hero-grid>div:first-child{width:min(790px,51vw)!important;max-width:790px!important}
+.vph2-hero-orbit-card,.vph2-final-visual,.vph2-command-visual,.vph2-hero-orbit,.vph2-command-orbit,.vph2-clean-orbit{display:none!important}
+@media(min-width:1101px) and (max-width:1500px){.vph2-hero{min-height:680px!important;background-position:center center!important}.vph2-hero-grid{width:min(100% - 64px,1440px)!important}.vph2-hero-grid>div:first-child{width:min(720px,53vw)!important}}
+@media(max-width:1100px){.vph2-hero{min-height:auto!important;background-position:58% center!important}.vph2-hero-grid{width:min(100% - 48px,1440px)!important}.vph2-hero-grid>div:first-child{width:min(100%,780px)!important}}
+@media(max-width:700px){.vph2-hero{background-position:55% center!important}.vph2-hero-grid{width:calc(100% - 28px)!important}}
+/* V PILOT 1536X1024 HERO ALIGNMENT END */
+/* V PILOT RIGHT-ALIGNED HERO FINAL START */
+
+/*
+ * The 1536 x 1024 artwork is rendered at 100% hero height and anchored
+ * to the right. This prevents the embedded PUDICA architecture from
+ * drifting underneath the live text column.
+ */
+.vph2-hero {
+  position: relative !important;
+  min-height: 720px !important;
+  padding: 58px 0 0 !important;
+  overflow: hidden !important;
+  background-color: #03162c !important;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(2, 16, 34, 0.99) 0%,
+      rgba(2, 18, 38, 0.98) 28%,
+      rgba(3, 24, 49, 0.93) 39%,
+      rgba(3, 27, 53, 0.70) 47%,
+      rgba(3, 28, 55, 0.20) 57%,
+      rgba(3, 28, 55, 0.00) 66%
+    ),
+    url('/assets/vpilot-home-mountain-hero.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: auto 100% !important;
+  background-position: right center !important;
+}
+
+/* Keep the live narrative inside a fixed left-side safe zone. */
+.vph2-hero-grid {
+  position: relative !important;
+  z-index: 3 !important;
+  display: block !important;
+  width: min(1440px, calc(100% - 96px)) !important;
+  margin: 0 auto !important;
+  padding: 0 0 42px !important;
+}
+
+.vph2-hero-grid > div:first-child {
+  width: min(690px, 44vw) !important;
+  max-width: 690px !important;
+  min-width: 0 !important;
+  padding: 8px 0 0 !important;
+}
+
+.vph2-hero-grid > div:first-child > span {
+  display: block !important;
+  max-width: 660px !important;
+  color: #6fe1f1 !important;
+  font-size: 10.5px !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.16em !important;
+}
+
+.vph2-hero h1 {
+  max-width: 690px !important;
+  margin: 15px 0 14px !important;
+  font-size: clamp(3.2rem, 4.35vw, 5.05rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.05em !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-grid > div:first-child > strong {
+  display: block !important;
+  max-width: 680px !important;
+  margin: 0 0 23px !important;
+  color: #22c6ec !important;
+  font-size: clamp(1.38rem, 1.65vw, 1.9rem) !important;
+  line-height: 1.16 !important;
+}
+
+.vph2-hero-grid > div:first-child > p {
+  max-width: 680px !important;
+  margin: 0 0 14px !important;
+  color: #c8d8e4 !important;
+  font-size: 14.5px !important;
+  line-height: 1.68 !important;
+}
+
+.vph2-actions {
+  margin-top: 24px !important;
+}
+
+.vph2-actions a {
+  min-height: 50px !important;
+  padding-inline: 21px !important;
+}
+
+.vph2-five-d {
+  max-width: 675px !important;
+  margin-top: 22px !important;
+  font-size: 8.75px !important;
+}
+
+/* Historical foreground artwork must remain removed. */
+.vph2-hero-orbit-card,
+.vph2-final-visual,
+.vph2-command-visual,
+.vph2-hero-orbit,
+.vph2-command-orbit,
+.vph2-clean-orbit {
+  display: none !important;
+}
+
+/* Keep proof items beneath the content and above the lower fade. */
+.vph2-proof {
+  position: relative !important;
+  z-index: 4 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(1440px, calc(100% - 96px)) !important;
+  margin: 0 auto !important;
+  border-top: 1px solid rgba(107, 224, 241, 0.18) !important;
+}
+
+.vph2-proof div {
+  min-width: 0 !important;
+  min-height: 72px !important;
+  padding: 11px 13px !important;
+  background: rgba(2, 23, 45, 0.18) !important;
+  line-height: 1.28 !important;
+}
+
+/* 1366-1500px laptops: reserve a little more room for the artwork. */
+@media (min-width: 1251px) and (max-width: 1500px) {
+  .vph2-hero {
+    min-height: 680px !important;
+    padding-top: 48px !important;
+    background-size: auto 100% !important;
+    background-position: right center !important;
+  }
+
+  .vph2-hero-grid,
+  .vph2-proof {
+    width: min(100% - 64px, 1440px) !important;
+  }
+
+  .vph2-hero-grid > div:first-child {
+    width: min(630px, 45vw) !important;
+  }
+
+  .vph2-hero h1 {
+    max-width: 630px !important;
+    font-size: clamp(3rem, 4.5vw, 4.55rem) !important;
+  }
+
+  .vph2-hero-grid > div:first-child > p {
+    max-width: 620px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* 1101-1250px: prioritise readable live content over embedded labels. */
+@media (min-width: 1101px) and (max-width: 1250px) {
+  .vph2-hero {
+    min-height: 660px !important;
+    padding-top: 44px !important;
+    background-size: auto 100% !important;
+    background-position: right center !important;
+  }
+
+  .vph2-hero-grid,
+  .vph2-proof {
+    width: min(100% - 48px, 1440px) !important;
+  }
+
+  .vph2-hero-grid > div:first-child {
+    width: min(570px, 48vw) !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(2.8rem, 4.4vw, 4rem) !important;
+  }
+
+  .vph2-hero-grid > div:first-child > p {
+    font-size: 13.5px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vph2-hero {
+    min-height: auto !important;
+    padding-top: 52px !important;
+    background-size: cover !important;
+    background-position: 66% center !important;
+    background-image:
+      linear-gradient(90deg, rgba(2,16,34,.99), rgba(3,25,51,.94) 62%, rgba(3,28,55,.58)),
+      url('/assets/vpilot-home-mountain-hero.png') !important;
+  }
+
+  .vph2-hero-grid {
+    width: min(100% - 48px, 1440px) !important;
+  }
+
+  .vph2-hero-grid > div:first-child {
+    width: min(100%, 760px) !important;
+  }
+
+  .vph2-proof {
+    width: min(100% - 48px, 1440px) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero {
+    padding-top: 40px !important;
+    background-position: 61% center !important;
+  }
+
+  .vph2-hero-grid {
+    width: calc(100% - 28px) !important;
+    padding-bottom: 25px !important;
+  }
+
+  .vph2-hero h1 {
+    font-size: clamp(2.65rem, 11.5vw, 3.9rem) !important;
+  }
+
+  .vph2-actions {
+    display: grid !important;
+  }
+
+  .vph2-proof {
+    width: calc(100% - 28px) !important;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* V PILOT RIGHT-ALIGNED HERO FINAL END */
+

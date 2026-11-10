@@ -1,0 +1,491 @@
+.vph-header{position:sticky;top:0;z-index:1000;background:#fff;color:#0a315f}.vph-shell{width:min(1440px,calc(100% - 64px));margin:auto}.vph-utility{height:30px;background:#061d3a;color:#b9cee0;font-size:12px}.vph-utility-inner{height:100%;display:flex;justify-content:flex-end;align-items:center}.vph-utility nav{display:flex;gap:20px}.vph-utility a,.vph-utility button{color:inherit;text-decoration:none;background:none;border:0;font:inherit;display:inline-flex;gap:5px;align-items:center}.vph-primary{height:76px;border-bottom:1px solid #d7e5f1;box-shadow:0 8px 24px rgba(3,33,66,.06)}.vph-primary-inner{height:100%;display:grid;grid-template-columns:190px 1fr auto;gap:28px;align-items:center}.vph-logo{width:170px;display:flex}.vph-logo img,.vph-logo svg{width:100%;height:auto}.vph-nav{display:flex;justify-content:center;align-items:stretch;gap:30px;height:100%}.vph-nav>a,.vph-nav>button{position:relative;display:inline-flex;align-items:center;gap:5px;border:0;background:none;color:#0a315f;text-decoration:none;font:600 14px/1 Inter,sans-serif;padding:0 8px;min-height:44px}.vph-nav>a:hover,.vph-nav>button:hover,.vph-nav>button.is-active{color:#087eeb;background:rgba(8,126,235,.06)}.vph-nav>button.is-active:after{content:"";position:absolute;left:8px;right:8px;bottom:0;height:2px;background:linear-gradient(90deg,#087eeb,#14c1d8)}.vph-actions{display:flex;align-items:center;gap:10px}.vph-search{width:42px;height:42px;border:0;background:transparent;color:#0a315f;display:grid;place-items:center}.vph-pudica,.vph-briefing{height:44px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:8px;font-weight:750;font-size:13px;white-space:nowrap}.vph-pudica{color:#087eeb;padding:0 14px}.vph-briefing{gap:8px;padding:0 20px;color:#fff;background:#087eeb}.vph-menu-toggle,.vph-mobile-actions{display:none}.vph-search-panel{position:absolute;left:0;right:0;top:106px;background:#fff;border-bottom:1px solid #d7e5f1;box-shadow:0 18px 40px rgba(3,33,66,.12)}.vph-search-panel>div{height:72px;display:flex;align-items:center;gap:12px}.vph-search-panel input{width:100%;border:0;outline:0;font:500 16px Inter;color:#0a315f}
+@media(max-width:1240px){.vph-shell{width:min(100% - 36px,1440px)}.vph-primary-inner{grid-template-columns:155px 1fr auto;gap:16px}.vph-logo{width:145px}.vph-nav{gap:18px}.vph-briefing{padding:0 15px}.vph-briefing{font-size:0}.vph-briefing:before{content:"Book Briefing";font-size:13px}.vph-pudica{display:none}}
+@media(max-width:1000px){.vph-utility{display:none}.vph-primary{height:72px}.vph-primary-inner{grid-template-columns:1fr auto}.vph-nav{position:absolute;display:none;top:72px;left:0;right:0;height:auto;padding:18px;background:#fff;box-shadow:0 20px 40px rgba(3,33,66,.16);flex-direction:column;align-items:stretch}.vph-nav.is-open{display:flex}.vph-nav>a,.vph-nav>button{min-height:48px;justify-content:space-between}.vph-actions{display:none}.vph-menu-toggle{display:grid;place-items:center;width:44px;height:44px;border:0;background:none}.vph-mobile-actions{display:grid;gap:8px;border-top:1px solid #d7e5f1;padding-top:14px}.vph-mobile-actions a{padding:12px;color:#0a315f;text-decoration:none}.vph-mobile-briefing{background:#087eeb;color:#fff!important;border-radius:8px}.vph-search-panel{top:72px}}
+
+/* V PILOT FINAL CLEAN SINGLE-SURFACE HEADER START */
+.vph-header{position:sticky!important;top:0!important;z-index:1000!important;width:100%!important;max-width:100vw!important;background:rgba(255,255,255,.99)!important;border-bottom:1px solid rgba(8,62,115,.11)!important;box-shadow:0 9px 28px rgba(3,33,66,.08)!important;overflow:visible!important}.vph-utility{position:absolute!important;z-index:3!important;top:5px!important;right:0!important;left:0!important;height:24px!important;color:#315677!important;background:transparent!important;pointer-events:none}.vph-utility-inner{height:24px!important;display:flex!important;align-items:center!important;justify-content:flex-end!important}.vph-utility nav{display:flex!important;align-items:center!important;gap:0!important;pointer-events:auto}.vph-utility a,.vph-utility button{position:relative;min-height:24px!important;padding:0 10px!important;color:#315677!important;border:0!important;background:transparent!important;font-size:10.5px!important;font-weight:600!important;text-decoration:none}.vph-utility a+a:before,.vph-utility a+button:before{content:"";position:absolute;top:7px;left:0;width:1px;height:10px;background:rgba(8,62,115,.2)}.vph-primary{height:92px!important;border:0!important;background:transparent!important;box-shadow:none!important}.vph-shell{width:min(1440px,calc(100vw - 56px))!important;max-width:calc(100vw - 56px)!important}.vph-primary-inner{height:100%!important;display:grid!important;grid-template-columns:180px minmax(0,1fr) auto!important;align-items:end!important;gap:24px!important;padding-bottom:10px!important}.vph-logo{align-self:center!important;display:flex!important;width:168px!important;max-width:168px!important;margin-top:4px!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;filter:drop-shadow(0 4px 6px rgba(7,64,108,.09))!important}.vph-logo>*,.vph-logo img,.vph-logo svg{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;margin:0!important;background:transparent!important;box-shadow:none!important;transform:none!important}.vph-nav{align-self:end!important;display:flex!important;justify-content:flex-end!important;align-items:center!important;gap:clamp(12px,1.35vw,26px)!important;height:50px!important;min-width:0!important}.vph-nav>a,.vph-nav>button{position:relative;min-height:44px!important;padding:0 4px!important;color:#082f63!important;border:0!important;border-radius:6px;background:transparent!important;font-size:12px!important;font-weight:650!important;white-space:nowrap}.vph-nav>a:hover,.vph-nav>button:hover,.vph-nav>button.is-active{color:#087eeb!important;background:rgba(8,126,235,.055)!important}.vph-nav>button.is-active:after{right:4px!important;bottom:-10px!important;left:4px!important;height:2px!important;background:linear-gradient(90deg,#087eeb,#14c1d8)!important}.vph-actions{align-self:end!important;display:flex!important;align-items:center!important;gap:10px!important;height:50px!important;min-width:0!important}.vph-search,.vph-search-panel{display:none!important}.vph-pudica,.vph-briefing{display:inline-flex!important;align-items:center!important;justify-content:center!important;height:44px!important;min-height:44px!important;border-radius:7px!important;font-size:11.5px!important;font-weight:750!important;line-height:1!important;text-decoration:none!important;white-space:nowrap!important}.vph-pudica{min-width:124px;padding:0 16px!important;color:#087eeb!important;border:1px solid #087eeb!important;background:#fff!important}.vph-briefing{min-width:198px;max-width:none!important;padding:0 19px!important;color:#fff!important;border:1px solid transparent!important;background:linear-gradient(135deg,#087eeb,#075eb5)!important;box-shadow:0 9px 23px rgba(8,126,235,.21)!important;overflow:visible!important;text-overflow:clip!important}.vpm-mega-wrap{top:92px!important}
+@media(max-width:1500px){.vph-shell{width:calc(100vw - 36px)!important;max-width:calc(100vw - 36px)!important}.vph-primary-inner{grid-template-columns:148px minmax(0,1fr) auto!important;gap:14px!important}.vph-logo{width:144px!important;max-width:144px!important}.vph-nav{gap:8px!important}.vph-nav>a,.vph-nav>button{padding-inline:3px!important;font-size:11px!important}.vph-pudica{min-width:108px;padding-inline:12px!important;font-size:10.5px!important}.vph-briefing{min-width:170px;padding-inline:14px!important;font-size:10.5px!important}}
+@media(max-width:1220px){.vph-utility{display:none!important}.vph-primary{height:76px!important}.vph-primary-inner{align-items:center!important;grid-template-columns:140px minmax(0,1fr) auto!important;padding-bottom:0!important}.vph-logo{width:136px!important;max-width:136px!important}.vph-nav,.vph-actions{align-self:center!important}.vph-pudica{display:none!important}.vph-briefing{min-width:132px;font-size:0!important}.vph-briefing:before{content:"Book Briefing";font-size:11px}.vpm-mega-wrap{top:76px!important}}
+@media(max-width:1080px){.vph-primary{height:72px!important}.vph-primary-inner{grid-template-columns:1fr auto!important;padding-bottom:0!important}.vph-logo{width:150px!important;max-width:150px!important}.vph-nav{position:fixed!important;top:72px!important;right:0!important;bottom:0!important;left:0!important;display:none!important;height:auto!important;padding:20px!important;overflow-y:auto!important;background:#fff!important;box-shadow:0 20px 48px rgba(3,33,66,.16);flex-direction:column;align-items:stretch!important}.vph-nav.is-open{display:flex!important}.vph-nav>a,.vph-nav>button{min-height:48px;justify-content:space-between!important;padding-inline:12px!important;font-size:14px!important}.vph-actions{display:none!important}.vph-menu-toggle{display:grid!important;place-items:center;width:44px;height:44px;border:0;background:transparent}.vph-mobile-actions{display:grid!important}.vpm-mega-wrap{top:72px!important}}
+/* V PILOT FINAL CLEAN SINGLE-SURFACE HEADER END */
+
+/* V PILOT LOGO AND UTILITY FINALIZATION START */
+
+/* Compact utility links: Customer Support, Careers and Contact only. */
+.vph-utility {
+  top: 5px !important;
+  height: 22px !important;
+}
+
+.vph-utility-inner {
+  height: 22px !important;
+}
+
+.vph-utility a,
+.vph-utility button {
+  min-height: 22px !important;
+  padding: 0 9px !important;
+  font-size: 9.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  line-height: 1 !important;
+}
+
+.vph-utility a + a::before,
+.vph-utility a + button::before {
+  top: 6px !important;
+  height: 9px !important;
+}
+
+/* Larger, clean logo. The shield/compass detail remains sharp. */
+.vph-primary-inner {
+  grid-template-columns: 215px minmax(0, 1fr) auto !important;
+  gap: 26px !important;
+}
+
+.vph-logo {
+  width: 205px !important;
+  max-width: 205px !important;
+  margin: 2px 0 0 !important;
+  filter: drop-shadow(0 5px 7px rgba(7, 64, 108, 0.11)) !important;
+  transform: none !important;
+}
+
+.vph-logo > *,
+.vph-logo img,
+.vph-logo svg {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+/* Keep both CTAs aligned and fully visible. */
+.vph-actions {
+  gap: 10px !important;
+}
+
+.vph-pudica {
+  min-width: 126px !important;
+}
+
+.vph-briefing {
+  min-width: 198px !important;
+}
+
+@media (max-width: 1500px) {
+  .vph-primary-inner {
+    grid-template-columns: 178px minmax(0, 1fr) auto !important;
+    gap: 16px !important;
+  }
+
+  .vph-logo {
+    width: 170px !important;
+    max-width: 170px !important;
+  }
+
+  .vph-utility a,
+  .vph-utility button {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 1220px) {
+  .vph-primary-inner {
+    grid-template-columns: 152px minmax(0, 1fr) auto !important;
+  }
+
+  .vph-logo {
+    width: 146px !important;
+    max-width: 146px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vph-primary-inner {
+    grid-template-columns: 1fr auto !important;
+  }
+
+  .vph-logo {
+    width: 164px !important;
+    max-width: 164px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .vph-logo {
+    width: 152px !important;
+    max-width: 152px !important;
+  }
+}
+
+/* V PILOT LOGO AND UTILITY FINALIZATION END */
+
+/* =========================================================
+   V PILOT FINAL HEADER VERTICAL ALIGNMENT START
+   ========================================================= */
+
+/*
+ * Shorter premium header surface.
+ */
+.vph-primary {
+  height: 84px !important;
+}
+
+/*
+ * Keep the small utility navigation close to the main row.
+ */
+.vph-utility {
+  top: 4px !important;
+
+  height: 19px !important;
+}
+
+.vph-utility-inner {
+  height: 19px !important;
+}
+
+.vph-utility nav {
+  height: 19px !important;
+
+  align-items: center !important;
+}
+
+.vph-utility a,
+.vph-utility button {
+  min-height: 19px !important;
+
+  padding:
+    0
+    8px !important;
+
+  font-size: 8.5px !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.015em !important;
+}
+
+.vph-utility a + a::before,
+.vph-utility a + button::before {
+  top: 5px !important;
+
+  height: 8px !important;
+}
+
+/*
+ * Center the logo, navigation and CTAs in the header.
+ */
+.vph-primary-inner {
+  height: 84px !important;
+
+  align-items: center !important;
+
+  padding-top: 12px !important;
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Remove the earlier downward transform introduced by
+ * the Assurance Orbit stylesheet.
+ */
+.vph-nav,
+.vph-actions {
+  align-self: center !important;
+
+  height: 46px !important;
+
+  transform: translateY(4px) !important;
+}
+
+/*
+ * Keep menu labels centered inside their interaction area.
+ */
+.vph-nav > a,
+.vph-nav > button {
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 42px !important;
+
+  line-height: 1 !important;
+}
+
+/*
+ * Keep the active underline close to the selected item.
+ */
+.vph-nav > button.is-active::after {
+  bottom: -4px !important;
+}
+
+/*
+ * Keep both CTA buttons centered with the menu labels.
+ */
+.vph-pudica,
+.vph-briefing {
+  height: 44px !important;
+  min-height: 44px !important;
+}
+
+/*
+ * Logo remains vertically centered and visually dominant.
+ */
+.vph-logo {
+  align-self: center !important;
+
+  margin-top: 6px !important;
+  margin-bottom: 0 !important;
+}
+
+/*
+ * Mega menu must begin immediately below the adjusted header.
+ */
+.vpm-mega-wrap {
+  top: 84px !important;
+}
+
+/* =========================================================
+   MEDIUM DESKTOP
+   ========================================================= */
+
+@media (max-width: 1500px) and (min-width: 1221px) {
+  .vph-primary,
+  .vph-primary-inner {
+    height: 82px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 11px !important;
+  }
+
+  .vph-nav,
+  .vph-actions {
+    transform: translateY(3px) !important;
+  }
+
+  .vph-utility a,
+  .vph-utility button {
+    font-size: 8.25px !important;
+
+    padding-inline: 7px !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 82px !important;
+  }
+}
+
+/* =========================================================
+   COMPACT DESKTOP
+   ========================================================= */
+
+@media (max-width: 1220px) and (min-width: 1081px) {
+  .vph-primary,
+  .vph-primary-inner {
+    height: 76px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 0 !important;
+  }
+
+  .vph-nav,
+  .vph-actions {
+    height: 46px !important;
+
+    transform: none !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 76px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 1080px) {
+  .vph-primary,
+  .vph-primary-inner {
+    height: 72px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 0 !important;
+  }
+
+  .vph-nav,
+  .vph-actions {
+    transform: none !important;
+  }
+
+  .vph-nav {
+    top: 72px !important;
+
+    height: auto !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 72px !important;
+  }
+}
+
+/* =========================================================
+   V PILOT FINAL HEADER VERTICAL ALIGNMENT END
+   ========================================================= */
+
+
+/* V PILOT DEFINITIVE HEADER CENTERING START */
+
+/* One 86px header canvas. Utility links occupy a compact top-right rail. */
+.vph-header {
+  min-height: 86px !important;
+}
+
+.vph-primary,
+.vph-primary-inner {
+  height: 86px !important;
+}
+
+.vph-utility {
+  top: 4px !important;
+  height: 17px !important;
+}
+
+.vph-utility-inner,
+.vph-utility nav {
+  height: 17px !important;
+}
+
+.vph-utility a,
+.vph-utility button {
+  min-height: 17px !important;
+  padding: 0 7px !important;
+  font-size: 8px !important;
+  line-height: 1 !important;
+}
+
+.vph-utility a + a::before,
+.vph-utility a + button::before {
+  top: 4px !important;
+  height: 8px !important;
+}
+
+/* Center all primary-header columns on the same vertical axis. */
+.vph-primary-inner {
+  align-items: center !important;
+  padding-top: 11px !important;
+  padding-bottom: 0 !important;
+}
+
+.vph-logo,
+.vph-nav,
+.vph-actions {
+  align-self: center !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  transform: none !important;
+}
+
+/* The logo image has internal transparent canvas. Raise the lockup slightly. */
+.vph-logo {
+  position: relative !important;
+  top: -2px !important;
+}
+
+.vph-nav,
+.vph-actions {
+  height: 44px !important;
+}
+
+.vph-nav > a,
+.vph-nav > button,
+.vph-pudica,
+.vph-briefing {
+  min-height: 44px !important;
+  height: 44px !important;
+  align-items: center !important;
+}
+
+.vph-nav > button.is-active::after {
+  bottom: -3px !important;
+}
+
+/* Mega menu starts exactly where the header ends. */
+.vpm-mega-wrap {
+  top: 86px !important;
+}
+
+@media (max-width: 1500px) and (min-width: 1221px) {
+  .vph-header,
+  .vph-primary,
+  .vph-primary-inner {
+    height: 84px !important;
+    min-height: 84px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 10px !important;
+  }
+
+  .vph-utility a,
+  .vph-utility button {
+    font-size: 7.75px !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 84px !important;
+  }
+}
+
+@media (max-width: 1220px) and (min-width: 1081px) {
+  .vph-header,
+  .vph-primary,
+  .vph-primary-inner {
+    height: 76px !important;
+    min-height: 76px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 0 !important;
+  }
+
+  .vph-logo {
+    top: 0 !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 76px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vph-header,
+  .vph-primary,
+  .vph-primary-inner {
+    height: 72px !important;
+    min-height: 72px !important;
+  }
+
+  .vph-primary-inner {
+    padding-top: 0 !important;
+  }
+
+  .vph-logo {
+    top: 0 !important;
+  }
+
+  .vph-nav {
+    top: 72px !important;
+    height: auto !important;
+  }
+
+  .vpm-mega-wrap {
+    top: 72px !important;
+  }
+}
+
+/* V PILOT DEFINITIVE HEADER CENTERING END */

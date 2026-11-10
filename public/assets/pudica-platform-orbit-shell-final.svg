@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+<title id="title">PUDICA integrated platform orbit</title>
+<desc id="desc">The approved PUDICA pentagonal emblem is the stationary platform core, surrounded by six integrated cybersecurity solution domains.</desc>
+<defs>
+  <radialGradient id="ambient" cx="50%" cy="48%" r="56%">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.98"/>
+    <stop offset="0.58" stop-color="#eaf8ff" stop-opacity="0.57"/>
+    <stop offset="1" stop-color="#eaf8ff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="core" cx="35%" cy="25%" r="80%">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="0.62" stop-color="#f1faff"/>
+    <stop offset="1" stop-color="#d9effb"/>
+  </radialGradient>
+  <linearGradient id="brandRing" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#087EE8"/>
+    <stop offset="0.52" stop-color="#20C5E7"/>
+    <stop offset="1" stop-color="#58D62F"/>
+  </linearGradient>
+  <filter id="coreShadow" x="-60%" y="-60%" width="220%" height="240%">
+    <feDropShadow dx="0" dy="11" stdDeviation="10" flood-color="#063566" flood-opacity="0.20"/>
+  </filter>
+  <filter id="nodeShadow" x="-80%" y="-80%" width="260%" height="260%">
+    <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#063566" flood-opacity="0.18"/>
+  </filter>
+  <clipPath id="coreClip"><circle cx="210" cy="202" r="76"/></clipPath>
+  <style><![CDATA[
+    .node-bg { fill:#fff; fill-opacity:.97; stroke-width:1.2; }
+    .icon { fill:none; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
+    .reduced-static { transform-origin:210px 202px; }
+    .orbit-dash { animation: dashFlow 14s linear infinite; }
+    .signal-dot { transform-origin:210px 202px; animation: signalSpin 26s linear infinite; }
+    .core-pulse { transform-origin:210px 202px; animation: corePulse 4.8s ease-out infinite; }
+    .core-sheen { animation: coreSheen 7.5s ease-in-out infinite; }
+    @keyframes dashFlow { to { stroke-dashoffset:-96; } }
+    @keyframes signalSpin { to { transform:rotate(360deg); } }
+    @keyframes corePulse { 0%,100% { opacity:.08; transform:scale(.92); } 45% { opacity:.34; transform:scale(1.12); } }
+    @keyframes coreSheen { 0%,58% { opacity:0; transform:translateX(-140px) rotate(18deg); } 68% { opacity:.38; } 88%,100% { opacity:0; transform:translateX(170px) rotate(18deg); } }
+    @media (prefers-reduced-motion: reduce) { .orbit-dash,.signal-dot,.core-pulse,.core-sheen { animation:none !important; } }
+  ]]></style>
+</defs>
+
+<!-- Soft transparent atmosphere, no opaque gray disk -->
+<circle cx="210" cy="202" r="196" fill="url(#ambient)"/>
+<circle cx="210" cy="202" r="183" fill="none" stroke="#0B88DD" stroke-opacity="0.13"/>
+<circle class="static-ring" cx="210" cy="202" r="158" fill="none" stroke="url(#brandRing)" stroke-opacity="0.20" stroke-width="1.2" stroke-dasharray="4 8"/>
+<circle class="static-ring" cx="210" cy="202" r="121" fill="none" stroke="#20C5E7" stroke-opacity="0.16"/>
+
+<!-- Rotating domain system. SMIL avoids CSS transform/browser positioning errors. -->
+<g class="motion">
+  
+  <circle class="orbit-dash" cx="210" cy="202" r="158" fill="none" stroke="url(#brandRing)" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="4 8"/>
+
+  <!-- NativeTrust -->
+  <g transform="translate(210 44)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#13A875" stroke-opacity=".32"/>
+    <path class="icon" d="M18 7.8l7.5 3.2v5.7c0 5.4-3.2 8.4-7.5 10.8-4.3-2.4-7.5-5.4-7.5-10.8V11z" stroke="#13A875"/>
+    <path class="icon" d="M14.7 17.7l2.3 2.3 4.8-5.6" stroke="#13A875"/>
+  </g></g>
+
+  <!-- Remediation -->
+  <g transform="translate(347 123)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#087EE8" stroke-opacity=".32"/>
+    <path class="icon" d="M18 8.5l1.6 2.5 3-.2.6 2.8 2.7 1.4-1.3 2.7 1.3 2.7-2.7 1.4-.6 2.8-3-.2L18 27l-1.6-2.5-3 .2-.6-2.8-2.7-1.4 1.3-2.7-1.3-2.7 2.7-1.4.6-2.8 3 .2z" stroke="#087EE8"/>
+    <path class="icon" d="M14.5 18.7l2.3 2.3 4.8-5.6" stroke="#087EE8"/>
+  </g></g>
+
+  <!-- SecOps -->
+  <g transform="translate(347 281)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#6659DA" stroke-opacity=".32"/>
+    <circle cx="18" cy="18" r="2.3" fill="#6659DA"/><path class="icon" d="M18 18l5.8-6.8M11.2 25.5a10.5 10.5 0 011.5-15M24.8 25.5a10.5 10.5 0 00-1.5-15" stroke="#6659DA"/>
+  </g></g>
+
+  <!-- Resilience -->
+  <g transform="translate(210 360)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#58C82D" stroke-opacity=".32"/>
+    <path class="icon" d="M9.5 18a8.5 8.5 0 111.7 5.1M9.2 23.2l2.7.1-.2-2.7M15.3 18l1.9 1.9 3.8-4.7" stroke="#58C82D"/>
+  </g></g>
+
+  <!-- AppSec -->
+  <g transform="translate(73 281)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#18B9D8" stroke-opacity=".32"/>
+    <path class="icon" d="M13.5 12.5L8.8 18l4.7 5.5M22.5 12.5l4.7 5.5-4.7 5.5M19.8 9.5l-3.7 17" stroke="#18B9D8"/>
+  </g></g>
+
+  <!-- GRC -->
+  <g transform="translate(73 123)"><g transform="translate(-18 -18)" filter="url(#nodeShadow)">
+    <circle class="node-bg" cx="18" cy="18" r="17" stroke="#0A4F97" stroke-opacity=".32"/>
+    <path class="icon" d="M11.5 8.5h9.5l3.8 3.8v15.2H11.5zM21 8.5v4.7h4.7M14.5 18h7.5M14.5 22h6.5" stroke="#0A4F97"/>
+  </g></g>
+</g>
+
+<!-- Counter-rotating signal markers -->
+<g class="signal-dot">
+  <circle cx="210" cy="81" r="3.4" fill="#20C5E7"/>
+  <circle cx="331" cy="202" r="2.7" fill="#58D62F"/>
+  <circle cx="210" cy="323" r="3.4" fill="#20C5E7"/>
+  <circle cx="89" cy="202" r="2.7" fill="#087EE8"/>
+</g>
+
+<!-- Pulse -->
+<circle class="core-pulse" cx="210" cy="202" r="91" fill="none" stroke="url(#brandRing)" stroke-opacity="0.28" stroke-width="1.3"/>
+
+<!-- Stationary approved emblem core -->
+<g filter="url(#coreShadow)">
+  <circle cx="210" cy="202" r="84" fill="url(#core)" stroke="url(#brandRing)" stroke-opacity="0.38"/>
+  <circle cx="210" cy="202" r="75" fill="#fff" fill-opacity="0.78" stroke="#fff" stroke-opacity="0.92"/>
+  <circle cx="210" cy="202" r="77" fill="none" stroke="#fff" stroke-opacity="0.9"/>
+</g>
+
+<!-- Premium light sweep -->
+<g clip-path="url(#coreClip)" class="motion">
+  <rect class="core-sheen" x="91" y="111" width="34" height="185" rx="17" fill="#fff" opacity="0.38" transform="rotate(18 108 204)"/>
+</g>
+</svg>

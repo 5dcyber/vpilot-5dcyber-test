@@ -1,0 +1,519 @@
+﻿.vpl-page{color:#102f50;background:#fff}.vpl-shell{width:min(1280px,calc(100% - 48px));margin-inline:auto}.vpl-hero{padding:108px 0 56px;color:#fff;background:radial-gradient(circle at 85% 20%,rgba(18,169,232,.22),transparent 30%),linear-gradient(135deg,#061b36,#0a437b)}.vpl-hero span{color:#78def2;font-size:.7rem;font-weight:900;letter-spacing:.17em;text-transform:uppercase}.vpl-hero h1{margin:12px 0 10px;font:700 clamp(2.8rem,5vw,5rem)/1 "Space Grotesk",Inter,sans-serif;letter-spacing:-.045em}.vpl-hero p{max-width:780px;margin:0;color:#c8dce9;font-size:1.02rem;line-height:1.65}.vpl-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:24px;color:#aec6d9;font-size:.72rem}.vpl-meta i{width:4px;height:4px;border-radius:50%;background:#18bde7}.vpl-layout{display:grid;grid-template-columns:190px minmax(0,820px) 220px;gap:36px;padding-block:54px 76px;align-items:start}.vpl-toc,.vpl-rail{position:sticky;top:100px}.vpl-toc{display:grid;gap:4px;padding-right:20px;border-right:1px solid #dce7f2}.vpl-toc strong{margin-bottom:8px;color:#082f63;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em}.vpl-toc a{padding:6px 0;color:#58718b;font-size:.72rem;text-decoration:none}.vpl-toc a:hover{color:#087eeb}.vpl-content{min-width:0}.vpl-section{scroll-margin-top:100px;margin-bottom:50px}.vpl-section h2{margin:0 0 16px;color:#082f63;font:700 clamp(1.55rem,2.2vw,2.1rem)/1.2 "Space Grotesk",Inter,sans-serif}.vpl-section h3{margin:24px 0 8px;color:#0b5cab;font-size:1rem}.vpl-section p,.vpl-section li{color:#49627e;font-size:1rem;line-height:1.75}.vpl-section ul{padding-left:22px}.vpl-section a{color:#0875c9}.vpl-rail{display:grid;gap:12px}.vpl-rail>div,.vpl-rail>button,.vpl-rail>a{padding:15px;border:1px solid #dce7f2;border-radius:9px;background:#f7fbfe;color:#49627e;font-size:.72rem;text-decoration:none}.vpl-rail button,.vpl-rail>a{display:flex;align-items:center;gap:8px;cursor:pointer}.vpl-rail strong{color:#082f63}.vpl-rail p{margin:5px 0 0}.vpl-sources{display:grid;gap:8px}.vpl-sources a{display:flex;align-items:center;justify-content:space-between;color:#0875c9;text-decoration:none}.vpl-table{display:grid;margin:18px 0;border:1px solid #dce7f2;border-radius:10px;overflow:hidden}.vpl-table>div{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;padding:14px 16px;border-bottom:1px solid #dce7f2}.vpl-table>div:last-child{border-bottom:0}.vpl-table span{color:#58718b}.vpl-callout{padding:16px 18px;border-left:3px solid #18bde7;background:#eef8fd;color:#0b5cab;font-weight:750}.vpl-cookie-button{min-height:44px;padding:0 18px;color:#fff;border:0;border-radius:8px;background:#087eeb;font-weight:800;cursor:pointer}.vpl-trust{padding:40px 0;color:#fff;background:#061d3a}.vpl-trust>.vpl-shell{display:grid;grid-template-columns:42px 1fr;gap:16px}.vpl-trust svg{color:#18bde7}.vpl-trust h2{margin:0 0 5px}.vpl-trust p{margin:0;color:#b7cbe0}.vpl-trust div div{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:15px}.vpl-trust a{color:#d8ecf8;font-size:.75rem;text-decoration:none}@media(max-width:1050px){.vpl-layout{grid-template-columns:170px 1fr}.vpl-rail{position:static;grid-column:1/-1;grid-template-columns:repeat(3,1fr)}}@media(max-width:760px){.vpl-shell{width:min(100% - 28px,1280px)}.vpl-hero{padding-top:88px}.vpl-layout{display:block}.vpl-toc{position:static;margin-bottom:34px;padding:18px;border:1px solid #dce7f2;border-radius:10px}.vpl-rail{grid-template-columns:1fr;margin-top:30px}.vpl-table>div{grid-template-columns:1fr}.vpl-trust>.vpl-shell{grid-template-columns:1fr}}
+@media print{.vpl-toc,.vpl-rail,.vpl-trust{display:none}.vpl-layout{display:block}.vpl-hero{padding:20px 0;color:#000;background:#fff}.vpl-hero p,.vpl-meta{color:#333}}
+
+/* V PILOT LEGAL PAGE LAYERING FIX START */
+.vpl-page {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+.vpl-page > .vpl-hero {
+  position: relative !important;
+  inset: auto !important;
+  z-index: 1 !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 410px;
+  margin: 0 !important;
+  padding: 132px 0 64px !important;
+  transform: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.vpl-page > .vpl-hero .vpl-shell {
+  position: relative;
+  z-index: 2;
+}
+
+.vpl-page > .vpl-layout {
+  position: relative;
+  z-index: 2;
+  clear: both;
+  background: #ffffff;
+}
+
+.vpl-page .vpl-hero h1,
+.vpl-page .vpl-hero p,
+.vpl-page .vpl-meta {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+}
+
+@media (max-width: 760px) {
+  .vpl-page > .vpl-hero {
+    min-height: 360px;
+    padding: 108px 0 48px !important;
+  }
+}
+/* V PILOT LEGAL PAGE LAYERING FIX END */
+
+/* =========================================================
+   V PILOT LEGAL TRUST TO FOOTER ALIGNMENT START
+   ========================================================= */
+
+/*
+ * Remove residual spacing below the legal-page content.
+ */
+.vpl-page {
+  min-height: 0 !important;
+
+  margin:
+    0 !important;
+
+  padding:
+    0 !important;
+}
+
+.vpl-page > .vpl-layout {
+  margin-bottom:
+    0 !important;
+
+  padding-bottom:
+    58px !important;
+}
+
+/*
+ * Keep the Legal Trust contact panel compact and
+ * visually connected to the footer conversion band.
+ */
+.vpl-page > .vpl-trust {
+  position: relative;
+
+  z-index: 2;
+
+  margin:
+    0 !important;
+
+  padding:
+    34px
+    0
+    36px !important;
+
+  color:
+    #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 12% 20%,
+      rgba(18, 169, 232, 0.12),
+      transparent 27%
+    ),
+    linear-gradient(
+      110deg,
+      #061d3a 0%,
+      #07284b 56%,
+      #07345c 100%
+    ) !important;
+
+  border-bottom:
+    0 !important;
+
+  box-shadow:
+    none !important;
+}
+
+/*
+ * Thin transition rule between the trust panel
+ * and the conversion band.
+ */
+.vpl-page > .vpl-trust::after {
+  content: "";
+
+  position: absolute;
+
+  z-index: 3;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height:
+    3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0b5cab 0%,
+      #12a9e8 48%,
+      #18c7d9 74%,
+      #22a06b 100%
+    );
+}
+
+.vpl-trust > .vpl-shell {
+  align-items:
+    start;
+
+  gap:
+    18px;
+}
+
+.vpl-trust h2 {
+  margin:
+    0
+    0
+    10px !important;
+
+  font-size:
+    clamp(
+      1.65rem,
+      2.25vw,
+      2.25rem
+    );
+
+  line-height:
+    1.12;
+}
+
+.vpl-trust p {
+  max-width:
+    1260px;
+
+  margin:
+    0 !important;
+
+  color:
+    #b9cee0 !important;
+
+  font-size:
+    0.92rem;
+
+  line-height:
+    1.62;
+}
+
+.vpl-trust div div {
+  gap:
+    8px
+    26px !important;
+
+  margin-top:
+    16px !important;
+}
+
+.vpl-trust div div a {
+  color:
+    #d8edf8 !important;
+
+  font-size:
+    0.75rem !important;
+
+  line-height:
+    1.45;
+
+  transition:
+    color 180ms ease;
+}
+
+.vpl-trust div div a:hover,
+.vpl-trust div div a:focus-visible {
+  color:
+    #33c5f3 !important;
+}
+
+/*
+ * Remove spacing injected by global main or footer rules.
+ * The legal page is the direct child of <main>.
+ */
+main:has(> .vpl-page) {
+  min-height:
+    0 !important;
+
+  margin:
+    0 !important;
+
+  padding:
+    0 !important;
+
+  background:
+    #ffffff;
+}
+
+main:has(> .vpl-page) > .vpl-page {
+  margin-bottom:
+    0 !important;
+}
+
+/*
+ * The footer follows <main> in App.jsx.
+ */
+main:has(> .vpl-page) + .vpf-footer {
+  margin-top:
+    0 !important;
+
+  padding-top:
+    0 !important;
+
+  border-top:
+    0 !important;
+}
+
+/*
+ * Ensure the conversion band begins immediately.
+ */
+main:has(> .vpl-page) + .vpf-footer .vpf-conversion {
+  margin:
+    0 !important;
+
+  border-top:
+    0 !important;
+
+  background:
+    linear-gradient(
+      110deg,
+      #073467 0%,
+      #0a437b 58%,
+      #0b558f 100%
+    ) !important;
+}
+
+/*
+ * The footer already provides its own accent system.
+ * Avoid a second line at this exact page transition.
+ */
+main:has(> .vpl-page) + .vpf-footer .vpf-accent {
+  height:
+    0 !important;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .vpl-page > .vpl-trust {
+    padding:
+      32px
+      0
+      34px !important;
+  }
+
+  .vpl-trust p {
+    font-size:
+      0.88rem;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .vpl-page > .vpl-layout {
+    padding-bottom:
+      42px !important;
+  }
+
+  .vpl-page > .vpl-trust {
+    padding:
+      28px
+      0
+      30px !important;
+  }
+
+  .vpl-trust > .vpl-shell {
+    display:
+      grid !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      12px !important;
+
+    text-align:
+      left;
+  }
+
+  .vpl-trust h2 {
+    font-size:
+      1.65rem;
+  }
+
+  .vpl-trust p {
+    font-size:
+      0.86rem;
+  }
+
+  .vpl-trust div div {
+    display:
+      grid !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      9px !important;
+
+    margin-top:
+      15px !important;
+  }
+
+  .vpl-trust div div a {
+    min-height:
+      28px;
+
+    display:
+      inline-flex;
+
+    align-items:
+      center;
+
+    font-size:
+      0.73rem !important;
+  }
+}
+
+/* =========================================================
+   V PILOT LEGAL TRUST TO FOOTER ALIGNMENT END
+   ========================================================= */
+
+
+/* =========================================================
+   V PILOT LEGAL PAGE PREMIUM FOOTER TRANSITION START
+   ========================================================= */
+
+/*
+ * Legal pages already have a strong trust conversion panel:
+ * “Questions about this policy?”
+ *
+ * Hide the generic commercial conversion band only when the
+ * footer immediately follows a Legal & Trust page.
+ */
+main:has(> .vpl-page) + .vpf-footer > .vpf-conversion {
+  display: none !important;
+}
+
+/*
+ * Remove the generic footer accent because the Legal Trust
+ * panel already provides its own transition line.
+ */
+main:has(> .vpl-page) + .vpf-footer > .vpf-accent {
+  display: none !important;
+}
+
+/*
+ * Join the Legal Trust panel directly to the light
+ * navigation footer.
+ */
+main:has(> .vpl-page) + .vpf-footer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+}
+
+/*
+ * Give the light footer a clean ice-blue continuation.
+ */
+main:has(> .vpl-page) + .vpf-footer > .vpf-primary {
+  position: relative;
+
+  margin-top: 0 !important;
+
+  padding-top: 48px !important;
+
+  border-top: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at 8% 8%,
+      rgba(18, 169, 232, 0.08),
+      transparent 24%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff 0%,
+      #edf7fd 52%,
+      #f7fbff 100%
+    ) !important;
+}
+
+/*
+ * One premium transition line between the navy Legal Trust
+ * statement and the light navigation footer.
+ */
+main:has(> .vpl-page) + .vpf-footer > .vpf-primary::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0757a7 0%,
+      #12a9e8 48%,
+      #18c7d9 74%,
+      #22a06b 100%
+    );
+}
+
+/*
+ * Avoid duplicating the transition line defined on the
+ * Legal Trust panel itself.
+ */
+.vpl-page > .vpl-trust::after {
+  display: none !important;
+}
+
+/*
+ * Slightly compact the contact panel now that the commercial
+ * conversion band is removed.
+ */
+.vpl-page > .vpl-trust {
+  padding:
+    32px
+    0
+    34px !important;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  main:has(> .vpl-page) + .vpf-footer > .vpf-primary {
+    padding-top: 42px !important;
+  }
+
+  .vpl-page > .vpl-trust {
+    padding:
+      30px
+      0
+      32px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 760px) {
+  main:has(> .vpl-page) + .vpf-footer > .vpf-primary {
+    padding-top: 34px !important;
+  }
+
+  .vpl-page > .vpl-trust {
+    padding:
+      26px
+      0
+      28px !important;
+  }
+}
+
+/* =========================================================
+   V PILOT LEGAL PAGE PREMIUM FOOTER TRANSITION END
+   ========================================================= */
+

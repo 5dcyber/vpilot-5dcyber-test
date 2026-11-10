@@ -1,51 +1,113 @@
-import { useEffect, useRef, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+﻿import { useEffect, useRef, useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { ApprovedVPilotBrand } from "../VPilotBrand.jsx";
-import { megaMenus } from "../data/siteContent.js";
-import MegaMenu from "./MegaMenu.jsx";
+import EnterpriseMegaMenu from "./EnterpriseMegaMenu.jsx";
+import "./vpilot-enterprise-header.css";
 
-const menuKeys = ["company", "services", "solutions", "insights"];
+const navItems = [
+  { key: "company", label: "Company", menu: true },
+  { key: "platform", label: "Platform", to: "/platform" },
+  { key: "solutions", label: "Solutions", to: "/solutions", menu: true },
+  { key: "services", label: "Services", to: "/services", menu: true },
+  { key: "frameworks", label: "Frameworks", to: "/frameworks" },
+  { key: "resources", label: "Resources", to: "/resources/insights" },
+];
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [solid, setSolid] = useState(false);
-  const closeTimer = useRef(null);
+  const headerRef = useRef(null);
+  const location = useLocation();
+
+  const closeAll = () => {
+    setActiveMenu(null);
+    setMobileOpen(false);
+  };
+
+  useEffect(() => closeAll(), [location.pathname]);
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 30);
-    const onKey = (event) => event.key === "Escape" && setActiveMenu(null);
-    window.addEventListener("scroll", onScroll);
-    window.addEventListener("keydown", onKey);
-    return () => { window.removeEventListener("scroll", onScroll); window.removeEventListener("keydown", onKey); };
+    const onKey = (event) => {
+      if (event.key === "Escape") closeAll();
+    };
+    const onPointer = (event) => {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        setActiveMenu(null);
+          }
+    };
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("pointerdown", onPointer);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("pointerdown", onPointer);
+    };
   }, []);
 
-  const openMenu = (key) => { clearTimeout(closeTimer.current); setActiveMenu(key); };
-  const delayedClose = () => { closeTimer.current = setTimeout(() => setActiveMenu(null), 180); };
-  const closeAll = () => { setActiveMenu(null); setMobileOpen(false); };
+  const toggleMenu = (key) => {
+    setActiveMenu((current) => current === key ? null : key);
+  };
 
   return (
-    <header className={`v46-approved-header ${solid ? "solid" : ""}`} onMouseLeave={delayedClose}>
-      <div className="nav-wrap">
-        <Link className="logo" to="/" aria-label="V Pilot home" onClick={closeAll}><ApprovedVPilotBrand compact/></Link>
-        <nav className={mobileOpen ? "mobile-open" : ""}>
-          {menuKeys.map((key) => (
-            <button className={activeMenu === key ? "active" : ""} key={key}
-              onMouseEnter={() => openMenu(key)} onClick={() => setActiveMenu(activeMenu === key ? null : key)}
-              aria-expanded={activeMenu === key}>
-              {key[0].toUpperCase() + key.slice(1)} <ChevronDown size={14}/>
-            </button>
-          ))}
-          <NavLink to="/contact" onClick={closeAll}>Contact Us</NavLink>
-          <Link className="nav-cta" to="/contact" onClick={closeAll}>Consult now <ArrowRight size={16}/></Link>
-        </nav>
-        <button className="menu" type="button" aria-label="Toggle navigation" aria-expanded={mobileOpen}
-          onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X/> : <Menu/>}</button>
+    <header ref={headerRef} className="vph-header">
+      <div className="vph-utility">
+        <div className="vph-shell vph-utility-inner">
+          <nav aria-label="Utility navigation">
+            <Link to="/support">Customer Support</Link>
+            <Link to="/careers">Careers</Link>
+            <Link to="/contact">Contact</Link>
+          </nav>
+        </div>
       </div>
-      <div onMouseEnter={() => clearTimeout(closeTimer.current)} onMouseLeave={delayedClose}>
-        <MegaMenu menu={activeMenu ? megaMenus[activeMenu] : null} onClose={closeAll}/>
+
+      <div className="vph-primary">
+        <div className="vph-shell vph-primary-inner">
+          <Link className="vph-logo" to="/" aria-label="V Pilot home" onClick={closeAll}>
+            <ApprovedVPilotBrand compact />
+          </Link>
+
+          <nav className={`vph-nav ${mobileOpen ? "is-open" : ""}`} aria-label="Primary navigation">
+            {navItems.map((item) => item.menu ? (
+              <button
+                key={item.key}
+                type="button"
+                className={activeMenu === item.key ? "is-active" : ""}
+                aria-expanded={activeMenu === item.key}
+                aria-controls={`vph-menu-${item.key}`}
+                onClick={() => toggleMenu(item.key)}
+              >
+                {item.label}<ChevronDown size={14}/>
+              </button>
+            ) : (
+              <NavLink key={item.key} to={item.to} onClick={closeAll}>{item.label}</NavLink>
+            ))}
+
+            <div className="vph-mobile-actions">
+              <Link to="/support">Customer Support</Link>
+              <Link to="/careers">Careers</Link>
+              <Link to="/contact">Contact</Link>
+              <Link className="vph-mobile-pudica" to="/platform">Explore PUDICA</Link>
+              <Link className="vph-mobile-briefing" to="/contact">Schedule Executive Briefing</Link>
+            </div>
+          </nav>
+
+          <div className="vph-actions">
+            
+            <Link className="vph-pudica" to="/platform">Explore PUDICA</Link>
+            <Link className="vph-briefing" to="/contact">Schedule Executive Briefing <ArrowRight size={16}/></Link>
+          </div>
+
+          <button className="vph-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded={mobileOpen} onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X/> : <Menu/>}</button>
+        </div>
       </div>
+
+      
+
+      <EnterpriseMegaMenu menuKey={activeMenu} onClose={closeAll}/>
     </header>
   );
 }
+
+
+
+
