@@ -1823,5 +1823,233 @@
   }
 }
 
-/* V PILOT RIGHT-ALIGNED HERO FINAL END */
+/* V PILOT FINAL HERO MESSAGE HIERARCHY START */
 
+.vph2-hero-eyebrow {
+    display: block;
+    margin: 0 0 12px;
+    color: #6fe1f1;
+    font-size: 11px;
+    font-weight: 850;
+    line-height: 1.2;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.vph2-hero-brand {
+    display: block;
+    margin: 0 0 14px;
+    color: #22c6ec;
+    font-family: "Space Grotesk", Inter, sans-serif;
+    font-size: clamp( 1.45rem, 1.8vw, 2rem );
+    font-weight: 720;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+}
+
+.vph2-hero-title {
+    max-width: 690px;
+    margin: 0 0 25px;
+    color: #ffffff;
+    font-family: "Space Grotesk", Inter, sans-serif;
+    font-size: clamp( 3.2rem, 4.35vw, 5.05rem );
+    font-weight: 760;
+    line-height: 0.98;
+    letter-spacing: -0.052em;
+    text-wrap: balance;
+}
+
+    .vph2-hero-title em {
+        font-style: normal;
+        color: transparent;
+        background: linear-gradient( 90deg, #d8f7ff 0%, #55ddef 48%, #65e6bd 100% );
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+.vph2-hero-summary {
+    max-width: 675px;
+    margin: 0 0 24px;
+    color: #c8d8e4;
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 1.72;
+}
+
+/* Remove spacing from earlier generic hero rules. */
+.vph2-hero-grid > div:first-child > strong.vph2-hero-brand {
+    margin: 0 0 14px !important;
+}
+
+.vph2-hero
+.vph2-hero-title {
+    margin: 0 0 25px !important;
+}
+
+/* Standard laptop */
+@media ( min-width: 1101px ) and ( max-width: 1500px ) {
+    .vph2-hero-eyebrow {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .vph2-hero-brand {
+        margin-bottom: 12px;
+        font-size: clamp( 1.3rem, 1.65vw, 1.7rem );
+    }
+
+    .vph2-hero-title {
+        max-width: 630px;
+        margin-bottom: 22px;
+        font-size: clamp( 3rem, 4.2vw, 4.55rem );
+    }
+
+    .vph2-hero-summary {
+        max-width: 620px;
+        font-size: 14px;
+        line-height: 1.67;
+    }
+}
+
+/* Mobile */
+@media ( max-width: 700px ) {
+    .vph2-hero-eyebrow {
+        max-width: 330px;
+        font-size: 9px;
+        line-height: 1.45;
+    }
+
+    .vph2-hero-brand {
+        font-size: 1.3rem;
+    }
+
+    .vph2-hero-title {
+        font-size: clamp( 2.65rem, 11.5vw, 3.9rem );
+    }
+
+    .vph2-hero-summary {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}
+
+/* V PILOT FINAL HERO MESSAGE HIERARCHY END */
+/* V PILOT FINAL HERO MESSAGE HIERARCHY V3 START */
+.vph2-hero-eyebrow {
+  display: block;
+  margin: 0 0 9px;
+  color: #6fe1f1;
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.25;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+.vph2-hero-brand {
+  display: block;
+  margin: 0 0 14px !important;
+  color: #22c6ec;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(1.45rem, 1.8vw, 2rem);
+  font-weight: 720;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+.vph2-hero-title,
+.vph2-hero .vph2-hero-title {
+  max-width: 690px;
+  margin: 0 0 24px !important;
+  color: #fff;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(3.2rem, 4.35vw, 5.05rem);
+  font-weight: 760;
+  line-height: .98;
+  letter-spacing: -.052em;
+  text-wrap: balance;
+}
+.vph2-hero-title em {
+  font-style: normal;
+  color: transparent;
+  background: linear-gradient(90deg, #d8f7ff 0%, #55ddef 48%, #65e6bd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero-eyebrow { margin-bottom: 8px; font-size: 10px; }
+  .vph2-hero-brand { margin-bottom: 12px !important; font-size: clamp(1.3rem, 1.65vw, 1.7rem); }
+  .vph2-hero-title,
+  .vph2-hero .vph2-hero-title { max-width: 630px; margin-bottom: 21px !important; font-size: clamp(3rem, 4.2vw, 4.55rem); }
+}
+@media (max-width: 700px) {
+  .vph2-hero-eyebrow { max-width: 330px; font-size: 9px; line-height: 1.45; }
+  .vph2-hero-brand { font-size: 1.3rem; }
+  .vph2-hero-title,
+  .vph2-hero .vph2-hero-title { font-size: clamp(2.65rem, 11.5vw, 3.9rem); }
+}
+/* V PILOT FINAL HERO MESSAGE HIERARCHY V3 END */
+/* V PILOT OUTCOME-FIRST HERO RESTORE START */
+.vph2-hero-eyebrow {
+  display: block;
+  margin: 0 0 22px !important;
+  color: #6fe1f1 !important;
+  font-size: 11px !important;
+  font-weight: 850 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.17em !important;
+  text-transform: uppercase;
+}
+
+.vph2-hero-title,
+.vph2-hero .vph2-hero-title {
+  max-width: 720px !important;
+  margin: 0 0 24px !important;
+  color: #ffffff !important;
+  font-family: "Space Grotesk", Inter, sans-serif !important;
+  font-size: clamp(3.55rem, 4.8vw, 5.45rem) !important;
+  font-weight: 770 !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.052em !important;
+  text-wrap: balance;
+}
+
+.vph2-hero-title em {
+  font-style: normal !important;
+  color: transparent !important;
+  background: linear-gradient(90deg, #d8f7ff 0%, #55ddef 48%, #65e6bd 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+.vph2-hero-brand {
+  display: block;
+  max-width: 680px;
+  margin: 0 0 30px !important;
+  color: #22c6ec !important;
+  font-family: "Space Grotesk", Inter, sans-serif !important;
+  font-size: clamp(1.55rem, 1.9vw, 2.15rem) !important;
+  font-weight: 720 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.025em !important;
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vph2-hero-eyebrow { margin-bottom: 18px !important; font-size: 10px !important; }
+  .vph2-hero-title,
+  .vph2-hero .vph2-hero-title {
+    max-width: 650px !important;
+    margin-bottom: 21px !important;
+    font-size: clamp(3.1rem, 4.25vw, 4.65rem) !important;
+  }
+  .vph2-hero-brand {
+    margin-bottom: 26px !important;
+    font-size: clamp(1.35rem, 1.7vw, 1.8rem) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vph2-hero-eyebrow { margin-bottom: 15px !important; font-size: 9px !important; line-height: 1.45 !important; }
+  .vph2-hero-title,
+  .vph2-hero .vph2-hero-title { font-size: clamp(2.7rem, 11.5vw, 4rem) !important; }
+  .vph2-hero-brand { margin-bottom: 22px !important; font-size: 1.35rem !important; }
+}
+/* V PILOT OUTCOME-FIRST HERO RESTORE END */
