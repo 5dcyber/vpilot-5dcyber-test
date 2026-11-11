@@ -10,3 +10,220 @@
 @media(max-width:1200px){.vsol-heading{display:block}.vsol-heading>p{margin-top:12px}.vsol-hero aside{display:none}.vsol-industries>div>div{grid-template-columns:repeat(4,1fr)}}@media(max-width:700px){.vsol-shell{width:min(100% - 32px,1360px)}.vsol-hero{background-position:68% center!important}.vsol-hero__grid{min-height:auto;padding-block:56px}.vsol-hero h1{font-size:2.85rem}.vsol-solution{padding-top:132px}.vsol-industries>div>div{grid-template-columns:1fr 1fr}.vsol-final>.vsol-shell{grid-template-columns:1fr}}
 /* V PILOT SOLUTIONS VISUAL SYSTEM FINAL END */
 
+/* V PILOT SOLUTIONS ENTERPRISE FINAL START */
+
+/* Hero: remove competing right-side statement and protect the live message. */
+#solutions-top aside,
+#solutions-top [class*="aside"],
+#solutions-top [class*="statement"],
+#solutions-top [class*="callout"] {
+  display: none !important;
+}
+
+#solutions-top {
+  min-height: 610px !important;
+  overflow: hidden !important;
+  background-position: center center !important;
+}
+
+#solutions-top > div,
+#solutions-top [class*="inner"],
+#solutions-top [class*="grid"] {
+  align-items: center !important;
+}
+
+#solutions-top [class*="copy"],
+#solutions-top [class*="content"] {
+  width: min(720px, 52vw) !important;
+  max-width: 720px !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+#solutions-top h1 {
+  max-width: 720px !important;
+  font-size: clamp(3.25rem, 4.55vw, 5.15rem) !important;
+  line-height: .98 !important;
+  letter-spacing: -.052em !important;
+  text-wrap: balance;
+}
+
+#solutions-top p {
+  max-width: 680px !important;
+}
+
+/* Neutralize global header styles that leak into page section headings. */
+main [id^="solutions-"] header:not(.vph-header),
+main [id^="solutions-"] [class*="section-head"],
+main [id^="solutions-"] [class*="heading"] {
+  position: static !important;
+  inset: auto !important;
+  z-index: auto !important;
+  width: auto !important;
+  max-width: 900px !important;
+  min-height: 0 !important;
+  margin: 0 0 32px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+main [id^="solutions-"] {
+  position: relative;
+  overflow: clip;
+  padding-block: clamp(72px, 7vw, 96px) !important;
+}
+
+main [id^="solutions-"] > div,
+main [id^="solutions-"] [class*="shell"] {
+  width: min(1400px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+/* Portfolio: contextual image banners aligned to each named solution. */
+#solutions-portfolio [class*="grid"],
+#solutions-portfolio [class*="cards"] {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  align-items: stretch !important;
+}
+
+#solutions-portfolio article,
+#solutions-portfolio [class*="card"] {
+  position: relative !important;
+  min-width: 0 !important;
+  min-height: 430px !important;
+  padding: 180px 26px 26px !important;
+  overflow: hidden !important;
+  border: 1px solid #d8e8f3 !important;
+  border-radius: 16px !important;
+  background: linear-gradient(155deg, #ffffff 0%, #f2f9ff 100%) !important;
+  box-shadow: 0 18px 44px rgba(4, 48, 91, .08) !important;
+}
+
+#solutions-portfolio article::before,
+#solutions-portfolio [class*="card"]::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 154px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid rgba(8, 126, 235, .13);
+}
+
+#solutions-portfolio article:nth-of-type(1)::before,
+#solutions-portfolio [class*="card"]:nth-child(1)::before { background-image: url('/assets/solution-nativetrust.png'); }
+#solutions-portfolio article:nth-of-type(2)::before,
+#solutions-portfolio [class*="card"]:nth-child(2)::before { background-image: url('/assets/solution-remediation.png'); }
+#solutions-portfolio article:nth-of-type(3)::before,
+#solutions-portfolio [class*="card"]:nth-child(3)::before { background-image: url('/assets/solution-secops.png'); }
+#solutions-portfolio article:nth-of-type(4)::before,
+#solutions-portfolio [class*="card"]:nth-child(4)::before { background-image: url('/assets/solution-resilience.png'); }
+#solutions-portfolio article:nth-of-type(5)::before,
+#solutions-portfolio [class*="card"]:nth-child(5)::before { background-image: url('/assets/solution-appsec.png'); }
+#solutions-portfolio article:nth-of-type(6)::before,
+#solutions-portfolio [class*="card"]:nth-child(6)::before { background-image: url('/assets/solution-grc.png'); }
+
+#solutions-portfolio article:hover,
+#solutions-portfolio [class*="card"]:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 24px 58px rgba(4, 58, 110, .14) !important;
+}
+
+/* Industry: eliminate narrow heading column and large empty field. */
+#solutions-industries {
+  background:
+    radial-gradient(circle at 88% 10%, rgba(32,197,231,.10), transparent 30%),
+    linear-gradient(145deg, #f6fbff 0%, #edf8ff 100%) !important;
+}
+
+#solutions-industries header,
+#solutions-industries [class*="section-head"],
+#solutions-industries [class*="heading"] {
+  max-width: 920px !important;
+  margin-bottom: 30px !important;
+}
+
+#solutions-industries [class*="grid"],
+#solutions-industries [class*="cards"] {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+}
+
+#solutions-industries article,
+#solutions-industries [class*="card"] {
+  min-height: 180px !important;
+  padding: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  border: 1px solid #d8e8f3 !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,.9) !important;
+  box-shadow: 0 12px 30px rgba(4, 48, 91, .06) !important;
+}
+
+/* Consistent section rhythm and enterprise surfaces. */
+#solutions-challenge,
+#solutions-foundation,
+#solutions-outcomes {
+  background: linear-gradient(145deg, #ffffff 0%, #f4faff 100%) !important;
+}
+
+#solutions-nativetrust,
+#solutions-approach,
+#solutions-assurance {
+  background: linear-gradient(145deg, #eef8ff 0%, #e8f5fb 100%) !important;
+}
+
+#solutions-remediation,
+#solutions-integrated,
+#solutions-final {
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(32,197,231,.16), transparent 34%),
+    linear-gradient(145deg, #061b36 0%, #082f63 62%, #064a75 100%) !important;
+}
+
+main [id^="solutions-"] a[class*="button"],
+main [id^="solutions-"] a[class*="cta"],
+main [id^="solutions-"] button[class*="button"],
+main [id^="solutions-"] button[class*="cta"] {
+  min-height: 48px;
+  border-radius: 8px !important;
+}
+
+@media (max-width: 1100px) {
+  #solutions-top [class*="copy"],
+  #solutions-top [class*="content"] {
+    width: min(760px, 100%) !important;
+  }
+  #solutions-portfolio [class*="grid"],
+  #solutions-portfolio [class*="cards"],
+  #solutions-industries [class*="grid"],
+  #solutions-industries [class*="cards"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  main [id^="solutions-"] > div,
+  main [id^="solutions-"] [class*="shell"] {
+    width: min(100% - 32px, 1400px);
+  }
+  #solutions-top h1 { font-size: clamp(2.7rem, 11vw, 4rem) !important; }
+  #solutions-portfolio [class*="grid"],
+  #solutions-portfolio [class*="cards"],
+  #solutions-industries [class*="grid"],
+  #solutions-industries [class*="cards"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* V PILOT SOLUTIONS ENTERPRISE FINAL END */
+
