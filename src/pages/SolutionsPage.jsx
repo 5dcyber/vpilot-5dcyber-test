@@ -1,55 +1,143 @@
 ﻿import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Cloud, DatabaseBackup, FileCheck2, Gauge, LockKeyhole, Network, Radar, ShieldCheck, Sparkles, Workflow, Wrench } from "lucide-react";
+import {
+  ArrowRight, Check, ShieldCheck, Network, Workflow, Gauge, Building2,
+  RadioTower, Factory, Landmark, HeartPulse, Zap, BriefcaseBusiness,
+  SearchCheck, Layers3, RefreshCw, Code2, Scale, Target, Compass,
+  ClipboardCheck, Rocket, Activity, FileCheck2, Store
+} from "lucide-react";
 import "./vpilot-solutions-premium.css";
 
-const portfolio=[
- ["NativeTrust Workspace","Trusted endpoint and workspace operations",["Workspace discovery","Identity and device trust","Endpoint compliance","Application governance","Browser governance","Mobile protection","Data controls","Lifecycle evidence"],ShieldCheck,"native","/solutions/nativetrust-workspace"],
- ["Autonomous Remediation","From finding to verified closure",["Six-layer taxonomy","Scanner correlation","Risk prioritization","GoldenVault validation","Controlled implementation","Retesting","Evidence-backed closure"],Wrench,"remediation","/solutions/autonomous-remediation"],
- ["Integrated Security Operations","Continuous visibility and coordinated response",["Telemetry onboarding","Managed SIEM","Detection engineering","Threat intelligence","Investigation","Incident response","Forensics","Threat-informed improvement"],Radar,"secops","/solutions/integrated-security-operations"],
- ["Autonomous Resilience","Recovery managed as a security control",["Backup governance","Failure workflows","Recovery-point validation","Restore testing","Ransomware readiness","BCP/DR exercises","Trusted restoration","Recovery evidence"],DatabaseBackup,"resilience","/solutions/autonomous-resilience"],
- ["Application Security Governance","Secure applications across the lifecycle",["Application risk","Threat modeling","VAPT and API security","SAST, DAST and SCA","Remediation ownership","Release assurance","Runtime monitoring"],LockKeyhole,"appsec","/solutions/application-security-governance"],
- ["GRC & Compliance","Risk decisions supported by operational evidence",["Enterprise risk","CISO as a Service","ISO/IEC 27001","Privacy readiness","Supplier assurance","Policy governance","Control testing","Audit evidence"],FileCheck2,"grc","/solutions/grc-compliance"],
+const portfolio = [
+  { title:"PUDICA NativeTrust Workspace", subtitle:"Trusted endpoint and workspace operations", image:"/assets/solutions-nativetrust-3d.png", to:"/solutions/nativetrust-workspace", items:["Workspace discovery","Identity and device trust","Endpoint compliance","Application and browser governance","Mobile and data protection","Lifecycle evidence"] },
+  { title:"Autonomous Remediation", subtitle:"From finding to verified closure", image:"/assets/solutions-remediation-3d.png", to:"/solutions/autonomous-remediation", items:["Exposure correlation","Risk-based prioritization","GoldenVault validation","Governed implementation","Retesting","Evidence-backed closure"] },
+  { title:"Integrated Security Operations", subtitle:"Continuous visibility and coordinated response", image:"/assets/solution-secops.png", to:"/solutions/integrated-security-operations", items:["Telemetry onboarding","Detection engineering","Threat intelligence","Investigation","Incident orchestration","Forensic evidence"] },
+  { title:"Autonomous Resilience", subtitle:"Recovery managed as a security control", image:"/assets/solution-resilience.png", to:"/solutions/autonomous-resilience", items:["Backup governance","Recovery validation","Restore testing","Ransomware readiness","BCP/DR exercises","Recovery evidence"] },
+  { title:"Application Security Governance", subtitle:"Secure applications throughout the lifecycle", image:"/assets/solution-appsec.png", to:"/solutions/application-security-governance", items:["Application risk","Threat modelling","VAPT and API security","Release assurance","Runtime monitoring","Remediation ownership"] },
+  { title:"GRC & Compliance", subtitle:"Risk decisions supported by operational evidence", image:"/assets/solution-grc.png", to:"/solutions/grc-compliance", items:["Enterprise risk","ISO/IEC 27001 operations","Privacy readiness","Supplier assurance","Control testing","Audit evidence"] }
 ];
-const challenges=[
- ["Transformation without security readiness","Business change introduces new identities, applications, data relationships, cloud exposure, and supplier dependencies."],
- ["Findings without operational closure","Treatment design, validation, approval, deployment, retesting, and evidence remain fragmented."],
- ["Response without recovery confidence","Detection and containment are separated from trusted backup, restoration, and return to service."],
- ["Compliance without control evidence","Policies exist while technical operation and control effectiveness remain difficult to demonstrate."],
+
+const industries = [
+  [Store, "Retail", "Secure stores, commerce, payment dependencies and recovery."],
+  [RadioTower, "Telecom", "Protect critical infrastructure, privileged access and service resilience."],
+  [Factory, "Manufacturing", "Secure IT, engineering access, legacy platforms and production recovery."],
+  [Landmark, "Financial Services", "Strengthen identity, monitoring, resilience and regulatory evidence."],
+  [HeartPulse, "Healthcare", "Protect information, clinical availability, endpoints and continuity."],
+  [Zap, "Energy & Utilities", "Secure remote operations, access, response and operational recovery."],
+  [Building2, "Public Sector", "Improve identity, endpoint security, citizen services and assurance."],
+  [BriefcaseBusiness, "Professional Services", "Protect remote work, client data, cloud apps and collaboration."]
 ];
-const shared=["Asset Graph","Service Operations Hub","Risk & Control Register","Approval & Governance Engine","Change Governance","Incident Response Center","ARC Remediation","Evidence Vault","Analytics & Reporting","Microsoft Security Connector"];
-const business=[
- ["Secure Business Transformation","Protect cloud adoption, digital migration, identity modernization, endpoint change, and supplier integration."],
- ["Integrated Security Operations","Unify remediation, detection, response, recovery, risk, and assurance through PUDICA and 5Pilot Operations."],
- ["Enterprise Risk Management","Translate technical exposure into accountable treatment and residual-risk decisions."],
- ["Autonomous Incident Response","Detect, validate, contain, investigate, and recover through governed response automation."],
- ["Next-Generation Cloud Forensics","Investigate identities, applications, SaaS, workloads, control planes, and telemetry."],
- ["Cyber Resilience & Recovery","Validate backup, restoration, BCP/DR, ransomware recovery, and trusted return to service."],
- ["ISO/IEC 27001 Operational Readiness","Establish practical ISMS operation, close control gaps, and prepare certification evidence."],
- ["Privacy & Data Protection","Strengthen privacy governance, data controls, suppliers, evidence, and regulatory readiness."],
+
+const approach = [
+  [Compass,"Understand","Business context, services, risks, obligations and authority."],
+  [Layers3,"Design","Target architecture, operating model, responsibilities and roadmap."],
+  [SearchCheck,"Validate","Test integrations, monitoring, rollback and recovery."],
+  [Rocket,"Implement","Deploy approved controls through staged, governed change."],
+  [Activity,"Operate","Administer, detect, remediate, respond, recover and report."],
+  [ShieldCheck,"Assure","Verify effectiveness, preserve evidence and improve continuously."]
 ];
-const industries=["Retail","Telecom","Manufacturing","Financial Services","Healthcare","Energy & Utilities","Public Sector","Professional Services"];
-const approach=[
- ["01","Understand","Business context, services, assets, risks, obligations, and authority."],
- ["02","Design","Target architecture, operating model, roadmap, controls, and acceptance criteria."],
- ["03","Validate","SecLabs and GoldenVault testing for integration, monitoring, rollback, and recovery."],
- ["04","Implement","Governed deployment, documentation, monitoring, and technical verification."],
- ["05","Operate","Continuous administration, detection, remediation, response, recovery, and reporting."],
- ["06","Assure","Effectiveness, evidence, residual risk, outcomes, and continual improvement."],
+
+const outcomes = [
+  [Gauge,"Faster Treatment","Reduce delays from finding through authorized and verified closure."],
+  [Target,"Reduced Unresolved Exposure","Prioritize and close material risks through connected workflows."],
+  [FileCheck2,"Improved Audit Readiness","Maintain traceable control, change, incident and recovery evidence."],
+  [Workflow,"Greater Operational Efficiency","Reduce duplicated workflows, fragmented records and repeated evidence work."],
+  [RefreshCw,"Stronger Business Resilience","Improve response coordination, restoration confidence and continuity."],
+  [ShieldCheck,"Increased Management Confidence","Provide ownership, risk visibility, metrics and residual-risk decisions."]
 ];
-function Heading({eyebrow,title,copy,dark=false}){return <div className={`vsol-heading${dark?" is-dark":""}`}><span>{eyebrow}</span><h2>{title}</h2>{copy&&<p>{copy}</p>}</div>}
-export default function SolutionsPage(){return <div className="vsol-page" id="solutions-top">
- <section className="vsol-hero"><div className="vsol-shell vsol-hero__grid"><div><span>ENTERPRISE CYBERSECURITY SOLUTIONS</span><h1>Solve Security Challenges as <em>Connected Business Outcomes</em></h1><strong>Secure Today. Enable Tomorrow.</strong><p>V Pilot delivers integrated cybersecurity solutions that help organizations transform securely, operate continuously, manage risk, respond to threats, and remain resilient.</p><p>Every solution combines PUDICA platform capabilities, 5D Threat Intelligence, SecLabs validation, GoldenVault testing, and specialist delivery through 5Pilot Operations.</p><div className="vsol-actions"><Link to="/contact">Discuss Your Security Priorities <ArrowRight/></Link><a href="#solutions-portfolio">Watch Solutions Overview</a></div></div><aside><span>Navigate Change with Confidence.</span><p>Security for today's operations and tomorrow's opportunities.</p></aside></div><div className="vsol-proof">{["Business-Aligned Outcomes","Integrated Platform and Expert Teams","Production-Relevant Validation","Measurable Risk Reduction"].map(x=><span key={x}><ShieldCheck/>{x}</span>)}</div></section>
- <section className="vsol-section vsol-challenge"><div className="vsol-shell"><Heading eyebrow="THE CONNECTED SECURITY CHALLENGE" title="Enterprise Risk Does Not Remain Inside One Security Domain" copy="One business condition should produce one coordinated security, operational, recovery, and assurance response."/><div className="vsol-grid vsol-grid--4">{challenges.map(([t,p])=><article className="vsol-card" key={t}><Network/><h3>{t}</h3><p>{p}</p></article>)}</div></div></section>
- <section id="solutions-portfolio" className="vsol-section"><div className="vsol-shell"><Heading eyebrow="OUR SOLUTIONS" title="A Connected Security Operations Portfolio" copy="Each solution addresses a critical part of the digital environment. Together, the six families deliver an integrated, risk-driven, and continuously assured model through PUDICA."/><div className="vsol-grid vsol-grid--3">{portfolio.map(([t,s,items,I,tone,to])=><article className={`vsol-card vsol-solution is-${tone}`} key={t}><I/><h3>{t}</h3><strong>{s}</strong><ul>{items.map(x=><li key={x}><CheckCircle2/>{x}</li>)}</ul><Link to={to}>Explore Solution <ArrowRight/></Link></article>)}</div></div></section>
- <section id="solutions-nativetrust" className="vsol-section vsol-native"><div className="vsol-shell vsol-feature"><div><span>SOLUTION 01</span><h2>PUDICA NativeTrust Workspace</h2><strong>Turn Approved Devices into Trusted Business Workspaces</strong><p>NativeTrust establishes and continuously operates trusted Microsoft-powered workspaces across identity, endpoints, applications, browsers, mobile devices, updates, and business data.</p><p>Designed to reduce dependency on separately hosted desktops for qualified corporate-device use cases.</p><Link to="/platform/nativetrust-workspace">Explore NativeTrust Workspace <ArrowRight/></Link></div><div className="vsol-capabilities">{["Workspace Inventory & Trust","Provisioning & Lifecycle","Update & Exposure Assurance","Application & Browser Governance","Workspace Protection & Response","Mobile Workspace Trust","Workspace Assurance"].map(x=><span key={x}><ShieldCheck/>{x}</span>)}</div></div></section>
- <section id="solutions-remediation" className="vsol-section vsol-remediation"><div className="vsol-shell vsol-feature"><div><span>SOLUTION 02</span><h2>PUDICA Autonomous Remediation</h2><strong>From Finding to Verified Remediation</strong><p>PUDICA correlates findings with actual state, business criticality, threat context, control requirements, dependencies, exceptions, and recovery readiness.</p><Link to="/platform/autonomous-remediation">Explore Autonomous Remediation <ArrowRight/></Link></div><div className="vsol-stack">{["OS Kernel & Base System","Middleware & Service Layer","Database & Data Platform","Enterprise Management & Security","Network & Security Edge","Standalone Software Packages"].map((x,i)=><span key={x} style={{"--i":i}}>{i+1}. {x}</span>)}</div></div></section>
- <section id="solutions-integrated-operations" className="vsol-section vsol-operate"><div className="vsol-shell"><Heading dark eyebrow="SOLUTIONS 03â€“06" title="Operate, Respond, Recover, and Govern through One Model" copy="Integrated Security Operations, Autonomous Resilience, Application Security Governance, and GRC & Compliance share one trusted operating record."/><div className="vsol-grid vsol-grid--4">{portfolio.slice(2).map(([t,s,items,I,tone,to])=><article className="vsol-dark-card" key={t}><I/><h3>{t}</h3><p>{s}</p><Link to={to}>Explore <ArrowRight/></Link></article>)}</div></div></section>
- <section id="solutions-foundation" className="vsol-section vsol-foundation"><div className="vsol-shell vsol-feature"><Heading eyebrow="SHARED PLATFORM FOUNDATION" title="Shared Services Power Every Solution" copy="No duplicate asset identities. No disconnected risk registers. No separate approval systems. No fragmented evidence."/><div className="vsol-shared">{shared.map(x=><span key={x}>{x}</span>)}</div></div></section>
- <section className="vsol-section"><div className="vsol-shell"><Heading eyebrow="ENTERPRISE SOLUTIONS BY BUSINESS OUTCOME" title="Connected Solutions for Real Business Risk"/><div className="vsol-grid vsol-grid--4">{business.map(([t,p])=><article className="vsol-card" key={t}><Sparkles/><h3>{t}</h3><p>{p}</p></article>)}</div></div></section>
- <section id="solutions-industries" className="vsol-section vsol-industries"><div className="vsol-shell"><Heading eyebrow="SOLUTIONS BY INDUSTRY" title="Built for Your Industry. Aligned to Your Business."/><div>{industries.map(x=><span key={x}>{x}</span>)}</div></div></section>
- <section id="solutions-approach" className="vsol-section"><div className="vsol-shell"><Heading eyebrow="OUR SOLUTION APPROACH" title="From Business Context to Measurable Outcomes"/><div className="vsol-approach">{approach.map(([n,t,p])=><article key={t}><span>{n}</span><h3>{t}</h3><p>{p}</p></article>)}</div></div></section>
- <section className="vsol-section vsol-outcomes"><div className="vsol-shell"><Heading eyebrow="BUSINESS VALUE" title="Real Outcomes for a Safer Tomorrow"/><div className="vsol-grid vsol-grid--3">{[["Faster Treatment","Reduce delays from finding and decision through implementation and verified closure."],["Reduced Unresolved Exposure","Prioritize and close high-value risks through connected remediation."],["Improved Audit Readiness","Maintain traceable control, change, incident, recovery, and management evidence."],["Greater Operational Efficiency","Reduce duplicated workflows, disconnected records, and fragmented suppliers."],["Stronger Business Resilience","Improve monitoring, incident coordination, recovery confidence, and continuity."],["Increased Management Confidence","Provide ownership, risk visibility, metrics, residual-risk decisions, and improvement reporting."]].map(([t,p])=><article className="vsol-card" key={t}><Gauge/><h3>{t}</h3><p>{p}</p></article>)}</div></div></section>
- <section className="vsol-section vsol-assurance"><div className="vsol-shell vsol-feature"><Heading dark eyebrow="SOLUTION ASSURANCE" title="Clear Scope. Governed Delivery. Verifiable Outcomes." copy="Every solution includes defined scope, responsibilities, architecture, acceptance criteria, validation, rollback, recovery, operational metrics, evidence, and improvement planning."/><div className="vsol-shared">{["Business & Technical Scope","Responsibility Matrix","Named Owners","Acceptance Criteria","Implementation Roadmap","Validation Requirements","Recovery Criteria","Evidence Requirements","Operational Metrics"].map(x=><span key={x}>{x}</span>)}</div></div></section>
- <section className="vsol-final"><div className="vsol-shell"><div><span>READY TO SOLVE YOUR SECURITY CHALLENGES?</span><h2>Design the Right Security Solution for Your Business</h2><p>Discuss priorities, operating gaps, risk context, regulatory requirements, and resilience objectives with V Pilot.</p></div><div className="vsol-actions"><Link to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link to="/contact">Request Solution Assessment</Link></div></div></section>
- </div>}
+
+function SectionHeading({eyebrow,title,summary,light=false}) {
+  return <div className={`vsol-head ${light ? "is-light" : ""}`}>
+    <span>{eyebrow}</span><h2>{title}</h2>{summary && <p>{summary}</p>}
+  </div>;
+}
+
+export default function SolutionsPage(){
+  return <div className="vsol-page">
+    <section id="solutions-top" className="vsol-hero">
+      <div className="vsol-shell vsol-hero__inner">
+        <div className="vsol-hero__copy">
+          <span className="vsol-eyebrow">ENTERPRISE CYBERSECURITY SOLUTIONS</span>
+          <h1>Solve Security Challenges as <em>Connected Business Outcomes</em></h1>
+          <h2>Secure Today. Enable Tomorrow.</h2>
+          <p>V Pilot delivers integrated cybersecurity solutions that help organizations transform securely, operate continuously, manage risk, respond to threats, and remain resilient.</p>
+          <p>Every solution combines PUDICA, 5D Threat Intelligence, SecLabs validation, GoldenVault testing, and specialist delivery through 5Pilot Operations.</p>
+          <div className="vsol-actions"><Link className="vsol-btn is-primary" to="/contact">Discuss Your Security Priorities <ArrowRight/></Link><a className="vsol-btn is-secondary" href="#solutions-portfolio">Explore Solutions</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions-portfolio" className="vsol-section vsol-surface-light">
+      <div className="vsol-shell"><SectionHeading eyebrow="OUR SOLUTIONS" title="A Connected Security Operations Portfolio" summary="Specialized solution families address distinct business risks while sharing one governed operating record across PUDICA."/>
+        <div className="vsol-portfolio">{portfolio.map((x)=><article className="vsol-card" key={x.title}>
+          <img src={x.image} alt=""/><div className="vsol-card__body"><h3>{x.title}</h3><strong>{x.subtitle}</strong><ul>{x.items.map(i=><li key={i}><Check/>{i}</li>)}</ul><Link to={x.to}>Explore solution <ArrowRight/></Link></div>
+        </article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-nativetrust" className="vsol-section vsol-feature vsol-feature--native">
+      <div className="vsol-shell vsol-feature__grid"><div className="vsol-feature__copy"><SectionHeading eyebrow="SOLUTION 01" title="PUDICA NativeTrust Workspace" summary="Turn approved corporate devices into continuously verified, encrypted, policy-governed and evidence-backed business workspaces."/>
+        <p>NativeTrust integrates Microsoft Entra ID, Intune, Defender, Conditional Access, Windows security and Microsoft 365 with PUDICA governance, risk, change, incident, remediation and evidence services.</p>
+        <div className="vsol-chip-grid">{["Workspace Inventory & Trust","Provisioning & Lifecycle","Update & Exposure Assurance","Application & Browser Governance","Workspace Protection & Response","Mobile Workspace Trust","Workspace Assurance"].map(x=><span key={x}>{x}</span>)}</div>
+        <Link className="vsol-text-link" to="/platform/nativetrust-workspace">Explore NativeTrust Workspace <ArrowRight/></Link></div>
+        <img className="vsol-feature__visual" src="/assets/solutions-nativetrust-3d.png" alt="Conceptual visual representing trusted workspace security operations."/>
+      </div>
+    </section>
+
+    <section id="solutions-remediation" className="vsol-section vsol-feature vsol-feature--dark">
+      <div className="vsol-shell vsol-feature__grid is-reverse"><img className="vsol-feature__visual" src="/assets/solutions-remediation-3d.png" alt="Conceptual visual representing governed autonomous remediation."/>
+        <div className="vsol-feature__copy"><SectionHeading light eyebrow="SOLUTION 02" title="PUDICA Autonomous Remediation" summary="From finding to verified remediation."/>
+          <p>PUDICA correlates scanner findings with actual configuration state, business criticality, threat context, dependencies, exceptions and recovery readiness before approved execution.</p>
+          <div className="vsol-taxonomy">{["OS Kernel & Base System","Middleware & Service Layer","Database & Data Platform","Enterprise Management & Security","Network & Security Edge","Standalone Software Packages"].map((x,i)=><span key={x}><b>{i+1}</b>{x}</span>)}</div>
+          <p className="vsol-flow">Discover â†’ Correlate â†’ Assess â†’ Decide â†’ Prove â†’ Approve â†’ Execute â†’ Verify â†’ Assure</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions-integrated" className="vsol-section vsol-model">
+      <div className="vsol-shell"><SectionHeading light eyebrow="SOLUTIONS 03â€“06" title="Operate, Respond, Recover, and Govern through One Model" summary="Four connected solution families share context, workflows, validation, evidence and accountability."/>
+        <img src="/assets/solutions-integrated-model-3d.png" alt="Conceptual visual representing integrated security operations, resilience, application security, and governance."/>
+        <div className="vsol-model__cards">{portfolio.slice(2).map(x=><article key={x.title}><h3>{x.title}</h3><p>{x.subtitle}</p><Link to={x.to}>Explore <ArrowRight/></Link></article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-foundation" className="vsol-section vsol-foundation">
+      <div className="vsol-shell"><SectionHeading eyebrow="SHARED PLATFORM FOUNDATION" title="Shared Services Power Every Solution" summary="Every solution references common assets, risk, authority, workflow, incidents, remediation, evidence and accountability."/>
+        <div className="vsol-foundation__grid"><img src="/assets/solutions-foundation-3d.png" alt="Conceptual visual representing the shared PUDICA platform foundation."/><div className="vsol-service-grid">{["Asset Graph","Service Operations Hub","Risk & Control Register","Approval & Governance Engine","Change Governance","Incident Response Center","ARC Remediation","Evidence Vault","Analytics & Reporting","Microsoft Security Connector"].map(x=><span key={x}>{x}</span>)}</div></div>
+      </div>
+    </section>
+
+    <section id="solutions-business-outcomes" className="vsol-section vsol-surface-light">
+      <div className="vsol-shell"><SectionHeading eyebrow="ENTERPRISE SOLUTIONS BY BUSINESS OUTCOME" title="Connected Solutions for Real Business Risk" summary="Apply coordinated solution patterns to transformation, risk, response, recovery, compliance and data protection."/>
+        <div className="vsol-outcome-grid">{["Secure Business Transformation","Integrated Security Operations","Enterprise Risk Management","Autonomous Incident Response","Next-Generation Cloud Forensics","Cyber Resilience & Recovery","ISO/IEC 27001 Operational Readiness","Privacy & Data Protection"].map(x=><article key={x}><Network/><h3>{x}</h3><p>Business-aligned scope, governed implementation, operational evidence and measurable assurance.</p></article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-industries" className="vsol-section vsol-industries">
+      <div className="vsol-shell"><SectionHeading eyebrow="SOLUTIONS BY INDUSTRY" title="Built for Your Industry. Aligned to Your Business." summary="Industry context changes the assets, dependencies, threats, obligations, recovery objectives and evidence required."/>
+        <img className="vsol-industries__visual" src="/assets/solutions-industries-3d.png" alt="Conceptual visual representing connected cybersecurity solutions across industries."/>
+        <div className="vsol-industry-grid">{industries.map(([Icon,title,text])=><article key={title}><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-approach" className="vsol-section vsol-approach">
+      <div className="vsol-shell"><SectionHeading eyebrow="OUR SOLUTION APPROACH" title="From Business Context to Measurable Outcomes" summary="A six-stage delivery model connects strategy, validation, implementation, continuous operation and assurance."/>
+        <div className="vsol-steps">{approach.map(([Icon,title,text],i)=><article key={title}><b>{String(i+1).padStart(2,"0")}</b><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-outcomes" className="vsol-section vsol-surface-light">
+      <div className="vsol-shell"><SectionHeading eyebrow="BUSINESS VALUE" title="Real Outcomes for a Safer Tomorrow" summary="Outcome statements remain measurable and evidence-led without unsupported universal performance claims."/>
+        <div className="vsol-value-grid">{outcomes.map(([Icon,title,text])=><article key={title}><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div>
+      </div>
+    </section>
+
+    <section id="solutions-assurance" className="vsol-section vsol-assurance">
+      <div className="vsol-shell vsol-assurance__grid"><div><SectionHeading light eyebrow="SOLUTION ASSURANCE" title="Clear Scope. Governed Delivery. Verifiable Outcomes." summary="Each solution defines scope, responsibilities, architecture, acceptance criteria, validation, recovery, metrics, evidence and improvement planning."/></div>
+        <img src="/assets/solutions-assurance-3d.png" alt="Conceptual visual representing governed delivery and verifiable assurance outcomes."/>
+      </div><div className="vsol-shell vsol-assurance__items">{["Business & Technical Scope","Responsibility Matrix","Named Owners","Acceptance Criteria","Implementation Roadmap","Validation Requirements","Recovery Criteria","Evidence Requirements","Operational Metrics","Improvement Plan"].map(x=><span key={x}>{x}</span>)}</div>
+    </section>
+
+    <section id="solutions-final" className="vsol-final"><div className="vsol-shell"><span>READY TO SOLVE YOUR SECURITY CHALLENGES?</span><h2>Design the Right Security Solution for Your Business</h2><p>Discuss priorities, operating gaps, risk context, regulatory requirements and resilience objectives with V Pilot.</p><div className="vsol-actions"><Link className="vsol-btn is-primary" to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link className="vsol-btn is-secondary" to="/contact">Request Solution Assessment</Link></div></div></section>
+  </div>;
+}
 
