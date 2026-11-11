@@ -3,11 +3,13 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import SolutionsRouteNavigator from "./components/SolutionsRouteNavigator.jsx";
 import RouteSectionNavigator from "./components/RouteSectionNavigator.jsx";
+import FrameworksRouteNavigator from "./components/FrameworksRouteNavigator.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CompanyPage from "./pages/CompanyPage.jsx";
 import PlatformPage from "./pages/PlatformPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
+import FrameworksPage from "./pages/FrameworksPage.jsx";
 import InsightsPage from "./pages/InsightsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import SupportPage from "./pages/SupportPage.jsx";
@@ -28,6 +30,7 @@ export default function App() {
       <main>
         <SolutionsRouteNavigator />
         <RouteSectionNavigator />
+        <FrameworksRouteNavigator />
         <Routes>
           <Route path="/" element={<HomePage />} />
 
@@ -43,7 +46,9 @@ export default function App() {
           <Route path="/services/*" element={<ServicesPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/solutions/*" element={<SolutionsPage />} />
-          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/frameworks" element={<FrameworksPage />} />
+          <Route path="/frameworks/*" element={<FrameworksPage />} />
+<Route path="/insights" element={<InsightsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/careers" element={<CareersPage />} />
@@ -59,6 +64,8 @@ export default function App() {
     </>
   );
 }
+
+
 
 
 
