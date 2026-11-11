@@ -72,3 +72,106 @@
 
 /* V PILOT FRAMEWORKS HERO VISUAL REMOVAL END */
 
+
+/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL START */
+
+/*
+ * The active Frameworks markup uses .vfw-compass.
+ * Keep the mountain background, summit, sunlight and flag.
+ * Remove only the overlaid compass composition.
+ */
+.vfw-page .vfw-hero .vfw-compass,
+.vfw-page .vfw-hero .vfw-hero__compass,
+.vfw-page .vfw-hero .vfw-hero__visual,
+.vfw-hero > .vfw-shell > .vfw-compass,
+.vfw-hero__grid > .vfw-compass {
+  display: none !important;
+
+  visibility: hidden !important;
+  opacity: 0 !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  pointer-events: none !important;
+}
+
+/* Convert the hero from a two-column layout to one protected text column. */
+.vfw-page .vfw-hero__grid,
+.vfw-hero .vfw-shell.vfw-hero__grid {
+  display: block !important;
+
+  grid-template-columns: none !important;
+
+  width: min(
+    1400px,
+    calc(100% - 64px)
+  ) !important;
+}
+
+/*
+ * Preserve a controlled live-text region.
+ * The right side remains visually open for the mountain summit and flag.
+ */
+.vfw-page .vfw-hero__copy,
+.vfw-hero .vfw-hero__copy {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(100%, 860px) !important;
+  max-width: 860px !important;
+
+  margin-right: auto !important;
+}
+
+/* Remove decorative compass descendants even if another rule changes the parent. */
+.vfw-page .vfw-hero .vfw-compass *,
+.vfw-page .vfw-hero .vfw-compass::before,
+.vfw-page .vfw-hero .vfw-compass::after {
+  display: none !important;
+
+  animation: none !important;
+}
+
+/* Standard laptop */
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vfw-page .vfw-hero__copy,
+  .vfw-hero .vfw-hero__copy {
+    width: min(100%, 760px) !important;
+    max-width: 760px !important;
+  }
+}
+
+/* Tablet and mobile */
+@media (max-width: 1100px) {
+  .vfw-page .vfw-hero__grid,
+  .vfw-hero .vfw-shell.vfw-hero__grid {
+    width: min(
+      100% - 40px,
+      900px
+    ) !important;
+  }
+
+  .vfw-page .vfw-hero__copy,
+  .vfw-hero .vfw-hero__copy {
+    width: 100% !important;
+    max-width: 760px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vfw-page .vfw-hero__grid,
+  .vfw-hero .vfw-shell.vfw-hero__grid {
+    width: calc(100% - 32px) !important;
+  }
+}
+
+/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL END */
+
