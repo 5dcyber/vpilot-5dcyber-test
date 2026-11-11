@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -13,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: github-pages
   cancel-in-progress: true
 
 jobs:
@@ -23,6 +22,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Configure Node.js
         uses: actions/setup-node@v4
@@ -37,13 +39,11 @@ jobs:
         run: npm run build
 
       - name: Verify deployment output
+        shell: bash
         run: |
           test -f dist/index.html
           test -f dist/CNAME
           test "$(cat dist/CNAME)" = "5dcyber.site"
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
