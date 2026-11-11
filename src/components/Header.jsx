@@ -11,7 +11,7 @@ import "./vpilot-enterprise-header.css";
 const navItems = [
   { key: "company", label: "Company", menu: true },
   { key: "platform", label: "Platform", menu: true },
-  { key: "solutions", label: "Solutions", to: "/solutions", menu: true },
+  { key: "solutions", label: "Solutions", menu: true },
   { key: "services", label: "Services", menu: true },
   { key: "frameworks", label: "Frameworks", to: "/frameworks" },
   { key: "resources", label: "Resources", to: "/resources/insights" },
@@ -131,6 +131,7 @@ export default function Header() {
     </header>
   );
 }
+
 
 
 
