@@ -1,0 +1,1223 @@
+﻿.vpmm{display:grid;grid-template-columns:minmax(230px,.75fr) minmax(0,2.25fr) minmax(300px,.9fr);max-width:1380px;min-width:1120px;max-height:calc(100vh - 100px);margin:0 auto;overflow:auto;border:1px solid rgba(9,57,105,.12);border-top:3px solid transparent;border-image:linear-gradient(90deg,#086ccf,#12b8e8,#54d447) 1;background:linear-gradient(135deg,rgba(255,255,255,.99),rgba(240,248,255,.98) 58%,rgba(230,244,255,.98));box-shadow:0 24px 70px rgba(3,33,66,.18),0 8px 24px rgba(3,33,66,.08);border-radius:0 0 18px 18px;color:#072b5e}.vpmm__intro{padding:32px 26px;border-right:1px solid #d8e8f3}.vpmm__intro>span,.vpmm__featured>span{color:#087eeb;font:700 10px 'IBM Plex Mono',monospace;letter-spacing:.14em}.vpmm__intro h2{margin:10px 0 13px;font:800 25px/1.08 Manrope,sans-serif}.vpmm__intro p,.vpmm__featured p{color:#617991;font-size:12px;line-height:1.55}.vpmm a{color:#244b73;text-decoration:none}.vpmm__intro>a,.vpmm__featured>a{display:inline-flex;align-items:center;gap:8px;margin-top:13px;color:#087eeb;font-weight:800}.vpmm svg{width:13px}.vpmm__groups{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:32px 28px}.vpmm__groups section{min-width:0}.vpmm__groups section:nth-child(4),.vpmm__groups section:nth-child(5){padding-top:15px;border-top:1px solid #d8e8f3}.vpmm__groups h3{margin:0 0 10px;color:#072b5e;font:800 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase}.vpmm__groups a{display:flex;justify-content:space-between;gap:8px;padding:5px 0;font-size:11px;font-weight:650}.vpmm__groups a:hover{color:#087eeb}.vpmm__featured{padding:25px 23px;background:radial-gradient(circle at 50% 8%,rgba(88,214,47,.1),transparent 31%),linear-gradient(150deg,#effaff,#e6f6ff 54%,#e1f4ed)}.vpmm__orbit{position:relative;width:205px;aspect-ratio:1;margin:0 auto 12px}.vpmm__orbit>img{position:absolute;inset:0;width:100%;height:100%}.vpmm__orbit>span{position:absolute;left:50%;top:50%;width:41%;aspect-ratio:1;display:grid;place-items:center;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 25%,#fff,#f3fbff 58%,#dceff9);box-shadow:0 14px 30px rgba(6,53,102,.18)}.vpmm__orbit>span img{width:85%;height:85%;object-fit:contain}.vpmm__featured h3{margin:8px 0;font:800 22px/1.08 Manrope,sans-serif}.vpmm__labels{display:flex;flex-wrap:wrap;gap:5px;margin-top:13px}.vpmm__labels small{padding:5px 8px;border-radius:999px;background:#fff;color:#45647d;font-size:9px}@media(max-width:1080px){.vpmm{min-width:0;grid-template-columns:1fr;max-height:none}.vpmm__groups{grid-template-columns:1fr}.vpmm__featured{display:none}}
+
+/* V PILOT PLATFORM MEGA MENU 3D FINAL START */
+.vpmm {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 86% 7%, rgba(32, 197, 231, 0.12), transparent 27%),
+    linear-gradient(135deg, rgba(255,255,255,0.995), rgba(239,248,255,0.985) 58%, rgba(228,244,255,0.985)) !important;
+}
+
+.vpmm::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -170px;
+  right: -155px;
+  width: 390px;
+  height: 390px;
+  border: 1px solid rgba(8, 126, 235, 0.08);
+  border-radius: 50%;
+  box-shadow: 0 0 0 58px rgba(32, 197, 231, 0.025);
+  pointer-events: none;
+}
+
+.vpmm__featured {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(88, 214, 47, 0.11), transparent 29%),
+    radial-gradient(circle at 50% 12%, rgba(32, 197, 231, 0.16), transparent 42%),
+    linear-gradient(150deg, #effaff, #e6f6ff 54%, #e1f4ed) !important;
+}
+
+.vpmm__orbit {
+  width: 218px !important;
+  transform-style: preserve-3d;
+  transform: translateZ(18px) rotateX(1deg);
+  filter:
+    saturate(1.035)
+    contrast(1.02)
+    drop-shadow(0 17px 26px rgba(5, 60, 110, 0.09));
+}
+
+.vpmm__orbit::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  bottom: 7%;
+  width: 70%;
+  height: 21%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(32,197,231,0.18), transparent 70%);
+  transform: translateX(-50%) rotateX(66deg);
+}
+
+.vpmm__orbit > span {
+  width: 42% !important;
+  animation: vpmm-core-float 6.5s ease-in-out infinite;
+}
+
+.vpmm__orbit > span img {
+  width: 88% !important;
+  height: 88% !important;
+}
+
+@keyframes vpmm-core-float {
+  0%, 100% { transform: translate(-50%, -50%) translateZ(18px); }
+  50% { transform: translate(-50%, calc(-50% - 4px)) translateZ(28px); }
+}
+
+.vpmm__groups a {
+  min-height: 27px;
+  align-items: center;
+  border-radius: 6px;
+  transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+}
+
+.vpmm__groups a:hover,
+.vpmm__groups a:focus-visible {
+  padding-left: 7px;
+  color: #087eeb;
+  background: rgba(8, 126, 235, 0.055);
+}
+
+.vpmm__featured > a,
+.vpmm__intro > a {
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 7px;
+  background: rgba(255,255,255,0.75);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vpmm__orbit > span { animation: none !important; }
+}
+/* V PILOT PLATFORM MEGA MENU 3D FINAL END */
+
+/* V PILOT FINAL PLATFORM MEGA MENU START */
+.vpm-mega-wrap {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.vpmm {
+  position: relative !important;
+  isolation: isolate;
+  display: grid !important;
+  grid-template-columns:
+    minmax(220px, 0.72fr)
+    minmax(0, 2.28fr)
+    minmax(285px, 0.84fr) !important;
+  width: min(1380px, 100%) !important;
+  min-width: 0 !important;
+  max-width: 1380px !important;
+  min-height: 0 !important;
+  height: min(625px, calc(100vh - 96px)) !important;
+  max-height: calc(100vh - 96px) !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(7, 65, 120, 0.12) !important;
+  border-top: 3px solid transparent !important;
+  border-image: linear-gradient(90deg, #087eeb, #20c5e7, #58d62f) 1 !important;
+  border-radius: 0 0 16px 16px !important;
+  color: #082f63;
+  background:
+    radial-gradient(circle at 86% 8%, rgba(32, 197, 231, 0.12), transparent 27%),
+    linear-gradient(135deg, #ffffff 0%, #f2f9ff 58%, #e6f5ff 100%) !important;
+  box-shadow:
+    0 26px 70px rgba(3, 33, 66, 0.18),
+    0 8px 24px rgba(3, 33, 66, 0.07) !important;
+}
+
+.vpmm::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -155px;
+  right: -145px;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgba(8, 126, 235, 0.075);
+  border-radius: 50%;
+  box-shadow: 0 0 0 52px rgba(32, 197, 231, 0.025);
+  pointer-events: none;
+}
+
+.vpmm__intro {
+  min-width: 0;
+  padding: 32px 26px 26px !important;
+  border-right: 1px solid #d8e8f3 !important;
+  background: linear-gradient(155deg, rgba(255,255,255,0.95), rgba(247,251,255,0.8));
+}
+
+.vpmm__intro > span,
+.vpmm__featured > span {
+  display: block;
+  color: #087eeb;
+  font: 700 10px/1.2 "IBM Plex Mono", monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.vpmm__intro h2 {
+  max-width: 230px;
+  margin: 12px 0 15px !important;
+  color: #082f63;
+  font: 800 clamp(1.85rem, 2.15vw, 2.4rem)/1.05 Manrope, Inter, sans-serif !important;
+  letter-spacing: -0.038em;
+}
+
+.vpmm__intro p,
+.vpmm__featured p {
+  color: #607994;
+  font-size: 12.5px !important;
+  line-height: 1.6 !important;
+}
+
+.vpmm__intro > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  min-height: 44px !important;
+  margin-top: 18px !important;
+  padding: 0 15px !important;
+  border: 1px solid rgba(8,126,235,0.16);
+  border-radius: 8px !important;
+  color: #087eeb !important;
+  background: #ffffff !important;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 9px 22px rgba(4,58,108,0.07);
+}
+
+.vpmm__groups {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  grid-template-rows: auto auto !important;
+  align-content: start !important;
+  gap: 20px 24px !important;
+  min-width: 0 !important;
+  padding: 30px 30px 24px !important;
+  overflow: hidden !important;
+}
+
+.vpmm__groups section {
+  min-width: 0 !important;
+}
+
+.vpmm__groups section:nth-child(4),
+.vpmm__groups section:nth-child(5) {
+  padding-top: 18px !important;
+  border-top: 1px solid #d8e8f3 !important;
+}
+
+.vpmm__groups h3 {
+  margin: 0 0 13px !important;
+  color: #082f63;
+  font: 800 10px/1.2 "IBM Plex Mono", monospace !important;
+  letter-spacing: 0.11em !important;
+  text-transform: uppercase;
+}
+
+.vpmm__groups a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  min-height: 34px !important;
+  padding: 5px 7px 5px 0 !important;
+  border-radius: 6px !important;
+  color: #244b73 !important;
+  background: transparent !important;
+  font-size: 11.5px !important;
+  font-weight: 680 !important;
+  line-height: 1.25 !important;
+  text-decoration: none !important;
+  transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+}
+
+.vpmm__groups a:hover,
+.vpmm__groups a:focus-visible {
+  padding-left: 7px !important;
+  color: #087eeb !important;
+  background: rgba(8,126,235,0.055) !important;
+}
+
+.vpmm__groups a svg,
+.vpmm__intro a svg {
+  flex: 0 0 13px;
+  width: 13px;
+  height: 13px;
+}
+
+.vpmm__featured {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  padding: 26px 26px 30px !important;
+  border-left: 1px solid rgba(8,86,156,0.08);
+  background:
+    radial-gradient(circle at 50% 8%, rgba(88,214,47,0.11), transparent 30%),
+    radial-gradient(circle at 50% 12%, rgba(32,197,231,0.16), transparent 43%),
+    linear-gradient(150deg, #effaff 0%, #e6f6ff 54%, #e1f4ed 100%) !important;
+}
+
+.vpmm__orbit {
+  position: relative !important;
+  align-self: center;
+  width: 190px !important;
+  max-width: 190px !important;
+  aspect-ratio: 1;
+  margin: 0 auto 19px !important;
+  transform-style: preserve-3d;
+  transform: translateZ(18px) rotateX(1deg);
+  filter:
+    saturate(1.035)
+    contrast(1.02)
+    drop-shadow(0 17px 26px rgba(5,60,110,0.09));
+}
+
+.vpmm__orbit > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vpmm__orbit > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 42% !important;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(8,126,232,0.28);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #fff, #f3fbff 58%, #dceff9);
+  box-shadow:
+    0 14px 30px rgba(6,53,102,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  animation: vpmm-final-core-float 6.5s ease-in-out infinite;
+}
+
+.vpmm__orbit > span img {
+  width: 88% !important;
+  height: 88% !important;
+  object-fit: contain;
+}
+
+@keyframes vpmm-final-core-float {
+  0%, 100% { transform: translate(-50%, -50%) translateZ(18px); }
+  50% { transform: translate(-50%, calc(-50% - 4px)) translateZ(28px); }
+}
+
+.vpmm__featured h3 {
+  max-width: 285px;
+  margin: 10px 0 12px !important;
+  color: #082f63;
+  font: 800 clamp(1.55rem, 1.9vw, 2rem)/1.08 Manrope, Inter, sans-serif !important;
+  letter-spacing: -0.035em;
+}
+
+.vpmm__featured p {
+  max-width: 285px;
+  margin: 0 !important;
+}
+
+/* The removed pill labels and duplicate Explore PUDICA CTA remain hidden
+   if an older cached component is momentarily rendered. */
+.vpmm__labels,
+.vpmm__featured > a {
+  display: none !important;
+}
+
+@media (max-width: 1280px) and (min-width: 1081px) {
+  .vpmm {
+    grid-template-columns: minmax(205px, 0.68fr) minmax(0, 2.32fr) !important;
+  }
+  .vpmm__featured {
+    display: none !important;
+  }
+  .vpmm__groups {
+    padding-inline: 24px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vpmm {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+  .vpmm__intro {
+    padding: 23px 20px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #d8e8f3 !important;
+  }
+  .vpmm__groups {
+    display: block !important;
+    padding: 8px 20px 30px !important;
+    overflow: visible !important;
+  }
+  .vpmm__groups section {
+    padding: 18px 0 !important;
+    border-top: 1px solid #d8e8f3 !important;
+  }
+  .vpmm__featured {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vpmm__orbit > span {
+    animation: none !important;
+  }
+}
+/* V PILOT FINAL PLATFORM MEGA MENU END */
+
+/* V PILOT PLATFORM FEATURED TOP-RIGHT ALIGNMENT START */
+
+/* Keep the complete menu visible at normal 100% browser zoom. */
+.vpmm {
+  height: min(590px, calc(100vh - 92px)) !important;
+  max-height: calc(100vh - 92px) !important;
+}
+
+/* The featured column becomes a top-aligned visual composition. */
+.vpmm__featured {
+  position: relative !important;
+  display: grid !important;
+  grid-template-rows: 188px auto auto auto !important;
+  align-content: start !important;
+  justify-items: start !important;
+  min-height: 0 !important;
+  padding: 20px 24px 24px !important;
+  overflow: hidden !important;
+}
+
+/* Move the complete two-layer PUDICA visual to the upper-right. */
+.vpmm__orbit {
+  position: relative !important;
+  justify-self: end !important;
+  align-self: start !important;
+  width: 176px !important;
+  max-width: 176px !important;
+  margin: -4px 4px 7px 0 !important;
+  transform: translateZ(18px) rotateX(1deg) !important;
+}
+
+/* Add constrained atmospheric depth around the upper-right visual only. */
+.vpmm__featured::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -112px;
+  right: -105px;
+  width: 315px;
+  height: 315px;
+  border: 1px solid rgba(8, 126, 235, 0.08);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 42px rgba(32, 197, 231, 0.025),
+    0 0 72px rgba(32, 197, 231, 0.08);
+  pointer-events: none;
+}
+
+.vpmm__featured::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 31px;
+  right: 26px;
+  width: 202px;
+  height: 74px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(32,197,231,0.16), transparent 72%);
+  transform: rotateX(66deg);
+  pointer-events: none;
+}
+
+.vpmm__orbit,
+.vpmm__featured > span,
+.vpmm__featured > h3,
+.vpmm__featured > p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Pull the narration upward directly beneath the visual. */
+.vpmm__featured > span {
+  margin-top: -1px !important;
+  font-size: 9.5px !important;
+}
+
+.vpmm__featured h3 {
+  max-width: 290px !important;
+  margin: 8px 0 10px !important;
+  font-size: clamp(1.45rem, 1.7vw, 1.85rem) !important;
+  line-height: 1.06 !important;
+}
+
+.vpmm__featured p {
+  max-width: 292px !important;
+  margin: 0 !important;
+  font-size: 12px !important;
+  line-height: 1.55 !important;
+}
+
+/* Keep the removed lower pills and duplicate CTA hidden. */
+.vpmm__labels,
+.vpmm__featured > a {
+  display: none !important;
+}
+
+/* Compact the navigation groups slightly so their bottom row remains visible. */
+.vpmm__groups {
+  gap: 15px 22px !important;
+  padding: 26px 28px 20px !important;
+}
+
+.vpmm__groups section:nth-child(4),
+.vpmm__groups section:nth-child(5) {
+  padding-top: 14px !important;
+}
+
+.vpmm__groups h3 {
+  margin-bottom: 9px !important;
+}
+
+.vpmm__groups a {
+  min-height: 31px !important;
+  padding-block: 4px !important;
+}
+
+.vpmm__intro {
+  padding: 27px 25px 22px !important;
+}
+
+.vpmm__intro h2 {
+  margin-block: 10px 12px !important;
+  font-size: clamp(1.75rem, 2vw, 2.25rem) !important;
+}
+
+.vpmm__intro p {
+  font-size: 12px !important;
+  line-height: 1.56 !important;
+}
+
+.vpmm__intro > a {
+  margin-top: 14px !important;
+}
+
+@media (max-width: 1500px) and (min-width: 1281px) {
+  .vpmm {
+    grid-template-columns:
+      minmax(210px, 0.68fr)
+      minmax(0, 2.36fr)
+      minmax(270px, 0.8fr) !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 165px auto auto auto !important;
+    padding: 17px 21px 21px !important;
+  }
+
+  .vpmm__orbit {
+    width: 156px !important;
+    max-width: 156px !important;
+    margin-right: 2px !important;
+  }
+
+  .vpmm__featured h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-height: 820px) and (min-width: 1281px) {
+  .vpmm {
+    height: calc(100vh - 88px) !important;
+    max-height: calc(100vh - 88px) !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 142px auto auto auto !important;
+    padding-top: 12px !important;
+  }
+
+  .vpmm__orbit {
+    width: 135px !important;
+    max-width: 135px !important;
+  }
+
+  .vpmm__featured h3 {
+    font-size: 1.38rem !important;
+  }
+
+  .vpmm__featured p {
+    font-size: 11px !important;
+  }
+
+  .vpmm__groups {
+    padding-top: 20px !important;
+    gap: 11px 20px !important;
+  }
+
+  .vpmm__groups a {
+    min-height: 27px !important;
+    font-size: 10.75px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .vpmm__featured {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vpmm__orbit > span {
+    animation: none !important;
+  }
+}
+
+/* V PILOT PLATFORM FEATURED TOP-RIGHT ALIGNMENT END */
+
+/* V PILOT RESPONSIVE PLATFORM MEGA MENU FINAL START */
+.vpm-mega-wrap {
+  overflow: hidden !important;
+  padding-inline: clamp(12px, 2vw, 28px) !important;
+}
+
+.vpmm {
+  position: relative !important;
+  isolation: isolate;
+  display: grid !important;
+  grid-template-columns:
+    minmax(205px, 0.72fr)
+    minmax(0, 2.35fr)
+    minmax(250px, 0.83fr) !important;
+  width: min(1380px, 100%) !important;
+  min-width: 0 !important;
+  max-width: 1380px !important;
+  min-height: 0 !important;
+  height: min(515px, calc(100vh - 96px)) !important;
+  max-height: calc(100vh - 96px) !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(7, 65, 120, 0.13) !important;
+  border-top: 3px solid transparent !important;
+  border-image: linear-gradient(90deg, #087eeb, #20c5e7, #58d62f) 1 !important;
+  border-radius: 0 0 16px 16px !important;
+  color: #082f63;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(32,197,231,0.13), transparent 26%),
+    linear-gradient(135deg, #fff 0%, #f2f9ff 58%, #e7f5ff 100%) !important;
+  box-shadow:
+    0 24px 68px rgba(3,33,66,0.17),
+    0 8px 22px rgba(3,33,66,0.07) !important;
+}
+
+.vpmm__intro {
+  min-width: 0 !important;
+  padding: 28px 24px 24px !important;
+  border-right: 1px solid #d8e8f3 !important;
+  background: linear-gradient(155deg, rgba(255,255,255,.97), rgba(248,252,255,.86));
+}
+
+.vpmm__intro > span,
+.vpmm__featured-copy > span {
+  display: block;
+  color: #087eeb;
+  font: 750 9.5px/1.2 "IBM Plex Mono", monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.vpmm__intro h2 {
+  max-width: 220px;
+  margin: 10px 0 13px !important;
+  color: #082f63;
+  font: 800 clamp(1.7rem, 1.95vw, 2.2rem)/1.04 Manrope, Inter, sans-serif !important;
+  letter-spacing: -.038em;
+}
+
+.vpmm__intro p,
+.vpmm__featured p {
+  color: #607994;
+  font-size: 11.75px !important;
+  line-height: 1.55 !important;
+}
+
+.vpmm__intro > a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  min-height: 42px !important;
+  margin-top: 14px !important;
+  padding: 0 14px !important;
+  border: 1px solid rgba(8,126,235,.17) !important;
+  border-radius: 8px !important;
+  color: #087eeb !important;
+  background: #fff !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  text-decoration: none !important;
+  box-shadow: 0 8px 20px rgba(4,58,108,.07);
+}
+
+.vpmm__intro > a svg {
+  width: 13px;
+  height: 13px;
+}
+
+.vpmm__groups {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-content: start !important;
+  gap: 24px !important;
+  min-width: 0 !important;
+  padding: 30px 28px 24px !important;
+  overflow: hidden !important;
+}
+
+.vpmm__groups section {
+  min-width: 0 !important;
+}
+
+.vpmm__groups h3 {
+  margin: 0 0 12px !important;
+  color: #082f63;
+  font: 800 9.75px/1.2 "IBM Plex Mono", monospace !important;
+  letter-spacing: .11em !important;
+  text-transform: uppercase;
+}
+
+.vpmm__groups a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+  min-height: 37px !important;
+  padding: 5px 7px 5px 0 !important;
+  border-radius: 6px !important;
+  color: #244b73 !important;
+  background: transparent !important;
+  font-size: 11.25px !important;
+  font-weight: 690 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+}
+
+.vpmm__groups a:hover,
+.vpmm__groups a:focus-visible {
+  padding-left: 7px !important;
+  color: #087eeb !important;
+  background: rgba(8,126,235,.055) !important;
+}
+
+.vpmm__groups a svg {
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.vpmm__featured {
+  position: relative !important;
+  display: grid !important;
+  grid-template-rows: 230px auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 18px 22px 24px !important;
+  overflow: hidden !important;
+  border-left: 1px solid rgba(8,86,156,.09) !important;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(88,214,47,.11), transparent 29%),
+    radial-gradient(circle at 50% 12%, rgba(32,197,231,.17), transparent 43%),
+    linear-gradient(150deg, #effaff 0%, #e6f6ff 54%, #e1f4ed 100%) !important;
+}
+
+.vpmm__featured::before {
+  content: "";
+  position: absolute;
+  top: -132px;
+  right: -128px;
+  width: 332px;
+  height: 332px;
+  border: 1px solid rgba(8,126,235,.075);
+  border-radius: 50%;
+  box-shadow: 0 0 0 46px rgba(32,197,231,.025);
+  pointer-events: none;
+}
+
+.vpmm__orbit {
+  position: relative !important;
+  align-self: center !important;
+  justify-self: center !important;
+  width: 205px !important;
+  max-width: 205px !important;
+  aspect-ratio: 1;
+  margin: 0 auto !important;
+  transform-style: preserve-3d;
+  transform: translateZ(18px) rotateX(1deg);
+  filter:
+    saturate(1.035)
+    contrast(1.02)
+    drop-shadow(0 18px 28px rgba(5,60,110,.1));
+}
+
+.vpmm__orbit-shell {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vpmm__orbit-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 42%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(8,126,232,.28);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 25%, #fff, #f3fbff 58%, #dceff9);
+  box-shadow: 0 14px 30px rgba(6,53,102,.18), inset 0 1px 0 rgba(255,255,255,.95);
+  animation: vpmm-responsive-core 6.5s ease-in-out infinite;
+}
+
+.vpmm__orbit-core img {
+  width: 88%;
+  height: 88%;
+  object-fit: contain;
+}
+
+@keyframes vpmm-responsive-core {
+  0%,100% { transform: translate(-50%,-50%) translateZ(18px); }
+  50% { transform: translate(-50%,calc(-50% - 4px)) translateZ(28px); }
+}
+
+.vpmm__featured-copy {
+  position: relative;
+  z-index: 2;
+  align-self: start;
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
+}
+
+.vpmm__featured-copy h3 {
+  margin: 8px 0 10px !important;
+  color: #082f63;
+  font: 800 clamp(1.42rem, 1.65vw, 1.82rem)/1.06 Manrope, Inter, sans-serif !important;
+  letter-spacing: -.035em;
+}
+
+.vpmm__featured-copy p {
+  margin: 0 !important;
+  font-size: 11.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* At common Windows 125% scaling, the CSS viewport is often 1100-1300px.
+   Keep the visual visible and simplify the navigation instead of hiding it. */
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .vpmm {
+    grid-template-columns:
+      minmax(190px, .65fr)
+      minmax(0, 2.35fr)
+      minmax(225px, .75fr) !important;
+    height: min(500px, calc(100vh - 92px)) !important;
+  }
+
+  .vpmm__intro {
+    padding: 24px 20px 20px !important;
+  }
+
+  .vpmm__intro h2 {
+    font-size: 1.72rem !important;
+  }
+
+  .vpmm__groups {
+    gap: 16px !important;
+    padding: 25px 20px 20px !important;
+  }
+
+  .vpmm__groups a {
+    min-height: 34px !important;
+    font-size: 10.5px !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 190px auto !important;
+    padding: 14px 16px 20px !important;
+  }
+
+  .vpmm__orbit {
+    width: 172px !important;
+    max-width: 172px !important;
+  }
+
+  .vpmm__featured-copy h3 {
+    font-size: 1.38rem !important;
+  }
+
+  .vpmm__featured-copy p {
+    font-size: 10.75px !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1081px) {
+  .vpmm {
+    height: calc(100vh - 88px) !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 160px auto !important;
+    padding-top: 8px !important;
+  }
+
+  .vpmm__orbit {
+    width: 145px !important;
+    max-width: 145px !important;
+  }
+
+  .vpmm__featured-copy h3 {
+    font-size: 1.28rem !important;
+  }
+
+  .vpmm__groups a {
+    min-height: 30px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vpmm {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+
+  .vpmm__intro {
+    padding: 23px 20px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #d8e8f3 !important;
+  }
+
+  .vpmm__groups {
+    display: block !important;
+    padding: 8px 20px 30px !important;
+    overflow: visible !important;
+  }
+
+  .vpmm__groups section {
+    padding: 18px 0 !important;
+    border-top: 1px solid #d8e8f3 !important;
+  }
+
+  .vpmm__featured {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vpmm__orbit-core {
+    animation: none !important;
+  }
+}
+/* V PILOT RESPONSIVE PLATFORM MEGA MENU FINAL END */
+
+/* V PILOT PLATFORM AND SERVICES MENU RESPONSIVE FINAL START */
+.vpm-mega-wrap {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding-inline: clamp(10px, 2vw, 26px) !important;
+}
+
+/* Shared enterprise framing for Platform and Services mega menus. */
+.vpmm,
+.vsmm {
+  width: min(1380px, 100%) !important;
+  max-width: 1380px !important;
+  min-width: 0 !important;
+  height: min(520px, calc(100vh - 94px)) !important;
+  max-height: calc(100vh - 94px) !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border-radius: 0 0 16px 16px !important;
+  box-shadow: 0 24px 68px rgba(3, 33, 66, 0.17) !important;
+}
+
+/* Make all menu links feel interactive and remain clickable above decoration. */
+.vpmm a,
+.vsmm a {
+  position: relative !important;
+  z-index: 5 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* SERVICES: keep featured visual visible at normal Windows 100% zoom. */
+.vsmm {
+  grid-template-columns:
+    minmax(210px, 0.67fr)
+    minmax(0, 2.38fr)
+    minmax(235px, 0.75fr) !important;
+}
+
+.vsmm__intro {
+  padding: 25px 21px 21px !important;
+}
+
+.vsmm__intro h2 {
+  margin: 10px 0 12px !important;
+  font-size: clamp(1.65rem, 1.9vw, 2.15rem) !important;
+}
+
+.vsmm__intro p {
+  font-size: 11.5px !important;
+  line-height: 1.55 !important;
+}
+
+.vsmm__groups {
+  gap: 12px 20px !important;
+  padding: 24px 24px 20px !important;
+}
+
+.vsmm__groups section:nth-child(n + 4) {
+  padding-top: 12px !important;
+}
+
+.vsmm__groups h3 {
+  margin-bottom: 7px !important;
+}
+
+.vsmm__groups a {
+  min-height: 29px !important;
+  padding: 3px 5px 3px 0 !important;
+  border-radius: 6px !important;
+  font-size: 10.5px !important;
+  transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+}
+
+.vsmm__groups a:hover,
+.vsmm__groups a:focus-visible {
+  padding-left: 6px !important;
+  color: #087eeb !important;
+  background: rgba(8, 126, 235, 0.055) !important;
+}
+
+.vsmm__featured {
+  display: grid !important;
+  grid-template-rows: 158px auto auto auto auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  min-width: 0 !important;
+  padding: 17px 20px 21px !important;
+  text-align: center !important;
+}
+
+.vsmm__shield {
+  width: 132px !important;
+  height: 132px !important;
+  margin: 0 auto 10px !important;
+  font-size: 60px !important;
+  transform: translateZ(18px) rotateX(1deg);
+}
+
+.vsmm__featured h3 {
+  max-width: 260px !important;
+  margin: 8px auto 9px !important;
+  font-size: 1.45rem !important;
+  line-height: 1.06 !important;
+}
+
+.vsmm__featured p {
+  max-width: 265px !important;
+  margin: 0 auto !important;
+  font-size: 10.75px !important;
+  line-height: 1.5 !important;
+}
+
+.vsmm__featured > a {
+  min-height: 42px !important;
+  margin-top: 13px !important;
+  padding: 0 14px !important;
+  font-size: 11px !important;
+}
+
+/* PLATFORM: centered 3D visual, consistent size at 100% and 90% zoom. */
+.vpmm {
+  grid-template-columns:
+    minmax(200px, 0.68fr)
+    minmax(0, 2.35fr)
+    minmax(235px, 0.77fr) !important;
+}
+
+.vpmm__featured {
+  display: grid !important;
+  grid-template-rows: 190px auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  padding: 14px 18px 22px !important;
+  text-align: center !important;
+}
+
+.vpmm__orbit {
+  justify-self: center !important;
+  align-self: center !important;
+  width: 172px !important;
+  max-width: 172px !important;
+  margin: 0 auto !important;
+}
+
+.vpmm__featured-copy {
+  max-width: 265px !important;
+  text-align: center !important;
+}
+
+.vpmm__featured-copy h3 {
+  font-size: 1.4rem !important;
+}
+
+.vpmm__featured-copy p {
+  font-size: 10.75px !important;
+}
+
+/* At 100% zoom on Windows with display scaling, retain the visual and tighten content. */
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .vpmm,
+  .vsmm {
+    height: min(495px, calc(100vh - 90px)) !important;
+  }
+
+  .vsmm {
+    grid-template-columns:
+      minmax(188px, 0.63fr)
+      minmax(0, 2.42fr)
+      minmax(210px, 0.7fr) !important;
+  }
+
+  .vsmm__intro {
+    padding: 21px 18px 18px !important;
+  }
+
+  .vsmm__intro h2 {
+    font-size: 1.55rem !important;
+  }
+
+  .vsmm__groups {
+    gap: 9px 15px !important;
+    padding: 20px 18px 17px !important;
+  }
+
+  .vsmm__groups a {
+    min-height: 27px !important;
+    font-size: 9.75px !important;
+  }
+
+  .vsmm__featured {
+    grid-template-rows: 128px auto auto auto auto !important;
+    padding: 12px 14px 16px !important;
+  }
+
+  .vsmm__shield {
+    width: 108px !important;
+    height: 108px !important;
+    font-size: 50px !important;
+  }
+
+  .vsmm__featured h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .vsmm__featured p {
+    font-size: 10px !important;
+  }
+
+  .vpmm {
+    grid-template-columns:
+      minmax(188px, 0.63fr)
+      minmax(0, 2.42fr)
+      minmax(210px, 0.7fr) !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 165px auto !important;
+  }
+
+  .vpmm__orbit {
+    width: 148px !important;
+    max-width: 148px !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1081px) {
+  .vpmm,
+  .vsmm {
+    height: calc(100vh - 86px) !important;
+    max-height: calc(100vh - 86px) !important;
+  }
+
+  .vsmm__groups a,
+  .vpmm__groups a {
+    min-height: 25px !important;
+  }
+
+  .vsmm__shield {
+    width: 92px !important;
+    height: 92px !important;
+    font-size: 44px !important;
+  }
+
+  .vpmm__orbit {
+    width: 132px !important;
+    max-width: 132px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vpmm,
+  .vsmm {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+
+  .vpmm__featured,
+  .vsmm__featured {
+    display: none !important;
+  }
+}
+/* V PILOT PLATFORM AND SERVICES MENU RESPONSIVE FINAL END */
+

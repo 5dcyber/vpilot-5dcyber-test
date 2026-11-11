@@ -3,13 +3,16 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { ApprovedVPilotBrand } from "../VPilotBrand.jsx";
 import EnterpriseMegaMenu from "./EnterpriseMegaMenu.jsx";
+import PlatformMegaMenu from "./PlatformMegaMenu.jsx";
+import ServicesMegaMenu from "./ServicesMegaMenu.jsx";
+import SolutionsMegaMenu from "./SolutionsMegaMenu.jsx";
 import "./vpilot-enterprise-header.css";
 
 const navItems = [
   { key: "company", label: "Company", menu: true },
-  { key: "platform", label: "Platform", to: "/platform" },
+  { key: "platform", label: "Platform", menu: true },
   { key: "solutions", label: "Solutions", to: "/solutions", menu: true },
-  { key: "services", label: "Services", to: "/services", menu: true },
+  { key: "services", label: "Services", menu: true },
   { key: "frameworks", label: "Frameworks", to: "/frameworks" },
   { key: "resources", label: "Resources", to: "/resources/insights" },
 ];
@@ -103,10 +106,34 @@ export default function Header() {
 
       
 
-      <EnterpriseMegaMenu menuKey={activeMenu} onClose={closeAll}/>
+      {activeMenu === "solutions" && (
+        <div id="vph-menu-solutions" className="vpm-mega-wrap">
+          <SolutionsMegaMenu onClose={closeAll} />
+        </div>
+      )}
+
+      {activeMenu === "services" && (
+        <div id="vph-menu-services" className="vpm-mega-wrap">
+          <ServicesMegaMenu onClose={closeAll} />
+        </div>
+      )}
+
+      {activeMenu === "platform" && (
+        <div id="vph-menu-platform" className="vpm-mega-wrap">
+          <PlatformMegaMenu onClose={closeAll} />
+        </div>
+      )}
+
+      <EnterpriseMegaMenu
+        menuKey={["platform", "solutions", "services"].includes(activeMenu) ? null : activeMenu}
+        onClose={closeAll}
+      />
     </header>
   );
 }
+
+
+
 
 
 

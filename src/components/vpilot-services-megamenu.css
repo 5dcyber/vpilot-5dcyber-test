@@ -1,0 +1,378 @@
+﻿.vsmm{display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,2.35fr) minmax(270px,.82fr);width:min(1380px,100%);height:min(570px,calc(100vh - 96px));margin:auto;overflow:hidden;border:1px solid rgba(7,65,120,.13);border-top:3px solid transparent;border-image:linear-gradient(90deg,#087eeb,#20c5e7,#58d62f) 1;border-radius:0 0 16px 16px;background:linear-gradient(135deg,#fff,#eef8ff);box-shadow:0 24px 68px rgba(3,33,66,.17)}.vsmm__intro{padding:30px 26px;border-right:1px solid #d8e8f3}.vsmm__intro>span,.vsmm__featured>span{color:#087eeb;font:800 10px/1.2 "IBM Plex Mono",monospace;letter-spacing:.14em}.vsmm h2{font:800 clamp(1.8rem,2.1vw,2.4rem)/1.04 Manrope,Inter,sans-serif}.vsmm p{color:#607994;font-size:12px;line-height:1.6}.vsmm a{text-decoration:none}.vsmm__intro>a,.vsmm__featured>a{display:inline-flex;align-items:center;gap:8px;margin-top:15px;padding:12px 15px;border-radius:8px;background:#fff;color:#087eeb;font-weight:800;box-shadow:0 9px 22px rgba(4,58,108,.07)}.vsmm__intro svg,.vsmm__featured svg{width:14px}.vsmm__groups{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 24px;padding:28px}.vsmm__groups section:nth-child(n+4){padding-top:15px;border-top:1px solid #d8e8f3}.vsmm__groups h3{margin:0 0 8px;font:800 9.5px/1.2 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase}.vsmm__groups a{display:flex;justify-content:space-between;align-items:center;min-height:31px;color:#244b73;font-size:10.75px;font-weight:680}.vsmm__groups a:hover{color:#087eeb}.vsmm__groups svg{width:12px}.vsmm__featured{display:flex;flex-direction:column;justify-content:center;padding:25px;border-left:1px solid #d8e8f3;background:radial-gradient(circle at 50% 12%,rgba(32,197,231,.18),transparent 40%),linear-gradient(150deg,#effaff,#e1f4ed)}.vsmm__shield{display:grid;place-items:center;width:150px;height:150px;margin:0 auto 18px;border:1px solid rgba(8,126,235,.25);border-radius:50%;color:#087eeb;background:radial-gradient(circle,#fff,#dff7ff);font:900 72px Manrope;box-shadow:0 20px 44px rgba(8,126,235,.18)}.vsmm__featured h3{font:800 1.8rem/1.06 Manrope;margin:8px 0 10px}@media(max-width:1280px){.vsmm{grid-template-columns:220px 1fr}.vsmm__featured{display:none}}@media(max-width:1080px){.vsmm{display:block;width:100%;height:auto;border:0;box-shadow:none}.vsmm__groups{display:block}.vsmm__groups section{padding:18px 0;border-top:1px solid #d8e8f3}}
+
+/* V PILOT PLATFORM AND SERVICES MENU RESPONSIVE FINAL START */
+.vpm-mega-wrap {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding-inline: clamp(10px, 2vw, 26px) !important;
+}
+
+/* Shared enterprise framing for Platform and Services mega menus. */
+.vpmm,
+.vsmm {
+  width: min(1380px, 100%) !important;
+  max-width: 1380px !important;
+  min-width: 0 !important;
+  height: min(520px, calc(100vh - 94px)) !important;
+  max-height: calc(100vh - 94px) !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border-radius: 0 0 16px 16px !important;
+  box-shadow: 0 24px 68px rgba(3, 33, 66, 0.17) !important;
+}
+
+/* Make all menu links feel interactive and remain clickable above decoration. */
+.vpmm a,
+.vsmm a {
+  position: relative !important;
+  z-index: 5 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* SERVICES: keep featured visual visible at normal Windows 100% zoom. */
+.vsmm {
+  grid-template-columns:
+    minmax(210px, 0.67fr)
+    minmax(0, 2.38fr)
+    minmax(235px, 0.75fr) !important;
+}
+
+.vsmm__intro {
+  padding: 25px 21px 21px !important;
+}
+
+.vsmm__intro h2 {
+  margin: 10px 0 12px !important;
+  font-size: clamp(1.65rem, 1.9vw, 2.15rem) !important;
+}
+
+.vsmm__intro p {
+  font-size: 11.5px !important;
+  line-height: 1.55 !important;
+}
+
+.vsmm__groups {
+  gap: 12px 20px !important;
+  padding: 24px 24px 20px !important;
+}
+
+.vsmm__groups section:nth-child(n + 4) {
+  padding-top: 12px !important;
+}
+
+.vsmm__groups h3 {
+  margin-bottom: 7px !important;
+}
+
+.vsmm__groups a {
+  min-height: 29px !important;
+  padding: 3px 5px 3px 0 !important;
+  border-radius: 6px !important;
+  font-size: 10.5px !important;
+  transition: color 180ms ease, background 180ms ease, padding 180ms ease;
+}
+
+.vsmm__groups a:hover,
+.vsmm__groups a:focus-visible {
+  padding-left: 6px !important;
+  color: #087eeb !important;
+  background: rgba(8, 126, 235, 0.055) !important;
+}
+
+.vsmm__featured {
+  display: grid !important;
+  grid-template-rows: 158px auto auto auto auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  min-width: 0 !important;
+  padding: 17px 20px 21px !important;
+  text-align: center !important;
+}
+
+.vsmm__shield {
+  width: 132px !important;
+  height: 132px !important;
+  margin: 0 auto 10px !important;
+  font-size: 60px !important;
+  transform: translateZ(18px) rotateX(1deg);
+}
+
+.vsmm__featured h3 {
+  max-width: 260px !important;
+  margin: 8px auto 9px !important;
+  font-size: 1.45rem !important;
+  line-height: 1.06 !important;
+}
+
+.vsmm__featured p {
+  max-width: 265px !important;
+  margin: 0 auto !important;
+  font-size: 10.75px !important;
+  line-height: 1.5 !important;
+}
+
+.vsmm__featured > a {
+  min-height: 42px !important;
+  margin-top: 13px !important;
+  padding: 0 14px !important;
+  font-size: 11px !important;
+}
+
+/* PLATFORM: centered 3D visual, consistent size at 100% and 90% zoom. */
+.vpmm {
+  grid-template-columns:
+    minmax(200px, 0.68fr)
+    minmax(0, 2.35fr)
+    minmax(235px, 0.77fr) !important;
+}
+
+.vpmm__featured {
+  display: grid !important;
+  grid-template-rows: 190px auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  padding: 14px 18px 22px !important;
+  text-align: center !important;
+}
+
+.vpmm__orbit {
+  justify-self: center !important;
+  align-self: center !important;
+  width: 172px !important;
+  max-width: 172px !important;
+  margin: 0 auto !important;
+}
+
+.vpmm__featured-copy {
+  max-width: 265px !important;
+  text-align: center !important;
+}
+
+.vpmm__featured-copy h3 {
+  font-size: 1.4rem !important;
+}
+
+.vpmm__featured-copy p {
+  font-size: 10.75px !important;
+}
+
+/* At 100% zoom on Windows with display scaling, retain the visual and tighten content. */
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .vpmm,
+  .vsmm {
+    height: min(495px, calc(100vh - 90px)) !important;
+  }
+
+  .vsmm {
+    grid-template-columns:
+      minmax(188px, 0.63fr)
+      minmax(0, 2.42fr)
+      minmax(210px, 0.7fr) !important;
+  }
+
+  .vsmm__intro {
+    padding: 21px 18px 18px !important;
+  }
+
+  .vsmm__intro h2 {
+    font-size: 1.55rem !important;
+  }
+
+  .vsmm__groups {
+    gap: 9px 15px !important;
+    padding: 20px 18px 17px !important;
+  }
+
+  .vsmm__groups a {
+    min-height: 27px !important;
+    font-size: 9.75px !important;
+  }
+
+  .vsmm__featured {
+    grid-template-rows: 128px auto auto auto auto !important;
+    padding: 12px 14px 16px !important;
+  }
+
+  .vsmm__shield {
+    width: 108px !important;
+    height: 108px !important;
+    font-size: 50px !important;
+  }
+
+  .vsmm__featured h3 {
+    font-size: 1.25rem !important;
+  }
+
+  .vsmm__featured p {
+    font-size: 10px !important;
+  }
+
+  .vpmm {
+    grid-template-columns:
+      minmax(188px, 0.63fr)
+      minmax(0, 2.42fr)
+      minmax(210px, 0.7fr) !important;
+  }
+
+  .vpmm__featured {
+    grid-template-rows: 165px auto !important;
+  }
+
+  .vpmm__orbit {
+    width: 148px !important;
+    max-width: 148px !important;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1081px) {
+  .vpmm,
+  .vsmm {
+    height: calc(100vh - 86px) !important;
+    max-height: calc(100vh - 86px) !important;
+  }
+
+  .vsmm__groups a,
+  .vpmm__groups a {
+    min-height: 25px !important;
+  }
+
+  .vsmm__shield {
+    width: 92px !important;
+    height: 92px !important;
+    font-size: 44px !important;
+  }
+
+  .vpmm__orbit {
+    width: 132px !important;
+    max-width: 132px !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vpmm,
+  .vsmm {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    box-shadow: none !important;
+  }
+
+  .vpmm__featured,
+  .vsmm__featured {
+    display: none !important;
+  }
+}
+/* V PILOT PLATFORM AND SERVICES MENU RESPONSIVE FINAL END */
+
+/* V PILOT SERVICES MEGA MENU SHIELD ORBIT FINAL START */
+
+/* Retire the temporary letter placeholder. */
+.vsmm__shield {
+  display: none !important;
+}
+
+/* Premium two-dimensional SVG asset with restrained dimensional depth. */
+.vsmm__shield-orbit {
+  position: relative;
+  z-index: 2;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  width: clamp(154px, 12vw, 205px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 15px;
+  object-fit: contain;
+  object-position: center;
+  transform: translateZ(20px) rotateX(1deg);
+  transform-origin: center;
+  filter:
+    saturate(1.045)
+    contrast(1.025)
+    drop-shadow(0 18px 26px rgba(4, 53, 102, 0.14))
+    drop-shadow(0 0 28px rgba(32, 197, 231, 0.08));
+  animation: vsmm-shield-depth 6.8s ease-in-out infinite;
+}
+
+@keyframes vsmm-shield-depth {
+  0%, 100% {
+    transform: translateY(0) translateZ(20px) rotateX(1deg);
+  }
+  50% {
+    transform: translateY(-4px) translateZ(28px) rotateX(1deg);
+  }
+}
+
+/* Add a restrained glass stage behind the SVG without obscuring it. */
+.vsmm__featured::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: clamp(20px, 3vh, 34px);
+  left: 50%;
+  width: clamp(190px, 15vw, 245px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(8, 126, 235, 0.08);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.62) 0%, rgba(231,248,255,0.28) 45%, transparent 72%);
+  box-shadow:
+    0 0 0 28px rgba(32, 197, 231, 0.018),
+    0 0 48px rgba(32, 197, 231, 0.08);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.vsmm__featured > span,
+.vsmm__featured > h3,
+.vsmm__featured > p,
+.vsmm__featured > a {
+  position: relative;
+  z-index: 2;
+}
+
+/* Preserve the current responsive menu height. */
+@media (max-width: 1320px) and (min-width: 1081px) {
+  .vsmm__shield-orbit {
+    width: 132px;
+    margin-bottom: 10px;
+  }
+
+  .vsmm__featured::before {
+    top: 14px;
+    width: 170px;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 1081px) {
+  .vsmm__shield-orbit {
+    width: 108px;
+    margin-bottom: 7px;
+  }
+
+  .vsmm__featured::before {
+    top: 9px;
+    width: 145px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vsmm__shield-orbit {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vsmm__shield-orbit {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* V PILOT SERVICES MEGA MENU SHIELD ORBIT FINAL END */
+

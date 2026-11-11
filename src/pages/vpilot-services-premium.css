@@ -1,0 +1,129 @@
+﻿:root{--vps-navy:#061b36;--vps-deep:#082f63;--vps-blue:#087eeb;--vps-cyan:#20c5e7;--vps-ice:#edf8ff;--vps-slate:#58718b}.vps-page{color:var(--vps-deep);background:#fff;font-family:Inter,system-ui,sans-serif}.vps-shell{width:min(1400px,calc(100% - 64px));margin:auto}.vps-section{padding:82px 0}.vps-hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(90deg,rgba(3,20,42,.98) 0 44%,rgba(3,20,42,.66) 60%,rgba(3,20,42,.18)),url('/assets/vpilot-services-hero.png') right center/cover no-repeat}.vps-hero__grid{min-height:650px;display:grid;grid-template-columns:minmax(0,720px) 1fr;align-items:center;gap:55px;padding-block:70px}.vps-hero__copy>span,.vps-feature-grid>div>span,.vps-assurance-grid>div>span,.vps-final span{color:#59dff2;font:800 11px/1.2 "IBM Plex Mono",monospace;letter-spacing:.16em}.vps-hero h1{margin:18px 0 14px;font:800 clamp(3.5rem,5.2vw,5.8rem)/.96 Manrope,Inter,sans-serif;letter-spacing:-.055em}.vps-hero h1 em{font-style:normal;color:var(--vps-cyan)}.vps-hero__copy>strong{display:block;margin-bottom:20px;color:#a9eeff;font-size:20px}.vps-hero p{max-width:690px;color:#cfdeea;font-size:15px;line-height:1.7}.vps-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.vps-actions a,.vps-inline-cta{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:0 20px;border:1px solid rgba(255,255,255,.45);border-radius:8px;color:#fff;text-decoration:none;font-weight:800}.vps-actions a:first-child,.vps-inline-cta{border-color:transparent;background:linear-gradient(135deg,#087eeb,#075eb5);box-shadow:0 12px 28px rgba(8,126,235,.26)}.vps-actions svg,.vps-inline-cta svg{width:16px}.vps-hero__model{justify-self:end;display:grid;gap:12px;color:#dffaff;font-weight:800;letter-spacing:.12em}.vps-orbit{position:relative;width:330px;aspect-ratio:1;border:1px solid rgba(32,197,231,.35);border-radius:50%;box-shadow:0 0 60px rgba(32,197,231,.14),inset 0 0 40px rgba(8,126,235,.12)}.vps-orbit:before,.vps-orbit:after{content:"";position:absolute;border:1px dashed rgba(32,197,231,.3);border-radius:50%;inset:30px}.vps-orbit:after{inset:78px;border-style:solid}.vps-orbit b{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:130px;height:130px;border-radius:50%;text-align:center;background:radial-gradient(circle at 35% 25%,#fff,#dff7ff);color:#087eeb;box-shadow:0 18px 40px rgba(8,126,235,.28)}.vps-orbit i{position:absolute;width:17px;height:17px;border:4px solid #fff;border-radius:50%;background:#20c5e7;box-shadow:0 5px 14px rgba(8,126,235,.4)}.vps-orbit i:nth-child(1){top:5%;left:48%}.vps-orbit i:nth-child(2){right:4%;top:35%;background:#16a970}.vps-orbit i:nth-child(3){right:20%;bottom:7%;background:#f49a31}.vps-orbit i:nth-child(4){left:20%;bottom:7%;background:#e55b43}.vps-orbit i:nth-child(5){left:4%;top:35%;background:#6956d9}.vps-proof{display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.96);color:#173f69}.vps-proof span{display:flex;align-items:center;justify-content:center;gap:8px;min-height:70px;border-right:1px solid #d8e8f3;font-size:12px;font-weight:800}.vps-proof svg{width:18px;color:#087eeb}.vps-heading{max-width:820px;margin-bottom:34px}.vps-heading>span{color:#087eeb;font:800 10px/1.2 "IBM Plex Mono",monospace;letter-spacing:.15em}.vps-heading h2,.vps-feature-grid h2,.vps-assurance h2,.vps-final h2{margin:10px 0 12px;font:800 clamp(2.2rem,3vw,3.4rem)/1.05 Manrope,Inter,sans-serif;letter-spacing:-.045em}.vps-heading p,.vps-feature-grid p{color:var(--vps-slate);line-height:1.7}.vps-split,.vps-feature-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.vps-challenge{background:linear-gradient(135deg,#fff,#edf8ff)}.vps-outcomes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.vps-outcomes span{display:flex;align-items:center;gap:9px;padding:15px;border:1px solid #d8e8f3;border-radius:10px;background:#fff;font-weight:750}.vps-outcomes svg{width:17px;color:#16a970}.vps-domain-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.vps-domain{min-height:430px;padding:24px 20px;border:1px solid #d8e8f3;border-top:3px solid var(--tone,#087eeb);border-radius:14px;background:linear-gradient(145deg,#fff,#f6fbff);box-shadow:0 15px 38px rgba(4,48,91,.07)}.vps-domain>svg{width:42px;height:42px;padding:10px;border-radius:50%;color:#fff;background:var(--tone,#087eeb)}.vps-domain.is-violet{--tone:#6956d9}.vps-domain.is-emerald{--tone:#16a970}.vps-domain.is-orange{--tone:#e55b43}.vps-domain.is-azure{--tone:#087eeb}.vps-domain.is-amber{--tone:#f49a31}.vps-domain h3{font-size:18px}.vps-domain>strong{display:block;min-height:55px;color:#315677;font-size:13px;line-height:1.45}.vps-domain ul{list-style:none;padding:0}.vps-domain li{display:flex;gap:7px;margin:8px 0;color:#58718b;font-size:12px}.vps-domain li svg{width:14px;color:#16a970}.vps-domain small{display:block;margin-top:18px;color:#58718b}.vps-domain>b{color:var(--tone)}.vps-native{background:linear-gradient(130deg,#eefaff,#ddefff)}.vps-feature-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.vps-feature-cards article,.vps-assurance-grid article{display:flex;align-items:center;gap:12px;padding:18px;border:1px solid #d2e6f3;border-radius:10px;background:rgba(255,255,255,.9);box-shadow:0 12px 28px rgba(4,48,91,.06)}.vps-feature-cards svg{color:#087eeb}.vps-remediation,.vps-fabric,.vps-assurance,.vps-final{color:#fff;background:radial-gradient(circle at 90% 10%,rgba(32,197,231,.13),transparent 35%),linear-gradient(140deg,#041a34,#082f63)}.vps-remediation p,.vps-fabric p,.vps-assurance p,.vps-assurance small,.vps-final p{color:#c8d8e4;line-height:1.7}.vps-stack{display:grid;gap:8px}.vps-stack span{display:block;padding:14px 18px;border:1px solid rgba(32,197,231,.35);border-radius:70px;background:linear-gradient(90deg,rgba(8,126,235,.35),rgba(32,197,231,.12));transform:translateX(calc(var(--i)*8px));text-align:center;font-weight:750}.vps-delivery-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.vps-delivery-grid article{padding:22px;border:1px solid #d8e8f3;border-radius:12px;background:#fff}.vps-delivery-grid span{color:#087eeb;font-family:"IBM Plex Mono",monospace}.vps-engagement{background:#edf8ff}.vps-engagement-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.vps-engagement-grid article{padding:24px;border:1px solid #d8e8f3;border-radius:14px;background:#fff}.vps-engagement-grid>article>svg{color:#087eeb}.vps-engagement-grid a{display:inline-flex;gap:8px;color:#087eeb;font-weight:800;text-decoration:none}.vps-engagement-grid a svg{width:14px}.vps-fabric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.vps-fabric-grid span{padding:13px;border:1px solid rgba(32,197,231,.25);border-radius:8px;background:rgba(255,255,255,.06)}.vps-heading.is-dark h2,.vps-heading.is-dark p{color:#fff}.vps-assurance-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px}.vps-assurance-grid>div:last-child{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.vps-assurance-grid article{color:#082f63}.vps-assurance-grid article svg{color:#087eeb}.vps-industry-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.vps-industry-grid span{padding:28px 14px;text-align:center;border:1px solid #d8e8f3;border-radius:12px;background:linear-gradient(145deg,#fff,#f2f9ff);font-weight:800}.vps-final{padding:65px 0}.vps-final>.vps-shell{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px}.vps-final h2{font-size:clamp(2rem,3vw,3.2rem)}
+@media(max-width:1200px){.vps-hero__grid,.vps-split,.vps-feature-grid,.vps-assurance-grid{grid-template-columns:1fr}.vps-hero__model{display:none}.vps-domain-grid{grid-template-columns:repeat(2,1fr)}.vps-delivery-grid{grid-template-columns:repeat(3,1fr)}.vps-engagement-grid{grid-template-columns:repeat(2,1fr)}.vps-industry-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.vps-shell{width:min(100% - 32px,1400px)}.vps-section{padding:58px 0}.vps-hero__grid{min-height:auto;padding-block:60px}.vps-hero h1{font-size:clamp(2.8rem,12vw,4rem)}.vps-proof{grid-template-columns:1fr}.vps-proof span{justify-content:flex-start;padding-inline:22px}.vps-domain-grid,.vps-delivery-grid,.vps-engagement-grid,.vps-industry-grid,.vps-outcomes,.vps-feature-cards,.vps-fabric-grid,.vps-assurance-grid>div:last-child{grid-template-columns:1fr}.vps-final>.vps-shell{grid-template-columns:1fr}.vps-actions a{width:100%}}
+
+/* V PILOT PLATFORM AND SERVICES HERO VISUAL REMOVAL START */
+
+/* Remove the current right-side Platform animation and its narration. */
+.vpp-hero__visual,
+.vpp-hero__visual-copy {
+  display: none !important;
+}
+
+/* Convert the Platform hero into a clean single-column narrative canvas. */
+.vpp-hero__grid {
+  display: block !important;
+  min-height: 670px !important;
+  padding-top: 76px !important;
+  padding-bottom: 76px !important;
+}
+
+.vpp-hero__copy {
+  width: min(760px, 49vw) !important;
+  max-width: 760px !important;
+  margin: 0 !important;
+}
+
+.vpp-hero {
+  background-position: right center !important;
+  background-size: cover !important;
+}
+
+/* Remove the current Services orbit/model visual. */
+.vps-hero__model,
+.vps-orbit {
+  display: none !important;
+}
+
+/* Convert the Services hero into the same premium single-column system. */
+.vps-hero__grid {
+  display: block !important;
+  min-height: 650px !important;
+  padding-top: 74px !important;
+  padding-bottom: 74px !important;
+}
+
+.vps-hero__copy {
+  width: min(730px, 48vw) !important;
+  max-width: 730px !important;
+  margin: 0 !important;
+}
+
+.vps-hero {
+  background-position: right center !important;
+  background-size: cover !important;
+}
+
+/* Keep live content separated from the right-side artwork. */
+.vpp-hero::before,
+.vps-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 20, 42, 0.99) 0%,
+    rgba(3, 20, 42, 0.975) 31%,
+    rgba(3, 20, 42, 0.91) 43%,
+    rgba(3, 20, 42, 0.62) 54%,
+    rgba(3, 20, 42, 0.16) 68%,
+    transparent 78%
+  );
+}
+
+.vpp-hero__grid,
+.vps-hero__grid {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1500px) and (min-width: 1101px) {
+  .vpp-hero__copy,
+  .vps-hero__copy {
+    width: min(660px, 47vw) !important;
+    max-width: 660px !important;
+  }
+
+  .vpp-hero__grid,
+  .vps-hero__grid {
+    min-height: 620px !important;
+    padding-top: 62px !important;
+    padding-bottom: 62px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .vpp-hero__copy,
+  .vps-hero__copy {
+    width: min(760px, 100%) !important;
+    max-width: 760px !important;
+  }
+
+  .vpp-hero::before,
+  .vps-hero::before {
+    background: linear-gradient(
+      90deg,
+      rgba(3, 20, 42, 0.98),
+      rgba(3, 20, 42, 0.86) 72%,
+      rgba(3, 20, 42, 0.65)
+    );
+  }
+}
+
+@media (max-width: 700px) {
+  .vpp-hero__grid,
+  .vps-hero__grid {
+    min-height: auto !important;
+    padding-top: 56px !important;
+    padding-bottom: 56px !important;
+  }
+
+  .vpp-hero,
+  .vps-hero {
+    background-position: 66% center !important;
+  }
+}
+
+/* V PILOT PLATFORM AND SERVICES HERO VISUAL REMOVAL END */
+

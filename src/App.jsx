@@ -1,8 +1,11 @@
 ﻿import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import SolutionsRouteNavigator from "./components/SolutionsRouteNavigator.jsx";
+import RouteSectionNavigator from "./components/RouteSectionNavigator.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CompanyPage from "./pages/CompanyPage.jsx";
+import PlatformPage from "./pages/PlatformPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
 import InsightsPage from "./pages/InsightsPage.jsx";
@@ -23,17 +26,23 @@ export default function App() {
     <>
       <Header />
       <main>
+        <SolutionsRouteNavigator />
+        <RouteSectionNavigator />
         <Routes>
           <Route path="/" element={<HomePage />} />
 
           {/* Corporate routes always render the complete Company page. */}
           <Route path="/company" element={<CompanyPage />} />
           <Route path="/company/*" element={<CompanyPage />} />
+          <Route path="/platform" element={<PlatformPage />} />
+          <Route path="/platform/*" element={<PlatformPage />} />
           <Route path="/why-v-pilot" element={<CompanyPage />} />
           <Route path="/5pilot-ops" element={<CompanyPage />} />
 
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/*" element={<ServicesPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
+          <Route path="/solutions/*" element={<SolutionsPage />} />
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/support" element={<SupportPage />} />
@@ -50,3 +59,6 @@ export default function App() {
     </>
   );
 }
+
+
+
