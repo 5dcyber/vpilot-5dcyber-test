@@ -13,31 +13,31 @@ import "./vpilot-pudica-platform-orbit.css";
 const companyGroups = [
   { title: "Company Overview", links: [
     ["About V Pilot", "/company", "Managed cybersecurity operations built around accountability and measurable outcomes."],
-    ["Purpose, Vision & Mission", "/company/purpose-vision-mission", "Purpose, strategic direction and operating commitments."],
-    ["Our Story", "/company/our-story", "Closing the gap between findings, operational action and trusted recovery."],
-    ["Leadership", "/company/leadership", "Strategy, platform development, governance and customer outcomes."],
+    ["Purpose, Vision & Mission", "/company", "Purpose, strategic direction and operating commitments."],
+    ["Our Story", "/company", "Closing the gap between findings, operational action and trusted recovery."],
+    ["Leadership", "/company", "Strategy, platform development, governance and customer outcomes."],
   ]},
   { title: "Why V Pilot", links: [
-    ["Our Difference", "/why-v-pilot", "From assessment through validated treatment and evidenced closure."],
-    ["Security Assurance", "/company/security-assurance", "Risk-driven proving, accountable delivery and continuous evidence."],
-    ["Operating Principles", "/company/operating-principles", "Governed authority, proving before production and evidence by design."],
-    ["Shared Responsibility", "/company/shared-responsibility", "Clear customer, V Pilot and shared decision responsibilities."],
-    ["Service Assurance Commitment", "/company/service-assurance", "Corrective-action and extended-support principles."],
+    ["Our Difference", "/company", "From assessment through validated treatment and evidenced closure."],
+    ["Security Assurance", "/company", "Risk-driven proving, accountable delivery and continuous evidence."],
+    ["Operating Principles", "/company", "Governed authority, proving before production and evidence by design."],
+    ["Shared Responsibility", "/company", "Clear customer, V Pilot and shared decision responsibilities."],
+    ["Service Assurance Commitment", "/company", "Corrective-action and extended-support principles."],
   ]},
   { title: "5Pilot Operations", links: [
-    ["5Pilot Overview", "/company/5pilot-operations", "Five specialist teams in one governed Virtual Security Operations model."],
-    ["Compass Pilot", "/company/5pilot-operations/compass", "CISO, ERM, GRC, privacy and managed ISMS."],
-    ["Custodian Pilot", "/company/5pilot-operations/custodian", "Identity, privileged access, endpoint, server and Intune operations."],
-    ["Vigil Pilot", "/company/5pilot-operations/vigil", "SIEM, detection engineering, monitoring and investigation."],
-    ["ART Pilot", "/company/5pilot-operations/art", "Exposure validation, remediation, hardening and retesting."],
-    ["Phoenix Pilot", "/company/5pilot-operations/phoenix", "Incident response, forensics, backup and trusted restoration."],
+    ["5Pilot Overview", "/company", "Five specialist teams in one governed Virtual Security Operations model."],
+    ["Compass Pilot", "/company", "CISO, ERM, GRC, privacy and managed ISMS."],
+    ["Custodian Pilot", "/company", "Identity, privileged access, endpoint, server and Intune operations."],
+    ["Vigil Pilot", "/company", "SIEM, detection engineering, monitoring and investigation."],
+    ["ART Pilot", "/company", "Exposure validation, remediation, hardening and retesting."],
+    ["Phoenix Pilot", "/company", "Incident response, forensics, backup and trusted restoration."],
   ]},
 ];
 
 
 const slides = [
-  { key:"assurance", eyebrow:"Security Assurance", title:"Built for Accountable Security Operations", text:"Governed responsibility, validated execution, trusted recovery, and evidence by design.", cta:"Explore Security Assurance", to:"/company/security-assurance" },
-  { key:"pilots", eyebrow:"5Pilot Operations", title:"Five Specialist Teams. One Integrated Operation.", text:"Compass governs. Custodian administers. Vigil observes. ART remediates. Phoenix responds and restores.", cta:"Meet the 5Pilot Teams", to:"/company/5pilot-operations" },
+  { key:"assurance", eyebrow:"Security Assurance", title:"Built for Accountable Security Operations", text:"Governed responsibility, validated execution, trusted recovery, and evidence by design.", cta:"Explore Security Assurance", to:"/company" },
+  { key:"pilots", eyebrow:"5Pilot Operations", title:"Five Specialist Teams. One Integrated Operation.", text:"Compass governs. Custodian administers. Vigil observes. ART remediates. Phoenix responds and restores.", cta:"Meet the 5Pilot Teams", to:"/company" },
   { key:"pudica", eyebrow:"PUDICA Platform", title:"One Platform. One Trusted Operating Record.", text:"Connect risk, workflow, approvals, automation, monitoring, response, recovery, and evidence.", cta:"Explore PUDICA", to:"/platform" },
 ];
 
@@ -110,6 +110,7 @@ export default function EnterpriseMegaMenu({menuKey,onClose}) {
     <FeaturedSlider onClose={onClose}/>
   </div></div>;
 }
+
 
 
 

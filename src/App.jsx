@@ -25,7 +25,13 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+
+          {/* Corporate routes always render the complete Company page. */}
           <Route path="/company" element={<CompanyPage />} />
+          <Route path="/company/*" element={<CompanyPage />} />
+          <Route path="/why-v-pilot" element={<CompanyPage />} />
+          <Route path="/5pilot-ops" element={<CompanyPage />} />
+
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/insights" element={<InsightsPage />} />
