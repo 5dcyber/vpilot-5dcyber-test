@@ -1,6 +1,0 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
-export function PageHero({eyebrow,title,lead,children}){return <section className="inner-hero"><div className="inner-glow"/><div className="container inner-hero-grid"><div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{lead}</p><Link className="btn primary" to="/contact">Discuss your operating need <ArrowRight size={16}/></Link></div><div className="narrative-visual" aria-hidden="true"><div className="visual-rings"><i/><i/><i/></div><b>V</b><span>{children}</span></div></div></section>}
-export function SectionHeading({eyebrow,title,lead}){return <div className="narrative-heading"><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{lead&&<p>{lead}</p>}</div>}
-export function CapabilityCard({title,label,text,items,id}){return <article className="narrative-card" id={id}><span className="card-index">{label}</span><h3>{title}</h3><p>{text}</p>{items&&<ul>{items.map(x=><li key={x}><CheckCircle2 size={15}/>{x}</li>)}</ul>}</article>}
-export function CTA({title,text}){return <section className="narrative-cta"><div className="container"><div><span className="eyebrow">NEXT STEP</span><h2>{title}</h2><p>{text}</p></div><Link className="btn primary" to="/contact">Consult V Pilot <ArrowRight size={16}/></Link></div></section>}
