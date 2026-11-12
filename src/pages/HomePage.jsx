@@ -8,6 +8,7 @@ import {
   ShieldCheck, Sparkles, Target, UsersRound, Workflow, Wrench, Zap
 } from "lucide-react";
 import "./vpilot-home-recommended.css";
+import "./vpilot-soc-hero.css";
 
 const proof = [
   [UsersRound,"Managed Shared Responsibility"],
@@ -52,17 +53,67 @@ const outcomes = ["Faster treatment cycles","Fewer overdue critical findings","I
 const industries = ["Financial Services","Retail","Manufacturing","Healthcare","Telecom","Professional Services","Public Sector","Technology"];
 function Head({eyebrow,title,lead}){return <div className="vph2-head"><span>{eyebrow}</span><h2>{title}</h2>{lead&&<p>{lead}</p>}</div>}
 export default function HomePage(){return <div className="vph2-page">
-  <section className="vph2-hero"><div className="vph2-shell vph2-hero-grid"><div><span className="vph2-hero-eyebrow">
-  INTEGRATED MANAGED CYBERSECURITY OPERATIONS
-</span>
+  {/* VPILOT_SOC_HERO_START */}
+<section className="vpsoc-hero" aria-labelledby="vpsoc-heading">
+  <div className="vpsoc-media" aria-hidden="true">
+    <img src="/assets/vpilot-virtual-security-operations-hero.png" alt="" width="1536" height="1024" fetchPriority="high" decoding="async" />
+  </div>
+  <div className="vpsoc-overlay" aria-hidden="true" />
 
-<h1 className="vph2-hero-title">
- We Pilot <em>Your Security Operations.</em>
-</h1>
+  <div className="vpsoc-shell">
+    <div className="vpsoc-content">
+      <span className="vpsoc-eyebrow">Your Virtual Security Operations Team</span>
 
-<strong className="vph2-hero-brand">
- From Risk to Resilient Outcomes.
-</strong><p>V Pilot works as an extension of security, IT, risk, compliance, and resilience teams to govern, protect, remediate, monitor, respond, recover, and continuously assure the digital environment.</p><p>Powered by PUDICA and delivered through five specialist Pilot teams, the operating model connects leadership, technical operations, independent validation, controlled automation, trusted recovery, and audit-ready evidence.</p><div className="vph2-actions"><Link to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link to="/platform">Explore PUDICA</Link></div><div className="vph2-five-d">ANTICIPATE <i/> OBSERVE <i/> RESPOND <i/> RESTORE <i/> PROVE</div></div></div><div className="vph2-shell vph2-proof">{proof.map(([Icon,label])=><div key={label}><Icon/><span>{label}</span></div>)}</div></section>
+      <h1 id="vpsoc-heading">
+        <span>We Pilot Your</span>
+        <strong>Security Operations.</strong>
+      </h1>
+
+      <p className="vpsoc-intro">
+        Extend your team without hiring every security specialist. V Pilot connects
+        expert people, threat intelligence and risk-driven operations to protect,
+        respond, recover and continuously improve.
+      </p>
+
+      <div className="vpsoc-actions">
+        <Link className="vpsoc-btn vpsoc-btn-primary" to="/contact?intent=executive-briefing">
+          <span>Schedule Executive Briefing</span><ArrowRight aria-hidden="true" />
+        </Link>
+        <Link className="vpsoc-btn vpsoc-btn-secondary" to="/5pilot-operations">
+          <span>Meet Your Virtual Pilots</span><ArrowRight aria-hidden="true" />
+        </Link>
+      </div>
+
+      <div className="vpsoc-positioning">
+        <i aria-hidden="true" />
+        <span>People-led. Platform-enabled. Accountable by design.</span>
+      </div>
+
+      <ul className="vpsoc-lifecycle" aria-label="V Pilot operational lifecycle">
+        <li>Anticipate</li><li>Observe</li><li>Respond</li><li>Restore</li><li>Prove</li>
+      </ul>
+    </div>
+
+    <aside className="vpsoc-responsibility" aria-label="Operational responsibility commitment">
+      <i aria-hidden="true" />
+      <div>
+        <strong>Your security. Our operational responsibility.</strong>
+        <span>Within the agreed service scope.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section className="vpsoc-assurance" aria-label="Operational assurance principles">
+  <div className="vpsoc-assurance-shell">
+    <article><UsersRound aria-hidden="true" /><span>5Pilot Ops Team</span></article>
+    <article><ShieldCheck aria-hidden="true" /><span>Governed Execution</span></article>
+    <article><Network aria-hidden="true" /><span>Coordinated Response</span></article>
+    <article><RotateCcw aria-hidden="true" /><span>Recovery Readiness</span></article>
+    <article><FileCheck2 aria-hidden="true" /><span>Evidence by Design</span></article>
+  </div>
+</section>
+{/* VPILOT_SOC_HERO_END */}
       <PremiumHomeNarrative />
 
   <section className="vph2-section vph2-gap"><div className="vph2-shell"><Head eyebrow="THE ENTERPRISE OPERATING GAP" title="Security Tools Are Connected to Systems. Security Operations Are Not." lead="Organizations have invested in identity, endpoint, SIEM, vulnerability, cloud, backup, and compliance technologies. Findings, approvals, remediation, monitoring, incidents, recovery, and evidence still move through disconnected teams and records."/><div className="vph2-gap-grid">{gaps.map(([Icon,title,text],i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div><blockquote>The challenge is not the absence of security tools. The challenge is the absence of one connected security-operations lifecycle.</blockquote></div></section>
