@@ -22,3 +22,1532 @@
 .vpfh-pudica-orbit .node .vpfh-pilot-icon{margin-bottom:6px}
 @media(max-width:720px){.vpfh-shield-stage .vpfh-assurance-emblem{height:220px}.vpfh-pilot-icon{width:64px;height:64px}.vpfh-pilot-icon svg{width:32px;height:32px}}
 /* V PILOT ROLE-SPECIFIC ICON SYSTEM END */
+
+/* V PILOT FINAL SECURITY ASSURANCE BAND START */
+.vpfh-assurance{
+  display:grid!important;grid-template-columns:minmax(0,39fr) minmax(310px,25fr) minmax(0,36fr)!important;
+  min-height:0!important;color:#fff;background:#021426!important;border-top:1px solid rgba(33,202,239,.26);border-bottom:1px solid rgba(33,202,239,.26);overflow:hidden
+}
+.vpfh-assurance>div{min-height:430px!important;padding:40px clamp(28px,3.4vw,58px)!important}
+.vpfh-assurance-left{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(110deg,#03172d,#021426 76%)}
+.vpfh-kicker{display:block!important;margin:0 0 10px!important;color:#20c5e7!important;font-size:11px!important;font-weight:800!important;letter-spacing:.16em!important;line-height:1.25;text-transform:uppercase}
+.vpfh-assurance h2{margin:0 0 16px!important;color:#fff;font-size:clamp(2rem,3vw,3.15rem)!important;line-height:1.02!important;letter-spacing:-.04em}
+.vpfh-assurance-left p,.vpfh-assurance-right p{margin:0;color:rgba(227,239,248,.88)!important;font-size:13px!important;line-height:1.52!important}
+.vpfh-assurance-rule{display:block;width:28px;height:3px;margin:18px 0 15px;background:#20c5e7}
+.vpfh-assurance-pillars{display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:9px!important;margin-top:0!important}
+.vpfh-assurance-pillars article{display:grid;justify-items:center;gap:8px;min-width:0;text-align:center}
+.vpfh-assurance-pillars article svg{width:42px;height:42px;padding:10px;border:1px solid #43dcf3;border-radius:50%;color:#8cecff;stroke-width:1.55}
+.vpfh-assurance-pillars article b{padding:0!important;border:0!important;color:#fff;font-size:9px!important;font-weight:800;line-height:1.18;text-transform:uppercase}
+.vpfh-shield-stage{position:relative;display:flex!important;flex-direction:column;align-items:center;justify-content:center;padding:24px!important;background:radial-gradient(circle at 50% 47%,rgba(7,108,179,.62),rgba(2,20,38,.93) 54%,#021426 82%)!important;border-left:1px solid rgba(48,204,235,.3);border-right:1px solid rgba(48,204,235,.3);isolation:isolate}
+.vpfh-shield-stage::before{position:absolute;inset:0;z-index:-2;content:"";background:linear-gradient(rgba(2,20,38,.52),rgba(2,20,38,.7)),radial-gradient(circle at 50% 70%,rgba(11,133,215,.42),transparent 38%)}
+.vpfh-shield-caption{position:absolute;top:31px;z-index:3;color:#fff!important;font-size:10px!important;line-height:1.2;text-align:center;letter-spacing:.12em!important}
+.vpfh-shield-caption b{font-weight:500}
+.vpfh-shield-stage .vpfh-assurance-emblem{width:230px!important;height:265px!important;margin-top:28px;transform:scale(1.03)}
+.vpfh-network-floor{position:absolute;right:-12%;bottom:-28px;left:-12%;height:145px;z-index:-1;opacity:.56;background:repeating-linear-gradient(90deg,transparent 0 31px,rgba(20,167,241,.28) 32px),repeating-linear-gradient(0deg,transparent 0 23px,rgba(20,167,241,.2) 24px);transform:perspective(250px) rotateX(62deg);transform-origin:bottom}
+.vpfh-assurance-right{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(125deg,#031a34,#021426)!important;border-left:0!important}
+.vpfh-assurance-commitment-head{display:grid;grid-template-columns:48px 1fr;gap:13px;align-items:start;margin-bottom:14px}
+.vpfh-assurance-commitment-head .vpfh-assurance-emblem.is-compact{width:46px!important;height:55px!important;flex-basis:46px!important}
+.vpfh-assurance-commitment-head h2{font-size:clamp(1.75rem,2.35vw,2.55rem)!important;line-height:1.04!important;margin:0!important}
+.vpfh-assurance-benefit{display:grid;grid-template-columns:42px 1fr 38px;align-items:center;gap:12px;margin:18px 0 12px;padding:12px 13px;border:1px solid #20c5e7;border-radius:6px;background:rgba(2,34,61,.64)}
+.vpfh-assurance-benefit>svg:first-child{width:34px;height:34px;color:#20c5e7}.vpfh-assurance-benefit>svg:last-child{width:36px;height:36px;padding:9px;border:1px solid #76e4f5;border-radius:50%;color:#fff}
+.vpfh-assurance-benefit strong{display:block;color:#fff;font-size:17px;line-height:1.05}.vpfh-assurance-benefit span{display:block;margin-top:2px;color:#fff;font-size:11px;line-height:1.25}
+.vpfh-assurance-close{display:block!important;margin:0 0 10px!important;color:#20c5e7!important;font-size:12px!important}.vpfh-assurance-right small{color:rgba(226,238,247,.76);font-size:9px;line-height:1.35}
+@media(max-width:1100px){.vpfh-assurance{grid-template-columns:1fr 1fr!important}.vpfh-shield-stage{grid-column:1/-1;grid-row:2;min-height:330px!important}.vpfh-assurance-right{border-left:1px solid rgba(48,204,235,.28)!important}.vpfh-assurance>div{min-height:400px!important}}
+@media(max-width:720px){.vpfh-assurance{grid-template-columns:1fr!important}.vpfh-assurance>div{min-height:0!important;padding:40px 24px!important}.vpfh-shield-stage{grid-column:auto;grid-row:auto;min-height:330px!important}.vpfh-assurance-pillars{grid-template-columns:1fr 1fr!important;gap:18px 10px!important}.vpfh-assurance-right{border-top:1px solid rgba(48,204,235,.28);border-left:0!important}.vpfh-assurance-commitment-head h2 br{display:none}}
+/* V PILOT FINAL SECURITY ASSURANCE BAND END */
+
+/* V PILOT ASSURANCE SHIELD VISIBILITY FIX START */
+.vpfh-assurance-emblem {
+  position: relative !important;
+  display: grid !important;
+  width: 240px !important;
+  height: 280px !important;
+  place-items: center !important;
+  overflow: visible !important;
+  color: #fff !important;
+  filter: none !important;
+}
+.vpfh-assurance-emblem::before,
+.vpfh-assurance-emblem::after { display: none !important; content: none !important; }
+.vpfh-assurance-emblem-svg {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible !important;
+  filter: drop-shadow(0 0 18px rgba(32,197,231,.36)) drop-shadow(0 20px 32px rgba(0,0,0,.32));
+}
+.vpfh-assurance-shield-glow { opacity: .48; }
+.vpfh-shield-stage .vpfh-assurance-emblem {
+  width: 240px !important;
+  height: 280px !important;
+  margin-top: 24px !important;
+  transform: none !important;
+}
+.vpfh-assurance-emblem.is-compact {
+  width: 48px !important;
+  height: 56px !important;
+  min-width: 48px !important;
+  flex: 0 0 48px !important;
+  margin: 0 !important;
+}
+.vpfh-assurance-emblem.is-compact .vpfh-assurance-emblem-svg {
+  filter: drop-shadow(0 0 7px rgba(32,197,231,.32));
+}
+.vpfh-assurance-commitment-head {
+  grid-template-columns: 48px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  align-items: start !important;
+}
+.vpfh-assurance-commitment-head .vpfh-kicker { padding-top: 2px; }
+.vpfh-shield-stage {
+  overflow: hidden !important;
+}
+@media (max-width: 1100px) {
+  .vpfh-shield-stage .vpfh-assurance-emblem { width: 220px !important; height: 255px !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-shield-stage .vpfh-assurance-emblem { width: 205px !important; height: 238px !important; }
+  .vpfh-assurance-emblem.is-compact { width: 44px !important; height: 52px !important; min-width: 44px !important; flex-basis: 44px !important; }
+}
+/* V PILOT ASSURANCE SHIELD VISIBILITY FIX END */
+
+/* V PILOT APPROVED PURPOSE AND ASSURANCE COMPOSITION START */
+.vpfh-purpose {
+  padding: 18px 0 20px !important;
+  background: linear-gradient(112deg,#fff 0%,#f6fbff 52%,#edf7ff 100%) !important;
+  border-top: 1px solid rgba(8,126,235,.07);
+  border-bottom: 1px solid #cfe3f3;
+}
+.vpfh-purpose .vpfh-shell { width: min(1440px,calc(100% - 80px)); }
+.vpfh-purpose-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.vpfh-purpose-header > span,
+.vpfh-purpose-header > p {
+  margin: 0;
+  color: #087eeb;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.vpfh-purpose-header > p { font-weight: 600; letter-spacing: .09em; }
+.vpfh-purpose-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+  align-items: stretch;
+}
+.vpfh-purpose-grid article {
+  display: grid;
+  grid-template-columns: 62px minmax(0,1fr);
+  gap: 16px;
+  min-height: 116px;
+  padding: 8px 30px 7px !important;
+  border-right: 1px solid #cfe3f3 !important;
+}
+.vpfh-purpose-grid article:first-child { padding-left: 0 !important; }
+.vpfh-purpose-grid article:last-child { padding-right: 0 !important; border-right: 0 !important; }
+.vpfh-purpose-icon {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border-radius: 50%;
+  color: #087eeb;
+  background: #e6f4ff;
+}
+.vpfh-purpose-icon svg { width: 32px !important; height: 32px !important; padding: 0 !important; border-radius: 0 !important; background: transparent !important; }
+.vpfh-purpose-icon--mission { border-radius: 14px; background: transparent; }
+.vpfh-purpose-icon--mission svg { width: 40px !important; height: 40px !important; }
+.vpfh-purpose-grid article > div:last-child > span {
+  display: block;
+  margin: 0 0 6px;
+  color: #087eeb;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: .14em;
+}
+.vpfh-purpose-grid h3 {
+  margin: 0 0 8px;
+  color: #061f52;
+  font-size: clamp(16px,1.25vw,20px);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+}
+.vpfh-purpose-grid p {
+  max-width: 360px;
+  margin: 0;
+  color: #365a7d;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (min-width: 1101px) {
+  .vpfh-assurance { grid-template-columns: minmax(0,40fr) minmax(310px,24fr) minmax(0,36fr) !important; }
+  .vpfh-assurance > div { min-height: 408px !important; padding-top: 32px !important; padding-bottom: 32px !important; }
+  .vpfh-assurance-left h2 { white-space: nowrap; font-size: clamp(2rem,2.35vw,2.7rem) !important; }
+  .vpfh-assurance-left p { max-width: 520px; }
+  .vpfh-assurance-commitment-head h2 { font-size: clamp(1.72rem,1.95vw,2.15rem) !important; }
+  .vpfh-shield-stage .vpfh-assurance-emblem { width: 220px !important; height: 258px !important; }
+}
+.vpfh-assurance-left { padding-left: max(42px,4.3vw) !important; }
+.vpfh-assurance-right { padding-right: max(42px,4.3vw) !important; }
+.vpfh-assurance-pillars article { align-content: start; }
+.vpfh-assurance-benefit { min-height: 62px; }
+
+@media (max-width: 900px) {
+  .vpfh-purpose-header { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .vpfh-purpose-grid { grid-template-columns: 1fr !important; }
+  .vpfh-purpose-grid article,
+  .vpfh-purpose-grid article:first-child,
+  .vpfh-purpose-grid article:last-child {
+    padding: 18px 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #cfe3f3;
+  }
+  .vpfh-purpose-grid article:last-child { border-bottom: 0; }
+}
+@media (max-width: 560px) {
+  .vpfh-purpose .vpfh-shell { width: calc(100% - 30px); }
+  .vpfh-purpose-grid article { grid-template-columns: 50px minmax(0,1fr); gap: 13px; }
+  .vpfh-purpose-icon { width: 48px; height: 48px; }
+  .vpfh-purpose-icon svg { width: 27px !important; height: 27px !important; }
+}
+/* V PILOT APPROVED PURPOSE AND ASSURANCE COMPOSITION END */
+
+/* V PILOT APPROVED TEAMS LIFECYCLE ENGAGEMENT START */
+.vpfh-pilots{padding:38px 0 22px!important;background:linear-gradient(145deg,#fff,#f7fbff)!important}.vpfh-section-bar{display:flex;align-items:flex-start;justify-content:space-between;gap:30px;margin-bottom:16px}.vpfh-section-bar span{display:block;color:#087eeb;font-size:11px;font-weight:800;letter-spacing:.14em}.vpfh-section-bar h2{margin:6px 0 0;color:#061f52;font-size:clamp(1.85rem,2.7vw,3rem);line-height:1.04;letter-spacing:-.04em}.vpfh-section-bar>p{max-width:460px;margin:14px 0 0;color:#355b7e;font-size:12px;line-height:1.45;text-align:right}.vpfh-pilot-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:11px!important}.vpfh-pilot-grid article{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid #cfe3f3!important;border-radius:8px!important;background:#fff;box-shadow:0 10px 28px rgba(4,49,94,.06)}.vpfh-pilot-scene{position:relative;display:grid;height:116px;place-items:center;overflow:hidden;color:#fff}.vpfh-pilot-scene::before{position:absolute;inset:0;content:"";background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(0,0,0,.28)),radial-gradient(circle at 50% 52%,rgba(255,255,255,.18),transparent 33%)}.vpfh-pilot-scene .vpfh-pilot-icon{position:relative;width:68px;height:68px}.vpfh-pilot-scene>span{display:none}.vpfh-pilot-grid .compass .vpfh-pilot-scene{background:linear-gradient(145deg,#13245f,#4f3bb3)}.vpfh-pilot-grid .custodian .vpfh-pilot-scene{background:linear-gradient(145deg,#043b31,#11936c)}.vpfh-pilot-grid .vigil .vpfh-pilot-scene{background:linear-gradient(145deg,#052f59,#087ac8)}.vpfh-pilot-grid .art .vpfh-pilot-scene{background:linear-gradient(145deg,#4f0711,#c61f34)}.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{background:linear-gradient(145deg,#6b2300,#df7105)}.vpfh-pilot-body{display:flex;flex:1;flex-direction:column;padding:14px 14px 12px}.vpfh-pilot-title{display:grid;grid-template-columns:38px 1fr;gap:9px;align-items:center}.vpfh-pilot-title .vpfh-pilot-icon{width:36px;height:36px}.vpfh-pilot-title .vpfh-pilot-icon svg{width:20px;height:20px}.vpfh-pilot-title h3{margin:0;color:#061f52;font-size:16px}.vpfh-pilot-title b{display:block;margin-top:2px;color:#087eeb;font-size:9px;line-height:1.2}.vpfh-pilot-body>p,.vpfh-pilot-body li{color:#365a7d;font-size:10px;line-height:1.4}.vpfh-pilot-body>p{min-height:56px;margin:12px 0 8px}.vpfh-pilot-body ul{margin:0 0 12px;padding-left:15px}.vpfh-pilot-body>a{display:flex;align-items:center;justify-content:space-between;margin-top:auto;color:#087eeb;font-size:10px;font-weight:800;text-decoration:none}.vpfh-pilot-body>a svg{width:14px}
+.vpfh-lifecycle{padding:22px 0 26px!important;background:linear-gradient(110deg,#eef8ff,#f9fcff)!important;border-top:1px solid #d5e8f4;border-bottom:1px solid #d5e8f4}.vpfh-lifecycle .vpfh-section-bar{margin-bottom:10px}.vpfh-lifecycle-row{display:grid!important;grid-template-columns:repeat(6,1fr)!important;padding:12px 8px 8px;border-radius:12px;background:rgba(255,255,255,.64)}.vpfh-lifecycle-row article{position:relative;padding:0 18px!important;text-align:center}.vpfh-lifecycle-icon{display:grid;width:58px;height:58px;margin:auto;place-items:center;border:2px solid #087eeb;border-radius:50%;color:#087eeb;background:#fff}.vpfh-lifecycle-icon svg{width:28px;height:28px}.vpfh-lifecycle-row h3{margin:8px 0 2px;color:#061f52;font-size:13px}.vpfh-lifecycle-row p{margin:0;color:#355b7e;font-size:10px;line-height:1.3}.vpfh-flow-arrow{position:absolute!important;top:22px!important;right:-14px!important;width:28px!important;color:#087eeb!important}
+.vpfh-engagement{padding:28px 0 32px!important;background:#fff!important}.vpfh-engagement-grid{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:14px!important}.vpfh-engagement-grid article{display:flex;min-height:210px;flex-direction:column;padding:16px!important;border:1px solid #cfe3f3!important;border-radius:8px!important;background:linear-gradient(145deg,#fff,#f7fbff)!important;box-shadow:0 9px 24px rgba(4,49,94,.055)!important}.vpfh-engagement-head{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:center}.vpfh-engagement-icon{display:grid;width:50px;height:50px;place-items:center;border-radius:50%;color:#087eeb;background:#e7f4ff}.vpfh-engagement-icon svg{width:30px;height:30px}.vpfh-engagement-head h3{margin:0;color:#061f52;font-size:17px}.vpfh-engagement-head p{margin:3px 0 0;color:#355b7e;font-size:10px}.vpfh-engagement-grid ul{margin:14px 0;padding-left:76px}.vpfh-engagement-grid li{color:#234d75;font-size:11px;line-height:1.5}.vpfh-engagement-grid a{display:flex;min-height:36px;align-items:center;justify-content:center;gap:9px;margin-top:auto;border-radius:5px;color:#fff;background:linear-gradient(135deg,#0a92f5,#0871d3);font-size:11px;font-weight:750;text-decoration:none}.vpfh-engagement-grid a svg{width:14px}
+@media(max-width:1150px){.vpfh-pilot-grid{grid-template-columns:repeat(3,1fr)!important}.vpfh-lifecycle-row{grid-template-columns:repeat(3,1fr)!important;gap:26px 0}.vpfh-flow-arrow{display:none}.vpfh-engagement-grid{grid-template-columns:1fr!important}}
+@media(max-width:720px){.vpfh-section-bar{flex-direction:column;gap:4px}.vpfh-section-bar>p{text-align:left}.vpfh-pilot-grid{grid-template-columns:1fr!important}.vpfh-pilot-body>p{min-height:0}.vpfh-lifecycle-row{grid-template-columns:1fr 1fr!important}.vpfh-engagement-grid ul{padding-left:22px}}
+/* V PILOT APPROVED TEAMS LIFECYCLE ENGAGEMENT END */
+
+/* V PILOT APPROVED PILOT ICON CARDS START */
+.vpfh-pilot-scene {
+  height: 112px !important;
+  background-image:
+    radial-gradient(circle at 50% 48%, rgba(255,255,255,.18), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,.06), rgba(0,0,0,.22)) !important;
+}
+.vpfh-pilot-scene .vpfh-pilot-icon {
+  position: relative;
+  z-index: 2;
+  width: 72px !important;
+  height: 72px !important;
+  border-width: 1.5px;
+  background: rgba(2,20,38,.34);
+  box-shadow:
+    inset 0 0 24px rgba(255,255,255,.08),
+    0 0 26px color-mix(in srgb, currentColor 34%, transparent),
+    0 14px 30px rgba(0,0,0,.22);
+}
+.vpfh-pilot-scene .vpfh-pilot-icon svg {
+  width: 36px !important;
+  height: 36px !important;
+  stroke-width: 1.7;
+}
+.vpfh-pilot-title {
+  grid-template-columns: 40px minmax(0,1fr) !important;
+  gap: 10px !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon {
+  width: 38px !important;
+  height: 38px !important;
+  border-width: 1px;
+}
+.vpfh-pilot-title .vpfh-pilot-icon svg {
+  width: 21px !important;
+  height: 21px !important;
+}
+.vpfh-pilot-body { padding: 14px 14px 13px !important; }
+.vpfh-pilot-body > p {
+  min-height: 68px !important;
+  margin: 12px 0 9px !important;
+  color: #365a7d !important;
+  font-size: 10.5px !important;
+  line-height: 1.43 !important;
+}
+.vpfh-pilot-body ul {
+  margin: 0 0 13px !important;
+  padding-left: 15px !important;
+}
+.vpfh-pilot-body li {
+  color: #234d75 !important;
+  font-size: 10px !important;
+  line-height: 1.45 !important;
+}
+.vpfh-pilot-body > a {
+  min-height: 30px;
+  gap: 8px;
+  color: #087eeb !important;
+  font-size: 9.5px !important;
+  line-height: 1.22;
+}
+.vpfh-pilot-body > a span { min-width: 0; }
+.vpfh-pilot-body > a svg { flex: 0 0 14px; }
+.vpfh-pilot-grid .custodian .vpfh-pilot-body > a { color: #069b70 !important; }
+@media (max-width: 1150px) {
+  .vpfh-pilot-body > p { min-height: 0 !important; }
+}
+/* V PILOT APPROVED PILOT ICON CARDS END */
+
+/* V PILOT 5PILOT APPROVED ARTWORK START */
+.vpfh-pilot-grid article { overflow: hidden; }
+.vpfh-pilot-scene {
+  position: relative;
+  height: 152px !important;
+  padding: 0 !important;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #f7fbff !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  border-bottom: 1px solid rgba(8,126,235,.14);
+}
+.vpfh-pilot-scene::before {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  height: 42%;
+  content: "";
+  background: linear-gradient(180deg, transparent, rgba(3,22,45,.14));
+  pointer-events: none;
+}
+.vpfh-pilot-scene::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  content: "";
+  border: 1px solid rgba(255,255,255,.68);
+  pointer-events: none;
+}
+.vpfh-pilot-scene > .vpfh-pilot-icon,
+.vpfh-pilot-scene > span { display: none !important; }
+
+/* The approved source is a 1536 x 1024 composite: three visuals above, two below. */
+.vpfh-pilot-grid .compass .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 0% 2% !important;
+}
+.vpfh-pilot-grid .custodian .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 50% 2% !important;
+}
+.vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 100% 2% !important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-size: 255% auto !important;
+  background-position: 13% 92% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-size: 255% auto !important;
+  background-position: 87% 92% !important;
+}
+
+.vpfh-pilot-body {
+  position: relative;
+  z-index: 3;
+  background: linear-gradient(180deg,#fff 0%,#fbfdff 100%);
+}
+.vpfh-pilot-title .vpfh-pilot-icon {
+  box-shadow: 0 7px 18px rgba(4,49,94,.18), inset 0 0 16px rgba(255,255,255,.08);
+}
+.vpfh-pilot-title h3 { font-size: 16px !important; }
+.vpfh-pilot-title b { font-size: 9.5px !important; }
+.vpfh-pilot-body > p { min-height: 66px !important; }
+.vpfh-pilot-body > a {
+  padding-top: 10px;
+  border-top: 1px solid rgba(8,126,235,.12);
+}
+@media (min-width: 1500px) {
+  .vpfh-pilot-scene { height: 165px !important; }
+}
+@media (max-width: 1150px) {
+  .vpfh-pilot-scene { height: 176px !important; }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene { background-size: 230% auto !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-pilot-scene { height: 220px !important; }
+  .vpfh-pilot-body > p { min-height: 0 !important; }
+}
+/* V PILOT 5PILOT APPROVED ARTWORK END */
+
+/* V PILOT 5PILOT FINAL ART ALIGNMENT START */
+/*
+  Source artwork is a 1536 x 1024 composite.
+  Top row: Compass, Custodian, Vigil.
+  Bottom row: ART, Phoenix.
+  The values below reduce over-zoom and keep the embedded artwork labels
+  outside the card image area so the accessible HTML titles remain primary.
+*/
+.vpfh-pilot-grid {
+  align-items: stretch !important;
+}
+.vpfh-pilot-grid article {
+  min-width: 0;
+  height: 100%;
+  border-radius: 10px !important;
+}
+.vpfh-pilot-scene {
+  height: 158px !important;
+  min-height: 158px !important;
+  background-size: 240% auto !important;
+  background-repeat: no-repeat !important;
+  background-color: #f7fbff !important;
+  border-bottom: 1px solid rgba(8,126,235,.15) !important;
+}
+
+/* Top-row subjects: reduced from 300% to 240% for breathing room. */
+.vpfh-pilot-grid .compass .vpfh-pilot-scene {
+  background-size: 240% auto !important;
+  background-position: 0% 3% !important;
+}
+.vpfh-pilot-grid .custodian .vpfh-pilot-scene {
+  background-size: 240% auto !important;
+  background-position: 50% 3% !important;
+}
+.vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+  background-size: 240% auto !important;
+  background-position: 100% 3% !important;
+}
+
+/* Bottom-row subjects: crop above the embedded ART/Phoenix source labels. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-size: 240% auto !important;
+  background-position: 21% 69% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-size: 240% auto !important;
+  background-position: 79% 69% !important;
+}
+
+/* Keep the lower role icons consistent and subordinate to the hero artwork. */
+.vpfh-pilot-title {
+  grid-template-columns: 36px minmax(0,1fr) !important;
+  gap: 10px !important;
+  align-items: center !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  stroke-width: 1.7 !important;
+}
+.vpfh-pilot-title h3 {
+  margin: 0 !important;
+  font-size: 15.5px !important;
+  line-height: 1.12 !important;
+}
+.vpfh-pilot-title b {
+  display: block;
+  margin-top: 3px !important;
+  font-size: 9px !important;
+  line-height: 1.2 !important;
+}
+.vpfh-pilot-body {
+  display: flex !important;
+  flex: 1 1 auto;
+  flex-direction: column !important;
+  padding: 14px 14px 13px !important;
+}
+.vpfh-pilot-body > p {
+  min-height: 66px !important;
+  margin: 12px 0 9px !important;
+}
+.vpfh-pilot-body ul {
+  margin-bottom: 12px !important;
+}
+.vpfh-pilot-body > a {
+  min-height: 32px;
+  margin-top: auto !important;
+  padding-top: 9px;
+}
+
+@media (min-width: 1500px) {
+  .vpfh-pilot-scene {
+    height: 168px !important;
+    min-height: 168px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .vpfh-pilot-scene {
+    height: 184px !important;
+    min-height: 184px !important;
+  }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene,
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    background-size: 220% auto !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene { background-position: 21% 68% !important; }
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene { background-position: 79% 68% !important; }
+  .vpfh-pilot-body > p { min-height: 0 !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-pilot-scene {
+    height: 228px !important;
+    min-height: 228px !important;
+    background-size: 205% auto !important;
+  }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene,
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    background-size: 205% auto !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene { background-position: 21% 67% !important; }
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene { background-position: 79% 67% !important; }
+}
+/* V PILOT 5PILOT FINAL ART ALIGNMENT END */
+
+
+/* V PILOT 5PILOT EXACT COMPOSITE CROPS START */
+.vpfh-pilot-scene {
+  height: 146px !important;
+  min-height: 146px !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  background-color: #fff !important;
+  overflow: hidden !important;
+}
+.vpfh-pilot-scene::before {
+  height: 18% !important;
+  background: linear-gradient(180deg, transparent, rgba(3,22,45,.06)) !important;
+}
+.vpfh-pilot-scene > .vpfh-pilot-icon,
+.vpfh-pilot-scene > span { display: none !important; }
+
+/* Top-row source cells: 3 columns. Crop only the artwork, not source labels. */
+.vpfh-pilot-grid .compass .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 0% 0% !important;
+}
+.vpfh-pilot-grid .custodian .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 50% 0% !important;
+}
+.vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: 100% 0% !important;
+}
+
+/* Bottom-row source cells: two subjects centered around 33% and 67%. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-size: 200% auto !important;
+  background-position: 0% 56% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-size: 200% auto !important;
+  background-position: 100% 56% !important;
+}
+
+.vpfh-pilot-title {
+  grid-template-columns: 32px minmax(0,1fr) !important;
+  gap: 9px !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+.vpfh-pilot-title h3 { font-size: 15px !important; }
+.vpfh-pilot-title b { font-size: 8.7px !important; }
+
+@media (min-width: 1500px) {
+  .vpfh-pilot-scene { height: 154px !important; min-height: 154px !important; }
+}
+@media (max-width: 1150px) {
+  .vpfh-pilot-scene { height: 178px !important; min-height: 178px !important; }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene { background-size: 270% auto !important; }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene { background-size: 185% auto !important; background-position-y: 55% !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-pilot-scene { height: 218px !important; min-height: 218px !important; }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene { background-size: 245% auto !important; }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene { background-size: 170% auto !important; background-position-y: 54% !important; }
+}
+/* V PILOT 5PILOT EXACT COMPOSITE CROPS END */
+
+/* V PILOT 5PILOT IMAGE ALIGNMENT V2 START */
+.vpfh-pilot-grid {
+  align-items: stretch !important;
+}
+.vpfh-pilot-grid article {
+  min-width: 0 !important;
+  height: 100% !important;
+}
+.vpfh-pilot-scene {
+  position: relative !important;
+  display: block !important;
+  height: 150px !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  background-color: #f8fbff !important;
+  border-bottom: 1px solid rgba(8,126,235,.14) !important;
+}
+.vpfh-pilot-scene::before {
+  position: absolute !important;
+  inset: auto 0 0 !important;
+  z-index: 3 !important;
+  display: block !important;
+  height: 18px !important;
+  content: "" !important;
+  background: linear-gradient(180deg, transparent, rgba(248,251,255,.92)) !important;
+  pointer-events: none !important;
+}
+.vpfh-pilot-scene::after {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 4 !important;
+  display: block !important;
+  content: "" !important;
+  border: 1px solid rgba(255,255,255,.76) !important;
+  pointer-events: none !important;
+}
+.vpfh-pilot-scene > .vpfh-pilot-icon,
+.vpfh-pilot-scene > span {
+  display: none !important;
+}
+
+/* Upper source row: exact thirds, shifted upward to exclude embedded labels. */
+.vpfh-pilot-grid .compass .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: left -32px !important;
+}
+.vpfh-pilot-grid .custodian .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: center -32px !important;
+}
+.vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+  background-size: 300% auto !important;
+  background-position: right -32px !important;
+}
+
+/* Lower source row: exact halves with a fixed upward Y-offset. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-size: 200% auto !important;
+  background-position: left -205px !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-size: 200% auto !important;
+  background-position: right -205px !important;
+}
+
+.vpfh-pilot-body {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  flex-direction: column !important;
+  padding: 14px 14px 13px !important;
+}
+.vpfh-pilot-title {
+  display: grid !important;
+  grid-template-columns: 32px minmax(0,1fr) !important;
+  gap: 9px !important;
+  align-items: center !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  flex-basis: 30px !important;
+}
+.vpfh-pilot-title .vpfh-pilot-icon svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+.vpfh-pilot-title h3 {
+  margin: 0 !important;
+  font-size: 15px !important;
+  line-height: 1.12 !important;
+}
+.vpfh-pilot-title b {
+  display: block !important;
+  margin-top: 3px !important;
+  font-size: 8.8px !important;
+  line-height: 1.2 !important;
+}
+.vpfh-pilot-body > p {
+  min-height: 66px !important;
+}
+.vpfh-pilot-body > a {
+  margin-top: auto !important;
+}
+
+@media (max-width: 1150px) {
+  .vpfh-pilot-scene {
+    height: 184px !important;
+    min-height: 184px !important;
+    max-height: 184px !important;
+  }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+    background-size: 270% auto !important;
+    background-position-y: -30px !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    background-size: 185% auto !important;
+    background-position-y: -216px !important;
+  }
+  .vpfh-pilot-body > p { min-height: 0 !important; }
+}
+
+@media (max-width: 720px) {
+  .vpfh-pilot-scene {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+  }
+  .vpfh-pilot-grid .compass .vpfh-pilot-scene,
+  .vpfh-pilot-grid .custodian .vpfh-pilot-scene,
+  .vpfh-pilot-grid .vigil .vpfh-pilot-scene {
+    background-size: 245% auto !important;
+    background-position-y: -28px !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    background-size: 170% auto !important;
+    background-position-y: -230px !important;
+  }
+}
+/* V PILOT 5PILOT IMAGE ALIGNMENT V2 END */
+
+/* V PILOT ART PHOENIX FINAL ALIGNMENT START */
+/* Preserve the approved Compass, Custodian and Vigil crops. */
+
+/* Restore the complete lower-row subjects from the composite artwork. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  position: relative !important;
+  height: 150px !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
+  overflow: hidden !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 240% auto !important;
+  background-color: #fff !important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-position: 21% 69% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-position: 79% 69% !important;
+}
+
+/* Hide only the labels baked into the source image, not the artwork. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 5 !important;
+  display: block !important;
+  height: 34px !important;
+  content: "" !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0), #fff 58%, #fff 100%) !important;
+  pointer-events: none !important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 6 !important;
+  display: block !important;
+  content: "" !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+  pointer-events: none !important;
+}
+
+@media (min-width: 1500px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 158px !important;
+    min-height: 158px !important;
+    max-height: 158px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 184px !important;
+    min-height: 184px !important;
+    max-height: 184px !important;
+    background-size: 220% auto !important;
+    background-position-y: 68% !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before {
+    height: 38px !important;
+  }
+}
+@media (max-width: 720px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    background-size: 205% auto !important;
+    background-position-y: 67% !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before {
+    height: 42px !important;
+  }
+}
+/* V PILOT ART PHOENIX FINAL ALIGNMENT END */
+
+/* V PILOT ART PHOENIX FINAL VISUAL FIX START */
+/* Compass, Custodian and Vigil are intentionally untouched. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  position: relative !important;
+  height: 150px !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
+  overflow: hidden !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 238% auto !important;
+  background-color: #fff !important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-position: 20% 66% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-position: 80% 66% !important;
+}
+
+/* Cover labels from the upper composite row. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 8 !important;
+  display: block !important;
+  height: 31px !important;
+  content: "" !important;
+  border: 0 !important;
+  background: linear-gradient(180deg,#fff 0%,#fff 74%,rgba(255,255,255,.94) 88%,rgba(255,255,255,0) 100%) !important;
+  pointer-events: none !important;
+}
+
+/* Cover the baked ART/Phoenix captions while retaining the full illustration. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 7 !important;
+  display: block !important;
+  height: 24px !important;
+  content: "" !important;
+  background: linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.94) 54%,#fff 78%,#fff 100%) !important;
+  pointer-events: none !important;
+}
+
+@media (min-width: 1500px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 158px !important;
+    min-height: 158px !important;
+    max-height: 158px !important;
+  }
+}
+@media (max-width: 1150px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 184px !important;
+    min-height: 184px !important;
+    max-height: 184px !important;
+    background-size: 220% auto !important;
+    background-position-y: 65% !important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after { height: 34px !important; }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before { height: 28px !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+    background-size: 203% auto !important;
+    background-position-y: 64% !important;
+  }
+}
+/* V PILOT ART PHOENIX FINAL VISUAL FIX END */
+
+/* V PILOT ART PHOENIX CROP V3 START */
+/* First three approved Pilot crops remain unchanged. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  position: relative !important;
+  height: 150px !important;
+  min-height: 150px !important;
+  max-height: 150px !important;
+  overflow: hidden !important;
+  background-image: url("/assets/vpilot-5pilot-ops-visual.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 218% auto !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid rgba(8,126,235,.14) !important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene {
+  background-position: 18% 70% !important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene {
+  background-position: 82% 70% !important;
+}
+
+/* Opaque top cover removes all labels and fragments from the composite top row. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 20 !important;
+  display: block !important;
+  height: 38px !important;
+  content: "" !important;
+  border: 0 !important;
+  background: #fff !important;
+  box-shadow: 0 10px 18px 5px rgba(255,255,255,.98) !important;
+  pointer-events: none !important;
+}
+
+/* Small lower fade removes only the baked lower label without hiding the artwork. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  z-index: 19 !important;
+  display: block !important;
+  height: 16px !important;
+  content: "" !important;
+  background: linear-gradient(180deg,rgba(255,255,255,0),#fff 72%,#fff) !important;
+  pointer-events: none !important;
+}
+
+@media (min-width:1500px){
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene{
+    height:158px!important;min-height:158px!important;max-height:158px!important;
+  }
+}
+@media (max-width:1150px){
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene{
+    height:184px!important;min-height:184px!important;max-height:184px!important;
+    background-size:202% auto!important;background-position-y:69%!important;
+  }
+  .vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after{height:42px!important}
+}
+@media (max-width:720px){
+  .vpfh-pilot-grid .art .vpfh-pilot-scene,
+  .vpfh-pilot-grid .phoenix .vpfh-pilot-scene{
+    height:220px!important;min-height:220px!important;max-height:220px!important;
+    background-size:188% auto!important;background-position-y:68%!important;
+  }
+}
+/* V PILOT ART PHOENIX CROP V3 END */
+
+/* V PILOT ART PHOENIX INDIVIDUAL ASSETS START */
+/* The first three approved composite crops remain unchanged. */
+.vpfh-pilot-grid .art .vpfh-pilot-scene,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{
+  height:150px!important;min-height:150px!important;max-height:150px!important;
+  background-repeat:no-repeat!important;background-position:center!important;
+  background-size:cover!important;background-color:#fff!important;
+  overflow:hidden!important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene{
+  background-image:url("/assets/pilots/vpilot-art-pilot-card.webp")!important;
+}
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{
+  background-image:url("/assets/pilots/vpilot-phoenix-pilot-card.webp")!important;
+}
+.vpfh-pilot-grid .art .vpfh-pilot-scene::before,
+.vpfh-pilot-grid .art .vpfh-pilot-scene::after,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::before,
+.vpfh-pilot-grid .phoenix .vpfh-pilot-scene::after{display:none!important;content:none!important}
+@media(min-width:1500px){.vpfh-pilot-grid .art .vpfh-pilot-scene,.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{height:158px!important;min-height:158px!important;max-height:158px!important}}
+@media(max-width:1150px){.vpfh-pilot-grid .art .vpfh-pilot-scene,.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{height:184px!important;min-height:184px!important;max-height:184px!important}}
+@media(max-width:720px){.vpfh-pilot-grid .art .vpfh-pilot-scene,.vpfh-pilot-grid .phoenix .vpfh-pilot-scene{height:220px!important;min-height:220px!important;max-height:220px!important}}
+/* V PILOT ART PHOENIX INDIVIDUAL ASSETS END */
+
+/* V PILOT SECURITY OBJECTIVE BAND START */
+.vpfh-objective-band {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 55% 46%, rgba(0,154,255,.13), transparent 25%),
+    radial-gradient(circle at 90% 18%, rgba(32,197,231,.08), transparent 26%),
+    linear-gradient(108deg, #021329 0%, #031a36 50%, #021329 100%);
+  border-top: 1px solid rgba(70,210,241,.35);
+  border-bottom: 1px solid rgba(70,210,241,.22);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+.vpfh-objective-band::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(920px,78vw);
+  height: 1px;
+  content: "";
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, #23d6f2 42%, #78edff 50%, #23d6f2 58%, transparent);
+  box-shadow: 0 0 14px rgba(35,214,242,.58);
+}
+.vpfh-objective-layout {
+  display: grid;
+  grid-template-columns: minmax(430px, .95fr) minmax(620px, 1.35fr);
+  align-items: center;
+  gap: clamp(44px,5vw,92px);
+  min-height: 232px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.vpfh-objective-copy { max-width: 650px; }
+.vpfh-objective-copy > span {
+  display: block;
+  margin-bottom: 10px;
+  color: #35d9f6;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .16em;
+}
+.vpfh-objective-copy h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(1.8rem,2.45vw,2.8rem);
+  line-height: 1.04;
+  letter-spacing: -.035em;
+}
+.vpfh-objective-copy p {
+  max-width: 620px;
+  margin: 0;
+  color: rgba(231,241,249,.88);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.vpfh-objective-metrics {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: clamp(16px,2vw,30px);
+  align-items: start;
+}
+.vpfh-objective-metrics article {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  min-width: 0;
+  text-align: center;
+}
+.vpfh-objective-metrics strong {
+  display: grid;
+  width: clamp(88px,7.2vw,112px);
+  height: clamp(88px,7.2vw,112px);
+  place-items: center;
+  border: 1.5px solid #079df1;
+  border-radius: 50%;
+  color: #fff;
+  background:
+    radial-gradient(circle at 50% 46%, rgba(8,126,235,.13), rgba(2,19,41,.18) 58%, rgba(2,19,41,.8));
+  box-shadow:
+    inset 0 0 24px rgba(8,126,235,.12),
+    0 0 20px rgba(0,157,255,.18),
+    0 12px 30px rgba(0,0,0,.18);
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: clamp(1.7rem,2.2vw,2.35rem);
+  font-weight: 650;
+  line-height: 1;
+}
+.vpfh-objective-metrics article:last-child strong {
+  font-size: clamp(2.5rem,3vw,3.25rem);
+  font-weight: 400;
+}
+.vpfh-objective-metrics span {
+  color: rgba(247,251,255,.96);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Disable the two superseded visual systems without affecting other sections. */
+.vpfh-purpose,
+.vpfh-assurance { display: none !important; }
+
+@media (max-width: 1150px) {
+  .vpfh-objective-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .vpfh-objective-copy { max-width: 760px; }
+  .vpfh-objective-metrics { width: min(760px,100%); }
+}
+@media (max-width: 700px) {
+  .vpfh-objective-layout { min-height: 0; }
+  .vpfh-objective-copy h2 { font-size: 2rem; }
+  .vpfh-objective-metrics { grid-template-columns: 1fr 1fr; gap: 24px 14px; }
+  .vpfh-objective-metrics strong { width: 92px; height: 92px; }
+}
+@media (max-width: 390px) {
+  .vpfh-objective-metrics { grid-template-columns: 1fr; }
+}
+/* V PILOT SECURITY OBJECTIVE BAND END */
+
+/* V PILOT ADVANTAGE PREMIUM SECTION START */
+.vpfh-model {
+  padding: 40px 0 42px !important;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(8,126,235,.075), transparent 28%),
+    linear-gradient(112deg,#fff 0%,#f4faff 52%,#eef8ff 100%) !important;
+  border-top: 1px solid rgba(8,126,235,.08);
+  border-bottom: 1px solid #cfe3f3;
+}
+.vpfh-advantage-grid {
+  display: grid;
+  grid-template-columns: minmax(300px,.9fr) minmax(430px,1.2fr) minmax(285px,.82fr);
+  gap: clamp(26px,3vw,48px);
+  align-items: center;
+}
+.vpfh-advantage-copy > span,
+.vpfh-outcomes-premium > span {
+  display: block;
+  color: #087eeb;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .13em;
+}
+.vpfh-advantage-copy h2 {
+  margin: 8px 0 12px;
+  color: #061f52;
+  font-family: "Space Grotesk",Inter,sans-serif;
+  font-size: clamp(2rem,2.8vw,3.15rem);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+}
+.vpfh-advantage-copy > p {
+  margin: 0 0 18px;
+  color: #365a7d;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.vpfh-advantage-list { display: grid; gap: 10px; }
+.vpfh-advantage-list > div {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 9px;
+  align-items: center;
+  color: #254e75;
+  font-size: 12px;
+}
+.vpfh-advantage-list svg {
+  width: 19px;
+  height: 19px;
+  color: #069e9d;
+  stroke-width: 2;
+}
+.vpfh-impact-button {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+  border-radius: 6px;
+  color: #fff;
+  background: linear-gradient(135deg,#0d91f4,#0875d8);
+  box-shadow: 0 10px 24px rgba(8,126,235,.2);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.vpfh-impact-button svg { width: 17px; transition: transform .18s ease; }
+.vpfh-impact-button:hover svg { transform: translateX(3px); }
+
+.vpfh-advantage-orbit {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border: 1px solid #d7eaf6;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 50%,rgba(255,255,255,.98) 0 25%,rgba(228,245,255,.82) 46%,rgba(236,248,255,.95) 100%);
+}
+.vpfh-orbit-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #58bdf2;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+.vpfh-orbit-ring-one { width: 315px; height: 315px; }
+.vpfh-orbit-ring-two { width: 235px; height: 235px; opacity: .66; }
+.vpfh-orbit-ring-one::after {
+  position: absolute;
+  inset: -7px;
+  content: "";
+  border: 1px dashed rgba(8,126,235,.28);
+  border-radius: 50%;
+}
+.vpfh-pudica-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 4;
+  display: grid;
+  width: 150px;
+  height: 150px;
+  place-items: center;
+  align-content: center;
+  transform: translate(-50%,-50%);
+  border: 1px solid #89d2f7;
+  border-radius: 50%;
+  background: rgba(255,255,255,.97);
+  box-shadow: 0 14px 36px rgba(8,126,235,.16);
+  text-align: center;
+}
+.vpfh-pudica-emblem {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  clip-path: polygon(50% 0,96% 35%,79% 92%,21% 92%,4% 35%);
+  color: #fff;
+  background: conic-gradient(from 0deg,#0d8eeb,#26cfe8,#6fc332,#f0b515,#6348cd,#0d8eeb);
+  box-shadow: inset 0 0 0 5px rgba(255,255,255,.24);
+}
+.vpfh-pudica-emblem span { font-size: 25px; font-weight: 900; }
+.vpfh-pudica-mark > strong { margin-top: 3px; color: #087eeb; font-size: 23px; line-height: 1; }
+.vpfh-pudica-mark > span { margin-top: 5px; color: #173f68; font-size: 7px; font-weight: 800; line-height: 1.25; }
+
+.vpfh-orbit-node {
+  position: absolute;
+  z-index: 6;
+  display: grid;
+  width: 115px;
+  justify-items: center;
+  text-align: center;
+}
+.vpfh-orbit-node .vpfh-pilot-icon { width: 45px !important; height: 45px !important; }
+.vpfh-orbit-node .vpfh-pilot-icon svg { width: 24px !important; height: 24px !important; }
+.vpfh-orbit-node b { margin-top: 4px; color: #061f52; font-size: 9px; line-height: 1.15; }
+.vpfh-orbit-node > span { color: #203f66; font-size: 8px; font-weight: 700; line-height: 1.15; }
+.node-compass { left: 50%; top: 2px; transform: translateX(-50%); }
+.node-vigil { right: 4px; top: 82px; }
+.node-phoenix { right: 42px; bottom: 8px; }
+.node-custodian { left: 42px; bottom: 8px; }
+.node-art { left: 4px; top: 82px; }
+.vpfh-orbit-phase {
+  position: absolute;
+  z-index: 5;
+  color: #087eeb;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+.phase-anticipate { left: 23%; top: 29%; transform: rotate(-36deg); }
+.phase-observe { right: 22%; top: 29%; transform: rotate(36deg); }
+.phase-respond { right: 12%; bottom: 30%; transform: rotate(72deg); }
+.phase-restore { left: 50%; bottom: 8%; transform: translateX(-50%); }
+.phase-prove { left: 11%; bottom: 30%; transform: rotate(-72deg); }
+
+.vpfh-outcomes-premium {
+  padding: 24px 24px 20px !important;
+  border: 1px solid #cfe3f3 !important;
+  border-radius: 10px !important;
+  background: rgba(255,255,255,.92) !important;
+  box-shadow: 0 12px 30px rgba(4,49,94,.06);
+}
+.vpfh-outcomes-premium > span { margin-bottom: 16px; }
+.vpfh-outcomes-premium p {
+  display: grid !important;
+  grid-template-columns: 19px 1fr;
+  gap: 10px !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 10px 0;
+  color: #365a7d !important;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.vpfh-outcomes-premium p + p { border-top: 1px solid rgba(8,126,235,.06); }
+.vpfh-outcomes-premium svg { width: 18px !important; height: 18px !important; color: #087eeb !important; }
+
+@media (max-width: 1150px) {
+  .vpfh-advantage-grid { grid-template-columns: 1fr 1fr; }
+  .vpfh-advantage-copy { align-self: stretch; }
+  .vpfh-outcomes-premium { grid-column: 1 / -1; columns: 2; column-gap: 32px; }
+  .vpfh-outcomes-premium > span { column-span: all; }
+}
+@media (max-width: 760px) {
+  .vpfh-model { padding: 52px 0 !important; }
+  .vpfh-advantage-grid { grid-template-columns: 1fr; }
+  .vpfh-advantage-orbit { min-height: 420px; }
+  .vpfh-outcomes-premium { grid-column: auto; columns: 1; }
+}
+@media (max-width: 430px) {
+  .vpfh-advantage-orbit { min-height: 390px; }
+  .vpfh-orbit-ring-one { width: 270px; height: 270px; }
+  .vpfh-orbit-ring-two { width: 205px; height: 205px; }
+  .vpfh-pudica-mark { width: 125px; height: 125px; }
+  .vpfh-orbit-node { width: 95px; }
+  .node-vigil,.node-art { top: 78px; }
+  .node-phoenix { right: 20px; }
+  .node-custodian { left: 20px; }
+}
+/* V PILOT ADVANTAGE PREMIUM SECTION END */
+
+/* V PILOT PUDICA OVERVIEW START */
+.vpfh-pudica-overview{color:#071f52;background:#fff}.vpfh-pudica-hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 70% 46%,rgba(0,141,255,.2),transparent 28%),linear-gradient(105deg,#021224,#052d55 55%,#021224)}.vpfh-pudica-hero::before{position:absolute;inset:0;content:"";opacity:.28;background:linear-gradient(135deg,transparent 0 58%,rgba(34,207,241,.08) 58% 59%,transparent 59%),radial-gradient(circle at 40% 80%,rgba(42,108,166,.28),transparent 32%)}.vpfh-pudica-hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(360px,.75fr) minmax(650px,1.35fr);gap:42px;align-items:center;min-height:520px;padding-top:34px;padding-bottom:34px}.vpfh-pudica-intro>span,.vpfh-pudica-section-head span,.vpfh-pudica-workflow>div>div>span,.vpfh-platform-promise span{color:#31d7f3;font-size:11px;font-weight:800;letter-spacing:.13em}.vpfh-pudica-intro h2{margin:3px 0 -3px;font-family:"Space Grotesk",Inter,sans-serif;font-size:clamp(3.5rem,5.2vw,6.2rem);line-height:.9;letter-spacing:-.06em}.vpfh-pudica-intro h3{margin:0 0 15px;color:#bcecff;font-size:clamp(1.35rem,2vw,2rem)}.vpfh-pudica-intro p{max-width:600px;margin:0 0 12px;color:#d8e7f3;font-size:13px;line-height:1.5}.vpfh-pudica-intro .vpfh-pudica-promise{color:#fff;font-size:15px}.vpfh-pudica-actions{display:flex;gap:12px;margin-top:20px}.vpfh-pudica-actions a{display:flex;min-height:46px;align-items:center;justify-content:center;gap:9px;padding:0 22px;border-radius:6px;color:#fff;font-size:12px;font-weight:800;text-decoration:none}.vpfh-pudica-actions .primary{background:#087eeb}.vpfh-pudica-actions .secondary{border:1px solid rgba(255,255,255,.72);background:rgba(2,18,36,.45)}.vpfh-pudica-actions svg{width:16px}.vpfh-pudica-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:28px}.vpfh-pudica-proof>span{display:grid;grid-template-columns:28px 1fr;align-items:center;gap:7px;color:#fff;font-size:8.5px;font-weight:800;line-height:1.2}.vpfh-pudica-proof svg{grid-row:1/3;width:28px;height:28px;padding:6px;border:1px solid #23d7f1;border-radius:50%;color:#23d7f1}.vpfh-pudica-proof small{grid-column:2;color:#bad0e1;font-size:7px;font-weight:600}.vpfh-pudica-architecture{position:relative;min-height:430px;padding:20px 24px 18px;border:1px solid rgba(42,211,242,.45);border-radius:180px 180px 16px 16px;background:linear-gradient(180deg,rgba(5,52,91,.58),rgba(2,18,36,.9));box-shadow:inset 0 0 50px rgba(0,136,255,.12),0 20px 50px rgba(0,0,0,.18)}.vpfh-pudica-platform-mark{display:grid;justify-items:center;margin-bottom:8px;text-align:center}.vpfh-pudica-logo-mark{display:grid;width:70px;height:70px;place-items:center;clip-path:polygon(50% 0,96% 35%,79% 94%,21% 94%,4% 35%);background:conic-gradient(#0a94ea,#20cadf,#70be31,#f1b61b,#5b4acb,#0a94ea);box-shadow:0 0 24px rgba(35,215,243,.45)}.vpfh-pudica-logo-mark span{font-size:32px;font-weight:900}.vpfh-pudica-platform-mark strong{margin-top:3px;color:#fff;font-size:24px}.vpfh-pudica-platform-mark small{color:#9eeaff;font-size:8px;font-weight:800}.vpfh-pudica-module-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;align-items:start;margin-top:8px}.vpfh-pudica-module-row article{display:grid;justify-items:center;text-align:center}.vpfh-pudica-module-row svg{width:43px;height:43px;padding:10px;border:1px solid #34d9f3;border-radius:10px;color:#fff;background:#07345c}.vpfh-pudica-module-row article:nth-child(2) svg{color:#32d8f0}.vpfh-pudica-module-row article:nth-child(3) svg{color:#d386ff}.vpfh-pudica-module-row article:nth-child(4) svg{color:#ff9a62}.vpfh-pudica-module-row article:nth-child(5) svg{color:#ff7480}.vpfh-pudica-module-row article:nth-child(6) svg{color:#cbd5ff}.vpfh-pudica-module-row b{margin-top:5px;color:#fff;font-size:8px;line-height:1.2}.vpfh-pudica-shared-layer,.vpfh-pudica-integration-layer{margin:16px auto 0;padding:11px 15px;border:1px solid #10aeea;border-radius:8px;text-align:center;background:rgba(5,48,85,.86)}.vpfh-pudica-shared-layer strong,.vpfh-pudica-integration-layer strong{display:block;color:#27d8ee;font-size:11px}.vpfh-pudica-shared-layer span,.vpfh-pudica-integration-layer span{color:#d4e8f5;font-size:7px}.vpfh-pudica-integration-layer{width:82%;margin-top:8px}.vpfh-pudica-lifecycle{position:absolute;right:7px;top:16px;display:grid;gap:5px;color:#75ddf0;font-size:7px;font-weight:800}.vpfh-pudica-solutions{padding:38px 0 42px;background:linear-gradient(135deg,#fff,#f3f9ff)}.vpfh-pudica-section-head{display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:end;margin-bottom:18px}.vpfh-pudica-section-head span{color:#087eeb}.vpfh-pudica-section-head h2{margin:5px 0 0;color:#071f52;font-size:clamp(2rem,3vw,3.4rem);line-height:1.04;letter-spacing:-.04em}.vpfh-pudica-section-head p{margin:0;color:#365a7d;font-size:11px;line-height:1.45}.vpfh-pudica-solution-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr)) minmax(220px,1.1fr);gap:9px}.vpfh-pudica-solution-grid>article,.vpfh-pudica-solution-grid>aside{display:flex;min-height:245px;flex-direction:column;padding:14px;border:1px solid #cfe3f3;border-radius:8px;background:#fff}.vpfh-pudica-solution-grid>article>svg{width:42px;height:42px;padding:10px;border-radius:50%;color:#fff;background:#098f82}.vpfh-pudica-solution-grid>article:nth-child(2)>svg{background:#2b7be4}.vpfh-pudica-solution-grid>article:nth-child(3)>svg{background:#8054bb}.vpfh-pudica-solution-grid>article:nth-child(4)>svg{background:#f4742c}.vpfh-pudica-solution-grid>article:nth-child(5)>svg{background:#eb3d49}.vpfh-pudica-solution-grid>article:nth-child(6)>svg{background:#58718f}.vpfh-pudica-solution-grid h3{margin:12px 0 7px;color:#071f52;font-size:13px;line-height:1.15}.vpfh-pudica-solution-grid article p{margin:0;color:#365a7d;font-size:10px;line-height:1.4}.vpfh-pudica-solution-grid article a{display:flex;align-items:center;justify-content:space-between;margin-top:auto;color:#087eeb;font-size:10px;font-weight:800;text-decoration:none}.vpfh-pudica-solution-grid article a svg{width:15px}.vpfh-pudica-solution-grid aside>span{margin-bottom:10px;color:#087eeb;font-size:10px;font-weight:800}.vpfh-pudica-solution-grid aside p{display:grid;grid-template-columns:17px 1fr;gap:7px;margin:0;padding:7px 0;color:#254e75;font-size:9px;line-height:1.3}.vpfh-pudica-solution-grid aside svg{width:16px;color:#087eeb}.vpfh-pudica-workflow{padding:30px 0;color:#fff;background:linear-gradient(110deg,#021428,#063d6b)}.vpfh-pudica-workflow-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:28px;align-items:center}.vpfh-pudica-workflow h2{margin:5px 0 7px;font-size:clamp(1.8rem,2.5vw,2.8rem)}.vpfh-pudica-workflow p{margin:0;color:#c3d6e5;font-size:12px}.vpfh-pudica-flow{display:grid;grid-template-columns:repeat(7,1fr);gap:15px;margin-top:20px}.vpfh-pudica-flow article{position:relative;display:grid;justify-items:center;text-align:center}.vpfh-pudica-flow article>svg:first-child{width:42px;height:42px;padding:10px;border:1px solid #2bd5f0;border-radius:50%;color:#fff}.vpfh-pudica-flow b{margin-top:6px;font-size:10px}.vpfh-pudica-flow small{color:#c0d4e4;font-size:8px;line-height:1.2}.vpfh-pudica-flow .flow-arrow{position:absolute;right:-17px;top:14px;width:18px;color:#2bd5f0}.vpfh-platform-promise{padding:20px;border:1px solid rgba(35,213,241,.3);border-radius:8px;background:radial-gradient(circle at 100% 0,rgba(39,145,232,.33),transparent 45%),rgba(2,24,47,.72)}.vpfh-platform-promise i{display:block;width:32px;height:2px;margin:13px 0;background:#35d9f6}.vpfh-platform-promise strong{font-size:18px;line-height:1.35}@media(max-width:1200px){.vpfh-pudica-hero-grid{grid-template-columns:1fr}.vpfh-pudica-architecture{min-height:420px}.vpfh-pudica-solution-grid{grid-template-columns:repeat(3,1fr)}.vpfh-pudica-solution-grid aside{grid-column:1/-1;min-height:0}.vpfh-pudica-section-head{grid-template-columns:1fr}.vpfh-pudica-workflow-grid{grid-template-columns:1fr}.vpfh-platform-promise{max-width:600px}}@media(max-width:720px){.vpfh-pudica-hero-grid{padding-top:50px;padding-bottom:50px}.vpfh-pudica-actions{display:grid}.vpfh-pudica-proof{grid-template-columns:1fr 1fr}.vpfh-pudica-architecture{min-height:660px;border-radius:30px}.vpfh-pudica-module-row{grid-template-columns:repeat(2,1fr);gap:18px}.vpfh-pudica-lifecycle{display:none}.vpfh-pudica-solution-grid{grid-template-columns:1fr}.vpfh-pudica-solution-grid aside{grid-column:auto}.vpfh-pudica-flow{grid-template-columns:1fr 1fr}.vpfh-pudica-flow .flow-arrow{display:none}}
+/* V PILOT PUDICA OVERVIEW END */
+
+/* PUDICA APPROVED BRAND ASSETS START */
+.vpfh-pudica-brand-lockup{display:block;width:min(390px,92%);height:auto;margin:2px 0 16px;object-fit:contain;object-position:left center;filter:drop-shadow(0 12px 24px rgba(0,114,214,.22))}
+.vpfh-pudica-intro .vpfh-pudica-brand-lockup + .vpfh-pudica-promise{margin-top:4px}
+.vpfh-pudica-platform-mark{min-height:132px;align-content:center}
+.vpfh-pudica-platform-emblem{display:block;width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 0 18px rgba(39,215,243,.38))}
+.vpfh-pudica-platform-wordmark{display:block;width:205px;max-width:90%;height:auto;margin-top:-4px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,99,185,.2))}
+.vpfh-pudica-logo-mark,.vpfh-pudica-platform-mark>strong,.vpfh-pudica-platform-mark>small{display:none!important}
+@media(max-width:720px){.vpfh-pudica-brand-lockup{width:min(320px,100%)}.vpfh-pudica-platform-emblem{width:80px;height:80px}.vpfh-pudica-platform-wordmark{width:180px}}
+/* PUDICA APPROVED BRAND ASSETS END */
+
+/* V PILOT WHY CHOOSE PREMIUM THEME START */
+.vpfh-difference {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0 34px !important;
+  background:
+    radial-gradient(circle at 78% 10%, rgba(8,126,235,.08), transparent 25%),
+    linear-gradient(112deg,#fff 0%,#f7fbff 48%,#edf7ff 100%) !important;
+  border-top: 1px solid rgba(8,126,235,.07);
+  border-bottom: 1px solid #cfe3f3;
+}
+.vpfh-difference::before {
+  position: absolute;
+  top: -190px;
+  right: -170px;
+  width: 420px;
+  height: 420px;
+  content: "";
+  border: 1px solid rgba(8,126,235,.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.vpfh-difference-head {
+  display: grid !important;
+  grid-template-columns: minmax(0,1.05fr) minmax(400px,.95fr) !important;
+  gap: clamp(34px,5vw,78px) !important;
+  align-items: start !important;
+  margin-bottom: 16px;
+}
+.vpfh-difference-head .vpfh-heading {
+  max-width: 680px;
+  margin: 0 !important;
+}
+.vpfh-difference-head .vpfh-heading > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #087eeb;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: .15em;
+}
+.vpfh-difference-head .vpfh-heading h2 {
+  margin: 0 0 9px !important;
+  color: #061f52;
+  font-size: clamp(1.9rem,2.65vw,3rem) !important;
+  line-height: 1.03 !important;
+  letter-spacing: -.04em !important;
+}
+.vpfh-difference-head .vpfh-heading p {
+  max-width: 650px;
+  margin: 0;
+  color: #365a7d;
+  font-size: 12.5px;
+  line-height: 1.48;
+}
+.vpfh-difference-head aside {
+  position: relative;
+  min-height: 120px;
+  padding: 20px 28px 18px !important;
+  overflow: hidden;
+  border: 1px solid #cfe3f3 !important;
+  border-radius: 9px !important;
+  background:
+    radial-gradient(circle at 83% 8%,rgba(32,197,231,.08),transparent 34%),
+    linear-gradient(135deg,#f8fcff,#eaf6ff) !important;
+  box-shadow: 0 10px 28px rgba(4,49,94,.055) !important;
+  text-align: center;
+}
+.vpfh-difference-head aside::after {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  width: 32px;
+  height: 2px;
+  content: "";
+  transform: translateX(-50%);
+  background: #20c5e7;
+}
+.vpfh-difference-head aside > span {
+  display: block;
+  color: #087eeb !important;
+  font-size: 10px !important;
+  font-weight: 800;
+  letter-spacing: .13em !important;
+}
+.vpfh-difference-head aside strong {
+  display: block;
+  margin: 9px 0 7px !important;
+  color: #061f52 !important;
+  font-family: "Space Grotesk",Inter,sans-serif;
+  font-size: clamp(1.25rem,1.7vw,1.75rem) !important;
+  line-height: 1.12;
+  letter-spacing: -.025em;
+}
+.vpfh-difference-head aside p {
+  margin: 0 0 9px !important;
+  color: #456887 !important;
+  font-size: 11px;
+  line-height: 1.35;
+}
+.vpfh-difference-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4,minmax(0,1fr)) !important;
+  gap: 9px !important;
+}
+.vpfh-difference-grid article {
+  display: grid;
+  grid-template-columns: 54px minmax(0,1fr);
+  grid-template-rows: auto auto 1fr;
+  gap: 0 12px;
+  min-height: 132px;
+  padding: 13px 14px !important;
+  border: 1px solid #cfe3f3 !important;
+  border-radius: 8px !important;
+  background: rgba(255,255,255,.88) !important;
+  box-shadow: 0 7px 20px rgba(4,49,94,.045) !important;
+  transition: transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+.vpfh-difference-grid article:hover {
+  transform: translateY(-3px);
+  border-color: rgba(8,126,235,.3) !important;
+  box-shadow: 0 13px 28px rgba(4,64,120,.1) !important;
+}
+.vpfh-difference-grid article > div {
+  grid-row: 1 / 4;
+  display: grid !important;
+  justify-items: center;
+  align-content: start;
+  gap: 5px !important;
+}
+.vpfh-difference-grid article > div svg {
+  width: 50px !important;
+  height: 50px !important;
+  padding: 12px !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  background: #087eeb !important;
+  box-shadow: 0 8px 18px rgba(8,126,235,.2);
+  stroke-width: 1.8;
+}
+.vpfh-difference-grid article > div b {
+  color: #087eeb;
+  font-size: 11px;
+  line-height: 1;
+}
+.vpfh-difference-grid article h3 {
+  grid-column: 2;
+  margin: 1px 0 7px !important;
+  color: #061f52;
+  font-size: 12px !important;
+  line-height: 1.18;
+}
+.vpfh-difference-grid article p {
+  grid-column: 2;
+  margin: 0 !important;
+  color: #365a7d;
+  font-size: 10px !important;
+  line-height: 1.4 !important;
+}
+
+/* Approved category colors from the supplied visual. */
+.vpfh-difference-grid article:nth-child(1) > div svg { background:#087eeb !important; }
+.vpfh-difference-grid article:nth-child(2) > div svg { background:#0b8d57 !important; box-shadow:0 8px 18px rgba(11,141,87,.19); }
+.vpfh-difference-grid article:nth-child(3) > div svg { background:#6d2e91 !important; box-shadow:0 8px 18px rgba(109,46,145,.18); }
+.vpfh-difference-grid article:nth-child(4) > div svg { background:#f27600 !important; box-shadow:0 8px 18px rgba(242,118,0,.18); }
+.vpfh-difference-grid article:nth-child(5) > div svg { background:#ea2027 !important; box-shadow:0 8px 18px rgba(234,32,39,.18); }
+.vpfh-difference-grid article:nth-child(6) > div svg { background:#0788a6 !important; box-shadow:0 8px 18px rgba(7,136,166,.18); }
+.vpfh-difference-grid article:nth-child(7) > div svg { background:#087eeb !important; }
+.vpfh-difference-grid article:nth-child(8) > div svg { background:#42af3e !important; box-shadow:0 8px 18px rgba(66,175,62,.18); }
+
+@media (max-width: 1120px) {
+  .vpfh-difference-head { grid-template-columns: 1fr 1fr !important; }
+  .vpfh-difference-grid { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width: 720px) {
+  .vpfh-difference { padding: 48px 0 !important; }
+  .vpfh-difference-head { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .vpfh-difference-grid { grid-template-columns: 1fr !important; }
+  .vpfh-difference-grid article { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vpfh-difference-grid article { transition: none; }
+  .vpfh-difference-grid article:hover { transform: none; }
+}
+/* V PILOT WHY CHOOSE PREMIUM THEME END */
