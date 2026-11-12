@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown, ShieldCheck, BadgeCheck } from "lucide-react";
 import { ApprovedVPilotBrand } from "../VPilotBrand.jsx";
@@ -33,10 +33,10 @@ const footerGroups = [
     ["Managed Backup & Recovery", "/services/managed-backup-recovery"],
   ]},
   { title: "Company", items: [
-    ["About V Pilot", "/company"],
+    ["About V Pilot", "/about-v-pilot"],
     ["Why V Pilot", "/why-v-pilot"],
-    ["Security Assurance", "/company/security-assurance", true],
-    ["5Pilot Operations", "/company/5pilot-operations"],
+    ["Security Assurance", "/security-assurance", true],
+    ["5Pilot Operations", "/5pilot-operations"],
     ["Careers", "/careers"],
     ["Contact", "/contact"],
   ]},
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="vpf-brand"><Link to="/" className="vpf-logo" aria-label="V Pilot home"><ApprovedVPilotBrand/></Link><h2>We Pilot Your Security Operations.</h2><p>V Pilot delivers accountable managed cybersecurity operations across governance, identity, endpoints, monitoring, remediation, incident response, recovery and continuous assurance.</p></div>
       <nav className="vpf-nav" aria-label="Footer">{footerGroups.map((group,index)=><FooterGroup key={group.title} group={group} open={openGroup===index} onToggle={()=>setOpenGroup(openGroup===index?null:index)}/>)}</nav>
     </div></section>
-    <section className="vpf-assurance"><div className="vpf-shell vpf-assurance-layout"><article><span className="vpf-assurance-icon"><ShieldCheck size={21}/></span><div><h3>Shared Responsibility</h3><p>V Pilot operates the capabilities assigned through the applicable service agreement and Responsibility Assignment Matrix. Customers retain business ownership, executive authority, legal accountability and final risk acceptance.</p><Link to="/frameworks">View Shared Responsibility Model <ArrowRight size={13}/></Link></div></article><article><span className="vpf-assurance-icon"><BadgeCheck size={21}/></span><div><h3>Service Assurance Commitment</h3><p>Eligible verified service failures receive transparent review, corrective action and applicable extended assurance support under the service agreement.</p><Link to="/company/security-assurance">Review Our Assurance Commitment <ArrowRight size={13}/></Link></div></article></div>
+    <section className="vpf-assurance"><div className="vpf-shell vpf-assurance-layout"><article><span className="vpf-assurance-icon"><ShieldCheck size={21}/></span><div><h3>Shared Responsibility</h3><p>V Pilot operates the capabilities assigned through the applicable service agreement and Responsibility Assignment Matrix. Customers retain business ownership, executive authority, legal accountability and final risk acceptance.</p><Link to="/frameworks">View Shared Responsibility Model <ArrowRight size={13}/></Link></div></article><article><span className="vpf-assurance-icon"><BadgeCheck size={21}/></span><div><h3>Service Assurance Commitment</h3><p>Eligible verified service failures receive transparent review, corrective action and applicable extended assurance support under the service agreement.</p><Link to="/security-assurance">Review Our Assurance Commitment <ArrowRight size={13}/></Link></div></article></div>
       <div className="vpf-shell vpf-legal-bar"><p>&copy; {currentYear} V Pilot Cyber Solutions LLP. All rights reserved.</p><nav aria-label="Legal"><Link to="/privacy">Privacy Policy</Link><Link to="/terms">Terms of Use</Link><Link to="/cookies">Cookie Settings</Link><Link to="/security-disclosure">Security Disclosure</Link><Link to="/accessibility">Accessibility</Link></nav><div className="vpf-connect">
             <span>Connect with V Pilot</span>
             <a href="https://www.facebook.com/VPilotCyberSolutions" target="_blank" rel="noopener noreferrer" aria-label="V Pilot on Facebook"><FacebookMark /></a>

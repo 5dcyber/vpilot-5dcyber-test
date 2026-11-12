@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { ApprovedVPilotBrand } from "../VPilotBrand.jsx";
@@ -92,14 +92,14 @@ export default function Header() {
               <Link to="/careers">Careers</Link>
               <Link to="/contact">Contact</Link>
               <Link className="vph-mobile-pudica" to="/platform">Explore PUDICA</Link>
-              <Link className="vph-mobile-briefing" to="/contact">Schedule Executive Briefing</Link>
+              <Link className="vph-mobile-briefing" to="/contact?intent=executive-briefing">Schedule Executive Briefing</Link>
             </div>
           </nav>
 
           <div className="vph-actions">
             
             <Link className="vph-pudica" to="/platform">Explore PUDICA</Link>
-            <Link className="vph-briefing" to="/contact">Schedule Executive Briefing <ArrowRight size={16}/></Link>
+            <Link className="vph-briefing" to="/contact?intent=executive-briefing">Schedule Executive Briefing <ArrowRight size={16}/></Link>
           </div>
 
           <button className="vph-menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded={mobileOpen} onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X/> : <Menu/>}</button>

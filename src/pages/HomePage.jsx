@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import PremiumHomeNarrative from "./PremiumHomeNarrative.jsx";
+import FinalHomeNarrative from "./FinalHomeNarrative.jsx";
 import {
   ArrowRight, BadgeCheck, BrainCircuit, Building2, CheckCircle2,
   CloudCog, DatabaseBackup, Eye, FileCheck2, FlaskConical, Gauge,
@@ -52,7 +52,15 @@ const pilots = [
 const outcomes = ["Faster treatment cycles","Fewer overdue critical findings","Improved detection coverage","Verified recovery readiness","More complete audit evidence","Measurable SLA performance"];
 const industries = ["Financial Services","Retail","Manufacturing","Healthcare","Telecom","Professional Services","Public Sector","Technology"];
 function Head({eyebrow,title,lead}){return <div className="vph2-head"><span>{eyebrow}</span><h2>{title}</h2>{lead&&<p>{lead}</p>}</div>}
-export default function HomePage(){return <div className="vph2-page">
+export default function HomePage({ initialSection = null }){
+  const location = useLocation();
+  useEffect(() => {
+    const section = initialSection || new URLSearchParams(location.search).get("section");
+    if (!section) { window.scrollTo({ top: 0, behavior: "auto" }); return; }
+    const timer = window.setTimeout(() => document.getElementById(section)?.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
+    return () => window.clearTimeout(timer);
+  }, [initialSection, location.pathname, location.search]);
+  return <div className="vph2-page">
   {/* VPILOT_SOC_HERO_START */}
 <section className="vpsoc-hero" aria-labelledby="vpsoc-heading">
   <div className="vpsoc-media" aria-hidden="true">
@@ -114,33 +122,5 @@ export default function HomePage(){return <div className="vph2-page">
   </div>
 </section>
 {/* VPILOT_SOC_HERO_END */}
-      <PremiumHomeNarrative />
-
-  <section className="vph2-section vph2-gap"><div className="vph2-shell"><Head eyebrow="THE ENTERPRISE OPERATING GAP" title="Security Tools Are Connected to Systems. Security Operations Are Not." lead="Organizations have invested in identity, endpoint, SIEM, vulnerability, cloud, backup, and compliance technologies. Findings, approvals, remediation, monitoring, incidents, recovery, and evidence still move through disconnected teams and records."/><div className="vph2-gap-grid">{gaps.map(([Icon,title,text],i)=><article key={title}><span>0{i+1}</span><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div><blockquote>The challenge is not the absence of security tools. The challenge is the absence of one connected security-operations lifecycle.</blockquote></div></section>
-
-  <section className="vph2-section vph2-proposition"><div className="vph2-shell"><Head eyebrow="THE V PILOT OPERATING PROPOSITION" title="One Accountable Path from Risk Identification to Verified Outcome." lead="V Pilot converts fragmented security work into a governed operating capability across authority, administration, threat intelligence, monitoring, response, recovery, and assurance."/><div className="vph2-op-flow">{operations.map(([Icon,title,text])=><article key={title}><div><Icon/></div><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
-
-  <section className="vph2-section vph2-platform"><div className="vph2-shell"><Head eyebrow="PUDICA INTEGRATED CYBERSECURITY OPERATIONS" title="The Operational Control Plane for Integrated Security Operations" lead="PUDICA connects trusted state, risk, asset intelligence, workflows, approvals, change governance, remediation, monitoring, incident response, recovery, compliance, and evidence through one governed operating record."/><div className="vph2-platform-grid"><div className="vph2-stack"><article><span>APPLICATION LAYER</span><p>NativeTrust Â· Remediation Â· Security Operations Â· Resilience Â· AppSec Â· GRC</p></article><article><span>OPERATIONS LAYER</span><p>Workflows Â· Approvals Â· Changes Â· Incidents Â· Recovery tests Â· Service levels</p></article><article><span>INTELLIGENCE LAYER</span><p>Threat context Â· Risk correlation Â· Control effectiveness Â· Asset criticality</p></article><article><span>DATA LAYER</span><p>Asset graph Â· Business services Â· Identities Â· Configuration Â· Evidence</p></article><article><span>INTEGRATION LAYER</span><p>Microsoft Â· Cloud Â· SIEM Â· Vulnerability Â· Backup Â· Identity Â· Applications</p></article></div><div className="vph2-modules">{modules.map(([Icon,title,text])=><article key={title}><Icon/><div><h3>{title}</h3><p>{text}</p></div></article>)}</div></div><div className="vph2-promise">Modules detect and operate security conditions. Shared platform services govern records, workflows, authority, evidence, and accountability. <Link to="/platform">Explore the PUDICA Platform <ArrowRight/></Link></div></div></section>
-
-  <section className="vph2-section vph2-pilots"><div className="vph2-shell"><Head eyebrow="VIRTUAL PILOT OPERATIONS TEAM" title="Five Specialist Teams. One Accountable Operation." lead="5Pilot Operations is V Pilotâ€™s managed-service delivery model. Each Pilot identifies specialist ownership across a security domain, with professional, project-based, co-managed, and continuous operational services."/><div className="vph2-pilot-grid">{pilots.map(([Icon,title,subtitle,text])=><article key={title}><Icon/><span>{subtitle}</span><h3>{title}</h3><p>{text}</p></article>)}</div><Link className="vph2-text-link" to="/company/5pilot-operations">Explore 5Pilot Operations <ArrowRight/></Link></div></section>
-
-  <section className="vph2-section vph2-native"><div className="vph2-shell vph2-native-grid"><div><span>PUDICA NATIVETRUST WORKSPACE</span><h2>Turn Every Device into a Trusted Business Workspace.</h2><p>Unify identity, endpoint, application, browser, mobile, update, protection, response, and lifecycle assurance without creating another disconnected operating record.</p><Link to="/platform/nativetrust-workspace">Explore NativeTrust <ArrowRight/></Link></div><div>{["Inventory & Trust","Provisioning & Lifecycle","Update & Exposure","Application & Browser","Protection & Response","Mobile Workspace","Workspace Assurance"].map(x=><span key={x}><ShieldCheck/>{x}</span>)}</div></div></section>
-
-  <section className="vph2-section"><div className="vph2-shell"><Head eyebrow="INTEGRATED SOLUTIONS" title="Solutions for Business Risk. Operations for Verified Outcomes." lead="Adopt focused solutions while preserving shared platform context, authority, recovery protection, and evidence."/><div className="vph2-solutions"><article><Target/><h3>Secure Business Transformation</h3><p>Integrate security requirements, decision authority, implementation, validation, and evidence into business change.</p></article><article><Network/><h3>Enterprise Risk Management</h3><p>Connect business services, risk, controls, treatment ownership, exceptions, and management reporting.</p></article><article><Zap/><h3>Incident Response & Forensics</h3><p>Coordinate readiness, containment, investigation, evidence preservation, recovery, and post-incident correction.</p></article><article><RotateCcw/><h3>Cyber Resilience & Recovery</h3><p>Govern backup, restoration, BCP/DR testing, ransomware recovery, and trusted service restoration.</p></article></div></div></section>
-
-  <section className="vph2-section vph2-assurance"><div className="vph2-shell vph2-assurance-grid"><div><span>SECURITY ASSURANCE</span><h2>Security Work Continues Through the Verified Outcome.</h2><p>V Pilot does not consider work complete when an alert, assessment, policy, or patch is delivered. The approved control must be implemented, observed, recovery protected, evidence recorded, and remaining risk clearly communicated.</p></div><div>{outcomes.map(x=><span key={x}><CheckCircle2/>{x}</span>)}</div></div></section>
-
-  <section className="vph2-section vph2-confidence"><div className="vph2-shell"><Head eyebrow="BUYER CONFIDENCE" title="Clear Scope. Defined Responsibility. Measurable Operations."/><div className="vph2-confidence-grid"><article><h3>Engagement deliverables</h3><p>Scope, responsibility matrix, owners, runbooks, service levels, transition plan, and reporting calendar.</p></article><article><h3>Operating outputs</h3><p>Trusted-state baseline, prioritized backlog, validated treatment, response and recovery profiles, and evidence packages.</p></article><article><h3>Responsibility boundaries</h3><p>Customer ownership and executive authority remain clear while V Pilot operates contracted capabilities.</p></article><article><h3>Service assurance</h3><p>Operational metrics, SLA reporting, closure rates, detection coverage, recovery results, exceptions, and improvement plans.</p></article></div><div className="vph2-industries"><span>SECURITY OPERATIONS ADAPTED TO YOUR BUSINESS CONTEXT</span>{industries.map(x=><b key={x}><Building2/>{x}</b>)}</div></div></section>
-
-  <section className="vph2-final"><div className="vph2-shell"><div><span>BUILD YOUR OPERATING MODEL</span><h2>Build a Security Operating Model That Can Finish the Work.</h2><p>Begin with one specialist Pilot, combine teams into an Integrated Fleet, or adopt Complete 5Pilot Operations as a managed extension of the internal security organization.</p></div><div><Link to="/contact">Schedule Executive Briefing <ArrowRight/></Link><Link to="/contact">Request Operating-Gap Assessment</Link></div></div></section>
+  <FinalHomeNarrative />
 </div>}
-
-
-
-
-
-
-
-
-
-
