@@ -7,6 +7,7 @@ import FrameworksMegaMenu from "./FrameworksMegaMenu.jsx";
 import PlatformMegaMenu from "./PlatformMegaMenu.jsx";
 import ServicesMegaMenu from "./ServicesMegaMenu.jsx";
 import SolutionsMegaMenu from "./SolutionsMegaMenu.jsx";
+import ResourcesMegaMenu from "./ResourcesMegaMenu.jsx";
 import "./vpilot-enterprise-header.css";
 
 const navItems = [
@@ -15,7 +16,7 @@ const navItems = [
   { key: "solutions", label: "Solutions", menu: true },
   { key: "services", label: "Services", menu: true },
   { key: "frameworks", label: "Frameworks", menu: true },
-  { key: "resources", label: "Resources", to: "/resources/insights" },
+  { key: "resources", label: "Resources", menu: true },
 ];
 
 export default function Header() {
@@ -131,8 +132,19 @@ export default function Header() {
         </div>
       )}
 
+
+      {activeMenu === "resources" && (
+        <div
+          id="vph-menu-resources"
+          className="vpm-mega-wrap"
+        >
+          <ResourcesMegaMenu onClose={closeAll} />
+        </div>
+      )}
+
 <EnterpriseMegaMenu
-        menuKey={["platform", "solutions", "services", "frameworks"].includes(activeMenu) ? null : activeMenu}
+        menuKey={["platform", "solutions", "services", "frameworks",
+      "resources",].includes(activeMenu) ? null : activeMenu}
         onClose={closeAll}
       />
     </header>

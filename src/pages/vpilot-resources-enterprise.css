@@ -1,0 +1,468 @@
+.rsc-page{--navy:#052b61;--blue:#087eeb;--cyan:#18c8ef;--ice:#f4faff;--line:#d8e7f3;--slate:#58718b;color:var(--navy);background:#fff;font-family:Inter,"Segoe UI",sans-serif}.rsc-shell{width:min(1440px,calc(100% - 64px));margin:auto}.rsc-section{padding:58px 0}.rsc-section.alt{background:linear-gradient(145deg,#f9fcff,#edf7ff)}.rsc-kicker{display:block;color:var(--blue);font:800 11px/1.3 "IBM Plex Mono",monospace;letter-spacing:.16em}.rsc-kicker.light{color:#70e5f1}.rsc-hero{min-height:600px;color:#fff;background:linear-gradient(90deg,rgba(2,25,54,.99),rgba(3,41,80,.88) 44%,rgba(2,37,76,.24) 72%),url('/assets/vpilot-resources-hero.png') center/cover no-repeat}.rsc-hero-grid{min-height:520px;display:grid;grid-template-columns:minmax(0,780px) 1fr;align-items:center;gap:40px}.rsc-hero h1{margin:14px 0;font:800 clamp(3.5rem,5vw,5.7rem)/.95 Manrope,Inter,sans-serif;letter-spacing:-.056em}.rsc-hero h1 em{font-style:normal;color:var(--cyan)}.rsc-hero h2{font-size:25px}.rsc-hero p{max-width:740px;color:#d2dfec;line-height:1.7}.rsc-hero aside{justify-self:end;text-align:left;font:800 13px/1.55 "IBM Plex Mono",monospace;letter-spacing:.1em}.rsc-hero aside small{display:block;margin-top:20px;color:#71e5f1}.rsc-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:25px}.rsc-btn{min-height:48px;padding:0 22px;border-radius:7px;display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800}.rsc-btn.primary{color:#fff;background:linear-gradient(135deg,#087eeb,#0861bc)}.rsc-btn.secondary{color:#fff;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.06)}.rsc-btn svg{width:17px}.rsc-proof{display:grid;grid-template-columns:repeat(6,1fr);background:rgba(2,20,43,.72);border-top:1px solid rgba(255,255,255,.14)}.rsc-proof span{padding:18px 10px;text-align:center;font-size:12px;font-weight:700}.rsc-nav{padding:17px 0 24px;background:#f7fbff;border-bottom:1px solid var(--line)}.rsc-tabs{display:grid;grid-template-columns:repeat(9,1fr);gap:6px}.rsc-tabs button{min-height:68px;padding:10px;border:1px solid var(--line);border-radius:7px;color:var(--navy);background:#fff;font-weight:700;cursor:pointer}.rsc-tabs button.is-active{color:#fff;background:var(--blue)}.rsc-search{margin-top:13px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;padding:9px 12px;border:1px solid var(--line);border-radius:9px;background:#fff}.rsc-search svg{width:18px;color:var(--blue)}.rsc-search input{border:0;outline:0;font:inherit}.rsc-search button{display:flex;align-items:center;gap:7px;border:0;background:#eef7ff;color:var(--navy);padding:9px 12px}.rsc-search-results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:15px}.rsc-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.rsc-head span{color:var(--blue);font:800 11px "IBM Plex Mono",monospace;letter-spacing:.16em}.rsc-head h2{margin:7px 0 0;font:800 clamp(2rem,3vw,3.2rem)/1 Manrope,Inter,sans-serif;letter-spacing:-.04em}.rsc-head>a{display:flex;gap:8px;color:var(--blue);text-decoration:none;font-weight:800}.rsc-head svg{width:16px}.rsc-feature-grid{display:grid;grid-template-columns:1.25fr .95fr .62fr;gap:20px}.rsc-feature-main{position:relative;min-height:445px;overflow:hidden;border-radius:13px;background:#052b61}.rsc-feature-main>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.74}.rsc-feature-main>div{position:absolute;inset:auto 0 0;padding:30px;color:#fff;background:linear-gradient(transparent,rgba(2,25,54,.96))}.rsc-feature-main span,.rsc-feature-list span,.rsc-card>span,.rsc-spotlight>span{color:#58dcf0;font:800 10px "IBM Plex Mono",monospace;letter-spacing:.1em}.rsc-feature-main h3{font-size:28px;margin:10px 0}.rsc-feature-main p{color:#d5e2ed}.rsc-feature-main>div>div{display:flex;gap:10px}.rsc-feature-main small{padding:5px 9px;border:1px solid rgba(255,255,255,.4);border-radius:999px}.rsc-feature-list{display:grid;gap:10px}.rsc-feature-list article{display:grid;grid-template-columns:145px 1fr;gap:13px;padding-bottom:10px;border-bottom:1px solid var(--line)}.rsc-feature-list img{width:145px;height:90px;object-fit:cover;border-radius:7px}.rsc-feature-list h3{margin:4px 0;font-size:16px}.rsc-feature-list p{margin:0;color:var(--slate);font-size:12px}.rsc-spotlight{padding:24px;color:#fff;border-radius:12px;background:linear-gradient(160deg,#031f45,#064178)}.rsc-book{height:210px;margin:18px 12px;padding:22px;display:flex;flex-direction:column;justify-content:center;border:1px solid rgba(113,229,242,.45);background:radial-gradient(circle at 70% 20%,rgba(32,197,231,.28),transparent 35%),linear-gradient(145deg,#062a5c,#021a39);box-shadow:14px 12px 0 rgba(255,255,255,.16),0 20px 36px rgba(0,0,0,.34)}.rsc-book b{font-size:31px}.rsc-book strong{font-size:21px}.rsc-book small{color:#8fe9f2}.rsc-spotlight p,.rsc-doc-meta{color:#c8d8e5;font-size:12px;line-height:1.55}.rsc-spotlight>a{display:flex;justify-content:center;gap:8px;padding:13px;color:#075eb5;background:#fff;border-radius:7px;text-decoration:none;font-weight:800}.rsc-grid{display:grid;gap:14px}.rsc-grid.three{grid-template-columns:repeat(3,1fr)}.rsc-grid.four{grid-template-columns:repeat(4,1fr)}.rsc-grid.five{grid-template-columns:repeat(5,1fr)}.rsc-card{padding:22px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:0 8px 20px rgba(4,48,91,.04);transition:.18s}.rsc-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(4,48,91,.1)}.rsc-card>span{color:var(--blue)}.rsc-card h3{font-size:19px;margin:10px 0}.rsc-card p{color:var(--slate);line-height:1.55}.rsc-meta{display:flex;gap:9px;flex-wrap:wrap;margin:17px 0;color:#698199}.rsc-card>a{display:flex;gap:8px;color:var(--blue);text-decoration:none;font-weight:800}.rsc-card svg{width:15px}.rsc-template-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.rsc-template-grid a{min-height:76px;padding:16px;display:grid;grid-template-columns:30px 1fr 18px;align-items:center;gap:9px;color:var(--navy);text-decoration:none;border:1px solid var(--line);border-radius:10px;background:#fff;font-weight:750}.rsc-template-grid svg{width:23px;color:var(--blue)}.advisory{color:#fff;background:radial-gradient(circle at 80% 10%,rgba(32,197,231,.15),transparent 35%),linear-gradient(145deg,#05234d,#073b70)}.rsc-advisory-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}.rsc-advisory-grid h2{font:800 38px/1.05 Manrope,Inter,sans-serif}.rsc-advisory-grid p{color:#c8d7e5}.rsc-advisory-levels{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.rsc-advisory-levels span{padding:17px;display:flex;gap:9px;border:1px solid rgba(255,255,255,.18);border-radius:10px;background:rgba(255,255,255,.06)}.rsc-advisory-levels svg{width:20px}.rsc-learning{padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}.rsc-learning svg{width:36px;color:var(--blue)}.rsc-learning span{display:block;padding:7px 0;color:var(--slate);border-bottom:1px solid #edf3f7}.governance{background:#fff}.rsc-governance-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px}.rsc-governance-grid h2{font:800 40px/1 Manrope,Inter,sans-serif}.rsc-governance-grid p{color:var(--slate)}.rsc-governance-tags{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.rsc-governance-tags span{padding:13px;border-left:3px solid var(--blue);background:#f3f9fe;font-weight:700}.rsc-subscribe{padding:42px 0;color:#fff;background:radial-gradient(circle at 30% 50%,rgba(32,197,231,.15),transparent 35%),linear-gradient(90deg,#032650,#06467c)}.rsc-subscribe-grid{display:grid;grid-template-columns:.9fr 1.2fr .45fr;gap:30px;align-items:center}.rsc-subscribe h2{margin:7px 0}.rsc-subscribe p{color:#c8d9e7}.rsc-subscribe form>div{display:grid;grid-template-columns:1fr 150px}.rsc-subscribe input{min-height:48px;padding:0 16px;border:0}.rsc-subscribe button{border:0;color:#fff;background:#087eeb;font-weight:800}.rsc-subscribe label{display:inline-flex;gap:6px;margin:10px 16px 0 0;font-size:12px}.rsc-subscribe>strong{font-size:24px}.rsc-final{padding:60px 0;color:#fff;background:linear-gradient(90deg,rgba(3,32,69,.96),rgba(4,64,112,.9)),url('/assets/vpilot-resources-cta.png') center/cover no-repeat}.rsc-final h2{font:800 44px/1 Manrope,Inter,sans-serif;margin:10px 0}.rsc-final p{max-width:850px;color:#d2e0ec}@media(max-width:1200px){.rsc-tabs{grid-template-columns:repeat(3,1fr)}.rsc-feature-grid{grid-template-columns:1.3fr .7fr}.rsc-spotlight{grid-column:1/-1}.rsc-grid.five,.rsc-grid.four{grid-template-columns:repeat(2,1fr)}.rsc-subscribe-grid{grid-template-columns:1fr}.rsc-subscribe>strong{display:none}}@media(max-width:760px){.rsc-shell{width:calc(100% - 30px)}.rsc-hero-grid{grid-template-columns:1fr}.rsc-hero aside{display:none}.rsc-proof{grid-template-columns:repeat(2,1fr)}.rsc-tabs{grid-template-columns:1fr 1fr}.rsc-head{align-items:start}.rsc-feature-grid,.rsc-grid.three,.rsc-grid.five,.rsc-grid.four,.rsc-template-grid,.rsc-advisory-grid,.rsc-governance-grid{grid-template-columns:1fr}.rsc-feature-list article{grid-template-columns:100px 1fr}.rsc-feature-list img{width:100px}.rsc-search{grid-template-columns:auto 1fr}.rsc-search button{grid-column:1/-1}.rsc-hero h1{font-size:3.1rem}.rsc-actions{flex-direction:column}.rsc-btn{width:100%;justify-content:center}}
+
+/* V PILOT RESOURCES VR CLEANUP FINAL START */
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+.vr-hero {
+  position: relative;
+
+  min-height: 600px;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 22, 45, 0.99) 0%,
+      rgba(4, 29, 57, 0.95) 38%,
+      rgba(4, 34, 65, 0.66) 58%,
+      rgba(4, 34, 65, 0.18) 80%,
+      rgba(4, 34, 65, 0.05) 100%
+    ),
+    url("/assets/vpilot-resources-hero.png")
+      center center /
+      cover
+      no-repeat !important;
+}
+
+/*
+ * Remove the separate right-side textual and visual composition.
+ * The mountain remains because it is the section background.
+ */
+.vr-hero__visual,
+.vr-hero__aside,
+.vr-hero__statement,
+.vr-hero__stack,
+.vr-hero__model,
+.vr-hero__spotlight,
+.vr-hero__right,
+.vr-hero__art,
+.vr-hero [class*="visual"],
+.vr-hero [class*="aside"],
+.vr-hero [class*="statement"],
+.vr-hero [class*="stack"],
+.vr-hero [class*="model"],
+.vr-hero [class*="spotlight"] {
+  display: none !important;
+
+  visibility: hidden !important;
+  opacity: 0 !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  pointer-events: none !important;
+}
+
+/* Convert the hero to one protected text column. */
+.vr-hero__grid,
+.vr-hero__inner {
+  display: block !important;
+
+  grid-template-columns:
+    none !important;
+}
+
+.vr-hero__copy {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(100%, 850px) !important;
+  max-width: 850px !important;
+
+  margin-right: auto !important;
+}
+
+.vr-hero h1 {
+  max-width: 820px;
+
+  margin:
+    14px
+    0
+    20px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(3.5rem, 5vw, 5.7rem);
+
+  line-height: 0.96;
+
+  letter-spacing:
+    -0.055em;
+}
+
+.vr-hero h1 em,
+.vr-hero h1 strong {
+  color: #20c5e7;
+
+  font-style: normal;
+}
+
+.vr-hero h2 {
+  max-width: 800px;
+
+  color: #ffffff;
+}
+
+.vr-hero p {
+  max-width: 800px;
+
+  color: #d3e3ef;
+
+  font-size: 17px;
+  line-height: 1.68;
+}
+
+/* ---------------------------------------------------------
+   EYEBROWS
+   Remove the white full-width ribbons.
+   --------------------------------------------------------- */
+
+.vr-page .vr-eyebrow,
+.vr-page [class*="eyebrow"],
+.vr-hero .vr-eyebrow,
+.vr-section .vr-eyebrow,
+#resources-advisories .vr-eyebrow,
+#resources-learning .vr-eyebrow,
+#resources-final .vr-eyebrow,
+#resources-conversion .vr-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+
+  width: auto !important;
+  max-width: max-content !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin:
+    0
+    0
+    14px !important;
+
+  padding: 0 !important;
+
+  color: #087eeb !important;
+
+  background:
+    transparent !important;
+
+  background-color:
+    transparent !important;
+
+  background-image:
+    none !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  box-shadow:
+    none !important;
+
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace !important;
+
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+
+  letter-spacing:
+    0.16em !important;
+
+  text-transform:
+    uppercase !important;
+}
+
+/* Dark surfaces use cyan eyebrow text. */
+.vr-hero .vr-eyebrow,
+.vr-dark .vr-eyebrow,
+.vr-final .vr-eyebrow,
+#resources-final .vr-eyebrow,
+#resources-conversion .vr-eyebrow {
+  color: #55dff0 !important;
+}
+
+/* Short premium accent instead of a white ribbon. */
+.vr-page .vr-eyebrow::before,
+.vr-page [class*="eyebrow"]::before {
+  display: inline-block;
+
+  width: 22px;
+  height: 2px;
+
+  flex: 0 0 22px;
+
+  margin-right: 10px;
+
+  content: "";
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #087eeb,
+      #20c5e7
+    );
+
+  box-shadow:
+    0 0 10px
+    rgba(32, 197, 231, 0.32);
+}
+
+/*
+ * Neutralize possible ribbon pseudo-elements from earlier CSS.
+ */
+.vr-page .vr-eyebrow::after,
+.vr-page [class*="eyebrow"]::after {
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  content: none !important;
+
+  background:
+    transparent !important;
+
+  box-shadow:
+    none !important;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .vr-hero {
+    min-height: 560px;
+
+    background-position:
+      62% center !important;
+  }
+
+  .vr-hero__copy {
+    width: min(100%, 740px) !important;
+    max-width: 740px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vr-hero {
+    min-height: auto;
+
+    background-position:
+      68% center !important;
+  }
+
+  .vr-hero h1 {
+    font-size:
+      clamp(2.7rem, 13vw, 4.2rem);
+  }
+}
+
+/* V PILOT RESOURCES VR CLEANUP FINAL END */
+
+
+/* V PILOT RSC RIBBON AND HERO-ASIDE FIX START */
+
+/* Remove the actual right-side hero statement. */
+.rsc-page .rsc-hero-grid > aside {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  pointer-events: none !important;
+}
+
+/* Convert the hero to one protected live-content column. */
+.rsc-page .rsc-hero-grid {
+  display: block !important;
+  grid-template-columns: none !important;
+}
+
+.rsc-page .rsc-hero-grid > div:first-child {
+  position: relative;
+  z-index: 3;
+
+  width: min(100%, 850px) !important;
+  max-width: 850px !important;
+
+  margin-right: auto !important;
+}
+
+/*
+ * Remove the white ribbon from every Resources section kicker.
+ * This targets the actual class used in ResourcesPage.jsx.
+ */
+.rsc-page .rsc-kicker,
+.rsc-page span.rsc-kicker,
+.rsc-page .rsc-kicker.light,
+.rsc-page .rsc-section .rsc-kicker,
+.rsc-page .rsc-hero .rsc-kicker,
+.rsc-page [id] .rsc-kicker {
+  position: relative !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+
+  width: fit-content !important;
+  max-width: max-content !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+
+  color: #087eeb !important;
+
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+
+  box-shadow: none !important;
+  filter: none !important;
+
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace !important;
+
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+/* Cyan kicker text on dark surfaces. */
+.rsc-page .rsc-hero .rsc-kicker,
+.rsc-page .rsc-kicker.light,
+.rsc-page .rsc-dark .rsc-kicker,
+.rsc-page .rsc-final .rsc-kicker,
+.rsc-page #resources-final .rsc-kicker {
+  color: #55dff0 !important;
+}
+
+/* Remove any ribbon created by pseudo-elements. */
+.rsc-page .rsc-kicker::before,
+.rsc-page .rsc-kicker::after {
+  position: static !important;
+
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  content: none !important;
+
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Add a short premium accent line without using the kicker itself. */
+.rsc-page .rsc-section-head::before,
+.rsc-page .rsc-hero-grid > div:first-child::before {
+  display: block;
+
+  width: 28px;
+  height: 3px;
+
+  margin-bottom: 10px;
+
+  content: "";
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #087eeb,
+      #20c5e7
+    );
+
+  box-shadow:
+    0 0 12px rgba(32, 197, 231, 0.28);
+}
+
+/* Hero receives a cyan accent. */
+.rsc-page .rsc-hero-grid > div:first-child::before {
+  background:
+    linear-gradient(
+      90deg,
+      #20c5e7,
+      #65e6f3
+    );
+}
+
+/* Prevent any global span rule from recreating the ribbon. */
+.rsc-page section > .rsc-shell > .rsc-kicker,
+.rsc-page section > .rsc-shell > div > .rsc-kicker {
+  float: none !important;
+  clear: none !important;
+
+  flex: none !important;
+
+  align-self: flex-start !important;
+}
+
+/* Responsive protection. */
+@media (max-width: 900px) {
+  .rsc-page .rsc-hero-grid > div:first-child {
+    width: min(100%, 720px) !important;
+    max-width: 720px !important;
+  }
+}
+
+/* V PILOT RSC RIBBON AND HERO-ASIDE FIX END */
+
+
+/* V PILOT RESOURCES PREMIUM HERO AND GUIDE START */
+.rsc-page .rsc-hero {
+  min-height: 620px;
+  background:
+    linear-gradient(90deg,rgba(3,22,45,.98) 0%,rgba(3,24,48,.94) 37%,rgba(3,30,57,.66) 58%,rgba(3,30,57,.14) 82%,rgba(3,30,57,.03) 100%),
+    url("/assets/vpilot-resources-hero-premium.png") center/cover no-repeat !important;
+}
+.rsc-page .rsc-hero-grid {grid-template-columns:minmax(0,860px) minmax(0,1fr)!important;}
+.rsc-page .rsc-hero-grid>div:first-child {position:relative;z-index:2;max-width:850px;}
+.rsc-page .rsc-hero-grid>aside {display:none!important;}
+.rsc-page .rsc-book--guide {height:auto;padding:0;background:transparent;border:0;box-shadow:none;}
+.rsc-page .rsc-book--guide img {display:block;width:100%;max-width:280px;margin:0 auto;border:1px solid rgba(80,205,235,.28);box-shadow:18px 16px 0 rgba(255,255,255,.12),0 22px 44px rgba(0,0,0,.3);}
+.rsc-page .rsc-guide-download {display:flex!important;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;}
+@media(max-width:1100px){.rsc-page .rsc-hero{background-position:62% center!important}.rsc-page .rsc-hero-grid{display:block!important}.rsc-page .rsc-hero-grid>div:first-child{max-width:740px}}
+@media(max-width:700px){.rsc-page .rsc-hero{min-height:auto;background-position:68% center!important}}
+/* V PILOT RESOURCES PREMIUM HERO AND GUIDE END */

@@ -3,6 +3,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import SolutionsRouteNavigator from "./components/SolutionsRouteNavigator.jsx";
 import RouteSectionNavigator from "./components/RouteSectionNavigator.jsx";
+import ResourcesRouteNavigator from "./components/ResourcesRouteNavigator.jsx";
 import FrameworksRouteNavigator from "./components/FrameworksRouteNavigator.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import CompanyPage from "./pages/CompanyPage.jsx";
@@ -11,9 +12,11 @@ import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
 import FrameworksPage from "./pages/FrameworksPage.jsx";
 import InsightsPage from "./pages/InsightsPage.jsx";
+import ResourcesPage from "./pages/ResourcesPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import SupportPage from "./pages/SupportPage.jsx";
 import CareersPage from "./pages/CareersPage.jsx";
+import SubscribePage from "./pages/SubscribePage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import {
   PrivacyPolicyPage,
@@ -31,6 +34,7 @@ export default function App() {
         <SolutionsRouteNavigator />
         <RouteSectionNavigator />
         <FrameworksRouteNavigator />
+                <ResourcesRouteNavigator />
         <Routes>
           <Route path="/" element={<HomePage />} />
 
@@ -57,6 +61,10 @@ export default function App() {
           <Route path="/cookies" element={<CookiePolicyPage />} />
           <Route path="/security-disclosure" element={<SecurityDisclosurePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
+          
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/resources/*" element={<ResourcesPage />} />
+                    <Route path="/subscribe" element={<SubscribePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

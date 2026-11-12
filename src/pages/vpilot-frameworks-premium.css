@@ -73,18 +73,75 @@
 /* V PILOT FRAMEWORKS HERO VISUAL REMOVAL END */
 
 
-/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL START */
+/* V PILOT RESOURCES PREMIUM CLEANUP START */
 
 /*
- * The active Frameworks markup uses .vfw-compass.
- * Keep the mountain background, summit, sunlight and flag.
- * Remove only the overlaid compass composition.
+ * HERO
+ * Replace the composite PUDICA/homepage artwork with the clean
+ * mountain background. The hero keeps a protected live-text zone.
  */
-.vfw-page .vfw-hero .vfw-compass,
-.vfw-page .vfw-hero .vfw-hero__compass,
-.vfw-page .vfw-hero .vfw-hero__visual,
-.vfw-hero > .vfw-shell > .vfw-compass,
-.vfw-hero__grid > .vfw-compass {
+.vpr-hero,
+.vrc-hero,
+.vres-hero,
+.resources-hero,
+[class*="resources"][class*="hero"] {
+  position: relative;
+
+  min-height: 610px;
+
+  overflow: hidden;
+
+  color: #ffffff;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(4, 24, 49, 0.98) 0%,
+      rgba(4, 28, 55, 0.94) 37%,
+      rgba(4, 32, 61, 0.62) 58%,
+      rgba(4, 32, 61, 0.16) 79%,
+      rgba(4, 32, 61, 0.04) 100%
+    ),
+    url("/assets/vpilot-company-mountain-hero.png") !important;
+
+  background-position:
+    center center !important;
+
+  background-size:
+    cover !important;
+
+  background-repeat:
+    no-repeat !important;
+}
+
+/*
+ * Remove any separately rendered right-side Resource Center visual,
+ * knowledge stack, statement, orbit, model, or illustration.
+ */
+.vpr-hero__visual,
+.vpr-hero__aside,
+.vpr-hero__statement,
+.vpr-hero__model,
+.vpr-hero__stack,
+.vrc-hero__visual,
+.vrc-hero__aside,
+.vrc-hero__statement,
+.vrc-hero__model,
+.vrc-hero__stack,
+.vres-hero__visual,
+.vres-hero__aside,
+.vres-hero__statement,
+.vres-hero__model,
+.vres-hero__stack,
+.resources-hero__visual,
+.resources-hero__aside,
+.resources-hero__statement,
+.resources-hero__model,
+.resources-hero__stack,
+[class*="resources"][class*="hero"] [class*="visual"],
+[class*="resources"][class*="hero"] [class*="statement"],
+[class*="resources"][class*="hero"] [class*="model"],
+[class*="resources"][class*="hero"] [class*="stack"] {
   display: none !important;
 
   visibility: hidden !important;
@@ -93,34 +150,31 @@
   width: 0 !important;
   height: 0 !important;
 
-  min-width: 0 !important;
-  min-height: 0 !important;
-
   margin: 0 !important;
   padding: 0 !important;
 
   pointer-events: none !important;
 }
 
-/* Convert the hero from a two-column layout to one protected text column. */
-.vfw-page .vfw-hero__grid,
-.vfw-hero .vfw-shell.vfw-hero__grid {
+/*
+ * Convert the hero to a controlled single-column composition.
+ */
+.vpr-hero__grid,
+.vrc-hero__grid,
+.vres-hero__grid,
+.resources-hero__grid,
+[class*="resources"][class*="hero"] [class*="grid"] {
   display: block !important;
 
-  grid-template-columns: none !important;
-
-  width: min(
-    1400px,
-    calc(100% - 64px)
-  ) !important;
+  grid-template-columns:
+    none !important;
 }
 
-/*
- * Preserve a controlled live-text region.
- * The right side remains visually open for the mountain summit and flag.
- */
-.vfw-page .vfw-hero__copy,
-.vfw-hero .vfw-hero__copy {
+.vpr-hero__copy,
+.vrc-hero__copy,
+.vres-hero__copy,
+.resources-hero__copy,
+[class*="resources"][class*="hero"] [class*="copy"] {
   position: relative;
 
   z-index: 3;
@@ -131,47 +185,211 @@
   margin-right: auto !important;
 }
 
-/* Remove decorative compass descendants even if another rule changes the parent. */
-.vfw-page .vfw-hero .vfw-compass *,
-.vfw-page .vfw-hero .vfw-compass::before,
-.vfw-page .vfw-hero .vfw-compass::after {
-  display: none !important;
+/*
+ * EYEBROWS
+ * Remove the full-width white ribbons throughout the Resources page.
+ */
+.vpr-page [class*="eyebrow"],
+.vrc-page [class*="eyebrow"],
+.vres-page [class*="eyebrow"],
+.resources-page [class*="eyebrow"],
+.vpr-hero [class*="eyebrow"],
+.vrc-hero [class*="eyebrow"],
+.vres-hero [class*="eyebrow"],
+.resources-hero [class*="eyebrow"],
+[id*="resources"] [class*="eyebrow"],
+[id*="advis"] [class*="eyebrow"],
+[id*="learning"] [class*="eyebrow"],
+[id*="final"] [class*="eyebrow"],
+[id*="conversion"] [class*="eyebrow"] {
+  display: inline-flex !important;
+  align-items: center !important;
 
-  animation: none !important;
+  width: auto !important;
+  max-width: max-content !important;
+
+  min-height: 0 !important;
+
+  margin:
+    0
+    0
+    14px !important;
+
+  padding: 0 !important;
+
+  color: #31d4ed !important;
+
+  background:
+    transparent !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  box-shadow:
+    none !important;
+
+  font-family:
+    "IBM Plex Mono",
+    Consolas,
+    monospace !important;
+
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+
+  letter-spacing:
+    0.16em !important;
+
+  text-transform:
+    uppercase !important;
 }
 
-/* Standard laptop */
-@media (min-width: 1101px) and (max-width: 1500px) {
-  .vfw-page .vfw-hero__copy,
-  .vfw-hero .vfw-hero__copy {
-    width: min(100%, 760px) !important;
-    max-width: 760px !important;
-  }
+/*
+ * Add a premium short accent line instead of a white ribbon.
+ */
+.vpr-page [class*="eyebrow"]::before,
+.vrc-page [class*="eyebrow"]::before,
+.vres-page [class*="eyebrow"]::before,
+.resources-page [class*="eyebrow"]::before,
+.vpr-hero [class*="eyebrow"]::before,
+.vrc-hero [class*="eyebrow"]::before,
+.vres-hero [class*="eyebrow"]::before,
+.resources-hero [class*="eyebrow"]::before,
+[id*="resources"] [class*="eyebrow"]::before,
+[id*="advis"] [class*="eyebrow"]::before,
+[id*="learning"] [class*="eyebrow"]::before,
+[id*="final"] [class*="eyebrow"]::before,
+[id*="conversion"] [class*="eyebrow"]::before {
+  display: inline-block;
+
+  width: 22px;
+  height: 2px;
+
+  margin-right: 10px;
+
+  content: "";
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #087eeb,
+      #20c5e7
+    );
+
+  box-shadow:
+    0 0 10px
+    rgba(32, 197, 231, 0.35);
 }
 
-/* Tablet and mobile */
+/*
+ * Hero-specific hierarchy.
+ */
+.vpr-hero h1,
+.vrc-hero h1,
+.vres-hero h1,
+.resources-hero h1,
+[class*="resources"][class*="hero"] h1 {
+  max-width: 820px;
+
+  margin:
+    12px
+    0
+    20px;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(3.4rem, 5vw, 5.8rem);
+
+  line-height: 0.96;
+
+  letter-spacing:
+    -0.055em;
+}
+
+.vpr-hero h2,
+.vrc-hero h2,
+.vres-hero h2,
+.resources-hero h2,
+[class*="resources"][class*="hero"] h2 {
+  max-width: 780px;
+
+  color: #ffffff;
+}
+
+.vpr-hero p,
+.vrc-hero p,
+.vres-hero p,
+.resources-hero p,
+[class*="resources"][class*="hero"] p {
+  max-width: 780px;
+
+  color: #d1e2ef;
+
+  line-height: 1.7;
+}
+
+/*
+ * Ensure dark section eyebrows remain cyan,
+ * while light section eyebrows use enterprise blue.
+ */
+.vpr-section:not([class*="dark"]) [class*="eyebrow"],
+.vrc-section:not([class*="dark"]) [class*="eyebrow"],
+.vres-section:not([class*="dark"]) [class*="eyebrow"],
+.resources-section:not([class*="dark"]) [class*="eyebrow"],
+[id*="advis"] [class*="eyebrow"],
+[id*="learning"] [class*="eyebrow"] {
+  color: #087eeb !important;
+}
+
+/*
+ * Responsive behavior.
+ */
 @media (max-width: 1100px) {
-  .vfw-page .vfw-hero__grid,
-  .vfw-hero .vfw-shell.vfw-hero__grid {
-    width: min(
-      100% - 40px,
-      900px
-    ) !important;
+  .vpr-hero,
+  .vrc-hero,
+  .vres-hero,
+  .resources-hero,
+  [class*="resources"][class*="hero"] {
+    min-height: 560px;
+
+    background-position:
+      62% center !important;
   }
 
-  .vfw-page .vfw-hero__copy,
-  .vfw-hero .vfw-hero__copy {
-    width: 100% !important;
-    max-width: 760px !important;
+  .vpr-hero__copy,
+  .vrc-hero__copy,
+  .vres-hero__copy,
+  .resources-hero__copy,
+  [class*="resources"][class*="hero"] [class*="copy"] {
+    width: min(100%, 740px) !important;
+    max-width: 740px !important;
   }
 }
 
 @media (max-width: 700px) {
-  .vfw-page .vfw-hero__grid,
-  .vfw-hero .vfw-shell.vfw-hero__grid {
-    width: calc(100% - 32px) !important;
+  .vpr-hero,
+  .vrc-hero,
+  .vres-hero,
+  .resources-hero,
+  [class*="resources"][class*="hero"] {
+    min-height: auto;
+
+    background-position:
+      68% center !important;
+  }
+
+  .vpr-hero h1,
+  .vrc-hero h1,
+  .vres-hero h1,
+  .resources-hero h1,
+  [class*="resources"][class*="hero"] h1 {
+    font-size:
+      clamp(2.7rem, 13vw, 4.2rem);
   }
 }
 
-/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL END */
+/* V PILOT RESOURCES PREMIUM CLEANUP END */
 

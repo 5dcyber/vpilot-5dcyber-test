@@ -1,0 +1,177 @@
+:root{--vfw-navy:#061b36;--vfw-deep:#082f63;--vfw-blue:#087eeb;--vfw-cyan:#20c5e7;--vfw-ice:#f5fbff;--vfw-slate:#58718b}.vfw-page{color:var(--vfw-deep);font-family:Inter,"Segoe UI",sans-serif}.vfw-shell{width:min(1380px,calc(100% - 64px));margin:auto}.vfw-section{padding:84px 0}.vfw-light{background:linear-gradient(145deg,#fff,#edf8ff)}.vfw-blue{background:linear-gradient(145deg,#eef9ff,#e6f4fb)}.vfw-dark{color:#fff;background:radial-gradient(circle at 18% 12%,rgba(32,197,231,.14),transparent 32%),linear-gradient(145deg,#061b36,#082f63)}.vfw-head{max-width:900px;margin-bottom:34px}.vfw-head span,.vfw-eyebrow,.vfw-final>div>span{display:block;color:var(--vfw-blue);font:800 11px/1.3 "IBM Plex Mono",monospace;letter-spacing:.16em}.vfw-head h2{margin:10px 0 14px;font:750 clamp(2.2rem,3.3vw,4rem)/1.02 Manrope,Inter,sans-serif;letter-spacing:-.04em}.vfw-head p{color:var(--vfw-slate);font-size:16px;line-height:1.72}.vfw-head.is-light h2,.vfw-head.is-light p{color:#fff}.vfw-head.is-light span{color:#76e7f2}.vfw-hero{min-height:720px;color:#fff;background:linear-gradient(90deg,rgba(3,24,48,.98),rgba(4,31,61,.88) 46%,rgba(4,32,62,.18) 72%),url('/assets/vpilot-frameworks-hero.png') center/cover no-repeat}.vfw-hero__grid{min-height:640px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(420px,.85fr);gap:48px;align-items:center}.vfw-hero__copy{max-width:780px}.vfw-hero h1{margin:14px 0 18px;font:780 clamp(3.3rem,4.7vw,5.4rem)/.98 Manrope,Inter,sans-serif;letter-spacing:-.055em}.vfw-hero h1 em{font-style:normal;color:#66e4ef}.vfw-hero h2{font-size:25px}.vfw-hero p{max-width:760px;color:#c7d9e8;font-size:16px;line-height:1.72}.vfw-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.vfw-btn{min-height:50px;padding:0 24px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:8px;text-decoration:none;font-weight:750}.vfw-btn svg{width:17px}.vfw-btn.primary{color:#fff;background:linear-gradient(135deg,#087eeb,#075eb5);box-shadow:0 14px 30px rgba(8,126,235,.25)}.vfw-btn.secondary{color:#fff;border:1px solid rgba(255,255,255,.42);background:rgba(255,255,255,.08)}.vfw-btn.secondary.dark{color:#fff}.vfw-compass{justify-self:center;position:relative;width:330px;aspect-ratio:1;display:grid;place-items:center;border:1px solid rgba(109,230,241,.35);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),rgba(8,126,235,.08) 48%,transparent 70%);box-shadow:0 30px 80px rgba(0,0,0,.28),inset 0 0 60px rgba(32,197,231,.12)}.vfw-compass__ring{position:absolute;inset:22px;border:2px dashed rgba(107,229,240,.52);border-radius:50%;animation:vfw-spin 32s linear infinite}.vfw-compass>svg{width:140px;height:140px;color:#79e5ef;filter:drop-shadow(0 16px 22px rgba(0,0,0,.28))}.vfw-compass b{position:absolute;bottom:87px}.vfw-compass small{position:absolute;bottom:62px;color:#bcecf1;letter-spacing:.16em}.vfw-proof{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,.15);background:rgba(2,18,38,.55)}.vfw-proof span{text-align:center;padding:17px 10px;font-size:13px;font-weight:700}.vfw-grid{display:grid;gap:18px}.vfw-grid.three{grid-template-columns:repeat(3,1fr)}.vfw-grid.four{grid-template-columns:repeat(4,1fr)}.vfw-grid.five{grid-template-columns:repeat(5,1fr)}.vfw-grid.six{grid-template-columns:repeat(6,1fr)}.vfw-card{padding:26px;border:1px solid #d9e8f3;border-radius:16px;background:#fff;box-shadow:0 16px 38px rgba(4,48,91,.07)}.vfw-card>svg{width:42px;height:42px;color:var(--vfw-blue)}.vfw-card h3{margin:14px 0 8px;font-size:21px}.vfw-card strong{color:#2a668f}.vfw-card p{color:var(--vfw-slate);line-height:1.62}.vfw-card.accent-2>svg{color:#7d3df1}.vfw-card.accent-3>svg{color:#e44c5d}.vfw-card.accent-4>svg{color:#11a56e}.vfw-card.accent-5>svg{color:#d28a00}.vfw-card.accent-6>svg{color:#0e9b9d}.vfw-callout{margin:28px 0 0;padding:20px 24px;border-left:4px solid var(--vfw-cyan);background:rgba(255,255,255,.75);font-weight:700;line-height:1.6}.vfw-ops-grid{display:grid;grid-template-columns:420px 1fr;gap:38px;align-items:center}.vfw-infinity{display:flex;align-items:center;justify-content:center;min-height:280px}.vfw-infinity div{width:185px;height:185px;display:grid;place-items:center;border:26px solid #1187df;border-radius:50%;box-shadow:inset 0 0 26px rgba(0,0,0,.12)}.vfw-infinity div:last-child{margin-left:-42px;border-color:#13aa93}.vfw-infinity span{z-index:2;margin:0 -18px;font-size:80px;color:#fff}.vfw-grid.compact{gap:12px}.vfw-step{padding:18px;border:1px solid #cce3f1;border-radius:12px;background:#fff}.vfw-step b{color:var(--vfw-blue)}.vfw-step h3{font-size:15px}.vfw-text-link{display:inline-flex;align-items:center;gap:8px;margin-top:24px;color:var(--vfw-blue);font-weight:750;text-decoration:none}.vfw-lifecycle{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.vfw-lifecycle article{position:relative;padding:22px;border:1px solid #d9e8f3;border-radius:14px;background:linear-gradient(145deg,#fff,#f1f9ff)}.vfw-lifecycle b{position:absolute;right:14px;top:12px;color:#b3ccde}.vfw-lifecycle svg{width:32px;color:#7343ef}.vfw-dual{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}.vfw-checks{list-style:none;padding:0;margin:18px 0;display:grid;gap:10px}.vfw-checks li{display:flex;align-items:flex-start;gap:9px;color:var(--vfw-slate)}.vfw-checks svg{flex:0 0 auto;width:17px;color:#11a56e}.vfw-dimension{padding:24px;border:1px solid rgba(109,230,241,.22);border-radius:14px;background:rgba(255,255,255,.06)}.vfw-dimension b{color:#70e6ef}.vfw-dimension strong{display:block;color:#fff;line-height:1.4}.vfw-dimension p{color:#c3d6e5;line-height:1.6}.vfw-dark-callout{padding:22px;border:1px solid rgba(109,230,241,.2);border-radius:12px;background:rgba(255,255,255,.06)}.vfw-validation{background:linear-gradient(145deg,#fff,#f2f9ff)}.vfw-validation__grid{display:grid;grid-template-columns:1fr 180px 1fr;gap:24px;align-items:stretch}.vfw-validation__grid>article{padding:30px;border:1px solid #d9e8f3;border-radius:18px;background:#fff}.vfw-validation__grid>article>svg{width:48px;height:48px;color:#11a56e}.vfw-validation__grid>article:last-child>svg{color:#d28a00}.vfw-validation__grid>article>span{display:block;margin-top:14px;color:var(--vfw-blue);font:800 11px "IBM Plex Mono",monospace;letter-spacing:.14em}.vfw-relationship{display:grid;place-items:center;align-content:center;gap:8px;padding:20px;border-radius:18px;background:linear-gradient(180deg,#061b36,#0b5980);color:#fff;text-align:center}.vfw-relationship span{padding:9px 12px;border:1px solid rgba(255,255,255,.2);border-radius:8px;background:rgba(255,255,255,.08)}.vfw-relationship i{color:#6fe4ed}.vfw-evidence{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.vfw-evidence span,.vfw-output-grid span{padding:16px;border:1px solid #d9e8f3;border-radius:10px;background:#fff;font-weight:650}.vfw-evidence svg{width:18px;color:var(--vfw-blue);vertical-align:middle;margin-right:8px}.vfw-adopt{padding:22px;border:1px solid rgba(109,230,241,.2);border-radius:14px;background:rgba(255,255,255,.06)}.vfw-adopt b{color:#70e6ef}.vfw-adopt p{color:#c7d9e8;line-height:1.6}.vfw-output-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.vfw-resource-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.vfw-resource-grid a{display:flex;justify-content:space-between;align-items:center;padding:17px 19px;border:1px solid #d9e8f3;border-radius:10px;color:var(--vfw-deep);background:#fff;text-decoration:none;font-weight:700}.vfw-resource-grid svg{width:16px;color:var(--vfw-blue)}.vfw-final{padding:76px 0;color:#fff;background:linear-gradient(135deg,#061b36,#075eb5)}.vfw-final>div>span{color:#70e6ef}.vfw-final h2{max-width:900px;margin:10px 0;font:750 clamp(2.4rem,4vw,4.2rem)/1.02 Manrope,Inter,sans-serif}.vfw-final p{max-width:850px;color:#c7d9e8;line-height:1.7}@keyframes vfw-spin{to{transform:rotate(360deg)}}@media(max-width:1100px){.vfw-shell{width:min(100% - 36px,900px)}.vfw-hero__grid{grid-template-columns:1fr}.vfw-compass{display:none}.vfw-proof{grid-template-columns:repeat(2,1fr)}.vfw-grid.three,.vfw-grid.four,.vfw-grid.five,.vfw-grid.six,.vfw-lifecycle,.vfw-evidence,.vfw-output-grid{grid-template-columns:repeat(2,1fr)}.vfw-ops-grid,.vfw-validation__grid{grid-template-columns:1fr}.vfw-relationship{min-height:260px}}@media(max-width:700px){.vfw-shell{width:calc(100% - 28px)}.vfw-section{padding:62px 0}.vfw-hero h1{font-size:clamp(2.7rem,12vw,4rem)}.vfw-grid.three,.vfw-grid.four,.vfw-grid.five,.vfw-grid.six,.vfw-lifecycle,.vfw-evidence,.vfw-output-grid,.vfw-resource-grid,.vfw-dual{grid-template-columns:1fr}.vfw-proof{grid-template-columns:1fr}.vfw-actions{flex-direction:column}.vfw-btn{width:100%}.vfw-infinity{transform:scale(.78);margin-inline:-40px}}
+@media(prefers-reduced-motion:reduce){.vfw-compass__ring{animation:none}}
+
+/* V PILOT VALIDATION CONNECTOR FINAL START */
+
+.vfw-validation-connector {
+  position: relative;
+
+  display: block;
+
+  width: 2px;
+  height: 42px;
+
+  margin: 8px auto;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(32, 197, 231, 0.25),
+      #20c5e7 48%,
+      #087eeb
+    );
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 0 15px rgba(32, 197, 231, 0.28);
+}
+
+.vfw-validation-connector::after {
+  position: absolute;
+
+  left: 50%;
+  bottom: -1px;
+
+  width: 10px;
+  height: 10px;
+
+  content: "";
+
+  border-right: 2px solid #087eeb;
+  border-bottom: 2px solid #087eeb;
+
+  transform:
+    translateX(-50%)
+    rotate(45deg);
+
+  transform-origin:
+    center;
+}
+
+/* V PILOT VALIDATION CONNECTOR FINAL END */
+
+
+/* V PILOT FRAMEWORKS HERO VISUAL REMOVAL START */
+
+.vfw-hero__visual,
+.vfw-hero__compass {
+  display: none !important;
+}
+
+.vfw-hero__grid {
+  grid-template-columns:
+    minmax(0, 860px)
+    minmax(0, 1fr) !important;
+}
+
+.vfw-hero__copy {
+  max-width:
+    860px !important;
+}
+
+/* V PILOT FRAMEWORKS HERO VISUAL REMOVAL END */
+
+
+/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL START */
+
+/*
+ * The active Frameworks markup uses .vfw-compass.
+ * Keep the mountain background, summit, sunlight and flag.
+ * Remove only the overlaid compass composition.
+ */
+.vfw-page .vfw-hero .vfw-compass,
+.vfw-page .vfw-hero .vfw-hero__compass,
+.vfw-page .vfw-hero .vfw-hero__visual,
+.vfw-hero > .vfw-shell > .vfw-compass,
+.vfw-hero__grid > .vfw-compass {
+  display: none !important;
+
+  visibility: hidden !important;
+  opacity: 0 !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  min-width: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  pointer-events: none !important;
+}
+
+/* Convert the hero from a two-column layout to one protected text column. */
+.vfw-page .vfw-hero__grid,
+.vfw-hero .vfw-shell.vfw-hero__grid {
+  display: block !important;
+
+  grid-template-columns: none !important;
+
+  width: min(
+    1400px,
+    calc(100% - 64px)
+  ) !important;
+}
+
+/*
+ * Preserve a controlled live-text region.
+ * The right side remains visually open for the mountain summit and flag.
+ */
+.vfw-page .vfw-hero__copy,
+.vfw-hero .vfw-hero__copy {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(100%, 860px) !important;
+  max-width: 860px !important;
+
+  margin-right: auto !important;
+}
+
+/* Remove decorative compass descendants even if another rule changes the parent. */
+.vfw-page .vfw-hero .vfw-compass *,
+.vfw-page .vfw-hero .vfw-compass::before,
+.vfw-page .vfw-hero .vfw-compass::after {
+  display: none !important;
+
+  animation: none !important;
+}
+
+/* Standard laptop */
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .vfw-page .vfw-hero__copy,
+  .vfw-hero .vfw-hero__copy {
+    width: min(100%, 760px) !important;
+    max-width: 760px !important;
+  }
+}
+
+/* Tablet and mobile */
+@media (max-width: 1100px) {
+  .vfw-page .vfw-hero__grid,
+  .vfw-hero .vfw-shell.vfw-hero__grid {
+    width: min(
+      100% - 40px,
+      900px
+    ) !important;
+  }
+
+  .vfw-page .vfw-hero__copy,
+  .vfw-hero .vfw-hero__copy {
+    width: 100% !important;
+    max-width: 760px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .vfw-page .vfw-hero__grid,
+  .vfw-hero .vfw-shell.vfw-hero__grid {
+    width: calc(100% - 32px) !important;
+  }
+}
+
+/* V PILOT FRAMEWORKS HERO COMPASS DEFINITIVE REMOVAL END */
+
