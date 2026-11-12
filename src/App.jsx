@@ -1,12 +1,17 @@
-﻿import { Route, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import SolutionsRouteNavigator from "./components/SolutionsRouteNavigator.jsx";
 import RouteSectionNavigator from "./components/RouteSectionNavigator.jsx";
 import ResourcesRouteNavigator from "./components/ResourcesRouteNavigator.jsx";
 import FrameworksRouteNavigator from "./components/FrameworksRouteNavigator.jsx";
+
 import HomePage from "./pages/HomePage.jsx";
-import CompanyPage from "./pages/CompanyPage.jsx";
 import PlatformPage from "./pages/PlatformPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
@@ -30,29 +35,35 @@ export default function App() {
   return (
     <>
       <Header />
-      <main>
+      <main id="main-content">
         <SolutionsRouteNavigator />
         <RouteSectionNavigator />
         <FrameworksRouteNavigator />
-                <ResourcesRouteNavigator />
+        <ResourcesRouteNavigator />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-          {/* Corporate routes always render the complete Company page. */}
-          <Route path="/company" element={<CompanyPage />} />
-          <Route path="/company/*" element={<CompanyPage />} />
+          {/* Legacy Company URLs resolve to the single corporate homepage. */}
+          <Route path="/company" element={<Navigate to="/" replace />} />
+          <Route path="/company/*" element={<Navigate to="/" replace />} />
+
+          {/* Company narratives remain part of HomePage. */}
+          <Route path="/about-v-pilot" element={<HomePage initialSection="about-v-pilot" />} />
+          <Route path="/why-v-pilot" element={<HomePage initialSection="why-v-pilot" />} />
+          <Route path="/security-assurance" element={<HomePage initialSection="security-assurance" />} />
+          <Route path="/5pilot-operations" element={<HomePage initialSection="5pilot-operations" />} />
+          <Route path="/5pilot-ops" element={<Navigate to="/5pilot-operations" replace />} />
+
           <Route path="/platform" element={<PlatformPage />} />
           <Route path="/platform/*" element={<PlatformPage />} />
-          <Route path="/why-v-pilot" element={<CompanyPage />} />
-          <Route path="/5pilot-ops" element={<CompanyPage />} />
-
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/*" element={<ServicesPage />} />
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/solutions/*" element={<SolutionsPage />} />
           <Route path="/frameworks" element={<FrameworksPage />} />
           <Route path="/frameworks/*" element={<FrameworksPage />} />
-<Route path="/insights" element={<InsightsPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/support" element={<SupportPage />} />
           <Route path="/careers" element={<CareersPage />} />
@@ -61,10 +72,9 @@ export default function App() {
           <Route path="/cookies" element={<CookiePolicyPage />} />
           <Route path="/security-disclosure" element={<SecurityDisclosurePage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
-          
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/*" element={<ResourcesPage />} />
-                    <Route path="/subscribe" element={<SubscribePage />} />
+          <Route path="/subscribe" element={<SubscribePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
@@ -72,9 +82,3 @@ export default function App() {
     </>
   );
 }
-
-
-
-
-
-

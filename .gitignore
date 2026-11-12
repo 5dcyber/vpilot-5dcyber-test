@@ -44,3 +44,11 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# V Pilot local installer backups
+.vpilot-backup-*/
+.vpilot-full-backup-*/
+*.before-*.bak
+*.encoding-damaged-*.bak
+
+# Local build and development artifacts
