@@ -52,3 +52,17 @@ desktop.ini
 *.encoding-damaged-*.bak
 
 # Local build and development artifacts
+
+# Generated V Pilot recovery files
+.vpilot-optimization-backup-*/
+**/*.backup-*
+**/*.bak
+**/*.old
+**/*.original
+**/*.unexpected-design-*
+**/*.current-before-*
+**/*.encoding-damaged-*
+**/*.blank-runtime-*
+**/*.broken-before-*
+**/*.corrupted-*
+**/*-mock-final.*

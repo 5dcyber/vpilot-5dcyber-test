@@ -1,5 +1,6 @@
-﻿import PremiumHomeNarrative from "./PremiumHomeNarrative.jsx";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import PremiumHomeNarrative from "./PremiumHomeNarrative.jsx";
 import {
   ArrowRight, BadgeCheck, BrainCircuit, Building2, CheckCircle2,
   CloudCog, DatabaseBackup, Eye, FileCheck2, FlaskConical, Gauge,

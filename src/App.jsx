@@ -48,12 +48,31 @@ export default function App() {
           <Route path="/company" element={<Navigate to="/" replace />} />
           <Route path="/company/*" element={<Navigate to="/" replace />} />
 
-          {/* Company narratives remain part of HomePage. */}
-          <Route path="/about-v-pilot" element={<HomePage initialSection="about-v-pilot" />} />
-          <Route path="/why-v-pilot" element={<HomePage initialSection="why-v-pilot" />} />
-          <Route path="/security-assurance" element={<HomePage initialSection="security-assurance" />} />
-          <Route path="/5pilot-operations" element={<HomePage initialSection="5pilot-operations" />} />
-          <Route path="/5pilot-ops" element={<Navigate to="/5pilot-operations" replace />} />
+                  {/* Company narratives remain part of the canonical homepage. */}
+                  <Route
+                      path="/about-v-pilot"
+                      element={<HomePage initialSection="company-overview" />}
+                  />
+
+                  <Route
+                      path="/why-v-pilot"
+                      element={<HomePage initialSection="why-v-pilot" />}
+                  />
+
+                  <Route
+                      path="/security-assurance"
+                      element={<HomePage initialSection="security-assurance" />}
+                  />
+
+                  <Route
+                      path="/5pilot-operations"
+                      element={<HomePage initialSection="five-pilot-operations" />}
+                  />
+
+                  <Route
+                      path="/5pilot-ops"
+                      element={<Navigate to="/5pilot-operations" replace />}
+                  />
 
           <Route path="/platform" element={<PlatformPage />} />
           <Route path="/platform/*" element={<PlatformPage />} />
