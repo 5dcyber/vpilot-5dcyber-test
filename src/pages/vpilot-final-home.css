@@ -1551,3 +1551,29 @@
   .vpfh-difference-grid article:hover { transform: none; }
 }
 /* V PILOT WHY CHOOSE PREMIUM THEME END */
+
+/* V PILOT PEOPLE AND CONVERSION PREMIUM START */
+.vpfh-people-premium{position:relative;overflow:hidden;color:#fff;background:#02152b;border-top:1px solid rgba(38,211,240,.35);border-bottom:1px solid rgba(38,211,240,.25)}
+.vpfh-people-premium::after{position:absolute;right:-8%;bottom:-180px;left:-8%;height:330px;content:"";opacity:.72;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 38px,rgba(27,181,247,.19) 39px 40px),linear-gradient(90deg,transparent 0 49.8%,rgba(24,192,244,.24) 50%,transparent 50.2%);transform:perspective(420px) rotateX(62deg);transform-origin:bottom;pointer-events:none}
+.vpfh-people-premium-top{position:relative;z-index:2;display:grid;grid-template-columns:minmax(330px,1fr) minmax(360px,1fr) minmax(390px,1.15fr);min-height:310px}
+.vpfh-people-premium-top>div{padding:34px clamp(30px,3.5vw,62px)}
+.vpfh-people-story{display:flex;flex-direction:column;justify-content:center;background:linear-gradient(110deg,#03182f,rgba(3,35,65,.9))}
+.vpfh-people-story>span,.vpfh-global-presence>span{color:#35d9f6;font-size:10px;font-weight:800;letter-spacing:.14em}
+.vpfh-people-story h2,.vpfh-global-presence h2,.vpfh-conversion-message h2{margin:7px 0 12px;color:#fff;font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.035em}.vpfh-people-story h2{font-size:clamp(1.9rem,2.5vw,2.8rem)}
+.vpfh-people-story p{max-width:610px;margin:0;color:rgba(225,238,248,.86);font-size:12px;line-height:1.52}
+.vpfh-people-story>a{display:flex;width:max-content;min-width:210px;min-height:46px;align-items:center;justify-content:center;gap:10px;margin-top:22px;padding:0 22px;border-radius:6px;color:#fff;background:linear-gradient(135deg,#0c91f3,#0871d1);box-shadow:0 12px 28px rgba(8,126,235,.25);font-size:12px;font-weight:800;text-decoration:none}
+.vpfh-people-story>a svg{width:16px}
+.vpfh-people-visual{position:relative;isolation:isolate;background-image:linear-gradient(90deg,rgba(3,24,47,.76),rgba(3,25,49,.15) 38%,rgba(3,25,49,.12) 66%,rgba(3,24,47,.78)),url("/assets/vpilot-virtual-security-operations-hero.png");background-position:center;background-size:cover;border-left:1px solid rgba(55,196,230,.23);border-right:1px solid rgba(55,196,230,.23)}
+.vpfh-people-visual::after{position:absolute;inset:auto 0 0;height:48%;z-index:-1;content:"";background:linear-gradient(180deg,transparent,rgba(1,15,31,.92))}
+.vpfh-people-manifesto{position:absolute;right:24px;top:62px;display:grid;gap:5px;padding-left:15px;border-left:1px solid #28d5ef;color:#d8edfa;font-size:9px;letter-spacing:.1em}.vpfh-people-manifesto b{color:#fff;font-size:10px}.vpfh-people-manifesto small{color:#8edbec;font-size:8px}
+.vpfh-global-presence{background:linear-gradient(120deg,rgba(3,24,47,.96),rgba(4,46,82,.95))}.vpfh-global-presence h2{font-size:clamp(1.7rem,2.15vw,2.35rem)}
+.vpfh-industry-icons{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:19px;padding-bottom:16px;border-bottom:1px solid rgba(44,202,234,.36)}
+.vpfh-industry-icons div{display:grid;justify-items:center;text-align:center}.vpfh-industry-icons svg{width:21px;height:21px;color:#21d1ee}.vpfh-industry-icons b{margin-top:5px;color:#eaf6fc;font-size:7px;line-height:1.15}
+.vpfh-presence-proof{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:15px}.vpfh-presence-proof article{text-align:center}.vpfh-presence-proof strong{display:block;color:#fff;font-size:21px;line-height:1}.vpfh-presence-proof span{display:block;margin-top:5px;color:#bcd3e3;font-size:7px;line-height:1.15}
+.vpfh-conversion-premium{position:relative;z-index:3;display:grid;grid-template-columns:minmax(400px,1fr) auto minmax(210px,.45fr);gap:28px;align-items:center;min-height:118px;padding:23px max(40px,4vw);border-top:1px solid rgba(42,210,238,.42);background:linear-gradient(100deg,rgba(2,17,35,.98),rgba(4,52,91,.96) 58%,rgba(2,22,43,.98))}
+.vpfh-conversion-message h2{margin:0 0 5px;font-size:clamp(1.55rem,2vw,2.15rem)}.vpfh-conversion-message p{margin:0;color:#bed4e4;font-size:11px}.vpfh-conversion-actions{display:flex;gap:10px}.vpfh-conversion-actions a{display:flex;min-height:44px;align-items:center;justify-content:center;gap:9px;padding:0 20px;border-radius:6px;color:#fff;font-size:11px;font-weight:750;text-decoration:none;white-space:nowrap}.vpfh-conversion-actions .primary{background:#087eeb}.vpfh-conversion-actions .secondary{border:1px solid #58c9ed;background:rgba(3,27,51,.65)}.vpfh-conversion-actions svg{width:15px}.vpfh-conversion-principles{display:grid;gap:4px;padding-left:20px;border-left:1px solid rgba(63,206,234,.38)}.vpfh-conversion-principles span{color:#51cde9;font-size:8px;letter-spacing:.12em}
+/* Hide the superseded standalone conversion band after this combined section. */
+.vpfh-people-premium + .vpfh-final{display:none!important}
+@media(max-width:1150px){.vpfh-people-premium-top{grid-template-columns:1fr 1fr}.vpfh-global-presence{grid-column:1/-1}.vpfh-conversion-premium{grid-template-columns:1fr auto}.vpfh-conversion-principles{grid-column:1/-1;display:flex;gap:18px;padding-left:0;border-left:0}}
+@media(max-width:720px){.vpfh-people-premium-top{grid-template-columns:1fr}.vpfh-global-presence{grid-column:auto}.vpfh-people-visual{min-height:300px}.vpfh-industry-icons{grid-template-columns:repeat(4,1fr);gap:14px}.vpfh-presence-proof{grid-template-columns:repeat(2,1fr);gap:15px}.vpfh-conversion-premium{grid-template-columns:1fr;padding:34px 24px}.vpfh-conversion-actions{display:grid}.vpfh-conversion-principles{display:grid}.vpfh-conversion-actions a{width:100%}}
+/* V PILOT PEOPLE AND CONVERSION PREMIUM END */
